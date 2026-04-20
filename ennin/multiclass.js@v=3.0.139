@@ -1,0 +1,124 @@
+class MulticlassLevel {
+    static sum = 0;
+
+    static spellslotsTable = null;
+
+    static levels = {
+        'paladin': 0,
+        'artificer': 0,
+        'ranger': 0,
+        'cleric': 0,
+        'wizard': 0,
+        'sorcerer': 0,
+        'bard': 0,
+        'druid': 0,
+        'eknight': 0,
+        'atrickster': 0,
+    };
+
+    static mods = {
+        'paladin': 'half',
+        'artificer': 'halfup',
+        'ranger': 'half',
+        'cleric': 'full',
+        'wizard': 'full',
+        'sorcerer': 'full',
+        'bard': 'full',
+        'druid': 'full',
+        'eknight': 'third',
+        'atrickster': 'third',
+    };
+    static names = {
+        'bard': 'Бард',
+        'wizard': 'Волшебник',
+        'druid': 'Друид',
+        'cleric': 'Жрец',
+        'artificer': 'Изобретатель',
+        'paladin': 'Паладин',
+        'ranger': 'Следопыт',
+        'sorcerer': 'Чародей',
+        'eknight': 'Мистический рыцарь',
+        'atrickster': 'Мистический ловкач',
+    };
+
+    static init(slidersTable, spellslotsTable) {
+
+        this.spellslotsTable = spellslotsTable;
+
+        const body = slidersTable.querySelector('tbody');
+
+        for (const [key, name] of Object.entries(this.names)) {
+            let id = `level_slider_${key}`;
+            let slider = `<div class="slider" id="${id}">
+                            <div class="slider__bar"></div>
+                            <div class="slider__button">0</div>
+                        </div>`;
+            body.appendChild(
+                HTML.createElement('tr', 'class-row', {}, [
+                    HTML.createElement('td', 'class-name', { innerHTML: name }),
+                    HTML.createElement('td', 'class-level', { innerHTML: slider }),
+            ]));
+
+            window.slider(
+                document.querySelector(`#${id}`),
+                0, 20,
+                (levelOld, levelNew) => MulticlassLevel.updateLevel(key, levelNew)
+            );
+        }
+        body.appendChild(
+            HTML.createElement('tr', 'class-row', {}, [
+                HTML.createElement('td', 'class-name', { innerHTML: 'Колдун' }),
+                HTML.createElement('td', 'class-level', { innerHTML: 'Магия договора Колдуна считается отдельно' }),
+            ]));
+    }
+
+    static updateLevel(key, level) {
+        this.levels[key] = level;
+
+        this.recalcSum();
+
+        this.spellslotsTable
+            .querySelectorAll('tr:not(.table_header)')
+            .forEach((row, index) => {
+                let level = index + 1;
+
+                row.classList.toggle('rolled', level === this.sum);
+            })
+    }
+
+    static recalcSum() {
+        this.sum = 0;
+        for (const [key, mod] of Object.entries(this.mods)) {
+            let level = this.levels[key];
+            if (level <= 0) {
+                continue;
+            }
+
+            switch (mod) {
+                case "half": level = Math.floor(level / 2); break;
+                case "halfup": level = Math.ceil(level / 2); break;
+                case "third": level = Math.floor(level / 3); break;
+                case "full": break;
+            }
+
+            this.sum += level;
+        }
+
+        this.sum = Math.min(20, this.sum);
+
+        return this.sum;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (document.querySelectorAll("textarea.editor").length > 0) {
+        return;
+    }
+
+    setTimeout(function() {
+        MulticlassLevel.init(
+            document.querySelector('#multiclass_levels'),
+            document.querySelector('.multiclass_spellslots'),
+        )
+    }, 1);
+});

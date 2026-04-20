@@ -1,0 +1,691 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Homebrew статьи / Статьи D&D 5</title>
+	
+    <meta name="description" content="Статьи и руководства по механикам D&D 5-й редакции на русском языке." />
+    <meta name="keywords" content="dnd статьи механики,механики,homebrew, днд статьи механики,механики,homebrew, d&d статьи механики,механики,homebrew, dnd 5 статьи механики,механики,homebrew, днд 5 статьи механики,механики,homebrew, d&d 5 статьи механики,механики,homebrew, подземелья и драконы статьи механики,механики,homebrew, dungeons and dragons статьи механики,механики,homebrew" />
+    <meta property="og:title" content="Homebrew статьи / Статьи D&D 5" />
+    <meta property="og:description" content="Статьи и руководства по механикам D&D 5-й редакции на русском языке." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/articles/homebrew/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../ennin/rolltable.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='index.html'>Homebrew статьи</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../mechanics/468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../mechanics/26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../mechanics/index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Farticles%2Fhomebrew%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Farticles%2Fhomebrew%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Farticles%2Fhomebrew%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Farticles%2Fhomebrew%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCHvgDnlfa2zJXpaSEdX4_8w?partner=dnd.su" target="_blank" title="Monster park (Monster park of f#king Stark)" class="item_link_2 partner"><span class="sprite-partners__stark partner-icon"></span>Monster park</a></li><li class="item_level_2"><a href="https://vk.com/witchhouse13?partner=dnd.su" target="_blank" title="WI†CH H⏀USE" class="item_link_2 partner"><span class="sprite-partners__witchhouse13 partner-icon"></span>WI†CH H⏀USE</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCEDRLNTs-Fp3AZfxveT8d3w?partner=dnd.su" target="_blank" title="Lore (Описание мира Forgotten Realms)" class="item_link_2 partner"><span class="sprite-partners__lore partner-icon"></span>Lore</a></li><li class="item_level_2"><a href="https://www.youtube.com/@DangaMasta?partner=dnd.su" target="_blank" title="Данжа Маста (Канал о создании билдов различных персонажей в ДнД)" class="item_link_2 partner"><span class="sprite-partners__dangamasta partner-icon"></span>Данжа Маста</a></li><li class="item_level_2"><a href="https://vk.com/biblioteka_nri?partner=dnd.su" target="_blank" title="Библиотека на краю мира (Библиотека НРИ)" class="item_link_2 partner"><span class="sprite-partners__library partner-icon"></span>Библиотека на краю мира</a></li><li class="item_level_2"><a href="https://dkdice.com?partner=dnd.su" target="_blank" title="Dungeon Keepers's Dice (Уникальные игральные кости ручной работы)" class="item_link_2 partner"><span class="sprite-partners__dkdice partner-icon"></span>Dungeon Keepers's Dice</a></li><li class="item_level_2"><a href="https://www.youtube.com/@kasodochka?partner=dnd.su" target="_blank" title="Kasoda (Смешные, познавательные и разочаровывающие ролики про D&D)" class="item_link_2 partner"><span class="sprite-partners__kasoda partner-icon"></span>Kasoda</a></li><li class="item_level_2"><a href="https://vk.com/morelessvk?partner=dnd.su" target="_blank" title="Море Лес (Стримы D&D)" class="item_link_2 partner"><span class="sprite-partners__more partner-icon"></span>Море Лес</a></li><li class="item_level_2"><a href="https://badmimic.com?partner=dnd.su" target="_blank" title="Сокровища Мимика (3D печать миниатюр)" class="item_link_2 partner"><span class="sprite-partners__treasuresmimic partner-icon"></span>Сокровища Мимика</a></li><li class="item_level_2"><a href="https://vk.com/dnd_for_all?partner=dnd.su" target="_blank" title="D&D для всех (Dungeons & Dragons для всех! Группа для истинных ценителей D&D!)" class="item_link_2 partner"><span class="sprite-partners__dnd_for_all partner-icon"></span>D&D для всех</a></li><li class="item_level_2"><a href="https://www.youtube.com/@brosaitekosti?partner=dnd.su" target="_blank" title="Бросайте кости (Канал обучающий играть в настольно-ролевые игры)" class="item_link_2 partner"><span class="sprite-partners__brosaitekosti partner-icon"></span>Бросайте кости</a></li><li class="item_level_2"><a href="https://misterium-frpg.ru/?partner=dnd.su" target="_blank" title="FRPG Мистериум (Древнейшая форумная ролевая игра в стиле фэнтези)" class="item_link_2 partner"><span class="sprite-partners__misterium_rpg partner-icon"></span>FRPG Мистериум</a></li><li class="item_level_2"><a href="https://vk.com/dicehead_dnd?partner=dnd.su" target="_blank" title="DiceHead" class="item_link_2 partner"><span class="sprite-partners__dicehead partner-icon"></span>DiceHead</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCe_vCsHHRPT9XPVYDInQqqQ?partner=dnd.su" target="_blank" title="Sneaky Dice" class="item_link_2 partner"><span class="sprite-partners__sneaky_dice partner-icon"></span>Sneaky Dice</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='index.html'>Homebrew статьи</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+	            <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="index.html" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по homebrew" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+				<div class='paper-1 card card__group-homebrew'  style="background-position:16% 0" data-id='article:107' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper mechanics_alchemy'  style='background-image:url(../../img/card-bg/mechanics_alchemy.png);'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/107-alximiia-by-calculuschild/index.html' itemprop='url' class='item-link'>Алхимия by calculuschild</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<h3 class="smallSectionTitle">ВНИМАНИЕ: ЭТО HOMEBREW</h3><p>Алхимия — это навык извлечения уникальных свойств из определенных растений, материалов и частей существ, а также объединения этих свойств для создания уникальных субстанций. Даже если вы не обладаете магическими умениями, алхимия поможет воссоздать магический эффект, а произведенный продукт останется не магическим. В состав инструментов алхимика входят мензурки, контейнеры для смешивания и измерения, а также обычные химические компоненты, необходимые для алхимии. Владение этими инструментами позволит вам извлекать элементы, необходимые для алхимии, а также добавлять бонус мастерства к любым проверкам характеристик, направленным на создание предмета при помощи инструментов.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/107-alximiia-by-calculuschild/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:75% 0" data-id='article:500' data-typo-path='/homebrew/articles/homebrew/500-vooruzenie-iz-steinxarda/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/500-vooruzhenie_iz_steynkharda/index.html' itemprop='url' class='item-link'>Вооружение из Штейнхарда</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				Огнестрельное оружие было создано из-за острой необходимости бороться с Бедствием. Все они содержат серебро в своей конструкции, и поэтому снаряды, которыми они стреляют, считаются посеребренными в целях преодоления сопротивлений и иммунитетов.
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/500-vooruzhenie_iz_steynkharda/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew'  style="background-position:32% 0" data-id='article:109' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper mechanics_alchemy'  style='background-image:url(../../img/card-bg/mechanics_alchemy.png);'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/109-gerbalizm-i-alximiia/index.html' itemprop='url' class='item-link'>Гербализм и Алхимия</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<blockquote>РАСКРОЙ ИСТИННЫЙ ПОТЕНЦИАЛ. Раус Албрайт был очень умел с растениями и маслами. Он знал как извлечь их истинную силу и создать могущественные смеси.<br>Многие пытались создать и украсть эти великОлепные отвары, пока он не начал продавать его секреты для массового использования.Сегодня, даже самый обычный горожанин может создать простой отвар.<br>Проф. Клэйтон. <strong>Компендиум тайных наук</strong></blockquote><br><p>Во всём мире есть множество различных форм растительной жизни, морских растений и даже земляные субстанции которые Вы можете использовать как в боевых ситуациях, так и нет. Гербализм - это профессия по сбору подобных ресурсов и Алхимия- профессия по извлечению их потенциала и использования продуктов, которые они производят.</p>
+<p>Вы можете обнаружить себя гуляющим среди гор только для того, что бы найти немного очень редкого Изначального Бальзама, который в большинстве случаев может усилить эффект зелья или яда в двое. Затем Вы можете обнаружить себя одиноко гуляющим среди промозглой тундры и благодаря Вашим знаниям Вы можете использовать немого цветов Драку</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/109-gerbalizm-i-alximiia/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:51% 0" data-id='article:537' data-typo-path='/homebrew/articles/homebrew/537-combo-attacks/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/537-combo-attacks/index.html' itemprop='url' class='item-link'>Комбо атаки [Combo Attacks]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p style="">Комбо атаки - это возможность для персонажей игроков выполнять эффективные совместные действия в бою. Благодаря командной работе искатели приключений могут совершать необычные действия, а игроки - переживать невероятные, кинематографические моменты, отражающие связь их персонажей как компаньонов и воинов.</p>
+<p style="">Комбо атаки - это место для свободного и творческого взаимодействия игроков. Масштаб и зрелищность комбо-атак могут варьироваться в зависимости от уровня реализма, которого придерживается ваша игра. Мастера должны использовать эти правила как руководство по балансировке комбо-атак, работая с игроками, чтобы дать им свободу создавать свои собственные комбо-атаки таким образом, чтобы они улучшали бой.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/537-combo-attacks/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:81% 0" data-id='article:445' data-typo-path='/homebrew/articles/homebrew/445-rune-magic/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/445-rune_magic/index.html' itemprop='url' class='item-link'>Магия рун [Rune magic]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Чтобы получить доступ к магии, сокрытой в рунах, нужно иметь черту <a href="../../homebrew/feats/274-rune_knowledge/index.html" target="_blank">Знание Рун</a>. Если черты не используются в вашей кампании, то Знание Рун всё же может быть приобретено вместо увеличения характеристики при получении уровня, с позволения вашего Мастера. В качестве альтернативы персонажи могут выполнить какое-нибудь созданное Мастером задание, чтобы получить Знание Рун. Когда эти препятствия преодолены, все персонажи, подходящие по требованиям черты, могут получить Знание Рун и Мастерство Рун.
+</p><p>Когда руна требует совершения спасброска, Сл равняется 8 + модификатор базовой характеристики накладывающего руну + бонус мастерства.
+</p><p>Характеристика, используемая для определения сложности, используется та же, что используется для совершения спасброска, если в описании руны не сказано иначе. Например, если руна требует совершения спасброска Харизмы, сложность определяется с использованием модификатора Харизмы, накладывающего руну.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/445-rune_magic/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:91% 0" data-id='article:596' data-typo-path='/homebrew/articles/homebrew/596-monstry-pravila-steinxarda/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/ground/596-monstry_pravila_shteynkharda/index.html' itemprop='url' class='item-link'>Монстры. Правила Штейнхарда</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				Правила: Комбинированные типы монстров и Потеря конечностей
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/ground/596-monstry_pravila_shteynkharda/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:82% 0" data-id='article:398' data-typo-path='/homebrew/articles/homebrew/398-oruzeinye-priemy-i-oruzie-midgarda/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/398-oruzeinye-priemy-i-oruzie-midgarda/index.html' itemprop='url' class='item-link'>Оружейные приёмы и оружие Мидгарда</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Оружием можно не только наносить урон. В&nbsp;бою опытный воин использует его, чтобы запутать и&nbsp;ошеломить врагов, а&nbsp;затем нанести решающий удар. Ниже даны уникальные приёмы для конкретных видов оружия, которые позволяют ему особым образом биться на поле боя.
+</p><p>По умолчанию каждый из описанных приёмов может быть использован любым персонажем, у&nbsp;которого есть нужное оружие и&nbsp;умение в&nbsp;обращении с&nbsp;ним. Если приём требует, чтобы существо прошло испытание, то его Сл равна 8 + бонус умения атакующего + его модификатор Силы или Ловкости (на выбор атакующего). Если не&nbsp;указано обратное, приёмы предоставляют только указанный эффект, не нанося обычного урона от оружия.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/398-oruzeinye-priemy-i-oruzie-midgarda/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:13% 0" data-id='article:502' data-typo-path='/homebrew/articles/homebrew/502-eldritch-moons/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/502-eldritch_moons/index.html' itemprop='url' class='item-link'>Потусторонние луны [Eldritch Moons]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>В <em>«Руководстве Штейнхарда по Мистической охоте» </em>представлены 12 Потусторонних лун, обладающих <span>эффектами</span>, изменяющими игру.&nbsp;<span style="font-size: 15px; color: var(--color-text-main);">Они предназначены для создания динамичного и захватывающего игрового мира, который меняется с течением времени.</span></p><p>Есть два способа использовать луны: Лунный метод или метод Сверхъестественного призыва. Последнее немного сложнее, хотя и создает более динамичный элемент в игровом процессе. Оба метода используют приведенную ниже таблицу Потусторонних лун.</p><p>Независимо от выбранного метода, Потустороння<span style="font-size: 15px; color: var(--color-text-main);">&nbsp;луна появляется ночью и исчезает днем (если не сказано иное).</span></p><p>Кроме того, когда персонаж получает <a href="../../homebrew/articles/homebrew/501-steinhardt_s_madness_system/index.html" target="_blank">безумие</a> (кратковременное, долговременное или бессрочное) под Потусторонней луной, он получает дополнительные эффекты безумия, подробно описанные под каждой луной. Эти дополнительные эффекты объединяются с обычными эффектами безумия и действуют в течение той же продолжительности.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/502-eldritch_moons/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:65% 0" data-id='article:510' data-typo-path='/homebrew/articles/homebrew/510-eldritch-carvings/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/510-eldritch_carvings/index.html' itemprop='url' class='item-link'>Потусторонние орнаменты [Eldritch Carvings]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<blockquote>"Она - безжизненное воплощение падшего и потерпевшего крах творения. Он - свет тысячи умирающих солнц. Ваше существование - не что иное, как отголосок, затерявшийся в пронзительном крике погибающего бога. Невидимое приближается, обволакивая вас. И это сокрушает вас, как длань деспотичного света”.<br>- Рассказ человека, выжившего после первого сеанса</blockquote>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/510-eldritch_carvings/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:64% 0" data-id='article:269' data-typo-path='/homebrew/articles/homebrew/269-ability-checks-and-hacking-tools/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../269-ability_checks_and_hacking_tools/index.html' itemprop='url' class='item-link'>Проверки характеристик и инструменты хакера [Ability checks and hacking tools]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				Большинство персонажей в современных кампаниях хорошо разбираются в использовании компьютеров и автоматически добиваются успеха при использовании технологий для рутинных задач (поиск на жестком диске или в Интернете, использование обычных функций электронного устройства и т. д.).
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../269-ability_checks_and_hacking_tools/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:68% 0" data-id='article:210' data-typo-path='/homebrew/articles/homebrew/210-curse-of-wandering/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Бестиарий", "Проклятье Блуждания", "Земли Амонхета"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../210-curse_of_wandering/index.html' itemprop='url' class='item-link'>Проклятье Блуждания [Curse of Wandering]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				Проклятие Блуждания — величайшая опасность пустынных земель. Существо, убитое в пустыне, снова воскресает в виде зомби, как только с его плоти высохнет влага. В результате трупы всех видов пустынных существ бродят по дюнам вместе с гуманоидными зомби инакомыслящих и потенциальных исследователей.
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../210-curse_of_wandering/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:39% 0" data-id='article:334' data-typo-path='/homebrew/articles/homebrew/334-the-desert-land/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Бестиарий", "Пустынные земли", "Земли Амонхета"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../bestiary/334-the_desert_land/index.html' itemprop='url' class='item-link'>Пустынные земли [The Desert Land]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				Пустынная дикая местность, находящаяся за пределами защиты Хекмы, практически неизведана. Сразу за защитной завесой находится хаотичное море дюн под названием Шефет, Чистящие Пески. Пустыня стирается по краям плодородных земель, окружающих Нактамун, и служит постоянным напоминанием о том, что только щедрость и защита Бога-фараона стоят между жителями города-государства и ужасной смертью в песках за его пределами. За Шефетом простираются выжженные, потрескавшиеся просторы, называемые Рамунап, Расколотые земли. Говорят, что руины древних цивилизаций лежат в Расколотых землях, хотя никто никогда не исследовал такие руины и не возвращался в Нактамун, чтобы рассказать о них.
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../bestiary/334-the_desert_land/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew'  style="background-position:9% 0" data-id='article:203' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/203-rassirennoe-i-ekzoticeskoe-oruzie/index.html' itemprop='url' class='item-link'>Расширенное и экзотическое оружие</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<h3 class="smallSectionTitle">ВНИМАНИЕ: ЭТО HOMEBREW</h3><p>Каждая страна и каждая группа людей имеют свои собственные уникальные способы сражаться и нести смерть, странные и чуждые для остального мира. Даже в собственной стране, необычное оружие как правило используется редко и мало кто овладевает им в совершенстве. Это оружие как правило не лучше и не хуже, чем его более традиционные собратья, но иногда даёт тактическое преимущество, за которое и ценится закалёнными воинами.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/203-rassirennoe-i-ekzoticeskoe-oruzie/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew'  style="background-position:49% 0" data-id='article:400' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/400-slash-stab-hack-repeat/index.html' itemprop='url' class='item-link'>Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<h3 class="smallSectionTitle">ВНИМАНИЕ: ЭТО HOMEBREW</h3><p>Рукопашное и дальнобойное оружие, наносящее дробящий или колющий урон, обладает следующими преимуществами:
+</p><p><em><strong>Оружие наносящее дробящий урон.</strong></em> Когда вы атакуете рукопашным оружием, наносящим дробящий урон и промахиваетесь при выпадении «1», вы все равно наносите урон, нанося половину обычного урона по цели. Вы не можете наносить урон от скрытой атаки при попадании.
+</p><p><strong><em>Оружие наносящее колющий урон.</em></strong> Оружие, наносящее колющий урон, способно наносить особенно тяжелые раны, пронзая своих жертв и пронизывая жизненно важные органы. Когда вы наносите критическое попадание, вы утраиваете кости урона оружия вместо того, чтобы удваивать их.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/400-slash-stab-hack-repeat/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:37% 0" data-id='article:335' data-typo-path='/homebrew/articles/homebrew/335-the-luxa-river/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Бестиарий", "Река Лукса", "Земли Амонхета"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../bestiary/335-the_luxa_river/index.html' itemprop='url' class='item-link'>Река Лукса [The Luxa River]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Река Лукса — богатый источник жизни, удобряющий пышную долину вокруг Нактамуна и обеспечивающий водой как гуманоидов, так и животных. Это также яркая среда обитания для бесчисленных существ, в том числе многих видов птиц, рыб и лягушек. Крокодилы и гиппопотамы могут представлять опасность для лодок и барж, но, пожалуй, самые страшные обитатели реки — это гигантские змеи, которые, как известно, прячутся на её дне. В гневе они могут топить рыбацкие лодки десятками и затоплять берег.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../bestiary/335-the_luxa_river/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card typoable'  style="background-position:99% 0" data-id='article:313' data-typo-path='/articles/homebrew/313-dndsu-homebrewing-guide/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Руководство по оформлению неофициальных карточек"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../313-rukovodstvom_po_oformleniju_neofitsialnyh_kartochek/index.html' itemprop='url' class='item-link'>Руководство по оформлению неофициальных карточек [dnd.su Homebrewing guide]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				Руководством по оформлению неофициальных карточек на сайте dungeon.su
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../313-rukovodstvom_po_oformleniju_neofitsialnyh_kartochek/index.html' class='read-more'>Читать далее</a><br><a href='../313-rukovodstvom_po_oformleniju_neofitsialnyh_kartochek/index.html#comments' class='read-more-comments'>Комментарии: 78</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card typoable'  style="background-position:54% 0" data-id='article:260' data-typo-path='/articles/homebrew/260-manual-of-style/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Руководство по стилю"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../mechanics/260-manual_of_style/index.html' itemprop='url' class='item-link'>Руководство по стилю [Manual of Style]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Как правильно переводить и оформлять <span>переводы D&amp;D 5e для нашего сообщества.</span></p><p></p><p><span>Версия: 0.6.2 «Harmonic Convergence»</span></p><p>Источник оригинального руководства: <a href="https://dungeonsanddragons.ru" target="_blank">dungeons.ru</a></p><p></p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../mechanics/260-manual_of_style/index.html' class='read-more'>Читать далее</a><br><a href='../mechanics/260-manual_of_style/index.html#comments' class='read-more-comments'>Комментарии: 1</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:25% 0" data-id='article:549' data-typo-path='/homebrew/articles/homebrew/549-harvesting/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/549-harvesting/index.html' itemprop='url' class='item-link'>Сбор Добычи Рёко и Хелианы [Harvesting]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p style="">В этой статье подробно описаны основные концепции сбора добычи с убитых вами существ, что позволит вам представить совершенно новую систему на вашем столе.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/549-harvesting/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group-homebrew typoable'  style="background-position:81% 0" data-id='article:501' data-typo-path='/homebrew/articles/homebrew/501-steinhardts-madness-system/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../homebrew/articles/homebrew/501-steinhardt_s_madness_system/index.html' itemprop='url' class='item-link'>Система безумия Штейнхарда [Steinhardt’s Madness System]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p><em>«Руководство Штейнхардта по Мистической охоте» </em>содержит многочисленных аберраций, которые могут воздействовать на разум существ.</p><p>Следующие правила и эффекты подробно описывают множество способов, которыми сознание персонажей может быть искажено, развращено или иным образом осквернено.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../../homebrew/articles/homebrew/501-steinhardt_s_madness_system/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div></section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

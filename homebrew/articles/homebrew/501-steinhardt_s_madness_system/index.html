@@ -1,0 +1,679 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Система безумия Штейнхарда / Homebrew статьи / Статьи D&D 5 / Steinhardt's Guide to the Eldritch Hunt, Homebrew</title>
+	
+    <meta name="description" content="«Система безумия Штейнхарда (Steinhardt’s Madness System)» - статья в разделе «Homebrew» по D&D 5-й редакции." />
+    <meta name="keywords" content="dnd статьи механики,механики,homebrew, днд статьи механики,механики,homebrew, d&d статьи механики,механики,homebrew, dnd 5 статьи механики,механики,homebrew, днд 5 статьи механики,механики,homebrew, d&d 5 статьи механики,механики,homebrew, подземелья и драконы статьи механики,механики,homebrew, dungeons and dragons статьи механики,механики,homebrew, dnd статьи механики,механики,homebrew Система безумия Штейнхарда [Steinhardt’s Madness System], днд статьи механики,механики,homebrew Система безумия Штейнхарда [Steinhardt’s Madness System], d&d статьи механики,механики,homebrew Система безумия Штейнхарда [Steinhardt’s Madness System], dnd 5 статьи механики,механики,homebrew Система безумия Штейнхарда [Steinhardt’s Madness System], днд 5 статьи механики,механики,homebrew Система безумия Штейнхарда [Steinhardt’s Madness System], d&d 5 статьи механики,механики,homebrew Система безумия Штейнхарда [Steinhardt’s Madness System], подземелья и драконы статьи механики,механики,homebrew Система безумия Штейнхарда [Steinhardt’s Madness System], dungeons and dragons статьи механики,механики,homebrew Система безумия Штейнхарда [Steinhardt’s Madness System]" />
+    <meta property="og:title" content="Система безумия Штейнхарда / Homebrew статьи / Статьи D&D 5 / Steinhardt's Guide to the Eldritch Hunt, Homebrew" />
+    <meta property="og:description" content="«Система безумия Штейнхарда (Steinhardt’s Madness System)» - статья в разделе «Homebrew» по D&D 5-й редакции." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/homebrew/articles/homebrew/501-steinhardts-madness-system/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../../../articles/145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='index.html'>Система безумия Штейнхарда</a><span> — </span><a href='https://dnd.su/homebrew/articles/homebrew/'>Homebrew статьи</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../../../articles/newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../../articles/mechanics/468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../../articles/mechanics/26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../../articles/newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../../articles/bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/mechanics/index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../../../articles/homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../../../articles/news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Fhomebrew%2Farticles%2Fhomebrew%2F501-steinhardts-madness-system%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Fhomebrew%2Farticles%2Fhomebrew%2F501-steinhardts-madness-system%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Fhomebrew%2Farticles%2Fhomebrew%2F501-steinhardts-madness-system%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Fhomebrew%2Farticles%2Fhomebrew%2F501-steinhardts-madness-system%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../../../articles/partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://vk.com/anykeyspb?partner=dnd.su" target="_blank" title="ANY KEY (Настольные игры | D&D | Петербург |Спб)" class="item_link_2 partner"><span class="sprite-partners__anykey partner-icon"></span>ANY KEY</a></li><li class="item_level_2"><a href="https://dkdice.com?partner=dnd.su" target="_blank" title="Dungeon Keepers's Dice (Уникальные игральные кости ручной работы)" class="item_link_2 partner"><span class="sprite-partners__dkdice partner-icon"></span>Dungeon Keepers's Dice</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCC6Ay6Oz1Yb10SCmMdbLvPg?partner=dnd.su" target="_blank" title="Грядут Приключения (Пятеро друзей, подземелья и драконы)" class="item_link_2 partner"><span class="sprite-partners__gryadut_priklyucheniya partner-icon"></span>Грядут Приключения</a></li><li class="item_level_2"><a href="https://t.me/VrogharMasters?partner=dnd.su" target="_blank" title="Мастерская Врогхада (Переводы, сборки локаций и советы по играм)" class="item_link_2 partner"><span class="sprite-partners__vroghar partner-icon"></span>Мастерская Врогхада</a></li><li class="item_level_2"><a href="https://vk.com/myriads_of_truths?partner=dnd.su" target="_blank" title="Мириады Истин" class="item_link_2 partner"><span class="sprite-partners__miriady partner-icon"></span>Мириады Истин</a></li><li class="item_level_2"><a href="https://www.youtube.com/@DangaMasta?partner=dnd.su" target="_blank" title="Данжа Маста (Канал о создании билдов различных персонажей в ДнД)" class="item_link_2 partner"><span class="sprite-partners__dangamasta partner-icon"></span>Данжа Маста</a></li><li class="item_level_2"><a href="https://www.youtube.com/@kasodochka?partner=dnd.su" target="_blank" title="Kasoda (Смешные, познавательные и разочаровывающие ролики про D&D)" class="item_link_2 partner"><span class="sprite-partners__kasoda partner-icon"></span>Kasoda</a></li><li class="item_level_2"><a href="https://t.me/Lasspark?partner=dnd.su" target="_blank" title="Lasspark" class="item_link_2 partner"><span class="sprite-partners__lasspark partner-icon"></span>Lasspark</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCVloLo6Z-jPIpzBNm_ZVVAw?partner=dnd.su" target="_blank" title="Великое Путешествие" class="item_link_2 partner"><span class="sprite-partners__velikoe_pute partner-icon"></span>Великое Путешествие</a></li><li class="item_level_2"><a href="https://t.me/dnd_lucky_mess?partner=dnd.su" target="_blank" title="Везучий Случай (Мы — группа друзей, записывающих наши приключения в волшебных мирах Dungeons & Dragons)" class="item_link_2 partner"><span class="sprite-partners__lucky_mess partner-icon"></span>Везучий Случай</a></li><li class="item_level_2"><a href="https://vk.com/ednasmonsters?partner=dnd.su" target="_blank" title="Монстры Эдны (🎲🎲🎲)" class="item_link_2 partner"><span class="sprite-partners__ednasmonsters partner-icon"></span>Монстры Эдны</a></li><li class="item_level_2"><a href="https://www.adventureguys.club?partner=dnd.su" target="_blank" title="Adventure Guys (Команда друзей создаёт материалы для игр, рассказывает про лор, разбирает приключения и многое другое!)" class="item_link_2 partner"><span class="sprite-partners__ad_girl partner-icon"></span>Adventure Guys</a></li><li class="item_level_2"><a href="https://vk.com/dicebucket?partner=dnd.su" target="_blank" title="Ведро Кубов (НРИ | D&D)" class="item_link_2 partner"><span class="sprite-partners__dicebucket partner-icon"></span>Ведро Кубов</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCVl0HbZOsQyVrXNes6u4rnQ?partner=dnd.su" target="_blank" title="Уютное Газебо" class="item_link_2 partner"><span class="sprite-partners__gazebo partner-icon"></span>Уютное Газебо</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='index.html'>Система безумия Штейнхарда</a><span> — </span><a href='https://dnd.su/homebrew/articles/homebrew/'>Homebrew статьи</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+             <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="https://dnd.su/homebrew/articles/homebrew/" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по homebrew" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+			 <div class='paper-1 card card__group-homebrew typoable'  style="background-position:24% 0" data-id='article:501' data-typo-path='/homebrew/articles/homebrew/501-steinhardts-madness-system/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='index.html' itemprop='url' class='item-link'>Система безумия Штейнхарда [Steinhardt’s Madness System]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Steinhardt's Guide to the Eldritch Hunt</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<ul class="new-article-menu"><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="Madness-Guidelines"><span  class="new-article-menu__li-text">Руководство по безумию</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__break" data-parent="Madness-Guidelines"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="Madness-Guidelines"><a href="index.html#Madness-Guidelines" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Руководство по безумию</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="Madness-Guidelines"><a href="index.html#Short-term-madness" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Кратковременное безумие</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="Madness-Guidelines"><a href="index.html#Long-term-madness" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Долговременное безумие</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="Madness-Guidelines"><a href="index.html#Indefinite-madness" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Бессрочное безумие</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="Madness-Guidelines"><a href="index.html#Curing-Madness" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Излечение безумия</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="Madness-Guidelines"><a href="index.html#Temporary-cures" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Временное излечение</span></a></li></ul><p><em style="color: var(--color-text-main);">«Руководство Штейнхардта по Мистической охоте» </em><span style="color: var(--color-text-main);">содержит многочисленных аберраций, которые могут воздействовать на разум существ.</span><br></p><p>Следующие правила и эффекты подробно описывают множество способов, которыми сознание персонажей может быть искажено, развращено или иным образом осквернено.</p><br><h3 class="smallSectionTitle">Эффекты безумия</h3><p>Безумие может быть кратковременным, долговременным или бессрочным.</p><p>Более обыденные эффекты, подобные представленным здесь, вызывают кратковременное безумие, которое длится всего несколько минут. Более ужасные последствия или накопительные эффекты могут привести к долгосрочному или бессрочному безумию.</p><p>Интеллект существа может помочь ему понять потусторонние знания, не разрушая его разум. Персонажи могут добавлять модификатор своего Интеллекта к спасброскам, которые они совершают против безумия.&nbsp;</p><ul><li>Когда существо поражается безумием, будь то кратковременным, долговременным или бессрочным, существо становится ошеломлённым до начала следующего хода, после чего безумие вступает в силу.&nbsp;</li><li>Персонаж, страдающий кратковременным безумием, подвергается воздействию эффекта из таблицы Кратковременного безумия на 1к4 минуты.&nbsp;</li><li>На персонажа, страдающего долговременным безумием, получает эффект из таблицы Долговременного безумия на 1к4 × Потусторонних лун (или 1к4 × 7 дней, если вы не используете Потусторонние луны в своем мире).</li><li>Персонаж, пораженный бессрочным безумием, получает получает эффект из таблицы Бессрочного безумия, который сохраняется пока он не будет исцелён.</li></ul><br><h3 class="smallSectionTitle">Безумие и Эфирный план</h3><p>Когда существо находящееся в Луярне впервые за день попадает на Эфирный план, оно должно совершить спасбросок Мудрости Сл 15, иначе получит кратковременное безумие и немедленно вернётся на тот план, на котором оно было в последний раз. Существа, выбранные МП, невосприимчивы к этому эффекту.</p><p>Каждую минуту, проведенную на Эфирном плане, существо должно повторять спасбросок.</p><h2 class="bigSectionTitle"><span id='Madness-Guidelines'>Руководство по безумию</span></h2><p>Безумие может быть вызвано различными эффектами, существами и ситуациями. Используйте следующие рекомендации, чтобы знать, когда и где его применять.</p><h3 class="smallSectionTitle">Руководство по краткосрочному безумию</h3><p>Кратковременное безумие встречается чаще, чем более длительные формы, и оно может быстро перейти в долгосрочное безумие.</p><p>Кратковременное безумие возникает, когда персонаж переживает что-то травмирующее или изменяющее сознание, но последствия носят временный характер и проходят через некоторое время.</p><p>Чтобы определить, должно ли событие, с которым сталкиваются персонажи, вызывать кратковременное безумие, примите во внимание следующие рекомендации:&nbsp;</p><p><strong><em>Серьезность</em></strong>. Событие должно быть достаточно экстремальным или неожиданным, чтобы вызвать психологический шок или временный отрыв от реальности. Первое столкновение с аберрацией может привести к кратковременному безумию, если существо вызывает ужас или его присутствие сопровождается тревожным событием (например, ужасающей сценой убийства). Однако, если столкновение менее экстремальное или персонаж уже немного знаком с этой конкретной аберрацией, это может не приводить к подобному спасброску.</p><p><strong><em>Психическая устойчивость</em></strong>. Некоторые персонажи могут быть более устойчивы к безумию, чем другие, в зависимости от их происхождения, классовых умений или опыта. Например, опытный искатель приключений или егерь с меньшей вероятностью поддастся кратковременному безумию, чем неопытный новичок.</p><p><strong><em>Контекст и обстановка</em></strong>. Обстоятельства, окружающие событие, играют важную роль в определении того, возникает ли кратковременное безумие. Например, столкновение с аберрацией в тёмном замкнутом пространстве может быть более пугающим, чем столкновение с ним на хорошо освещенной открытой местности. Точно так же обнаружение аберрацией в центре мирной деревни может быть более шокирующим, чем обнаружение её в заведомо опасном месте, например в подземных катакомбах.</p><br><p><span style="font-size: 16px; font-weight: 600; text-transform: uppercase;">Примеры безумия и рекомендации</span><br></p><p>Следующий неполный список приводит несколько примеров, служащие руководством к тому, должен ли тот или иной эффект вызывать безумие.</p><h4 class="smallSectionTitle">Заклинания</h4><ul><li><a href="../../../../spells/309-contact_other_plane/index.html" target="_blank">Связь с иным миром [contact other plane]</a> (при провале<span style="font-size: 15px; color: var(--color-text-main);">&nbsp;спасброска Интеллекта): долговременное безумие.&nbsp;</span></li><li><span style="font-size: 15px; color: var(--color-text-main);"><a href="../../../../spells/317-feeblemind/index.html" target="_blank">Слабоумие [feeblemind]</a>&nbsp;(при провале спасброска Интеллекта): бессрочное безумие.&nbsp;</span></li><li><span style="font-size: 15px; color: var(--color-text-main);">Заклинания остеомантии: кратковременное безумие при первом знакомстве с данной школой магии.&nbsp;</span></li><li><span style="font-size: 15px; color: var(--color-text-main);"><a href="../../../../spells/95-plane_shift/index.html" target="_blank">Уход в иной мир [plane shift]</a>: долгосрочное или бессрочное безумие, в зависимости от того, связано ли место назначения с чем то потусторонним или ужасным.&nbsp;</span></li><li><span style="font-size: 15px; color: var(--color-text-main);">Символ безумия (при провале спасброска Интеллекта): неопределенное безумие.</span></li></ul><h4 class="smallSectionTitle">Существа</h4><ul><li>Первая встреча с неизвестным типом аберрации ПО 7 или ниже: кратковременное безумие.&nbsp;</li><li>Первая встреча с неизвестным типом аберрации ПО 8 или выше: долговременное безумие.&nbsp;</li><li>Первая встреча с неизвестным типом монстра ПО 5 или выше: кратковременное безумие.&nbsp;</li><li>Быть проглоченным аберрацией: кратковременное безумие.&nbsp;</li><li>Впервые за день хиты союзника уменьшаются до 0 монстром или аберрацией: кратковременное безумие.</li></ul><br><h4 class="smallSectionTitle">Ситуации и окружающая среда</h4><p>Настройка на проклятые предметы: кратковременное (обычный или необычный), долговременное (редкий, очень редкий) или бессрочное безумие (легендарный или артефакт).&nbsp;</p><p>Потустороннее вторжение на материальный план (например, глаза на стенах или древние священные писания, написанные кровью, появляющиеся на стенах): кратковременное, долговременное или бессрочное безумие, в зависимости от тяжести и степени распространенности.&nbsp;</p><p>Травмирующие события, такие как наблюдение ужасающей смерти или подвергание пыткам: кратковременное, долговременное или, возможно, даже бессрочное безумие, в зависимости от интенсивности и продолжительности события.&nbsp;</p><p>Длительная изоляция или воздействие экстремальных условий: кратковременное или долговременное безумие, в зависимости от тяжести и продолжительности и воздействия.&nbsp;</p><p>Попадание в кошмар или другой ужасающий план: кратковременное или долговременное безумие, в зависимости от природы плана и его влияния.&nbsp;</p><p>Прием внутрь или воздействие наркотиков, ядов или злоупотребление другими веществами, которые изменяют восприятие или вызывают галлюцинации: кратковременное безумие.&nbsp;</p><p>Наблюдение или участие в ужасных, жестоких или запрещенных ритуалах: кратковременное или долговременное безумие, особенно если персонажи наблюдают ужасающие зрелища, вступают в контакт с потусторонними силами или становятся свидетелями вызова инопланарных сущностей.&nbsp;</p><p>Раскрытие результатов извращенных магических или научных экспериментов, таких как мутировавшие существа или жуткие объединения живого и механического: кратковременное или долговременное безумие, в зависимости от бесчеловечности экспериментов.</p><div class="additionalInfo"><p><em><strong>Заметка МП:</strong> Если вы не знаете, когда применять долговременное или бессрочное безумие, вот эмпирическое правило, которому стоит следовать.  Каждый раз, когда персонаж накапливает пять форм кратковременного безумия менее чем за 48 часов, он приобретает долговременное безумие. Если персонаж приобретает три формы долговременного безумия менее чем за 30 дней, он приобретает бессрочное безумие. Не стесняйтесь изменять эти цифры, если вы хотите видеть больше или меньше безумия в своей игре.</em></p></div>
+
+<h4 class="tableTitle"><span id='Short-term-madness'>Кратковременное безумие</span></h4><p>Когда персонаж получает кратковременное безумие, бросьте к100 по таблице ниже, затем бросьте к10, чтобы определить эффект этой формы безумия. Все эффекты действуют на протяжении всего времени безумия, если не указано иное.</p>
+
+<table><tbody><tr class="table_header"><th>к100</th><th>к10</th><th>Кратковременное безумие (длится 1к10 минут)</th></tr>
+
+<tr>
+<td rowspan="3"><p style="text-align: center;"><span style="font-size: 15px; color: var(--color-text-main);">1-10<br></span><span style="color: var(--color-text-main); font-size: 15px;">Ваш разум освобожден<br></span><span style="color: var(--color-text-main); font-size: 15px;">от любого самоощущения,<br></span><span style="color: var(--color-text-main); font-size: 15px;">которым вы могли обладать.</span></p></td>
+<td>1-2</td><td>Потеряв своё эго вы не можете стать <span tooltip-for="condition.charmed" title="condition.charmed">очарованным</span>.</td></tr>
+<tr><td>3-7</td><td>Вы имитируете манеры, поведение и речевые обороты ближайшего к вам существа, на момент получения этого безумия.</td></tr>
+<tr><td><nobr>8-10</nobr></td><td>Отчаявшись снова обрести себя и веря во что угодно, вы автоматически проваливаете спасброски от того, чтобы стать <span tooltip-for="condition.charmed" title="condition.charmed">очарованным</span>.</td></tr>
+
+
+<tr>
+<td rowspan="3" style="text-align: center;">11-20<br>В ваш разум вторгаются звуки космоса.</td>
+<td>1-2</td><td>Звуки, причиняющие боль, меркнут по сравнению с какофонией в вашей голове; вы получаете иммунитет к урону звуком.</td></tr>
+<tr><td>3-7</td><td>Потусторонние изречения скребутся об ваш мозг; вы слышите мягкий ласковый шёпот за своей спиной.</td></tr>
+<tr><td>8-10</td><td>Звуки космоса заглушают все остальные шумы, изолируя вас от окружающего мира. Вы становитесь <span tooltip-for="condition.deafened" title="condition.deafened">оглохшим</span>, и с помехой совершаете спасброски для поддержания концентрации.</td></tr>
+
+<tr>
+<td rowspan="3" style="text-align: center;">21-30<br>Вы увидели слишком много; <br>ваш разум не может этого осознать, <br>из-за чего ваше зрение становится беспорядочным и ненадежным.</td>
+<td>1-2</td><td>Ваше взор расширяется, как будто вы находитесь под действием заклинания <a href="../../../../spells/20-see_invisibility/index.html" target="_blank">видение невидимого [see invisibility]</a>.</td></tr>
+<tr><td>3-7</td><td>Призрачные фигуры мелькают в уголках ваших глаз, исчезая, когда вы поворачиваете голову</td></tr>
+<tr><td>8-10</td><td>Вы становитесь <span tooltip-for="condition.blinded" title="condition.blinded">ослеплённым</span> и не можете использовать какие-либо особые органы чувств, которые вы могли бы использовать для ориентации, такие как <span tooltip-for="vision.blindsight" title="vision.blindsight">слепое зрение</span> или <span tooltip-for="vision.tremorsense" title="vision.tremorsense">чувство вибрации</span>.</td></tr>
+
+<tr><td rowspan="3" style="text-align: center;">31-40<br>Безумие внутри вас вырывается наружу в виде пронзительных криков.</td><td>1-2</td><td>Ваш крик настолько громкий, что может травмировать. Бонусным действием, каждый ваш ход, вы можете закричать на существо, которое видите в пределах 30 футов от себя. Если цель слышит вас, она должна совершить спасбросок Телосложения Сл 13, получая 1к12 урона звуком в случае провала или половину этого урона в случае успеха.</td></tr><tr><td>3-7</td><td>Вы не можете нормально разговаривать; крик - это единственный способ общения.</td></tr><tr><td>8-10</td><td>Ваши крики настолько оглушительны, что любое существо в пределах 300 футов от вас может услышать, что вы говорите. Вы также не можете составлять связные предложения или использовать вербальные компоненты заклинаний.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">41-50<br>Ваша поза меняется, когда вы пытаетесь разобраться в происходящем перед вами безумии.</td><td>1-2</td><td>Вы становитесь невероятно непредсказуемы. Когда вы становитесь объектом атаки или эффекта, требующего от вас совершения спасброска Ловкости, вы можете реакцией уклониться, получая бонус +1 к КД и преимущество на спасброски Ловкости до начала вашего следующего хода.</td></tr><tr><td>3-7</td><td>Вы отчаянно ищете родительскую фигуру, которая могла бы защитить вас. Как только вы находите её в ком то, вы привязываетесь к нему и отказываетесь оставлять его, несмотря ни на что.</td></tr><tr><td>8-10</td><td>Вы падаете <span tooltip-for="condition.prone" title="condition.prone">ничком</span> и не можете встать, так как ваши ноги отказываются вам подчиняться, и вы не можете использовать скорость полёта, которую вы имеете.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">51-60<br>Вы осознаёте, что ваши руки - это святотатственные орудия.</td><td>1-2</td><td>Эти орудия способны сломить разум ваших врагов. Один раз за ход, когда вы попадаете по существу рукопашной атакой оружием, вы можете дополнительно ему нанести 1к8 урона психической энергией.</td></tr><tr><td>3-7</td><td>Вы отказываетесь использовать свои руки для чего бы то ни было, пряча их от посторонних глаз. Если кто-то пристально смотрит на них, это заставляет вас чувствовать себя крайне неуютно и оправдываться.</td></tr><tr><td>8-10</td><td>Вы не должны ни к чему прикасаться. Вы роняете всё, что держите в руках, и не можете держать предметы или хватать существ.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">61-70<br>Твое тело ломается под этим безумием.</td><td>1-2</td><td>Вы получаете иммунитет к состоянию <span tooltip-for="condition.poisoned" title="condition.poisoned">отравленный</span>.</td></tr><tr><td>3-7</td><td>От вас начинает исходить неприятный аромат, который неприятен даже вам, и никакое количество мыла или волшебства не может его устранить.</td></tr><tr><td>8-10</td><td>Вы становитесь <span tooltip-for="condition.poisoned" title="condition.poisoned">отравлены</span>, даже если вы обладаете иммунитетом к этому состоянию.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">71-80<br>Вам открываются Потусторонние ужасы, погружающие вас в страх.</td><td>1-2</td><td>Когда вы получите это безумие, каждое существо в пределах 30 футов от вас должно совершить спасбросок Мудрости Сл 13, иначе станет <span tooltip-for="condition.frightened" title="condition.frightened">испуганно</span> вами на 1 минуту. Испуганное существо может повторять спасбросок в конце каждого своего хода, оканчивая на себе действие эффекта в случае успеха.</td></tr><tr><td>3-7</td><td>Вы становитесь параноиком и начинаете бояться любого движения или звука.</td></tr><tr><td>8-10</td><td>Вы начинаете бояться своих союзников. Вы должны использовать <span tooltip-for="action.dash" title="action.dash">Рывок</span> и перемещаться от них по самому быстрому и доступному маршруту, каждый ваш ход, останавливаясь, если только двигаться некуда. Если вы начинаете свой ход в месте, где не видите никого из ваших союзников, вы можете действием окончить это безумие.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">81-90<br>Безумие разрушает ваш разум.</td><td>1-2</td><td>Вы осознаете, что ваш разум сковывал ваше тело, и теперь вы можете действовать свободно. Вы получаете дополнительное действие в каждый ваш ход. Этим действием может быть только «<span tooltip-for="action.hide" title="action.hide">Засада</span>», «<span tooltip-for="action.useItem" title="action.useItem">Использование предмета</span>», «<span tooltip-for="action.disengage" title="action.disengage">Отход</span>» или «<span tooltip-for="action.dash" title="action.dash">Рывок</span>».</td></tr><tr><td>3-7</td><td>Вы разражаетесь спонтанными приступами смеха, даже в самое неподходящее время</td></tr><tr><td>8-10</td><td>Вы становитесь&nbsp;<span tooltip-for="condition.incapacitated" title="condition.incapacitated">недееспособны</span>. Этот эффект заканчивается раньше, если вы получаете урон, в два раза превышающий ваш уровень, или если на вас накладывают <a href="../../../../spells/39-greater_restoration/index.html" target="_blank">высшее восстановление [greater restoration]</a>.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">91-95<br>Откровения из потустороннего мира поражают вас.</td><td>1-2</td><td>Ваше тело игнорирует всю боль; имеет значение только Потусторонняя Истина. Вы получаете иммунитет к состоянию <span tooltip-for="condition.stunned" title="condition.stunned">ошеломленный</span>.</td></tr><tr><td>3-7</td><td>Вы говорите другим о Потусторонней Истине как вам кажется понятным образом, но, возможно, не столь ясно для других. Ваши предложения непостижимы для невознесённого разума.</td></tr><tr><td>8-10</td><td>Вы становитесь&nbsp;<span tooltip-for="condition.stunned" title="condition.stunned">ошеломлены</span>. Этот эффект заканчивается досрочно, если вы получаете урон, равный вашему уровню или если на вас накладывают <a href="../../../../spells/39-greater_restoration/index.html" target="_blank">высшее восстановление [greater restoration]</a>.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">96-100<br>Зверь внутри вас просыпается и пытается взять вас под контроль.</td><td>1-2</td><td>Ваше тело высвобождает животные инстинкты без влияния вашего разума, который сдерживал их. Вы находитесь под действием заклинания <a href="../../../../spells/100-haste/index.html" target="_blank">ускорение [haste]</a>, которое и не требует поддержания концентрации. Заклинание заканчивается, когда вы излечиваетесь от безумия.</td></tr><tr><td>3-7</td><td>Ваша речь невнятна, как будто вы в состоянии алкогольного опьянения, и вы перемежаете свои предложения животными звуками.</td></tr><tr><td>8-10</td><td>Вы <span tooltip-for="condition.unconscious" title="condition.unconscious">теряете сознание</span>, т.к. ваш разум изо всех сил борется, чтобы не позволить вам превратиться в зверя. Этот эффект заканчивается досрочно, если вы получаете урон, равный вашему уровню или если на вас накладывают <a href="../../../../spells/39-greater_restoration/index.html" target="_blank">высшее восстановление [greater restoration]</a>.</td></tr>
+</tbody></table><br>
+
+<h4 class="tableTitle"><span id='Long-term-madness'>Долговременное безумие</span></h4><p>Когда персонаж получает долговременное безумие, бросьте к100 по таблице ниже, затем бросьте к10, чтобы определить эффект этой формы безумия. Все эффекты действуют на протяжении всего времени безумия, если не указано иное.</p>
+
+<table><tbody><tr class="table_header"><th>к100</th><th>к10</th><th>Долговременное безумие (длится 1к10 × 10 часов)</th></tr>
+
+<tr>
+<td rowspan="3"><p style="text-align: center;"><span style="font-size: 15px; color: var(--color-text-main);">1-10</span></p><p style="text-align: center;">Мистические силы сильно истощают ваше тело.</p></td>
+<td>1-2</td><td><span tooltip-for="condition.charmed" title="condition.charmed"></span>Ваше хрупкое тело легко перемещать; каждый раз, когда вы получаете урон, вас отбрасывает назад на 10 футов.</td></tr>
+<tr><td>3-7</td><td>Вы легко устаёте, и физические нагрузки тяжело сказываются на вашем организме. Вам требуется на 4 часа больше для завершения продолжительного отдыха.</td></tr>
+<tr><td><nobr>8-10</nobr></td><td><span tooltip-for="condition.charmed" title="condition.charmed"></span>Ваши ноги едва удерживают вас; каждый раз, когда вы получаете урон, вы падаете <span tooltip-for="condition.prone" title="condition.prone">ничком</span>.</td></tr>
+
+
+<tr>
+<td rowspan="3" style="text-align: center;">11-20<br>Потусторонняя магия пробуждается внутри вас.</td>
+<td>1-2</td><td>Ваш контакт с потусторонним миром пробуждает в вас силы. Вы узнаёте один случайный <a href="../../../../spells/index.html@search=&amp;level=0&amp;class=20&amp;sortBy=level.html" target="_blank">заговор</a> из списка заклинаний колдуна. Харизма является вашей базовой характеристикой для этого заговора.</td></tr>
+<tr><td>3-7</td><td>Магия этого мира вызывает у вас отвращение. Каждый раз, когда вы или на вас накладывают заклинание, вас тошнит и пошатывает, из за чего вы не можете использовать реакцию до начала своего следующего хода.</td></tr>
+<tr><td>8-10</td><td>Вы не можете справиться с новообретенной магией внутри вас, которая просачивается из вас при ранениях. Всякий раз, когда вы получаете 15 или более урона от одной атаки, вы взрываетесь выбросом потусторонней энергии. Вы и каждое существо в пределах 10 футов от вас должны преуспеть в спасброске Телосложения, иначе получит 2к10 урона силовым полем. Этот взрыв может быть вызван повторно спустя 1к6 раундов.<br></td></tr>
+
+<tr>
+<td rowspan="3" style="text-align: center;">21-30<br>Ваше чувство собственного достоинства уничтожается.</td>
+<td>1-2</td><td><a href="../../../../spells/20-see_invisibility/index.html" target="_blank"></a>Сильнейшая паранойя одолевает вас, заставляет вас быть настороже в отношении чего и кого угодно, защищая то немногое, что от вас осталось. Вы получаете бонус 1к4 к любой проверке Восприятия или Расследования, которую вы совершаете.</td></tr>
+<tr><td>3-7</td><td>Вы угрюмы и мрачны; эти негативные мысли в вашей голове заставляют вас уничижать себя во время любого вашего разговора.</td></tr>
+<tr><td>8-10</td><td><span tooltip-for="vision.tremorsense" title="vision.tremorsense"></span>Ваша никчемность проникает в каждый аспект вашей жизни, разъедая те остатки компетентности, которые у вас еще остались. Вы получаете штраф -1к4 на любую совершаемую вами проверку.</td></tr>
+
+<tr><td rowspan="3" style="text-align: center;">31-40<br>Вы теряете ощущения своей силы.</td><td>1-2</td><td>Не осознавая своих пределов, вы выводите себя за пределы того, на что способны. Всякий раз, когда вы наносите урон, добавляете урон одной кости урона с наименьшим значением.</td></tr><tr><td>3-7</td><td>Вы не осознаете своей силы; всякий раз, когда вам приходится использовать свое тело, вы либо прикладываете слишком много силы, либо недостаточно. Ваши рукопожатия могут быть похожи на тиски или дохлую рыбу, ваши объятия постигает та же участь, а любая другая физическая активность, которую вы пытаетесь выполнять, кажется азартной игрой.</td></tr><tr><td>8-10</td><td>Боясь разрушить свое тело, вы невольно сдерживаете свою силу. Всякий раз, когда вы наносите урон, вычитайте урон одной кости урона с наименьшим значением (минимум 0).</td></tr>
+<tr><td rowspan="3" style="text-align: center;">41-50<br>Потусторонняя Истина сама открывается вам.</td><td>1-2</td><td>Сумев понять эту Истину, вы получаете владение случайным навыком Интеллекта (выбирается МП) и можете удваивать свой бонус мастерства для любой проверке, которую вы совершаете, используя этот навык.</td></tr><tr><td>3-7</td><td>Вы становитесь заворожены тем, что лежит за пределами. Всякий раз, когда вы замечаете или слышите о чем-то сверхъестественном, вы бросаете все, что делаете, чтобы узнать об этом побольше и попытаться приблизиться к этому физически или иным образом.</td></tr><tr><td>8-10</td><td>Откровения из потустороннего мира манят вас, побуждая узнавать больше и быть чем-то большим. Вы с помехой совершаете спасброски против безумия.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">51-60<br>Безумие распаляет<br>вашу нервную систему, расплавляя ее дотла.</td><td>1-2</td><td>Любая боль, которую вы бы почувствовали, полностью исчезает. Вы получаете иммунитет к состоянию <span tooltip-for="condition.stunned" title="condition.stunned">ошеломлённый</span>&nbsp;и можете <span tooltip-for="condition.unconscious" title="condition.unconscious">потерять сознание</span> только в результате снижения ваших хитов до 0.</td></tr><tr><td>3-7</td><td>Ваши поврежденные нервы постоянно передают ощущение зуда. Это ощущение исчезает, когда ваша кожа находится в непосредственном контакте с металлом.</td></tr><tr><td>8-10</td><td>Вы испытываете постоянную боль из-за повреждения нерва, что мешает вам сосредоточиться или делать всё возможное в бою. Вы не можете добавлять свой модификатор Ловкости к своему КД и с помехой совершаете все проверки и спасброски Ловкости.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">61-70<br>Потусторонние силы захватывают вас и растворяются в вашем теле.</td><td>1-2</td><td><span tooltip-for="condition.poisoned" title="condition.poisoned"></span>Вам удается взять эти потусторонние силы под свой контроль. Вы с преимуществом совершаете спасброски для поддержания концентрации. Кроме того, если вы провалили данный спасбросок, вы можете вместо этого преуспеть. Если вы делаете это, вам необходимо снова совершить бросок по таблице долговременного безумия, чтобы получить новый эффект.</td></tr><tr><td>3-7</td><td>Пытаясь понять, что с вами слилось, вы начинаете ощущать чувство дереализации. Вы постоянно полностью отчуждены от своего окружения и удивляетесь любому физическому контакту.</td></tr><tr><td>8-10</td><td>Эти новые силы слишком могущественны, чтобы с ними справиться, они истощают ваш разум. Вы с помехой совершаете проверки Интеллекта, Мудрости и Харизмы, а также спасброски для поддержания концентрации.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">71-80<br>Ритм вашего сердца начинает сбиваться; такое просто не может существовать в действительности</td><td>1-2</td><td>Повышенная частота сердечных сокращений повышает вашу бдительность. Вы получаете бонус +3 к вашей пассивной Мудрости (<span tooltip-for="skill.perception" title="skill.perception">Восприятию</span>) и броскам инициативы.</td></tr><tr><td>3-7</td><td>Всё непредвиденное - это событие с которым вы не в силах справиться. Всякий раз, когда вы удивляетесь, вы кричите во всё горло. Если в бою вас застигают врасплох, вы <span tooltip-for="condition.unconscious" title="condition.unconscious">теряете сознание</span> до начала вашего следующего хода..</td></tr><tr><td>8-10</td><td>Ваше сердце слабеет в буквальном смысле этого слова. Вы получаете степень <span tooltip-for="condition.exhaustion" title="condition.exhaustion">истощения</span>, которая не может быть устранена до тех пор, пока безумие не закончится. Всякий раз, когда вы становитесь <span tooltip-for="condition.frightened" title="condition.frightened">испуганным</span>, вы получаете ещё одну степень истощения.<br>Помимо первого, истощения, вызванные этим безумием, могут быть устранены обычным образом.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">81-90<br>Ваши тщетные попытки остановить безумие оставили шрамы на вашем теле.</td><td>1-2</td><td>Шрамы лишь утолщают вашу кожу. Вы получаете бонус +1 к КД.</td></tr><tr><td>3-7</td><td>Шрамы, покрывающие ваше тело, более чем отталкивающе, заставляя большинство людей испытывать страх при их виде, особенно детей. Вы получаете бонус +2 к проверкам <span tooltip-for="skill.intimidation" title="skill.intimidation">Запугивания</span> и штраф -2 к проверкам <span tooltip-for="skill.persuasion" title="skill.persuasion">Убеждения</span>.</td></tr><tr><td>8-10</td><td><a href="../../../../spells/39-greater_restoration/index.html" target="_blank"></a>Вы мучаетесь от серьезных рубцов на обширной части всего вашего тела. Всякий раз, когда вы получаете дробящий, колющий или рубящий урон, вы дополнительно получаете 1к6 урона этого типа.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">91-95<br>Безумие заставляет ваше тело гнить, неспособное противостоять потустороннему влиянию.</td><td>1-2</td><td><span tooltip-for="condition.stunned" title="condition.stunned"></span>Ваш разум принимает идею о том, что ваше тело сгниет, и приветствует это; в конце концов, всё рано или поздно увядает. Вы получаете иммунитет к состоянию <span tooltip-for="condition.poisoned" title="condition.poisoned">отравленный</span>.</td></tr><tr><td>3-7</td><td>Гниль внутри вашего тела вызывает тошноту. Вы постоянно испытываете чувство отвращения, и каждый раз, когда вы чувствуете какой-то неприятный запах, вас тошнит.</td></tr><tr><td>8-10</td><td><a href="../../../../spells/39-greater_restoration/index.html" target="_blank"></a>Ужасные раны сверхъестественной природы терзают вашу плоть. Ваш максимум хитов уменьшается на 1 каждые 24 часа. Если максимуму ваших хитов уменьшается до 0, вы умираете. Вы или другое существо можете обрабатывать раны во время продолжительного отдыха, совершая проверку <span tooltip-for="skill.medicine" title="skill.medicine">Медицины</span> Сл 16, раз в 24 часа. После пяти успехов раны заживают.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">96-100<br>Зверь внутри вас просыпается и берет вас под свой контроль.</td><td>1-2</td><td>Большая часть вашей человечности сохраняется, но достаточное количество зверя так же вырывается на волю. Вы с преимуществом совершаете спасброски Ловкости. Кроме того, каждая из ваших рук превращается в Коготь, который вы можете использовать как оружие, если она пуста. Он наносит 1к6 рубящего урона при попадании.<br>Один раз в каждый ваш ход, когда вы атакуете когтем, используя действие "Атака", вы можете совершить одну дополнительную атаку когтем, частью того же действия.</td></tr><tr><td>3-7</td><td>Ваше тело преображается, но след вашей человечности остался. Ваша раса меняется на Порождение бедствия со случайной подрасой. Порождение бедствия и расы конструкты, такие как манекены, невосприимчивы к этому эффекту. Если вы уже являетесь порождением бедствия, вместо этого применяется следующий эффект безумия (см. 8-10).</td></tr><tr><td>8-10</td><td><a href="../../../../spells/39-greater_restoration/index.html" target="_blank"></a>Ваше тело превращается в зверя или монстра по выбору МП с ПО, равным половине вашего уровня (округленного в большую сторону). Помимо этого, ваша трансформация соответствует правилам заклинания <a href="../../../../spells/260-polymorph/index.html" target="_blank">превращение [polymorph]</a>, кроме того, что если ваши хиты опускаются до 0, вы <span tooltip-for="condition.unconscious" title="condition.unconscious">теряете сознание</span>, вместо того, чтобы вернуться к своей обычной форме.</td></tr>
+</tbody></table><br>
+
+<h4 class="tableTitle"><span id='Indefinite-madness'>Бессрочное безумие</span></h4><p>Когда персонаж получает бессрочное безумие, бросьте к100 по таблице ниже, затем бросьте к10, чтобы определить эффект этой формы безумия. Все эффекты действуют на протяжении всего времени безумия, если не указано иное.</p><div class="additionalInfo"><p><em><strong>Отказ от ответственности</strong>: Некоторые эффекты безумия содержат ссылки на членовредительство и самоубийство (в частности, бросок на 11-15 на к100), что является деликатной темой. Хотя их использование может быть неотъемлемой частью рассказываемой истории, важно убедиться, что все сидящие за столом пришли к соглашению относительно их использования до начала игровой сессии, и если оно присутствует, то должны ли описания быть менее четкими или более подробными.</em></p></div>
+
+<table><tbody><tr class="table_header"><th>к100</th><th>к10</th><th>Бессрочное безумие (длится до исцеления)</th></tr>
+
+<tr>
+<td rowspan="3"><p style="text-align: center;"><span style="font-size: 15px; color: var(--color-text-main);">1-5</span></p><p style="text-align: center;">Вы становитесь зависимы от психоактивных веществ, чтобы справиться с бессмысленностью этого болезненного существования.</p></td>
+<td>1-2</td><td><span tooltip-for="condition.charmed" title="condition.charmed"></span>Если у вас есть вредная привычка, такая как употребление алкоголя или наркотиков, она берет верх, и вы становитесь зависимым.<br>Если у вас нет такой привычки, у вас развивается алкоголизм. Вы получаете штраф -3 ко всем броскам атаки, спасброскам и проверкам характеристик, но если вы находитесь под действием вещества, то вы получаете бонус +3 к спасброскам против состояния <span tooltip-for="condition.frightened" title="condition.frightened">испуганный</span> или последующих безумий.</td></tr>
+<tr><td>3-7</td><td>Вы начинаете усиленно пичкать себя лекарствами, чтобы заглушить боль жизни. У вас развивается один из следующих пороков, наиболее соответствующих вашей личности: распущенность, злоупотребление наркотиками, алкоголизм или курение. Если вы не принимаете и удовлетворяете свой порок по крайней мере дважды за каждые 24 часа, вы получаете штраф -1к6 к спасброскам Мудрости до тех пор, пока не сделаете этого.</td></tr>
+<tr><td><nobr>8-10</nobr></td><td><span tooltip-for="condition.charmed" title="condition.charmed"></span><span tooltip-for="condition.prone" title="condition.prone"></span>Наркотики, алкоголь и другие пороки перестают оказывать на вас какое-либо воздействие. Вы немедленно избавляетесь от любых поглощённых пороков, прежде чем успеете их усвоить, и испытываете отвращение ко всем плотским мыслям.</td></tr>
+
+
+<tr>
+<td rowspan="3" style="text-align: center;">6-10<br>Жизнь отвратительна и становится только хуже.</td>
+<td>1-2</td><td>Всякий раз, когда вы проваливаете проверку характеристик, бросок атаки или спасбросок, вы с помехой совершаете следующую проверку характеристик, бросок атаки или спасбросок.</td></tr>
+<tr><td>3-7</td><td>Вы чувствуете, что мир прогнивает, и неохотно пробуете что-то новое, полагаясь только на то, что, как вы знаете, срабатывало в прошлом. Вы категорически отказываетесь узнавать что-либо новое, чего вы не испытывали до получения этого безумия, например, новое заклинание, умение или таверну.</td></tr>
+<tr><td>8-10</td><td>В прошлом вы, возможно, были перспективным человеком, но те времена давно прошли. Вы теряете владение всеми навыками и вместо этого получаете штраф ко всем навыкам, которыми вы владели до получения безумия, равный вашему бонусу мастерства. Если какое-либо умение позволяло вам получить бонус к проверке (например, "Компетентность" или "Мастер на все руки"), вы больше не получаете эти бонусы.<br></td></tr>
+
+<tr>
+<td rowspan="3" style="text-align: center;">11-15<br>У вас развивается ненависть к собственному телу.</td>
+<td>1-2</td><td><a href="../../../../spells/20-see_invisibility/index.html" target="_blank"></a>Когда вы впервые получаете это безумие, оно не проявляется до тех пор, пока вы не останетесь наедине с клинком на 10 секунд или больше. В гневе вы сами себе ампутируете конечность и уничтожаете отсечённую плоть.</td></tr>
+<tr><td>3-7</td><td>Вы начинаете носить горы одежды, которая скрывает как можно больше вашего тела, и отказываетесь демонстрировать кому бы то ни было даже дюйм кожи. Если вы поймете, что ваша кожа стала открытой, вы с помехой совершаете все проверки характеристик и броски атак, пока вы не скроете её снова.</td></tr>
+<tr><td>8-10</td><td><span tooltip-for="vision.tremorsense" title="vision.tremorsense"></span>Возможно, было бы лучше, если бы ваша душа покинула это бренное тело. Когда у вас остается 0 хитов, вы получаете два проваленных спасброска от смерти, и вы автоматически проваливаете все дальнейшие спасброски от смерти.</td></tr>
+
+<tr><td rowspan="3" style="text-align: center;">16-20<br>Вы теряете способность адекватно справляться со стрессом.</td><td>1-2</td><td>Всякий раз, когда вы попадаете в стрессовую ситуацию, вы впадаете в бешенство, безрассудно атакуя источник своего стресса, пока он не исчезнет или вы не <span tooltip-for="condition.unconscious" title="condition.unconscious">потеряете сознание</span>. МП определяет, когда вы оказываетесь в стрессовой ситуации.</td></tr><tr><td>3-7</td><td>Вы автоматически проваливаете спасброски против состояния <span tooltip-for="condition.frightened" title="condition.frightened">испуганный</span> и не можете воспользоваться эффектами, которые сделали бы вас невосприимчивым к этому состоянию.</td></tr><tr><td>8-10</td><td>Всякий раз, когда вы сталкиваетесь со стрессовой или социальной ситуацией, вы закрываетесь в себе.<br>Вы с помехой совершаете проверки Харизмы и Ловкости, и вы теряете всякую хвастливость, которая могла быть у вашего персонажа.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">21-25<br>Ваши глаза начинают покрываться коростами, когда Потусторонняя Истина сама вам открывается.</td><td>1-2</td><td>Вы становитесь <span tooltip-for="condition.blinded" title="condition.blinded">ослеплённым</span> и не можете вновь обрести зрение, пока вы пораженные этим безумием.</td></tr><tr><td>3-7</td><td>Вы обретаете способность видеть Эфирный план, но теряете способность видеть Материальный план. Вы <span tooltip-for="condition.blinded" title="condition.blinded">ослеплены</span> для существ и объектов на Материальном плане.</td></tr><tr><td>8-10</td><td>Ваши глаза темнеют, и вы начинаете презирать свет. Находясь на солнечном свету или под ярким лунным светом, вы с помехой совершаете броски атаки, а также в проверки Восприятия, полагающиеся на зрение.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">26-30<br>Безумие распаляет вашу нервную систему, и ваш разум начинает манить боль.</td><td>1-2</td><td>Ваше подсознание кричит, призывая терпеть боль. Вы с помехой совершаете спасброски против эффектов, которые наносят вам урон, а броски атаки по вам совершаются с преимуществом. Взамен вы с преимуществом совершаете спасброски от не наносящих ущерба эффектов, поскольку ваш разум считает их ниже вашего достоинства.</td></tr><tr><td>3-7</td><td>Всякий раз, когда вы получаете более 20 урона за ход, ваше тело взрывается психическим взрывом. Вы и все существа в пределах 30 футов от вас должны преуспеть в спасброске Интеллекта Сл 18, иначе получат 3к10 урона психической энергией. Вы с помехой совершаете данный спасбросок.</td></tr><tr><td>8-10</td><td>Вы становитесь заворожены загробной жизнью. Всякий раз, когда существо в пределах вашего поля зрения оказывается&nbsp;<span tooltip-for="condition.unconscious" title="condition.unconscious">без сознания</span> и имеет 0 хитов, вы чувствуете желание прикончить его и должны использовать свой ход, чтобы попытаться убить его.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">31-35<br>Таинственные потусторонние силы овладевают вами, и вы пытаетесь совладать с ними различными способами.</td><td>1-2</td><td><span tooltip-for="condition.poisoned" title="condition.poisoned"></span>Вы становитесь одержимы одним предметом, находящимся в вашем распоряжении. Если он не находится с вами всё время, это лишает вас душевного равновесия. Пока этот предмет не с вами, вы с помехой совершаете все проверки характеристик и броски атак.</td></tr><tr><td>3-7</td><td>Поначалу ничего не происходит. [Только МП может знать следующее] В следующий раз, когда вы <span tooltip-for="condition.unconscious" title="condition.unconscious">теряете сознание</span> в бою, вы получаете серьезную травму. Если вы снова столкнетесь с этим противником в бою, находясь под воздействием этого безумия, вы будете прокляты. Будучи проклятым таким образом, после окончания продолжительного отдыха, вы должны преуспеть в спасброске Мудрости Сл 12. При провале ваш разум начинает бороться с вашими прошлыми неудачами, и вы не получаете преимуществ продолжительного отдыха.</td></tr><tr><td>8-10</td><td>У вас развивается странная фобия. Это может быть страх длинных слов, темноты или другого аспекта вашей жизни. Поговорите со своим МП, чтобы решить, какой из них подойдет вашему персонажу.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">36-40<br>Ритм вашего сердца начинает сбиваться; такое просто не может существовать в действительности</td><td>1-2</td><td>Вы теряете контакт с реальностью. Вы начинаете видеть людей, которых не существует, и слышать звуки, которых нет. Этот эффект также применяется в бою, когда вы видите несуществующих противников на поле боя. Совершайте спасбросок Мудрости Сл 18 в начале каждого своего хода. В случае провала вы должны использовать своё действие для атаки одной цели по выбору МП.</td></tr><tr><td>3-7</td><td>Вы становитесь заядлым лжецом. Вы должны совершать спасбросок Мудрости Сл 18 каждый раз, когда пытаетесь сказать правду. В случае провала, вы лжете, даже если это противоречит вашим интересам.</td></tr><tr><td>8-10</td><td>Вы становитесь одержимы идеей кражи мелких, ценных предметов. Когда вы заметите эти предметы, вы должны совершить спасбросок Мудрости Сл 18, чтобы удержаться от желания украсть. В случае провала вы пытаетесь украсть что-либо поблизости, невзирая на последствия.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">41-45<br>Вы начинаете терять контроль над своими нервами и разумом.</td><td>1-2</td><td>Ваши чувства становятся болезненно обостренными, вызывая дискомфорт и спутанность мыслей. Вы, будучи неспособным обрести ясность ума среди какофонии своих чувств, с помехой совершаете проверки характеристик, основанных на зрении, слухе, обонянии, вкусе или осязании, а так же помеху на спасброски Мудрости.</td></tr><tr><td>3-7</td><td><span tooltip-for="skill.persuasion" title="skill.persuasion"></span>Вы случайным образом телепортируетесь на небольшое расстояние (от 10 до 60 футов) в неподходящие моменты. МП определяет время и пункт назначения этих телепортаций.</td></tr><tr><td>8-10</td><td><a href="../../../../spells/39-greater_restoration/index.html" target="_blank"></a>Вы телепатически передаете свои мысли существам в пределах 60 футов, теряя способность хранить секреты или заставать врасплох любое существо, находящееся в пределах досягаемости.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">46-50<br>Ваше тело мутирует дезадаптивный образом.</td><td>1-2</td><td><span tooltip-for="condition.stunned" title="condition.stunned"></span><span tooltip-for="condition.poisoned" title="condition.poisoned"></span>Вы становитесь чрезвычайно чувствительны к определенной стихии (огню, холоду, электричеству, кислоте, яду или звуку), испытывая сильную боль даже от незначительного воздействия. Вы становитесь уязвимы к этому типу урона. Этот эффект устраняет любое сопротивление или иммунитет к этому типу урона, которые могли у вас быть.</td></tr><tr><td>3-7</td><td>Вы становитесь ходячим громоотводом. Любая молния или эффекты, наносящие урон электричеством в пределах 120 футов от вас, отклоняются в вашу сторону, поражая и вас. Кроме того, вы автоматически проваливаете спасброски против эффектов, наносящих урон электричеством.</td></tr><tr><td>8-10</td><td><a href="../../../../spells/39-greater_restoration/index.html" target="_blank"></a>Вы теряете все волосы на своём теле, что приводит к проблемам с терморегуляцией. Манекены невосприимчивы к этому эффекту. Вы с помехой совершаете спасброски от экстремального <span tooltip-for="extreme.cold" title="extreme.cold">холода</span> и <span tooltip-for="extreme.heat" title="extreme.heat">жары</span>. Кроме того, вы с помехой совершаете спасброски от болезней и яда, и вы теряете всякое сопротивление урону ядом.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">51-55<br>Ваше тело воспринимает реальность аномальным образом.</td><td>1-2</td><td>Ваше тело начинает фазироваться, входя и выходя из реальности заставляя вас частично проходить сквозь предметы и существ. Когда вы совершаете атаку или накладываете заклинание, существует 50%-ная вероятность того, что оно воздействует на Эфирный план и проходит сквозь ваши цели, не причиняя вреда.</td></tr><tr><td>3-7</td><td>Вы искажённо воспринимаете расстояния, и объекты кажутся ближе или дальше, чем они есть на самом деле. Вы с помехой совершаете дальнобойные атаки и проверках Восприятия, полагающиеся на зрение.</td></tr><tr><td>8-10</td><td><a href="../../../../spells/39-greater_restoration/index.html" target="_blank"></a>Вы ощущаете время как хаотичную последовательность, и вам кажется, что моменты непредсказуемо растягиваются или сжимаются. Вы с помехой совершаете броски инициативы, и вы должны бросать к6 в начале каждого своего хода, чтобы определить, какие действия вы можете совершить (1-2: одно действие, бонусное действие или перемещение; 3-4: одно перемещение и либо одно действие, либо одно бонусное действие; 5-6: без изменений).</td></tr>
+<tr><td rowspan="3"><p style="text-align: center;"><span style="font-size: 15px; color: var(--color-text-main);">56-60</span></p><p style="text-align: center;">Ваш разум начинает играть с вами, питая вас иллюзиями.</p></td>
+<td>1-2</td><td><span tooltip-for="condition.charmed" title="condition.charmed"></span>Вы становитесь чрезмерно самоуверенным и идете на ненужные риски. Вы должны совершать спасбросок Мудрости Сл 18, прежде чем предпринимать какие-либо осторожные или хорошо обдуманные действия. В случае провала, вы вместо этого действуете импульсивно.</td></tr>
+<tr><td>3-7</td><td>Вы верите, что являетесь божеством, членом королевской семьи или другой могущественной фигурой, из-за чего вы с помехой совершаете все проверки Мудрости и Харизмы при взаимодействии с другими.</td></tr>
+<tr><td>8-10</td><td><span tooltip-for="condition.charmed" title="condition.charmed"></span><span tooltip-for="condition.prone" title="condition.prone"></span>Вы верите, что являетесь представителем иной расы. Вы можете говорить только на родном языке этой расы, и если этот язык не Общий, то вы теряете способность говорить на Общем. Если вы не знаете языка этой расы, вы вместо этого издаете звуки, которые кажутся вам близкими к языку, но на самом деле являются полной тарабарщиной.</td></tr>
+
+
+<tr>
+<td rowspan="3" style="text-align: center;">61-65<br>У вас развиваются асоциальные черты личности и вы становитесь воплощением хаоса и безумия.</td>
+<td>1-2</td><td>Каждый раз, когда вы совершаете бросок инициативы, вы начинаете танцевать. В начале каждого вашего хода вы должны совершать спасбросок Телосложения Сл 18, чтобы перестать танцевать в этом ходу. В случае провала, вы продолжаете танцевать в соответствии с заклинанием <a href="../../../../spells/187-otto_s_irresistible_dance/index.html" target="_blank">неудержимая пляска [irresistible dance]</a>.</td></tr>
+<tr><td>3-7</td><td>Вас одолевают приступы неконтролируемого смеха в самое неподходящее время, что мешает общению или концентрации. Если вы концентрируетесь на заклинании, вы должны преуспевать в спасброске Мудрости Сл 15 в начале каждого вашего хода, иначе потеряете концентрацию. Кроме того, вы с помехой совершаете проверки Скрытности.</td></tr>
+<tr><td>8-10</td><td>Вы становитесь ненасытны и должны преуспеть в спасброске Мудрости Сл 15, иначе будете вынуждены употреблять любую пищу, включая невкусную, протухшую или просто отвратительную, с которой столкнетесь.<br></td></tr>
+
+<tr>
+<td rowspan="3" style="text-align: center;">66-70<br>Вас охватывает всепоглощающая ненависть.</td>
+<td>1-2</td><td><a href="../../../../spells/20-see_invisibility/index.html" target="_blank"></a>У вас формируется альтернативная личность, пытающаяся уничтожить всё, что вам дорого, и взрастить все, что вы презираете.</td></tr>
+<tr><td>3-7</td><td>У вас развивается иррациональная ненависть к определенному существу, предмету или ситуации по выбору МП. Когда вы сталкиваетесь с объектом ненависти, вы должны преуспеть в спасброске Мудрости Сл 15, иначе станете враждебно относиться к нему в течение 1 часа, или до тех пор, пока цель не исчезнет из поля вашего зрения или не будет уничтожена.</td></tr>
+<tr><td>8-10</td><td><span tooltip-for="vision.tremorsense" title="vision.tremorsense"></span>Вы ликуете при мысли о предательстве. Всякий раз, когда несколько существ оказываются в пределах досягаемости атаки, которую вы собираетесь совершить, бросайте к20. При значении "10" или ниже вы случайным образом нацеливаетесь на другое существо вместо своей первоначальной цели.</td></tr>
+
+<tr><td rowspan="3" style="text-align: center;">71-75<br>Ваше тело начинает вести себя странным образом.</td><td>1-2</td><td>Ваши показатели Силы и Ловкости меняются местами.</td></tr><tr><td>3-7</td><td>Вы осознаёте, что страдаете от тяжелой болезни, которая может быть реальной, а может и не быть, вы с помехой совершаете спасброски и проверки Телосложения.</td></tr><tr><td>8-10</td><td>Ваш тип существа становится Нежить. Манекены теряют всякую человечность, которая у них была, и превращаются в Конструктов. Магическое лечение не оказывает на вас никакого воздействия.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">76-80<br>Повреждения просачиваются в ваш разум.</td><td>1-2</td><td>Вас начинают мучить ночные кошмары, из-за которых вы постоянно чувствуете себя измотанным. Если по окончании продолжительного отдыха у вас меньше двух степеней <span tooltip-for="condition.exhaustion" title="condition.exhaustion">истощения</span>, вы просыпаетесь с двумя степенями истощения.</td></tr><tr><td>3-7</td><td>Вы начинаете испытывать сильный страх перед определенным типом существ (по выбору МП). Если вы находитесь в пределах 10 футов от существа данного типа, вы должны использовать свое перемещение и действие <span tooltip-for="action.dash" title="action.dash">Рывок</span>, чтобы убежать от него в свой ход. Кроме того, существа этого типа с преимуществом совершают по вам атаки.</td></tr><tr><td>8-10</td><td>Ужасы, которые вы увидели, сковывают ваши язык и горло. Вы теряете способность говорить и издавать звуки, включая вербальные компоненты заклинаний.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">81-85<br>Потустороннее манит к себе.</td><td>1-2</td><td>Луна и все ее потусторонние формы манят вас. Вы с помехой совершаете любой спасбросок, вызванный эффектами лун (прямыми или косвенными), и вы с преимуществом совершаете любые проверки характеристик, касающихся знаний о лунах.</td></tr><tr><td>3-7</td><td>Ваше Потустороннее вознесение проваливается. Ваша скорость снижается наполовину и вы теряете способность телепортироваться. Если вы телепортируетесь против своей воли, например, с помощью заклинания <a href="../../../../spells/116-banishment/index.html" target="_blank">изгнание [banishment]</a>, вы получаете 3к10 урон силовым полем, поскольку космос забирает фунт вашей плоти в качестве наказания.</td></tr><tr><td>8-10</td><td>Ваше Потустороннее вознесение достигает частичного успеха. Ваш тип существа меняется на Аберрацию.<br>Вы получаете сопротивление урону психической энергией, получаете преимущество на спасброски против телепатии, но теряете всякую эмпатию, из-за чего вы с помехой совершаете проверки Проницательности и Убеждения. Кроме того, вы начинаете понимать Глубинную речь, и с помехой совершаете спасброски против эффектов вызывающих <span tooltip-for="condition.charmed" title="condition.charmed">очарование</span> от аберраций.</td></tr>
+<tr><td rowspan="3" style="text-align: center;">86-100<br>Зверь внутри вас пробуждается и берет вас под свой контроль.</td><td>1-2</td><td><span tooltip-for="condition.poisoned" title="condition.poisoned"></span>Зверь начинает терзать ваш разум, заставляя вас оставаться начеку, чтобы защититься от него. Всякий раз, когда вы <span tooltip-for="condition.unconscious" title="condition.unconscious">теряете сознание</span>, бросайте <span tooltip-for="option.rareDice" title="option.rareDice">к2</span><span></span>. При результате "1" вы теряет контроль, и в следующий раз, когда вы приходите в себя, зверь находящийся внутри вас контролирует ваше тело. До следующего момента потери сознания, вы находитесь под контролем МП, поскольку хаотичный-злой зверь внутри вас стремится присоединиться к другим зверям и изгнать вас из собственного тела. При результате "2" вы удерживаете или возвращаете свой рассудок после пробуждения.</td></tr><tr><td>3-7</td><td>Ваше тело преображается, но след вашей человечности остается. Ваша раса становится Порождением бедствия. Поговорите со своим МП, чтобы определить подрасу, наиболее подходящую для вашего персонажа. Ничто, кроме заклинания <a href="../../../../spells/124-wish/index.html" target="_blank">исполнение желаний [wish]</a>, не может отменить это превращение. Если вы уже являетесь Порождением бедствия, то примените приведенный ниже эффекты безумия (см. 8-10).</td></tr><tr><td>8-10</td><td>Вы становитесь зверем или монстром по выбору МП с ПО, равным половине вашего уровня (округленного в большую сторону), и теряете рассудок. Вы становитесь существом, находящимся под контролем МП.</td></tr>
+</tbody></table><br><h3 class="smallSectionTitle"><span id='Curing-Madness'>Излечение безумия</span></h3><p>У различных видов безумия есть разные методы их излечения. То, что может вылечить бессрочное безумие, может также вылечить долговременное или кратковременное, и то, что может вылечить долговременное безумие, может также вылечить кратковременное безумие. Но обратное невозможно.</p><p><strong>Кратковременное безумие</strong>: Персонажа, страдающего кратковременным безумием, можно излечить с помощью заклинания&nbsp;<a href="../../../../spells/155-lesser_restoration/index.html" target="_blank">малое восстановление [lesser restoration]</a>&nbsp;или подождав, пока безумие пройдёт естественным путем.</p><p><strong>Долговременное безумие</strong>: Персонаж, страдающий от долговременного безумия, может быть излечен заклинанием <a href="../../../../spells/39-greater_restoration/index.html" target="_blank">высшее восстановление [greater restoration]</a>&nbsp;или заклинанием <a href="../../../../spells/119-modify_memory/index.html" target="_blank">изменение памяти [modify memory]</a>, если травмирующее событие произошло в момент времени, который заклинание способно изменить.</p><p><strong>Бессрочное безумие</strong>: Персонаж, страдающий бессрочным безумием, может быть излечен заклинанием <a href="../../../../spells/124-wish/index.html" target="_blank">исполнение желаний [wish]</a>.&nbsp;<span style="font-size: 15px; color: var(--color-text-main);">В качестве альтернативы, его можно убить и вернуть полностью вменяемыми с помощью заклинания <a href="../../../../spells/125-true_resurrection/index.html" target="_blank">истинное воскрешение [true resurrection]</a>.</span></p><p>Если вы хотите облегчить устранение бессрочного безумия, вы можете разрешить использование <a href="../../../../spells/39-greater_restoration/index.html" target="_blank">высшее восстановление [greater restoration]</a> для излечения персонажа, если и заклинатель, и цель находятся в пределах области заклинания <a href="../../../../spells/310-hallow/index.html" target="_blank">святилище [hallow]</a>.<em><br></em></p><div class="additionalInfo"><p><em><strong>Заметка МП</strong>: Пьяный персонаж может пострадать от одного или всех следующих эффектов: Помеха на проверки Интеллекта, Мудрости и Харизмы; - штраф 1к4 к броскам атаки; Преимущество на спасброски от состояния <span tooltip-for="condition.frightened" title="condition.frightened">испуганный</span>.</em></p></div><h3 class="smallSectionTitle"><span id='Temporary-cures'>Временное излечение</span></h3><p>Иногда вылечить безумие невозможно, и облегчение симптомов - единственный выход. То, что может временно излечить бессрочное безумие, может также временно излечить долговременное или кратковременное безумие, и то, что может временно излечить долговременное безумие, может также временно излечить кратковременное безумие. Но обратное невозможно.</p><p><strong>Кратковременное безумие</strong>. Персонаж, страдающий от кратковременного безумия, может быть временно излечить :&nbsp;</p><ul><li>Заклинанием <a href="../../../../spells/102-calm_emotions/index.html" target="_blank">умиротворение [calm emotions]</a> на время действия заклинания.&nbsp;</li><li>Костью Импульса (прим. Егерь в сражении).</li></ul><p><strong>Долговременное безумие</strong>. Персонаж, страдающий от долговременного безумия, может быть временно излечен:&nbsp;</p><ul><li>Нахождением в области действия заклинания <a href="../../../../spells/310-hallow/index.html" target="_blank">святилище [hallow]</a>&nbsp;или&nbsp;<a href="../../../../spells/6-holy_aura/index.html" target="_blank">аура святости [holy aura]</a>.&nbsp;</li><li><span style="font-size: 15px; color: var(--color-text-main);">Нахождением под действием заклинания </span><a href="../../../../spells/328-mind_blank/index.html" target="_blank" style="background-color: initial; font-size: 15px;">сокрытие разума [mind blank]</a><span style="font-size: 15px; color: var(--color-text-main);">.&nbsp;</span></li><li>Нахождением внутри священного места, посвященного богу, который защищает от сверхъестественных влияний (таких как Лучезарный или Страж Бездны).&nbsp;</li><li>Нахождением в состоянии сильного алкогольного или наркотического опьянения.</li></ul><p><strong>Бессрочное безумие</strong>. Персонаж, страдающий от бессрочного безумия, может быть временно излечен:&nbsp;</p><ul><li>Нахождением внутри священного места, посвященного богу, который защищает от сверхъестественных влияний (таких как Лучезарный или Страж Бездны) или области заклинания <a href="../../../../spells/310-hallow/index.html" target="_blank">святилище [hallow]</a> и будучи под действием заклинания <a href="../../../../spells/328-mind_blank/index.html" target="_blank">сокрытие разума [mind blank]</a> или <a href="../../../../spells/6-holy_aura/index.html" target="_blank">аура святости [holy aura]</a>.</li></ul>
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div></section>
+<script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:501'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="25913"><div class="comment__entry comment__op comment__author-group-" data-id="25913" id="comment_25913">	<div class='comment__header'>
+			<a href='https://dnd.su/@b439b475a7ad' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/bcf17343cae37c37bad3e2ffd6184dbb.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@b439b475a7ad' class='profile__public-link profile__public-link-group-users comment__author-name'>fiponosius</a></span> 
+	<div class="comment__age" title="11:46:03 07.03.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_25913" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Вопросик - в долговременном безумии 96-100 в 3-7 раса игрока изменена до конца действия безумия, или навсегда?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="25915" id="comment_25915">	<div class='comment__header'>
+			<a href='https://dnd.su/@b439b475a7ad' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/bcf17343cae37c37bad3e2ffd6184dbb.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@b439b475a7ad' class='profile__public-link profile__public-link-group-users comment__author-name'>fiponosius</a></span> 
+	<div class="comment__age" title="11:54:01 07.03.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_25915" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Пояснение- если того хочет игрок
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="30330" id="comment_30330">	<div class='comment__header'>
+			<a href='https://dnd.su/@1fd62a53f8b3' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/1ae7812f5438b6972bd23f08c39eb31d.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@1fd62a53f8b3' class='profile__public-link profile__public-link-group-users comment__author-name'>Yrpchick</a></span> 
+	<div class="comment__age" title="13:16:33 27.05.2025">10 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_30330" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		До конца длительности безумия
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+		<p>
+ На данный момент в галерее нет изображений.
+ 	</p>
+	</section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../../../articles/145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

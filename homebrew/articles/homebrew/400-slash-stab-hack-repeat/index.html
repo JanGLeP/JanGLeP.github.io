@@ -1,0 +1,906 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Режь, руби, коли, повтори! / Homebrew статьи / Статьи D&D 5 / Homebrew</title>
+	
+    <meta name="description" content="«Режь, руби, коли, повтори! (Slash, Stab, Hack, Repeat!)» - статья в разделе «Homebrew» по D&D 5-й редакции." />
+    <meta name="keywords" content="dnd статьи механики,механики,homebrew, днд статьи механики,механики,homebrew, d&d статьи механики,механики,homebrew, dnd 5 статьи механики,механики,homebrew, днд 5 статьи механики,механики,homebrew, d&d 5 статьи механики,механики,homebrew, подземелья и драконы статьи механики,механики,homebrew, dungeons and dragons статьи механики,механики,homebrew, dnd статьи механики,механики,homebrew Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!], днд статьи механики,механики,homebrew Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!], d&d статьи механики,механики,homebrew Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!], dnd 5 статьи механики,механики,homebrew Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!], днд 5 статьи механики,механики,homebrew Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!], d&d 5 статьи механики,механики,homebrew Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!], подземелья и драконы статьи механики,механики,homebrew Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!], dungeons and dragons статьи механики,механики,homebrew Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!]" />
+    <meta property="og:title" content="Режь, руби, коли, повтори! / Homebrew статьи / Статьи D&D 5 / Homebrew" />
+    <meta property="og:description" content="«Режь, руби, коли, повтори! (Slash, Stab, Hack, Repeat!)» - статья в разделе «Homebrew» по D&D 5-й редакции." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/homebrew/articles/homebrew/400-slash-stab-hack-repeat/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../../../articles/145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='index.html'>Режь, руби, коли, повтори!</a><span> — </span><a href='https://dnd.su/homebrew/articles/homebrew/'>Homebrew статьи</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../../../articles/newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../../articles/mechanics/468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../../articles/mechanics/26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../../articles/newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../../articles/bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/mechanics/index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../../../articles/homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../../../articles/news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../articles/partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Fhomebrew%2Farticles%2Fhomebrew%2F400-slash-stab-hack-repeat%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Fhomebrew%2Farticles%2Fhomebrew%2F400-slash-stab-hack-repeat%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Fhomebrew%2Farticles%2Fhomebrew%2F400-slash-stab-hack-repeat%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Fhomebrew%2Farticles%2Fhomebrew%2F400-slash-stab-hack-repeat%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../../../articles/partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://vk.com/neardeathdungeon?partner=dnd.su" target="_blank" title="Near Death Dungeon" class="item_link_2 partner"><span class="sprite-partners__ndd partner-icon"></span>Near Death Dungeon</a></li><li class="item_level_2"><a href="https://misterium-frpg.ru/?partner=dnd.su" target="_blank" title="FRPG Мистериум (Древнейшая форумная ролевая игра в стиле фэнтези)" class="item_link_2 partner"><span class="sprite-partners__misterium_rpg partner-icon"></span>FRPG Мистериум</a></li><li class="item_level_2"><a href="https://vk.com/dicebucket?partner=dnd.su" target="_blank" title="Ведро Кубов (НРИ | D&D)" class="item_link_2 partner"><span class="sprite-partners__dicebucket partner-icon"></span>Ведро Кубов</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCC6Ay6Oz1Yb10SCmMdbLvPg?partner=dnd.su" target="_blank" title="Грядут Приключения (Пятеро друзей, подземелья и драконы)" class="item_link_2 partner"><span class="sprite-partners__gryadut_priklyucheniya partner-icon"></span>Грядут Приключения</a></li><li class="item_level_2"><a href="https://vk.com/ravenheart_studio?partner=dnd.su" target="_blank" title="Студия «Ravenheart» (Псс, не хочешь немного игры?)" class="item_link_2 partner"><span class="sprite-partners__ravenheart_studio partner-icon"></span>Студия «Ravenheart»</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCGmhxe5rI2b29loDwJzcQOw?partner=dnd.su" target="_blank" title="Бесценный Опыт" class="item_link_2 partner"><span class="sprite-partners__exp partner-icon"></span>Бесценный Опыт</a></li><li class="item_level_2"><a href="https://vk.com/anykeyspb?partner=dnd.su" target="_blank" title="ANY KEY (Настольные игры | D&D | Петербург |Спб)" class="item_link_2 partner"><span class="sprite-partners__anykey partner-icon"></span>ANY KEY</a></li><li class="item_level_2"><a href="https://vk.com/witchhouse13?partner=dnd.su" target="_blank" title="WI†CH H⏀USE" class="item_link_2 partner"><span class="sprite-partners__witchhouse13 partner-icon"></span>WI†CH H⏀USE</a></li><li class="item_level_2"><a href="https://vk.com/wwguild?partner=dnd.su" target="_blank" title="Гильдия Мироходов (Пристань многих миров)" class="item_link_2 partner"><span class="sprite-partners__wwguild partner-icon"></span>Гильдия Мироходов</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCEDRLNTs-Fp3AZfxveT8d3w?partner=dnd.su" target="_blank" title="Lore (Описание мира Forgotten Realms)" class="item_link_2 partner"><span class="sprite-partners__lore partner-icon"></span>Lore</a></li><li class="item_level_2"><a href="https://badmimic.com?partner=dnd.su" target="_blank" title="Сокровища Мимика (3D печать миниатюр)" class="item_link_2 partner"><span class="sprite-partners__treasuresmimic partner-icon"></span>Сокровища Мимика</a></li><li class="item_level_2"><a href="https://discord.gg/RKzAhaQvBx?partner=dnd.su" target="_blank" title="20d20 | НРИ (Играем в НРИ, общаемся и строим сообщество, где каждый будет чувствовать себя как дома)" class="item_link_2 partner"><span class="sprite-partners__20d20 partner-icon"></span>20d20 | НРИ</a></li><li class="item_level_2"><a href="https://t.me/VrogharMasters?partner=dnd.su" target="_blank" title="Мастерская Врогхада (Переводы, сборки локаций и советы по играм)" class="item_link_2 partner"><span class="sprite-partners__vroghar partner-icon"></span>Мастерская Врогхада</a></li><li class="item_level_2"><a href="https://youtube.com/@wermeron?partner=dnd.su" target="_blank" title="Wermeron (Дында на простом языке)" class="item_link_2 partner"><span class="sprite-partners__wermeron partner-icon"></span>Wermeron</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='index.html'>Режь, руби, коли, повтори!</a><span> — </span><a href='https://dnd.su/homebrew/articles/homebrew/'>Homebrew статьи</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+             <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="https://dnd.su/homebrew/articles/homebrew/" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по homebrew" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+			 <div class='paper-1 card card__group-homebrew'  style="background-position:25% 0" data-id='article:400' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='index.html' itemprop='url' class='item-link'>Режь, руби, коли, повтори! [Slash, Stab, Hack, Repeat!]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Homebrew</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<span style="font-size: 16px; font-weight: 600; text-transform: uppercase;"><h2 class="bigSectionTitle">ВНИМАНИЕ: ЭТО HOMEBREW</h2><br></span><p><span style="font-size: 16px; font-weight: 600; text-transform: uppercase;">Оружие</span><br><span title="Вы можете использовать оружие со свойством «боеприпас» для совершения дальнобойной атаки только если у вас есть боеприпасы для стрельбы. Каждый раз, когда вы совершаете атаку с помощью этого оружия, вы тратите один боеприпас. Вынимается боеприпас из колчана или другого контейнера частью атаки. Для зарядки одноручного оружия требуется одна свободная рука. В конце сражения вы восстанавливаете половину использованных боеприпасов, потратив минуту на поиски на поле боя. Если вы используете оружие со свойством «боеприпас» для совершения рукопашной атаки, вы считаете его импровизированным оружием (смотрите ниже «Импровизированное оружие»). Праща при этом должна быть заряжена." class="tooltip"></span></p>
+<table>
+<tbody>
+<tr class="table_header"><td>Название</td>
+<td>Стоимость</td>
+<td>Урон</td>
+<td>Вес</td>
+<td>Свойства</td>
+</tr>
+<tr>
+<td colspan="5"><strong><em>Простое оружие</em></strong></td>
+</tr>
+<tr>
+<td> Боевой посох</td>
+<td>2 см.</td>
+<td>1к6 дробящий</td>
+<td>4 фнт.</td>
+<td><span title="Это оружие можно использовать как одной, так и двумя руками. Урон, указанный в скобках после этого свойства, означает урон при совершении рукопашной атаки двумя руками." class="tooltip">Универсальное</span> (1к8), парирование (универсальное), ответный выпад</td>
+</tr>
+<tr>
+<td> Булава</td>
+<td>5 зм.</td>
+<td>1к6 дробящий</td>
+<td>4 фнт.</td>
+<td>Жестокое (5)</td>
+</tr>
+<tr>
+<td> Дубинка</td>
+<td>1 см.</td>
+<td>1к4 дробящий</td>
+<td>2 фнт.</td>
+<td><span title="Лёгкое оружие маленькое и удобное, и идеально подходит для сражения двумя оружиями. Смотрите правила по сражению двумя оружиями в главе 9." class="tooltip">Лёгкое</span></td>
+</tr>
+<tr>
+<td> Кинжал</td>
+<td>2 зм.</td>
+<td>1к4 колющий</td>
+<td>1 фнт.</td>
+<td><span title="Лёгкое оружие маленькое и удобное, и идеально подходит для сражения двумя оружиями. Смотрите правила по сражению двумя оружиями в главе 9." class="tooltip">Лёгкое</span>, <span title="Если у оружия есть свойство «метательное», вы можете совершать им дальнобойные атаки, метая его. Если это рукопашное оружие, вы используете для бросков атаки и урона тот же модификатор характеристики, что и при совершении рукопашной атаки этим оружием. Например, если вы метаете ручной топор, вы используете Силу, а если метаете кинжал, то можете использовать либо Силу, либо Ловкость, так как у кинжала есть свойство «фехтовальное»." class="tooltip">метательное </span>(дис. 20/60), <span tooltip-for="weapon.finesse" title="weapon.finesse">фехтовальное</span><span>, подручное, короткое, подлое</span></td>
+</tr>
+<tr>
+<td> Копье</td>
+<td>1 зм.</td>
+<td>1к6 колющий</td>
+<td>3 фнт.</td>
+<td><span title="Если у оружия есть свойство «метательное», вы можете совершать им дальнобойные атаки, метая его. Если это рукопашное оружие, вы используете для бросков атаки и урона тот же модификатор характеристики, что и при совершении рукопашной атаки этим оружием. Например, если вы метаете ручной топор, вы используете Силу, а если метаете кинжал, то можете использовать либо Силу, либо Ловкость, так как у кинжала есть свойство «фехтовальное»." class="tooltip">Метательное </span>(дис. 20/60), <span title="Это оружие можно использовать как одной, так и двумя руками. Урон, указанный в скобках после этого свойства, означает урон при совершении рукопашной атаки двумя руками." class="tooltip">универсальное</span> (1к8), атака с разбега, длинное, парирование (двумя руками)</td>
+</tr>
+<tr>
+<td> Легкий молот</td>
+<td>2 зм.</td>
+<td>1к4 дробящий</td>
+<td>2 фнт.</td>
+<td><span title="Лёгкое оружие маленькое и удобное, и идеально подходит для сражения двумя оружиями. Смотрите правила по сражению двумя оружиями в главе 9." class="tooltip">Лёгкое</span>, <span title="Если у оружия есть свойство «метательное», вы можете совершать им дальнобойные атаки, метая его. Если это рукопашное оружие, вы используете для бросков атаки и урона тот же модификатор характеристики, что и при совершении рукопашной атаки этим оружием. Например, если вы метаете ручной топор, вы используете Силу, а если метаете кинжал, то можете использовать либо Силу, либо Ловкость, так как у кинжала есть свойство «фехтовальное»." class="tooltip">метательное </span>(дис. 20/60) </td>
+</tr>
+<tr>
+<td> Метательное копье</td>
+<td>5 см.</td>
+<td>1к6 колющий</td>
+<td>2 фнт.</td>
+<td><span title="Если у оружия есть свойство «метательное», вы можете совершать им дальнобойные атаки, метая его. Если это рукопашное оружие, вы используете для бросков атаки и урона тот же модификатор характеристики, что и при совершении рукопашной атаки этим оружием. Например, если вы метаете ручной топор, вы используете Силу, а если метаете кинжал, то можете использовать либо Силу, либо Ловкость, так как у кинжала есть свойство «фехтовальное»." class="tooltip">Метательное </span>(дис. 30/120), атака с разбега</td>
+</tr>
+<tr>
+<td> Палица</td>
+<td>2 см.</td>
+<td>1к8 дробящий</td>
+<td>10 фнт.</td>
+<td><span title="Это оружие нужно держать двумя руками, когда вы атакуете им." class="tooltip">Двуручное</span></td>
+</tr>
+<tr>
+<td> Ручной топор</td>
+<td>5 зм.</td>
+<td>1к6 рубящий</td>
+<td>2 фнт.</td>
+<td><span title="Лёгкое оружие маленькое и удобное, и идеально подходит для сражения двумя оружиями. Смотрите правила по сражению двумя оружиями в главе 9." class="tooltip">Лёгкое</span>, <span title="Если у оружия есть свойство «метательное», вы можете совершать им дальнобойные атаки, метая его. Если это рукопашное оружие, вы используете для бросков атаки и урона тот же модификатор характеристики, что и при совершении рукопашной атаки этим оружием. Например, если вы метаете ручной топор, вы используете Силу, а если метаете кинжал, то можете использовать либо Силу, либо Ловкость, так как у кинжала есть свойство «фехтовальное»." class="tooltip">метательное </span>(дис. 20/60), жестокое (3)</td>
+</tr>
+<tr>
+<td> Серп</td>
+<td>1 зм.</td>
+<td>1к4 рубящий</td>
+<td>2 фнт.</td>
+<td><span><span tooltip-for="weapon.light" title="weapon.light">Лёгкое</span>, парирование, ответный выпад</span></td>
+</tr>
+<tr>
+<td colspan="5"><strong><em>Воинское рукопашное оружие</em></strong></td>
+</tr>
+<tr>
+<td> Алебарда</td>
+<td>20 зм.</td>
+<td>1к10 рубящий</td>
+<td>6 фнт.</td>
+<td><span title="Это оружие нужно держать двумя руками, когда вы атакуете им." class="tooltip">Двуручное</span>, <span title="Это оружие добавляет 5 футов к расстоянию, на котором вы можете совершать этим оружием атаки, а также провоцированные атаки." class="tooltip">досягаемость</span>, <span tooltip-for="weapon.heavy" title="weapon.heavy">тяжелое</span><span>, копьё</span></td>
+</tr>
+<tr>
+<td> Боевая кирка</td>
+<td>5 зм.</td>
+<td>1к8 колющий</td>
+<td>2 фнт.</td>
+<td>Жестокое (5), выбивание</td>
+</tr>
+<tr>
+<td> Боевой молот</td>
+<td>15 зм.</td>
+<td>1к8 дробящий</td>
+<td>2 фнт.</td>
+<td><span title="Это оружие можно использовать как одной, так и двумя руками. Урон, указанный в скобках после этого свойства, означает урон при совершении рукопашной атаки двумя руками." class="tooltip">Универсальное </span>(1к10), жестокое (5), выбивание</td>
+</tr>
+<tr>
+<td> Боевой топор</td>
+<td>10 зм.</td>
+<td>1к8 рубящий</td>
+<td>4 фнт.</td>
+<td><span title="Это оружие можно использовать как одной, так и двумя руками. Урон, указанный в скобках после этого свойства, означает урон при совершении рукопашной атаки двумя руками." class="tooltip">Универсальное </span>(1к10), жестокое, выбивание</td>
+</tr>
+<tr>
+<td> Глефа</td>
+<td>20 зм.</td>
+<td>1к10 рубящий</td>
+<td>6 фнт.</td>
+<td><span title="Это оружие нужно держать двумя руками, когда вы атакуете им." class="tooltip">Двуручное</span>, <span title="Это оружие добавляет 5 футов к расстоянию, на котором вы можете совершать этим оружием атаки, а также провоцированные атаки." class="tooltip">досягаемость</span>, <span tooltip-for="weapon.heavy" title="weapon.heavy">тяжёлое</span><span>, жестокое (4)</span></td>
+</tr>
+<tr>
+<td> Двуручный меч</td>
+<td>50 зм.</td>
+<td>2к6 рубящий</td>
+<td>6 фнт.</td>
+<td><span title="Это оружие нужно держать двумя руками, когда вы атакуете им." class="tooltip">Двуручное</span>, <span tooltip-for="weapon.heavy" title="weapon.heavy">тяжелое</span><span>, жестокое (3)</span></td>
+</tr>
+<tr>
+<td>Длинное копье</td>
+<td>10 зм.</td>
+<td>1к12 колющий</td>
+<td>6 фнт.</td>
+<td><span title="Это оружие добавляет 5 футов к расстоянию, на котором вы можете совершать этим оружием атаки, а также провоцированные атаки." class="tooltip">Досягаемость</span>, <span tooltip-for="weapon.special" title="weapon.special">особое</span><span>, атака с разбега, длинное, громоздкое</span></td>
+</tr>
+<tr>
+<td> Длинный меч</td>
+<td>15 зм.</td>
+<td>1к8 рубящий</td>
+<td>3 фнт.</td>
+<td><span title="Это оружие можно использовать как одной, так и двумя руками. Урон, указанный в скобках после этого свойства, означает урон при совершении рукопашной атаки двумя руками." class="tooltip">Универсальное </span>(1к10), парирование, жестокое (3)</td>
+</tr>
+<tr>
+<td> Кнут</td>
+<td>2 зм.</td>
+<td>1к4 рубящий</td>
+<td>3 фнт.</td>
+<td><span title="Это оружие добавляет 5 футов к расстоянию, на котором вы можете совершать этим оружием атаки, а также провоцированные атаки." class="tooltip">Досягаемость</span>, <span title="При совершении атаки фехтовальным оружием вы сами выбираете, какой модификатор использовать при совершении бросков атаки и урона — модификатор Силы или Ловкости. Для обоих бросков должен использоваться один и тот же модификатор." class="tooltip">фехтовальное</span></td>
+</tr>
+<tr>
+<td> Короткий меч</td>
+<td>10 зм.</td>
+<td>1к6 колющий</td>
+<td>2 фнт.</td>
+<td><span title="Лёгкое оружие маленькое и удобное, и идеально подходит для сражения двумя оружиями. Смотрите правила по сражению двумя оружиями в главе 9." class="tooltip">Лёгкое</span>, <span tooltip-for="weapon.finesse" title="weapon.finesse">фехтовальное</span><span>, подручное, подлое</span></td>
+</tr>
+<tr>
+<td> Молот</td>
+<td>10 зм.</td>
+<td>2к6 дробящий</td>
+<td>10 фнт.</td>
+<td><span title="Это оружие нужно держать двумя руками, когда вы атакуете им." class="tooltip">Двуручное</span>, <span tooltip-for="weapon.heavy" title="weapon.heavy">тяжелое</span><span>, выбивание</span></td>
+</tr>
+<tr>
+<td> Моргенштерн</td>
+<td>15 зм.</td>
+<td>1к8 колющий</td>
+<td>4 фнт.</td>
+<td>Особое (наносящее дробящий урон)</td>
+</tr>
+<tr>
+<td> Пика</td>
+<td>5 зм.</td>
+<td>1к10 колющий</td>
+<td>18 фнт.</td>
+<td><span title="Это оружие нужно держать двумя руками, когда вы атакуете им." class="tooltip">Двуручное</span>, <span title="Это оружие добавляет 5 футов к расстоянию, на котором вы можете совершать этим оружием атаки, а также провоцированные атаки." class="tooltip">досягаемость</span>, <span tooltip-for="weapon.heavy" title="weapon.heavy">тяжёлое</span><span>, атака с разбега, длинное (оборона), громоздкое</span></td>
+</tr>
+<tr>
+<td> Рапира</td>
+<td>25 зм.</td>
+<td>1к8 колющий</td>
+<td>2 фнт.</td>
+<td><span tooltip-for="weapon.finesse" title="weapon.finesse">Фехтовальное</span><span>, парирование, ответный выпад, особое (двойное использование кинжала)&nbsp;</span></td>
+</tr>
+<tr>
+<td> Секира</td>
+<td>30 зм.</td>
+<td>1к12 рубящий</td>
+<td>7 фнт.</td>
+<td><span title="Это оружие нужно держать двумя руками, когда вы атакуете им." class="tooltip">Двуручное</span>, <span tooltip-for="weapon.heavy" title="weapon.heavy">тяжелое</span><span>, жестокое, выбивание</span></td>
+</tr>
+<tr>
+<td> Скимитар</td>
+<td>25 зм.</td>
+<td>1к6 рубящий</td>
+<td>3 фнт.</td>
+<td><span title="Лёгкое оружие маленькое и удобное, и идеально подходит для сражения двумя оружиями. Смотрите правила по сражению двумя оружиями в главе 9." class="tooltip">Лёгкое</span>, <span tooltip-for="weapon.finesse" title="weapon.finesse">фехтовальное</span><span>, парирование, ответный выпад, жестокое (5)&nbsp;</span></td>
+</tr>
+<tr>
+<td> Трезубец</td>
+<td>5 зм.</td>
+<td>1к6 колющий</td>
+<td>4 фнт.</td>
+<td><span title="Если у оружия есть свойство «метательное», вы можете совершать им дальнобойные атаки, метая его. Если это рукопашное оружие, вы используете для бросков атаки и урона тот же модификатор характеристики, что и при совершении рукопашной атаки этим оружием. Например, если вы метаете ручной топор, вы используете Силу, а если метаете кинжал, то можете использовать либо Силу, либо Ловкость, так как у кинжала есть свойство «фехтовальное»." class="tooltip">Метательное </span>(дис. 20/60), <span title="Это оружие можно использовать как одной, так и двумя руками. Урон, указанный в скобках после этого свойства, означает урон при совершении рукопашной атаки двумя руками." class="tooltip">универсальное </span>(1к8), атака с разбега, длинное, парирование (двумя руками)</td>
+</tr>
+<tr>
+<td> Цеп</td>
+<td>10 зм.</td>
+<td>1к8 дробящий</td>
+<td>2 фнт.</td>
+<td>Щитобойное</td>
+</tr>
+</tbody>
+</table><br><p>Рукопашное и дальнобойное оружие, наносящее дробящий или колющий урон, обладает следующими преимуществами:</p><p><strong style="font-size: 15px;"><em>Оружие наносящее дробящий урон. </em></strong><span style="font-size: 15px;">Когда вы атакуете рукопашным оружием, наносящим дробящий урон и промахиваетесь при выпадении «1», вы все равно наносите урон, нанося половину обычного урона по цели. Вы не можете наносить урон от скрытой атаки при попадании.</span></p><p><strong><em>Оружие наносящее колющий урон</em></strong>. Оружие, наносящее колющий урон, способно наносить особенно тяжелые раны, пронзая своих жертв и пронизывая жизненно важные органы. Когда вы наносите критическое попадание, вы утраиваете кости урона оружия вместо того, чтобы удваивать их.</p><br><h3 class="underlined">Новые Свойства Оружия</h3><p>Список новых свойств оружия.</p><p><strong><em>Атака с разбега</em></strong>. Это оружие может быть использовано для нанесения смертельного урона при разбеге. Если вы переместитесь по крайней мере на 20 футов по прямой, прежде чем атаковать противника, вы можете выбрать модификатор -4 для первого броска атаки против этого существа. Если вы попадаете этой атакой, вы наносите дополнительную кость урона, равную обычной кости урона этого оружия.</p><p><em><strong>Подручное</strong></em>. вы с преимуществом совершаете броски атаки против существ, которых вы держите в захвате и которые держат в захвате вас.</p><p><strong><em>Длинное</em></strong>. В то время как вы держите длинное оружие, любое существо, которое не держит длинное оружие (или не имеет естественное оружием с досягаемость 10 футов), провоцирует атаку, когда оно входят в зону вашей досягаемости. Если у вас есть черта Владения древковым оружием, вы совершаете этот бросок с преимуществом. Вы с совершаете с помехой бросок атаки по противнику, который борется с вами или схвачен вами, когда вы атакуете длинным оружием.</p><p><em><strong>Длинное (оборона).&nbsp;</strong></em>Оружие со свойство «длинное (оборона)» обладает теми же преимуществами и помехами, что и оружие со свойством «длинное», но с одним дополнительным преимуществом. Если вы попадаете по существу провоцированной атакой,&nbsp;<span style="font-size: 15px;">когда оно входит в область вашей досягаемости, вы уменьшите его скорость до 0.</span></p><p><em><strong>Парирование</strong></em>. Когда вы сражаетесь оружием со свойством «парирование», и существо, которое вы видите, попадает по вам рукопашной атакой, вы можете использовать свою реакцию, чтобы добавить 1 к вашему КД против этой атаки, потенциально заставляя атаку промахнуться. Чтобы воспользоваться этим свойством ваш показатель Ловкости должен быть 13 или выше, это свойство можно использовать в сочетании с чертой Оборонительный дуэлянт.</p><p><span style="font-size: 15px;"><strong><em>Парирование (универсальное).</em></strong> Оружие со свойством «парирование (универсальное)» может использоваться для обычного парирования одной рукой (см. выше) или двумя руками, в этом случае владелец&nbsp; добавляет 2 к своему КД.</span></p><p><strong><em>Ответный выпад.</em></strong> Скорость этого оружия позволяет вам обратить защиту в атаку. Всякий раз, когда вы используете свойство вашего оружия «парирование» и оно приводит к тому, что атака по вам промахивается, в рамках той же реакции, которую вы используете, совершите ответную рукопашную атаку, используя свой модификатор Ловкости для бросков атаки и урона.</p><p><em><strong>Жестокое</strong></em>. Дикое оружие сочетает в себе скорость, вес и проникающую способность, что позволяет ему наносить сокрушающие удары в бою. Когда вы выбрасываете «19» на броске атаки, бросьте дополнительный к6. Если вы выбрасываете число, указанное в скобках рядом с оружием или выше, вы наносите критическое попадание. Если оружие обладает свойством «универсальное», уменьшите число в скобках на 1, когда вы держите его двумя руками. Если в скобках нет числа, не нужно бросать к6, «19»- это автоматическое критическое попадание.</p><p><em><strong>Щитобойное</strong></em>. Вы получаете +1 к броскам атаки против противников, держащих щиты.</p><p><em><strong>Короткое</strong></em>. См. особое свойство (двойное использование кинжала) ниже.</p><p><em><strong>Выбивание</strong></em>. Оружие со свойством «выбивание» дарует своим владельцам бонус для проверок Силы (Атлетика), чтобы выбивать деревянные двери. Бонус составляет +2 для одноручному оружию и +5 для двуручного и универсального оружия, используемому двумя руками.</p><p><strong><em>Подлое</em></strong>. Это оружие смертоносно против отвлеченного врага. Когда вы наносите урон от скрытой атаки, вы можете перебросить любые «1» на костях урона, использовав новые результаты.</p><p><strong><em>Копьё</em></strong>. Это многоцелевое оружие обладает преимуществами «атаки с разбега» и его «длинны». Атаки, использующие эти свойства, наносят 1к8 колющего урона вместо обычного урона оружия.</p><p><strong><em>Особое (наносящее дробящий урон). </em></strong>Когда вы промахиваетесь этим оружием выбрасывая «1», вы наносите половину урона вместо обычного урона. Кроме того, вы можете наносить дробящий урон существам, уязвимым к этому типу урона.</p><p><em><strong>Особое (двойное использование кинжала).</strong></em> Вы можете использовать это оружие дважды, при условии, что ваше второе оружие обладает свойством «короткое».</p><p><em><strong>Двуручный (обновлённый). </strong></em>Когда вы наносите критическое попадание двуручным оружием (или универсальным оружием, используемым двумя руками), вы можете удвоить свой модификатор урона Силы, а также кости урона.</p><p><em><strong>Громоздкое</strong></em>. Это оружие непрактично использовать в сражении. Вы с помехой совершаете атаки по противникам на близком расстоянии, и ваша скорость уменьшается вдвое. Если вы находитесь на скакуне, то это не влияет на скорость вашего скакуна. Любое одноручное оружие со свойством «громоздкое» должно использоваться двумя руками, пока вы не на скакуне.</p><br><h3 class="underlined">Безоружные удары (Монахи)</h3><p>Безоружные удары монаха обладают свойствами «парирование» и «ответный выпад». Однако монах не может использовать свойство «парирование» против определенных типов оружия, такого как мечи, если только он не вложит деньги в какие-нибудь прикольные щитки для рук!</p><br><h3 class="underlined">Провоцированные атаки (Варианты правил)</h3><p>– Провоцированные атаки, совершаемые с помощью метательного оружия, совершаются с преимуществом при условии, что атакующий уже держит оружие (т.е. ему не нужно его вытаскивать).</p><p>– Всякий раз, когда вы совершаете провоцированную атаку по существу, вы провоцируете атаки со стороны всех других враждебных существ в пределах досягаемости от вас.</p><div class="additionalInfo"><h3 class="smallSectionTitle">Примечания по использованию</h3>Последнее из этих двух правил предназначено для предотвращения того, чтобы враги, находящиеся в меньшинстве, безнаказанно совершали провоцированные атаки при любом удобном случае. Это позволяет существам эффективно прикрывать отступление союзника с помощью численного преимущества. Это также означает, что существа с «длинным» оружием, уже участвующие в бою, платят определенную цену за то, чтобы атаковать новых бойцов, когда они попадают в область их досягаемости. (В качестве альтернативы можно определить, что только существа, не участвующие в бою, могут совершать провоцированные атаки, предоставляемой свойством «длинное» /&nbsp; чертой «Мастер древкового оружия»).<p>Первое дает отличное преимущество тем, у кого есть метательное оружие, и отражает лёгкость прицеливания в незащищенный тыл, без необходимости подходить достаточно близко, чтобы совершить рукопашную атаку.</p></div>
+
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div></section>
+<script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:400'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="1983"><div class="comment__entry comment__op comment__author-group-" data-id="1983" id="comment_1983">	<div class='comment__header'>
+			<a href='https://dnd.su/@9f183cadc4' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@9f183cadc4' class='profile__public-link profile__public-link-group-users comment__author-name'>Banbeluga</a></span> 
+	<div class="comment__age" title="13:46:21 03.02.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_1983" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		А где "оружие, наносящие рубящий урон"? Я хочу узнать, какие у него особые свойства!
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="6641"><div class="comment__entry comment__op comment__author-group-" data-id="6641" id="comment_6641">	<div class='comment__header'>
+			<a href='https://dnd.su/@vk-193981462' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/398bda4cc675dd20182df7655ad66480.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@vk-193981462' class='profile__public-link profile__public-link-group-users comment__author-name'>Zigo</a></span> 
+	<div class="comment__age" title="20:17:38 18.04.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_6641" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		У вас тут ошибка в описании дробящего урона. Не когда вы выбрасываете 1, а когда вы промахиваетесь на 1. Т.е кд цели и на 1 меньше. Наверное тут ещё есть ошибки
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="10344"><div class="comment__entry comment__op comment__author-group-" data-id="10344" id="comment_10344">	<div class='comment__header'>
+			<a href='https://dnd.su/@305019c7051b' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/81c0384ae6d6b59507103bdc74ad29c0.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@305019c7051b' class='profile__public-link profile__public-link-group-users comment__author-name'>Daturn</a></span> 
+	<div class="comment__age" title="14:23:00 22.06.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_10344" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Ещё бы "Тяжелое" от силы персонажа зависело, а не от размера. А то как за Поппи из ЛоЛа играть.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="13717"><div class="comment__entry comment__op comment__author-group-" data-id="13717" id="comment_13717">	<div class='comment__header'>
+			<a href='https://dnd.su/@c4a8c6c036' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@c4a8c6c036' class='profile__public-link profile__public-link-group-users comment__author-name'>ねこくん</a></span> 
+	<div class="comment__age" title="19:43:21 09.08.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_13717" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		а режущего нет в игре???
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-Модератор" data-id="13750" id="comment_13750">	<div class='comment__header'>
+			<a href='https://dnd.su/@Jekyll-ne-ban' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/ae6b1be1fc2b0a916b30e2b77dd67e04.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Jekyll-ne-ban' class='profile__public-link profile__public-link-group-moderators comment__author-name'>Jekill|Мистер Б</a></span> 
+	<div class="comment__age" title="06:37:07 10.08.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_13750" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Нет. Из урона от оружия только рубящий, колющий и дробящий.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="41820" id="comment_41820">	<div class='comment__header'>
+			<a href='https://dnd.su/@0ff4a89d0d5a' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0ff4a89d0d5a' class='profile__public-link profile__public-link-group-users comment__author-name'>Бухой чародей</a></span> 
+	<div class="comment__age" title="09:14:42 31.12.2025">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_41820" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Считай рубящий и есть режущий
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="17238"><div class="comment__entry comment__op comment__author-group-" data-id="17238" id="comment_17238">	<div class='comment__header'>
+			<a href='https://dnd.su/@1bf1f61fb5' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@1bf1f61fb5' class='profile__public-link profile__public-link-group-users comment__author-name'>Русский Колобок</a></span> 
+	<div class="comment__age" title="05:09:31 08.10.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_17238" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Кости урона оружием это собственно кость оружия (к6, к8, и т.д.), или условные кары, скрытые атаки и иже с ними тоже можно считать костями урона оружия?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="21168" id="comment_21168">	<div class='comment__header'>
+			<a href='https://dnd.su/@Armored_God' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/cb945153685bf21fbc6b0de2ab27a20e.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Armored_God' class='profile__public-link profile__public-link-group-users comment__author-name'>Armored_God</a></span> 
+	<div class="comment__age" title="20:59:39 22.12.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_21168" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Все кости урона, участвующие в расчете урона атаки, удваиваются при крите. Кара, скрытая атака, наложенные заранее заклинания и иже с ними.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="19154"><div class="comment__entry comment__op comment__author-group-" data-id="19154" id="comment_19154">	<div class='comment__header'>
+			<a href='https://dnd.su/@39690af4a66d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/3b9807df2a743e47a2c8f543cb820b31.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@39690af4a66d' class='profile__public-link profile__public-link-group-users comment__author-name'>Гойдунок Бобриный</a></span> 
+	<div class="comment__age" title="19:33:33 13.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_19154" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		"Кроме того, вы можете наносить дробящий урон существам, уязвимым к этому типу урона." <br>Я не понимаю, это опечатка или это что-то значит?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="45220" id="comment_45220">	<div class='comment__header'>
+			<a href='https://dnd.su/@b91a73f60793' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/a5a48e04c9d221db762f66e46aa97a8b.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@b91a73f60793' class='profile__public-link profile__public-link-group-users comment__author-name'>DoktorHomak</a></span> 
+	<div class="comment__age" title="18:57:55 04.03.2026">1 месяц  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_45220" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Наверное, тут имеется в виду, что если существо имеет уязвимость к дробящему, каждый промах по нему будет дамажить половиной урона оружия. Т.е. эффект будет активироваться не при разнице в единицу (кд 16, атака 15 = половина урона) а при любом промахе (даже при КД 20 атака 2).
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="37995"><div class="comment__entry comment__op comment__author-group-" data-id="37995" id="comment_37995">	<div class='comment__header'>
+			<a href='https://dnd.su/@96f2163775c9' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/0e721d8973315a286e3eae40064275d2.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@96f2163775c9' class='profile__public-link profile__public-link-group-users comment__author-name'>Virkerk</a></span> 
+	<div class="comment__age" title="08:12:38 21.10.2025">5 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_37995" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Хпхаахха я поражаюсь тому сколько хороших идей можно придумать, но сделать чушь(ИМХО) - дать двуручному мечу помехи на буквально все броски атак на его дистанции, забалансив более частыми критами
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="39666" id="comment_39666">	<div class='comment__header'>
+			<a href='https://dnd.su/@d390658d2c93' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@d390658d2c93' class='profile__public-link profile__public-link-group-users comment__author-name'>P1nosPrime</a></span> 
+	<div class="comment__age" title="11:34:13 25.11.2025">4 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_39666" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Про какую постоянную помеху вы говорите, если про особенность тяжелое, то оно всегда и везде было
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="44901" id="comment_44901">	<div class='comment__header'>
+			<a href='https://dnd.su/@96f2163775c9' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/0e721d8973315a286e3eae40064275d2.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@96f2163775c9' class='profile__public-link profile__public-link-group-users comment__author-name'>Virkerk</a></span> 	<div class="comment__user-reply-user" data-reply-to="39666">
+		<a href="index.html#comment_39666" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@d390658d2c93' class='profile__public-link profile__public-link-group-users comment__replied-to'>P1nosPrime</a>
+	<div class="comment__age" title="15:17:14 26.02.2026">1 месяц  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_44901" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Не знаю почему, но у меня стойкое ощущение будто раньше у двуручного меча тут было одно из свойств описанных здесь и из-за него были помехи вблизи взамен на криты. Может быть я безумец и по мне просто дурка плачет, но я помню это так. Если это читает кто-то кто ранее читал статью и помнит это как я пожалуйста напишите мне об этом
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+		<p>
+ На данный момент в галерее нет изображений.
+ 	</p>
+	</section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../../../articles/145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

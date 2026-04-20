@@ -1,0 +1,1765 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Звездочёт / Классы D&D 5 / Homebrew</title>
+	
+    <meta name="description" content="" />
+    <meta name="keywords" content="dnd статьи классы,классы, днд статьи классы,классы, d&d статьи классы,классы, dnd 5 статьи классы,классы, днд 5 статьи классы,классы, d&d 5 статьи классы,классы, подземелья и драконы статьи классы,классы, dungeons and dragons статьи классы,классы, dnd статьи классы,классы Звездочёт [Stargazer], днд статьи классы,классы Звездочёт [Stargazer], d&d статьи классы,классы Звездочёт [Stargazer], dnd 5 статьи классы,классы Звездочёт [Stargazer], днд 5 статьи классы,классы Звездочёт [Stargazer], d&d 5 статьи классы,классы Звездочёт [Stargazer], подземелья и драконы статьи классы,классы Звездочёт [Stargazer], dungeons and dragons статьи классы,классы Звездочёт [Stargazer]" />
+    <meta property="og:title" content="Звездочёт / Классы D&D 5 / Homebrew" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/homebrew/class/565-stargazer/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../../articles/145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='../../articles/sandbox/565-stargazer/index.html'>Звездочёт</a><span> — </span><a href='../index.html'>Homebrew Классы</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="../../articles/sandbox/565-stargazer/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../articles/race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="../../articles/sandbox/565-stargazer/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../../articles/newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../articles/mechanics/468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../articles/mechanics/26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../articles/newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="../../articles/sandbox/565-stargazer/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../articles/bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../articles/inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../articles/mechanics/index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../articles/lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../../articles/homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../../articles/news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../articles/partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="../../articles/sandbox/565-stargazer/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../articles/sandbox/565-stargazer/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Fhomebrew%2Fclass%2F565-stargazer%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Fhomebrew%2Fclass%2F565-stargazer%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Fhomebrew%2Fclass%2F565-stargazer%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Fhomebrew%2Fclass%2F565-stargazer%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../articles/sandbox/565-stargazer/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../../articles/partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://vk.com/wwguild?partner=dnd.su" target="_blank" title="Гильдия Мироходов (Пристань многих миров)" class="item_link_2 partner"><span class="sprite-partners__wwguild partner-icon"></span>Гильдия Мироходов</a></li><li class="item_level_2"><a href="https://vk.com/gooddragondice?partner=dnd.su" target="_blank" title="GoodDragon Dice (Лавка кубиков)" class="item_link_2 partner"><span class="sprite-partners__gdd partner-icon"></span>GoodDragon Dice</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCe_vCsHHRPT9XPVYDInQqqQ?partner=dnd.su" target="_blank" title="Sneaky Dice" class="item_link_2 partner"><span class="sprite-partners__sneaky_dice partner-icon"></span>Sneaky Dice</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCGmhxe5rI2b29loDwJzcQOw?partner=dnd.su" target="_blank" title="Бесценный Опыт" class="item_link_2 partner"><span class="sprite-partners__exp partner-icon"></span>Бесценный Опыт</a></li><li class="item_level_2"><a href="https://youtube.com/@wermeron?partner=dnd.su" target="_blank" title="Wermeron (Дында на простом языке)" class="item_link_2 partner"><span class="sprite-partners__wermeron partner-icon"></span>Wermeron</a></li><li class="item_level_2"><a href="https://vk.com/dicehead_dnd?partner=dnd.su" target="_blank" title="DiceHead" class="item_link_2 partner"><span class="sprite-partners__dicehead partner-icon"></span>DiceHead</a></li><li class="item_level_2"><a href="https://www.youtube.com/@kasodochka?partner=dnd.su" target="_blank" title="Kasoda (Смешные, познавательные и разочаровывающие ролики про D&D)" class="item_link_2 partner"><span class="sprite-partners__kasoda partner-icon"></span>Kasoda</a></li><li class="item_level_2"><a href="https://vk.com/phantom_st?partner=dnd.su" target="_blank" title="Студия «Phantom» (Cтудия фэнтези «Phantom». Перевод литературы по настольным ролевым играм)" class="item_link_2 partner"><span class="sprite-partners__phantom partner-icon"></span>Студия «Phantom»</a></li><li class="item_level_2"><a href="https://www.youtube.com/c/%D0%9F%D0%BE%D0%A2%D1%83%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86?partner=dnd.su" target="_blank" title="По ту сторону страниц (Пишем Музыку, Карты, Обзоры и Подкасты!)" class="item_link_2 partner"><span class="sprite-partners__po_tu_storonu partner-icon"></span>По ту сторону страниц</a></li><li class="item_level_2"><a href="https://www.adventureguys.club?partner=dnd.su" target="_blank" title="Adventure Guys (Команда друзей создаёт материалы для игр, рассказывает про лор, разбирает приключения и многое другое!)" class="item_link_2 partner"><span class="sprite-partners__ad_girl partner-icon"></span>Adventure Guys</a></li><li class="item_level_2"><a href="https://vk.com/hesgar?partner=dnd.su" target="_blank" title="Сады гесперид (Советы мастерам даю какие-то. То ли про D&D паблик, то ли нет, хрен его разбери.)" class="item_link_2 partner"><span class="sprite-partners__hesgar partner-icon"></span>Сады гесперид</a></li><li class="item_level_2"><a href="https://vk.com/dice_scream?partner=dnd.su" target="_blank" title="Dice Scream (Самые северные стримы по ДнД, добро пожаловать к нам за стол!)" class="item_link_2 partner"><span class="sprite-partners__dice_scream partner-icon"></span>Dice Scream</a></li><li class="item_level_2"><a href="https://aternia.games?partner=dnd.su" target="_blank" title="Атерния (Ваши НРИ вселенные и инструменты)" class="item_link_2 partner"><span class="sprite-partners__aternia partner-icon"></span>Атерния</a></li><li class="item_level_2"><a href="https://vk.com/drunkenbadger?partner=dnd.su" target="_blank" title="Накидавшийся барсук (Make DnD, not war.)" class="item_link_2 partner"><span class="sprite-partners__drunkenbadger partner-icon"></span>Накидавшийся барсук</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../articles/sandbox/565-stargazer/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='../../articles/sandbox/565-stargazer/index.html'>Звездочёт</a><span> — </span><a href='../index.html'>Homebrew Классы</a>                        </h1>
+                    </section>
+
+					    <section class="block block_100">
+		<div class='paper-1 card card__group-homebrew'  style="background-position:73% 0" data-id='article:565' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../articles/sandbox/565-stargazer/index.html' itemprop='url' class='item-link'>Звездочёт [Stargazer]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Homebrew</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<div class="additionalInfo"><blockquote><p> Данный материал является продуктом morethanwordscansay (<a href="https://www.reddit.com/user/morethanwordscansay/" target="_blank">Reddit</a> автора). Этот материал не является официальным продуктом Wizards of the Coast. Если вы хотите использовать этот класс, вам следует посоветоваться с вашим Мастером.</p>
+    <strong>— Господин Финик</strong></blockquote>
+</div>
+
+<blockquote style="">Каждое знаменательное событие предвещает рой зой падающих звёзд, что серебристыми полосами освещают ночное небо. На склоне холма сидит молодая девушка. Она тщательно следит за их скоростью и углом падения, внимательно записывая каждую деталь. Она будет расшифровывать их всю ночь, а получившееся послание навсегда изменит будущее её племени.<br>
+Седой старец бродит рядом с медведем с лохматой черной шерстью, что слабо блестит светом тысячи крошечных звезд, спрятанных в его шерсти. Они блуждают взад и вперёд, словно старые друзья.  Но стоило стреле вылететь из недр леса прямо в сторону старца, как медведь бросается напротив нее, и стрела исчезает в пустоте его тела.<br>
+Через поле мчатся три полурослика, стараясь скрыться от преследующих их орков. Они быстро достигают ущелья, на которое указывает один из них. Он сотворяет мост через него. В то же время орки позади врезаются в стену, внезапно выросшую на пути. Стоило полуросликам оказаться на другой стороне, как все волшебные барьеры растворились в мгновение ока.
+</blockquote>
+
+<p style="">Звездочеты используют силы звёзд для гадания и колдовства. Их способность управлять небесной магией проявляется по-разному и  зависит от их культуры и происхождения, начиная от племенных шаманов и астрономов-любителей и заканчивая дворцовыми советниками с дорогими картами и мощными телескопами. Разумеется, из звездочётов выходят превосходные искатели приключений. Они отлично ориентируются на местности и прекрасно разбираются в душах существ, знают толк как в защите, так и в нападении. Их связь с духами космоса часто открывают те двери, которые не поддались бы никому другому.
+</p><p><ul class="new-article-menu"><li class="new-article-menu__li"><a href="../../articles/sandbox/565-stargazer/index.html#Stargazer" class="new-article-menu__li-wrapper btn btn-sm btn-green"><span  class="new-article-menu__li-text">Звездочёт</span></a></li><li class="new-article-menu__li"><a href="../../articles/sandbox/565-stargazer/index.html#class-features" class="new-article-menu__li-wrapper btn btn-sm btn-green"><span  class="new-article-menu__li-text">Классовые умения</span></a></li><li class="new-article-menu__li"><a href="../../articles/sandbox/565-stargazer/index.html#asterisms" class="new-article-menu__li-wrapper btn btn-sm btn-green"><span  class="new-article-menu__li-text">Астеризмы</span></a></li><li class="new-article-menu__li"><a href="../../articles/sandbox/565-stargazer/index.html#spisok_zaklinanij_zvezdochjota" class="new-article-menu__li-wrapper btn btn-sm btn-green"><span  class="new-article-menu__li-text">Список заклинаний звездочёта</span></a></li><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="stellar-trines"><span  class="new-article-menu__li-text">Звёздные трины</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__break" data-parent="stellar-trines"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="stellar-trines"><a href="../../articles/sandbox/565-stargazer/index.html#stellar-trines" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Звёздные трины</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="stellar-trines"><a href="../../articles/sandbox/565-stargazer/index.html#trine.water" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Трин воды</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="stellar-trines"><a href="../../articles/sandbox/565-stargazer/index.html#trine.air" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Трин воздуха</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="stellar-trines"><a href="../../articles/sandbox/565-stargazer/index.html#trine.earth" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Трин земли</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="stellar-trines"><a href="../../articles/sandbox/565-stargazer/index.html#trine.fire" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Трин огня</span></a></li></ul><br></p>
+
+<h4 class="tableTitle"><span id='Stargazer'>Звездочёт</span></h4><table style="text-align: center;">
+<tbody>
+    <tr class="table_header">
+        <td>Уровень</td>
+        <td>Бонус мастерства</td>
+        <td style="text-align: left;">Умения</td>
+        <td>Известные заговоры</td>
+        <td>Подготовленные<br>заклинания</td>
+        <td>Ячейки заклинаний</td><td>Уровень ячеек</td><td>Известные<br>астеризмы</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>+2</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.astromancy" target="_blank">Астромантия</a>, <a href="../../articles/sandbox/565-stargazer/index.html#feature.stellar-trine" target="_blank">Звёздный трин</a></td>
+        <td>2</td>
+        <td>3</td>
+        <td>1</td><td>1</td><td>-</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>+2</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.asterisms" target="_blank">Астеризм</a>, <a href="../../articles/sandbox/565-stargazer/index.html#feature.horoscope" target="_blank">Гороскоп</a>&nbsp;(к6)</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td><td>1</td><td>1</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>+2</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.manifest-zodiac" target="_blank">Призыв зодиака</a>, <a href="../../articles/sandbox/565-stargazer/index.html#feature.stellar-trine" target="_blank">Умение звёздного трина</a></td><td>2</td>
+        <td>5</td>
+        <td>2</td><td>2</td><td>2</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>+2</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.asi" target="_blank">Увеличение характеристик</a></td>
+        <td>3</td>
+        <td>5</td>
+        <td>2</td><td>2</td><td>2</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>+3</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.starlight-bridge" target="_blank">Мост звёздного света</a></td>
+        <td>3</td>
+        <td>6</td>
+        <td>2</td><td>3</td><td>3</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>+3</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.stellar-trine" target="_blank">Умение звёздного трина</a></td>
+        <td>3</td>
+        <td>7</td>
+        <td>2</td><td>3</td><td>3</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>+3</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.create-constellation" target="_blank">Создание созвездий</a></td>
+        <td>3</td>
+        <td>8</td>
+        <td>2</td><td>4</td><td>4</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>+3</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.asi" target="_blank">Увеличение характеристик</a></td>
+        <td>3</td>
+        <td>8</td>
+        <td>2</td><td>4</td><td>4</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>+4</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.horoscope" target="_blank">Гороскоп</a> (к8)</td>
+        <td>3</td>
+        <td>9</td>
+        <td>2</td><td>5</td><td>5</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>+4</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.stellar-trine" target="_blank">Умение звёздного трина</a></td>
+        <td>3</td>
+        <td>10</td>
+        <td>2</td><td>5</td><td>5</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>+4</td>
+        <td style="text-align: left;">—</td>
+        <td>4</td>
+        <td>11</td>
+        <td>3</td><td>5</td><td>6</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>+4</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.asi" target="_blank">Увеличение характеристик</a></td>
+        <td>4</td>
+        <td>11</td>
+        <td>3</td><td>5</td><td>6</td>
+    </tr>
+    <tr>
+        <td>13</td>
+        <td>+5</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.stellar-corona" target="_blank">Звёздная корона</a></td>
+        <td>4</td>
+        <td>12</td>
+        <td>3</td><td>5</td><td>6</td>
+    </tr>
+    <tr>
+        <td>14</td>
+        <td>+5</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.stellar-trine" target="_blank">Умение звёздного трина</a></td>
+        <td>4</td>
+        <td>13</td>
+        <td>3</td><td>5</td><td>7</td>
+    </tr>
+    <tr>
+        <td>15</td>
+        <td>+5</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.supernova" target="_blank">Сверхновая звезда</a></td>
+        <td>4</td>
+        <td>14</td>
+        <td>3</td><td>5</td><td>7</td>
+    </tr>
+    <tr>
+        <td>16</td>
+        <td>+5</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.asi" target="_blank">Увеличение характеристик</a>, <a href="../../articles/sandbox/565-stargazer/index.html#feature.horoscope" target="_blank">Гороскоп</a>(к10)</td>
+        <td>4</td>
+        <td>14</td>
+        <td>3</td><td>5</td><td>7</td>
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>+6</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.black-hole" target="_blank">Чёрная дыра</a></td>
+        <td>4</td>
+        <td>15</td>
+        <td>4</td><td>5</td><td>8</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>+6</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.conjunction" target="_blank">Связь</a></td>
+        <td>4</td>
+        <td>16</td>
+        <td>4</td><td>5</td><td>8</td>
+    </tr>
+    <tr>
+        <td>19</td>
+        <td>+6</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.asi" target="_blank">Увеличение характеристик</a></td>
+        <td>4</td>
+        <td>17</td>
+        <td>4</td><td>5</td><td>8</td>
+    </tr>
+    <tr>
+        <td>20</td>
+        <td>+6</td>
+        <td style="text-align: left;"><a href="../../articles/sandbox/565-stargazer/index.html#feature.wish-upon-a-star" target="_blank">Звезда желаний</a></td>
+        <td>4</td>
+        <td>17</td>
+        <td>4</td><td>5</td><td>9</td>
+    </tr>
+</tbody>
+</table>
+
+<br>
+
+<h3 class="underlined">СУДЬБА ИЛИ ВОЛЯ?</h3>
+<p>Когда вы тратите свою жизнь на изучение небесных знаков, предсказывающих грядущее, грань между судьбой и волей начинает для вас размываться. Навык чтения знамений — это нечто большее, чем попытка заглянуть в будущее. Предрешено ли оно, или его можно изменить? Многие звездочёты тратят всю свою жизнь на поиск ответа на этот вопрос.
+</p><p>Все звездочеты в душе ученые, хотя многие из них избегают академической чопорности, выбирая жизнь, полную приключений. Звезды наблюдают за всем миром, потому звездочёты должны быть рядом, чтобы прочесть их волю. Секреты, раскрытые во время путешествий, значительно расширяют набор навыков звездочета, ведь они обладают уникальными способностями, с которыми едва ли кто-то может сравниться.
+</p><br><h3 class="underlined">КОСМИЧЕСКИЕ СООБЩЕСТВА
+</h3><p>Звездочёты определяются их отношениями, которые они формируют как с их смертными союзниками, так и с духами, повелевающими звездами (обсудите эти моменты с вашим Мастером). Духи объединены в родственные группы, но все они уникальны. Многие звездочёты выстраивают особую связь с одним духом, однако их настоящая мощь раскрывается, когда они используют все связи для преодоления возникших трудностей.
+</p><p>Связи не просто даруют им силу; они и есть сила. В отличие от колдунов, которые служат воле неизвестных сущностей, звездочеты относятся к духам, которых они встречают, как к партнерам, союзникам и даже как к друзьям. Их мудрость и проницательность помогают раскрыть весь потенциал таких отношений.
+</p><br><h3 class="underlined">СОЗДАНИЕ ЗВЕЗДОЧЁТА
+</h3><p>Так или иначе, все звездочеты — дети судьбы. Загвоздка лишь в том, как вы узнали о своём предназначении. Быть может, секреты чтения звёзд передаются в вашей семье из поколения в поколение? Или вам посчастливилось стать учеником мудреца в вашем племени или деревне? Наблюдали ли вы за звёздами во время ночного караула, теша себя мыслями о более интересной жизни? А, может, к вам во сне явился Зодиакальный Дух, который даровал вам эту силу?
+</p><p>То, как вы пришли к собственной силе, часто отражается на Трине,  к которому вас будут относить. Силы небес оказывают влияние на все — даже на вас. Ваше ремесло более мистическое или точное? Храните ли вы свои техники в тайне или свободно наставляете нуждающихся, что обратились к вам за помощью? Как вы будете управлять судьбой этого мира? Выбор лишь за вами.
+</p><br><h3 class="smallSectionTitle">БЫСТРОЕ СОЗДАНИЕ
+</h3><p>Вы можете быстро создать Звездочёта, следуя этим рекомендациям. Во-первых, у вашего Интеллекта или Мудрости должно быть наивысшее значение. Следующей по величине характеристикой должна быть Харизма. Если вы планируете присоединиться к трину воды, у вашей Мудрости должно быть наивысшее значение. Во-вторых, выберите предысторию «<a href="../../../backgrounds/762/index.html" target="_blank">мудрец</a>».</p>
+
+<div class="additionalInfo"><h3 class="smallSectionTitle spoiler_head">МУЛЬТИКЛАССИРОВАНИЕ И звездочёт</h3>
+<div>
+<p>Если вы используете опциональное правило по <a href="../../../articles/mechanics/449-multiclassing/index.html" target="_blank">мультиклассированию</a> из <em>«Книги игрока»</em>, вот что вам нужно знать при выборе звездочёта в качестве одного из ваших классов.</p>
+<p><strong><em>Минимальные значения характеристик</em>.</strong>&nbsp;Вы должны иметь значение Интеллекта или Мудрости, а также значение Харизмы не ниже 13 чтобы взять уровень в этом классе или взять уровень другого класса, если вы уже являетесь звездочётом.</p>
+<p><strong><em>Получаемые владения</em>.</strong>&nbsp;Если звездочёт не является вашим начальным классом, вот владения, которые вы приобретаете, когда берете свой первый уровень звездочёта: <a href="../../../articles/inventory/95-armor_and_shields/index.html#armor.light" target="_blank">лёгкие доспехи</a>, <a href="../../../articles/inventory/96-arms/index.html#weapon.martial" target="_blank">скимитары</a>, <a href="../../articles/sandbox/565-stargazer/index.html#tools.astrologist" target="_blank">инструменты астролога</a>.</p>
+<p><strong><em>Астромантия.</em></strong>&nbsp;Если у вас есть умение другого класса, позволяющее вам узнавать и накладывать заклинания, вы можете использовать ячейки заклинаний звездочёта чтобы использовать заклинания, которые вы получили благодаря этому умению, и вы можете использовать эти ячейки для накладывания заклинаний звездочёта.</p>
+</div>
+</div>
+
+
+<br><h2 class="bigSectionTitle"><span id='class-features'>Классовые умения</span></h2>
+<p>Колдуны обладают следующими классовыми умениями.</p>
+
+<div class="additionalInfo"><h3 class="smallSectionTitle spoiler_head">Хиты, владение и снаряжение</h3>
+<div>
+<h4 class="smallSectionTitle">ХИТЫ</h4>
+<p><strong>Кость Хитов:</strong> 1к8 за каждый уровень звездочёта</p>
+<p><strong>Хиты на 1 уровне:</strong> 8 + модификатор Телосложения</p>
+<p><strong>Хиты на следующих уровнях:</strong> 1к8 (или 5) + модификатор Телосложения (суммарно минимум 1) за каждый уровень звездочёта после первого</p>
+<br>
+<h4 class="smallSectionTitle">ВЛАДЕНИЕ</h4>
+<p><strong>Доспехи</strong>: <a href="../../../articles/inventory/95-armor_and_shields/index.html#armor.light" target="_blank">Лёгкие доспехи</a></p>
+<p><strong>Оружие</strong>: <a href="../../../articles/inventory/96-arms/index.html#weapon.simple" target="_blank">Простое оружие</a>, <a href="../../../articles/inventory/96-arms/index.html#weapon.martial" target="_blank">скимитары</a></p>
+<p><strong>Инструменты</strong>: <a href="../../articles/sandbox/565-stargazer/index.html#tools.astrologist" target="_blank">Инструмента астролога</a></p>
+<p><strong>Спасброски</strong>: Мудрость, Харизма</p>
+<p><strong>Навыки</strong>: Выберите два навыка из следующих: <span tooltip-for="skill.perception" title="skill.perception">Восприятие</span>, <span tooltip-for="skill.history" title="skill.history">История</span>, <span tooltip-for="skill.arcana" title="skill.arcana">Магия</span>, <span tooltip-for="skill.nature" title="skill.nature">Природа</span>, <span tooltip-for="skill.insight" title="skill.insight">Проницательность</span>, <span tooltip-for="skill.religion" title="skill.religion">Религия</span> и <span tooltip-for="skill.persuasion" title="skill.persuasion">Убеждение</span></p>
+<br>
+<h4 class="smallSectionTitle">СНАРЯЖЕНИЕ</h4>
+<p>Вы начинаете со следующим снаряжением в дополнение к снаряжению, полученному за вашу предысторию:</p>
+<ul>
+<li>а) <a href="../../../articles/inventory/96-arms/index.html#weapon.martial" target="_blank">скимитар</a>&nbsp;или б) любое <a href="../../../articles/inventory/96-arms/index.html#weapon.simple" target="_blank">простое оружие</a></li>
+<li>а) <a href="../../../articles/inventory/98-equipment.html" target="_blank">мешочек с компонентами</a> или б) <a href="../../../articles/inventory/98-equipment.html" target="_blank">магическая фокусировка</a></li>
+<li>а) <span tooltip-for="item.pack.explorer" title="item.pack.explorer">набор путешественника</span>&nbsp;или б)&nbsp;<span tooltip-for="item.pack.scholar" title="item.pack.scholar">набор учёного</span></li>
+<li><a href="../../../articles/inventory/95-armor_and_shields/index.html#armor.leather" target="_blank">Кожаный доспех</a>&nbsp;и <a href="../../articles/sandbox/565-stargazer/index.html#tools.astrologist" target="_blank">инструменты астролога</a></li>
+</ul>
+<div class="additionalInfo"><h3 class="smallSectionTitle spoiler_head"><span id='tools.astrologist'>Инструменты астролога</span></h3>
+<div>
+<p>Инструменты Астролога помогают персонажам отслеживать перемещение звёзд и других небесных тел.
+</p><p><strong><em>Компоненты.</em></strong> Инструменты Астролога включают в себя звёздную карту, астролябию, компас, штангенциркули, перо, чернила и пергамент.
+</p><p><strong><em>Магия.</em></strong> Ваши знания о космосе помогают вам отвечать на вопросы о других планах.
+</p><p><strong><em>Проницательность.</em></strong> Вы можете использовать Инструменты Астролога, чтобы создать натальную карту существа, потратив на это 10 минут. Карта поможет вам понять это существо лучше.
+</p><p><strong><em>Природа. </em></strong>Вы можете точно предсказывать погоду на следующие 24 часа, когда изучаете ночное небо.</p>
+</div>
+</div>
+</div>
+</div>
+
+<h3 class="underlined"><span id='feature.astromancy'>Астромантия</span></h3>
+<p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p><em>1-й уровень, умение звездочёта
+</em></p><p>Ваше усердное исследование и медитации открыли некоторые секреты небес, давая вам силы направлять космическую энергию как магию. См. главу 10 Руководства Игрока (Player’s Handbook) для общих правил накладывания заклинаний и конец данного дополнения для списка заклинаний звездочета.
+</p><h4 class="smallSectionTitle">Заговоры (заклинания 0-го уровня)
+</h4><p>Вы знаете 2 заговора из списка заговоров Звездочёта на свой выбор. Вы узнаёте дополнительные заговоры Звездочёта на более высоких уровнях, как показано в колонке «Известные заговоры». Вы можете заменить любые известные заклинания на другие из списка заклинаний Звездочёта на 4-м, 8-м, 12-м, 16-м и 19-м уровнях.</p><h4 class="smallSectionTitle">Ячейки заклинаний
+</h4><p style="">Таблица «Звездочёт» (самая первая страница) показывает, какое количество ячеек для накладывания заклинаний Звездочёта с 1-го по 5-й уровень у вас есть, а также уровень этих ячеек — все ваши ячейки заклинаний одного уровня. Для накладывания одного из заклинаний Звездочёта 1-го уровня и выше вы должны потратить ячейку заклинаний. Вы восстановите все потраченные ячейки, когда окончите короткий или продолжительный отдых.
+</p><p style="">Например, если ваш персонаж 5-го уровня, у вас есть две ячейки заклинаний 3-го уровня. Чтобы использовать заклинание 1-го уровня вы должны потратить одну из этих ячеек, и заклинание сработает как заклинание 3-го уровня.
+</p><h4 class="smallSectionTitle" style="">Подготовка и сотворение заклинаний
+</h4><p style="">На 1-м уровне вы знаете 3 заклинания 1-го уровня по своему выбору из списка заклинаний Звездочёта.
+</p><p style="">Колонка «Подготовленные заклинания» показывает сколько заклинаний Звездочёта 1-го уровня и выше вы можете подготовить. Подготовленное заклинание не должно превышать уровень, который показан в таблице в колонке «Уровень ячеек заклинаний» вашего уровня. Например, когда вы достигаете 3-го уровня, вы можете подготовить 3 заклинания Звездочёта, каждое из которых может быть 1-го или 2-го уровня. Накладывание заклинаний не убирает их из вашего списка подготовленных заклинаний.
+</p><p style="">Вы можете изменить список подготовленных заклинаний, когда закончите продолжительный отдых и толкование звёздных предзнаменований. Подготовка нового списка заклинаний требует минимум 1 минуты за уровень каждого заклинания в вашем списке.
+</p><h4 class="smallSectionTitle" style="">Базовая характеристика заклинаний
+</h4><p style="">Во время создания персонажа выберите Интеллект или Мудрость в качестве базовой характеристики для использования заклинаний. Ваша сила берётся из вашей способности считывать секреты звёзд или через изучение, или с помощью вашей интуиции.
+</p><p style="text-align: center;"><strong style="">Сл спасбросок</strong> = 8 + ваш бонус мастерства + ваш модификатор Интеллекта/Мудрости
+</p><p style="text-align: center;"><strong style="">Модификатор атаки заклинанием</strong> = ваш бонус мастерства + ваш модификатор Интеллекта/Мудрости</p><div class="additionalInfo" style=""><h3 class="smallSectionTitle" style="">Интеллект или Мудрость?</h3>Данный класс может легко работать с обоими показателями как базовой характеристикой. Используйте тот, который вы предпочитаете больше всего — это может повлиять на вкусы персонажа, но не должно сильно влиять на стиль игры.</div><h4 class="smallSectionTitle" style="">Ритуальное колдовство
+</h4><p>Вы можете накладывать заклинания pвездочёта в качестве ритуала, если есть возможность и если у вас подготовлено это заклинание&nbsp;</p><h4 class="smallSectionTitle">Магическая фокусировка
+</h4><p>Вы можете использовать <a href="../../articles/sandbox/565-stargazer/index.html#tools.astrologist" target="_blank">инструменты астролога</a> в качества вашей магической фокусировки.
+</p><h4 class="smallSectionTitle">Благословение космоса</h4><p>Ваша связь со звездами выражается небольшим знаком. Выберите одиен из таблицы «Благословений космоса» или определите его случайным образом.</p>
+
+
+<h4 class="tableTitle">БЛАГОСЛОВЕНИЕ КОСМОСА</h4>
+
+<table><tbody><tr class="table_header"><td>к6</td><td>Благословение</td></tr><tr><td>1</td><td>
+У вас веснушки в форме созвездий.
+</td></tr>
+<tr><td>2</td><td>
+Пока вы совершаете короткий или продолжительный отдых, вокруг вас обращаются маленькие камушки.
+</td></tr>
+<tr><td>3</td><td>
+Вокруг вас кружатся крошечные частички света, когда вы накладываете заклинания.
+</td></tr>
+<tr><td>4</td><td>
+Вы слегка магнититесь; крошечные металлические объекты магнитятся к вашей коже.
+</td></tr>
+<tr><td>5</td><td>
+Ваши глаза приобрели цветное космическое сияние.
+</td></tr>
+<tr><td>6</td><td>
+Ваши волосы переливаются, будто наполнены звёздным светом.
+</td></tr>
+</tbody></table><br>
+
+<h3 class="underlined"><span id='feature.stellar-trine'>Звёздный трин</span></h3><p><em>1-й уровень, умение звездочёта
+</em></p><p>У вас появилась предрасположенность к одному из зодиакальных тринов из <a href="../../articles/sandbox/565-stargazer/index.html#stellar-trines" target="_blank">списка доступных</a>. Ваш выбор позволяет вам получать навыки на 1-м, 3-м, 6-м, 10-м и 15-м уровнях.
+</p><br><h3 class="underlined"><span id='feature.asterisms'>Астеризмы</span></h3>
+<p><em>2-й уровень, умение звездочёта
+</em></p><p>Вы научились различать астеризмы, уникальные созвездия, которые позволяют вам использовать новый вид магии.</p><p>Вы получаете 1 <a href="../../articles/sandbox/565-stargazer/index.html#asterisms" target="_blank">астеризм</a> на выбор. Когда вы получаете определённый уровень pвездочёта, вы можете выбрать дополнительные астеризмы, как показано в таблице в колонке «Известные астеризмы» .
+</p><p>В дополнение, когда вы получаете новый уровень в классе pвездочёта, вы можете заменить один из своих астеризмов на другой, который доступен вашему уровню.
+</p><br><h3 class="underlined"><span id='feature.horoscope'>Гороскоп</span></h3><p><em>2-й уровень, умение звездочёта
+</em></p><p>Ваше детальное изучение небесных тел позволило углубить ваши познания в их перемещениях. После окончания продолжительного отдыха и толкование звёздных предзнаменований, вы научились избегать надвигающиеся катастрофы.
+</p><p>Вы сотворяете 5-минутный ритуал, используя <a href="../../articles/sandbox/565-stargazer/index.html#tools.astrologist" target="_blank">инструменты астролога</a>. Выберите одно существо (кроме себя) в пределах 30 футов от вас, которое может вас слышать. Это существо получает Кость Гороскопа к6.
+</p><p>После того, как выбранное существо окончит продолжительный отдых и когда оно будет вынуждено совершить спасбросок, оно может бросить Кость Гороскопа и добавить выпавшее число к спасброску. Существо может бросить Кость Гороскопа после того, как бросит к20, но до того, как Мастер объявит бросок успешным или провальным. После того, как Кость Гороскопа была брошена, она считается потерянной. Существо может иметь только 1 Кость Гороскопа за раз.
+</p><p>Вы должны окончить продолжительный отдых, прежде чем сможете использовать это умение снова.
+</p><p>Ваша Кость Гороскопа меняется с повышением уровня в этом классе: к8 на 9-м и к10 на 16-м.
+</p><br><h3 class="underlined"><span id='feature.manisest-zodiac'>Призыв зодиака</span></h3><p><em>3-й уровень, умение звездочёта
+</em></p><p>Ваша связь с зодиакальными знаками может проявить себя через вас. Когда вы оканчиваете продолжительный отдых и толкование звёздных предзнаменований, выберите один из знаков зодиака, которые предлагает вам ваш «Звёздный трин». Это определит, какие умения вы получите на следующий день.
+</p><p>В дополнение вы выбираете, получите ли вы дополнительное умение, которое сможете использовать, или компаньона, которого сможете призвать. Любые варианты этого умения, которые требуют спасброска, используют Сл спасброска от ваших заклинаний. Каждый раз, когда вы оканчиваете короткий отдых, вы можете сделать новый выбор: изменить зодиакальный знак и/или выбор Аспекта или Воплощения.
+</p><h4 class="smallSectionTitle">Аспект
+</h4><p>Вы можете использовать умение «Аспект», указанное в зодиакальном знаке, который вы выбрали количество раз равное вашему Бонусу мастерства. Вы восстанавливаете все использования после короткого отдыха.
+</p>
+
+<h4 class="smallSectionTitle">Воплощение</h4>
+<p>Вы можете действием призвать воплощение зодиакального знака. Эта материальная форма использует набор характеристик <a href="../../bestiary/14680-zodiac_spirit/index.html" target="_blank">зодиакального духа [zodiac spirit]</a> и умения «Воплощения» выбранного вами знака. Зодиакальный дух исчезнет, если его хиты опустятся до 0 или если вы умрёте.
+</p><p>В битве дух совершает действия в ваш ход. Он может перемещаться и использовать реакцию самостоятельно, но в таком случае единственное действие, которое он может совершать — <span tooltip-for="action.dodge" title="action.dodge">Уклонение</span>. Бонусным действием, в свой ход, вы можете отдать духу команду совершить другое доступное действие. В то же время вы можете отдать команду использовать бонусное действие, если у духа есть доступное. Если вы <span tooltip-for="condition.incapacitated" title="condition.incapacitated">недееспособны</span>, дух может использовать любое доступное действие на свой выбор, не только <span tooltip-for="action.dodge" title="action.dodge">Уклонение</span>.
+</p><p>Вы сами выбираете, как будет выглядеть дух, которого вы призвали. Внешность не влияет на возможности и характеристики.
+</p><p>После использования этого умения вы должны окончить короткий или продолжительный отдых, чтобы использовать его снова.</p><br><h3 class="underlined"><span id='feature.asi'>Увеличение характеристик</span></h3><p><em>4-й уровень, умение звездочёта
+</em></p><p>При достижении 4-го, 8-го, 12-го, 16-го и 19-го уровней вы можете повысить значение одной из ваших характеристик на 2 или двух характеристик на 1. Как обычно, значение характеристики при этом не должно превысить 20.
+</p><p>Если ваш Мастер разрешает использование черт, вы можете отказаться от преимуществ этого умения при повышении значений характеристик и вместо этого взять черту.</p><br><h3 class="underlined"><span id='feature.starlight-bridge'>Мост звёздного света</span></h3><p><em>5-й уровень, умение звездочёта
+</em></p><p>Вы узнаёте, как призвать к вам на помощь сами звёзды. Вы можете потратить действие, чтобы создать череду панелей из звёздного света, 5-футовый квадрат и толщиной 1 дюйм, которая излучает <span tooltip-for="light.dim" title="light.dim">тусклый свет</span> в радиусе 5 футов. Класс Доспеха панели 5, количество хитов 10.
+</p><p>Вы можете создать количество панелей равное половине вашего уровня звездочёта (округлённого в большую сторону). Вы можете установить эти панели в любом месте в пределах 100 футов от себя, но они должны находиться не дальше, чем в 5 футов друг от друга. Они не обязаны соприкасаться, что позволит вам создавать ступеньки или лестницы. Панели могут быть установлены боком, чтобы создать: <span tooltip-for="cover.half" title="cover.half">укрытие на половину</span> для 1-й панели; <span tooltip-for="cover.3quarters" title="cover.3quarters">укрытие на три четверти</span> для 2-й панелей; <span tooltip-for="cover.full" title="cover.full">полное укрытие</span> для 3-х и больше панелей. Однажды установленная панель не может быть убрана.
+</p><p>Каждая панель может выдержать до 400 фунтов за раз; если вес превышает этот лимит, то панель разбивается и исчезает. Остальные панели остаются на месте, даже если теперь находятся дальше, чем в 5 футах друг от друга. Вы можете укрепить панели, разместив их друг на друге и складывая их лимит веса вместе.
+</p><p>Ваши панели существуют до 10 минут. Вы можете убрать любое количество панелей действием. Вы должны окончить короткий отдых, чтобы использовать это умение снова.
+</p><br><h3 class="underlined"><span id='feature.create-constellation'>Создание созвездий</span></h3><p><em>7-й уровень, умение звездочёта
+</em></p><p>Когда окончите продолжительный отдых и толкование звёздных предзнаменований, выберите количество существ, равное вашему модификатору Харизмы. Вы создаёте магическую связь между этими существами и собой. Ваше Созвездие позволяет вам делиться некоторыми умениеями со всеми существами внутри него. Другие умения класса могут открывать вам дополнительные способы использования вашего Созвездия.
+</p><ul><li><strong>Гороскоп.</strong> Когда вы выдаёте Кость Гороскопа участнику Созвездия, все остальные участники Созвездия также получают её, если находятся в 30 футах от вас и могут вас слышать. Они не могут иметь более 1 кости за раз.
+</li><li><strong>Исцеление.</strong> Если вы используете заклинание или умение Звездочёта для восстановления хитов участнику Созвездия, все остальные его участники (включая вас) в пределах 30 футов от вас восстанавливают количество хитов равное вашему модификатору Харизмы.
+</li></ul><br><h3 class="underlined"><span id='feature.stellar-corona'>Звёздная корона</span></h3><p><em>13-й уровень, умение звездочёта
+</em></p><p>Вы можете накладывать заклинание <a href="../../../spells/501-crown_of_stars/index.html" target="_blank">корона звёзд [crown of stars]</a>  как заклинание 7-го уровня не тратя ячейку заклинаний. Вы должны окончить продолжительный отдых прежде, чтобы использовать это умение снова.
+</p><br><h3 class="underlined"><span id='feature.supernova'>Сверхновая звезда</span></h3><p><em>15-й уровень, умение звездочёта
+</em></p><p>Вы можете накладывать заклинание <a href="../../../spells/330-sunburst/index.html" target="_blank">солнечный ожог [sunburst]</a> не тратя ячейку заклинаний. Вы должны окончить продолжительный отдых прежде, чтобы использовать это умение снова.
+</p><br><h3 class="underlined"><span id='feature.black-hole'>Чёрная дыра</span></h3><p><em>17-й уровень, умение звездочёта
+</em></p><p>Вы можете накладывать заклинание <a href="../../../spells/2453-dark_star/index.html" target="_blank">тёмная звезда [dark star]</a> не тратя ячейку заклинаний. Вы должны окончить продолжительный отдых прежде, чтобы использовать это умение снова.
+</p><br><h3 class="underlined"><span id='feature.conjunction'>Связь</span></h3>
+<p><em>18-й уровень, умение звездочёта
+</em></p><p>Получаете поддержку Карты Звёздного Неба — 13-го Зодиака, чей символ это распутье. Ваша связь наделяет вас небольшим даром: вы получаете преимущества от обоих преимуществ «Воплощения Зодиака каждый день. Когда вы выбираете, какой зодиакальный знак призвать после продолжительного отдыха, вы можете использовать и «Аспект», и «Воплощение».
+</p><br><h3 class="underlined"><span id='feature.wish-upon-a-star'>Звезда желаний</span></h3><p><em>20-й уровень, умение звездочёта
+</em></p><p>Вы можете собрать всю силу небесных тел для исполнения желания. Вы можете накладывать заклинание <a href="../../../spells/124-wish/index.html" target="_blank">исполнение желаний [wish]</a>  не тратя ячейку заклинаний. Вы должны окончить продолжительный отдых прежде, чтобы использовать это умение снова.
+</p><div class="additionalInfo"><h3 class="smallSectionTitle">Будь осторожен со своими желаниями
+</h3><p>Мастерам настоятельно рекомендуется давать звездочётам возможность восстанавливать использование финального умения класса через определённый промежуток времени, вместо того, чтобы ограничивать доступ к её использованию. В зависимости от вашей кампании, восстановление может занять месяц или даже год. Подумайте об ограничении масштабов желания, чтобы оправдать наложенный штраф.</p></div>
+
+<h2 class="bigSectionTitle hide-next hide-next-h2"><span id='asterisms'>Астеризмы</span></h2><div class="hide-wrapper">
+
+<h3 class="underlined">Астеризмы 2-го уровня
+
+</h3><h4 class="smallSectionTitle">Абсолютный ноль
+</h4><p>Вы можете неограниченно накладывать заклинание <a href="../../../spells/59-armor_of_agathys/index.html" target="_blank">доспех Агатиса [armor of Agathys]</a> как заклинание 1-го уровня, не тратя ячейки заклинаний.
+</p><h4 class="smallSectionTitle">Вестник космоса
+</h4><p>Вы можете неограниченно накладывать заклинание <a href="../../../spells/248-find_familiar/index.html" target="_blank">поиск фамильяра [find familiar]</a>, не тратя ячейки заклинаний и материальные компоненты. Накладывая заклинание таким образом, фамильяр будет состоять из звёздного света, т.е. будет обладать иммунитетом ко всему урону, кроме урона силовым полем. Вы должны окончить продолжительный отдых, чтобы использовать этот Астеризм снова.
+</p><h4 class="smallSectionTitle">Горизонт событий 
+</h4><p><em>Требование: заговор <a href="../../spells/7282-photon/index.html" target="_blank">фотон [photon]</a></em></p><p>Один раз на каждом из ваших ходов, когда вы попадаете по существу <a href="../../spells/7282-photon/index.html" target="_blank">фотоном [photon]</a>, вы можете притянуть его на 10 футов к себе.
+</p><h4 class="smallSectionTitle">Звёздная пыль
+</h4><p>Вы можете неограниченно накладывать заклинание <a href="../../../spells/207-faerie_fire/index.html" target="_blank">огонь фей [faerie fire]</a>, не тратя ячейки заклинаний.
+</p><h4 class="smallSectionTitle">Лунная гравитация
+</h4><p>Вы можете неограниченно накладывать заклинание <a href="../../../spells/223-feather_fall/index.html" target="_blank">падение пёрышком [feather fall]</a> как заклинание 1-го уровня, не тратя ячейки заклинаний.
+</p><h4 class="smallSectionTitle">Падающая звезда 
+</h4><p><em>Требование: заговор «Фотон»
+</em></p><p>Когда вы накладываете заговор <a href="../../spells/7282-photon/index.html" target="_blank">фотон [photon]</a>, добавьте модификатор Харизмы к урону, причиняемому при попадании.
+</p><h4 class="smallSectionTitle">Полярная звезда
+</h4><p>Пока вы можете видеть ночное небо, вы знаете в точности, где находитесь и в какой стороне расположены знакомые вам места. Ваша команда не может заблудиться, если это не вызвано магическим вмешательством.
+</p><h4 class="smallSectionTitle">Секреты мироздания
+</h4><p>Вы можете неограниченно накладывать заклинание <a href="../../../spells/195-detect_magic/index.html" target="_blank">обнаружение магии [detect magic]</a>, не тратя ячейки заклинаний.
+</p><h4 class="smallSectionTitle">Солнечная вспышка
+</h4><p>Действием вы можете развеять любую магическую тьму в радиусе 30 футов вокруг себя. Кроме того, каждое враждебное существо в пределах 30 футов от вас должно совершить спасбросок Телосложения против Сл спасброска от ваших заклинаний. При провале враждебные существа получают урон излучением в размере 2к10 + ваш уровень звездочёта или половину урона при успехе. Существа, которые находятся за полным укрытием от вас, не получают урон. Вы должны окончить продолжительный отдых, чтобы использовать этот Астеризм снова.</p><br>
+
+<h3 class="underlined">Астеризмы 3-го уровня
+</h3><h4 class="smallSectionTitle">Астрология</h4>
+<p><em>Требование: 3-й уровень
+</em></p><p>Вы можете телепатически общаться с вашим Зодиакальным духом, а также воспринимать мир его чувствами, пока вы находитесь на одном Плане существования. Кроме того, пока вы воспринимаете мир чувствами духа, вы также можете говорить через него своим голосом.
+</p><h4 class="smallSectionTitle">Взор утренней звезды
+</h4><p><em>Требование: 3-й уровень
+</em></p><p>Вы научились видеть сквозь тьму бездны. Вы можете нормально видеть в немагической <span tooltip-for="light.darkness" title="light.darkness">темноте </span>на расстоянии 120 футов.
+</p><p>Действием вы можете наделить преимуществом от этого умения согласное существо, которое можете видеть в пределах 10 футов от вас. Такое <span tooltip-for="vision.darkvision" title="vision.darkvision">тёмное зрение</span> длится 1 час. Вы должны окончить короткий или продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><p><strong>Созвездие.</strong> Когда вы наделяете этим преимуществом участника созвездия, все остальные участники созвездия также получают это преимущество, если находятся в пределах 10 футов от вас в этот момент.
+</p>
+
+<h4 class="smallSectionTitle">Затмение</h4>
+<p><em>Требование: 3-й уровень
+</em></p><p>Вы можете наложить заклинание <span tooltip-for="light.darkness" title="light.darkness">тьма</span>, не тратя ячейки заклинаний. Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><h4 class="smallSectionTitle">Звёздный меч
+</h4><p><em>Требование: 3-й уровень
+</em></p><p>Вы можете наложить заклинание <a href="../../../spells/153-magic_weapon/index.html" target="_blank">магическое оружие [magic weapon]</a>, используя ячейку заклинаний звездочёта. Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><h4 class="smallSectionTitle">Пучины бездны
+</h4><p><em>Требование: 3-й уровень
+</em></p><p>Вы можете наложить заклинание <a href="../../../spells/45-blindness_deafness/index.html" target="_blank">глухота/слепота [blindness/deafness]</a>  как заклинание 2-го уровня, чтобы <span tooltip-for="condition.blinded" title="condition.blinded">ослепить </span>или <span tooltip-for="condition.deafened" title="condition.deafened">оглушить </span>существо, не тратя ячейки заклинаний. Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><h4 class="smallSectionTitle">Усиленное воплощение
+</h4><p><em>Требование: 3-й уровень
+</em></p><p>Каждый раз, когда вы восстанавливаете хиты, пока ваш Зодиакальный дух призван и находится в пределах 100 футов от вас, считайте каждый бросок костей, совершённый для восстановления хитов, максимальным.
+</p><h4 class="smallSectionTitle">Щедрый аспект
+</h4><p><em>Требование: 3-й уровень
+</em></p><p>Когда вы используете Аспект умения «Призыв зодиака», вы можете воспользоваться им ещё раз. Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.</p><br><h3 class="underlined">Астеризмы 5-го уровня
+</h3><h4 class="smallSectionTitle">Дар воды
+</h4><p><em>Требование: 5-й уровень, трин воды
+</em></p><p>Участники Созвездия получают скорость плавания равную их скорости ходьбы, а также могут дышать под водой, если находятся в пределах 60 футов от вас.
+</p><h4 class="smallSectionTitle">Дар воздуха
+</h4><p><em>Требование: 5-й уровень, трин воздуха
+</em></p><p>Участники Созвездия могут добавить половину модификатора вашей базовой характеристики округленной в меньшую сторону (минимум 1) к их броскам Инициативы, если находятся в пределах 60 футов от вас.
+</p><h4 class="smallSectionTitle">Дар земли</h4>
+<p><em>Требование: 5-й уровень, трин земли
+</em></p><p>Участники Созвездия игнорируют труднопроходимую местность, если находятся в пределах 60 футов от вас.
+</p><h4 class="smallSectionTitle">Дар огня
+</h4><p><em>Требование: 5-й уровень, трин огня
+</em></p><p>Если участники Созвездия находятся в пределах 60 футов от вас, они совершают спасброски от очарования и испуга с преимуществом.
+</p><h4 class="smallSectionTitle">Звёздная кара
+</h4><p><em>Требование: 5-й уровень, заговор <a href="../../spells/7282-photon/index.html" target="_blank">фотон [photon]</a></em></p><p>Один раз на каждом из ваших ходов, когда вы попадаете по существу Фотоном, вы можете потратить ячейку заклинаний Звездочёта, чтобы нанести дополнительный 1к8 урона излучением, а также дополнительно 1к8 урона за каждый уровень ячейки заклинания. Цель должна преуспеть в спасброске Телосложения против вашей Сл ваших заклинаний, иначе будет ошеломлена до конца своего следующего хода.
+</p><h4 class="smallSectionTitle">Лунатик</h4>
+<p><em>Требование: 5-й уровень
+</em></p><p>Вы можете наложить заклинание <a href="../../../spells/473-enemies_abound/index.html" target="_blank">изобилие врагов [enemies abound]</a>, используя ячейку заклинаний звездочёта. Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><h4 class="smallSectionTitle">Метеоритный удар
+</h4><p><em>Требование: 5-й уровень
+</em></p><p>Пока ваш Зодиакальный дух призван, он добавляет ваш модификатор Харизмы (минимум +1) к своим броскам атаки и урона.	
+</p><br><h3 class="underlined">Астеризмы 7-го уровня
+</h3><h4 class="smallSectionTitle">Ведомый звёздами
+</h4><p><em>Требование: 7-й уровень
+</em></p><p>Если вам или участнику вашего Созвездия в пределах 30 футов от вас выпала «1» при броске атаки, проверке характеристик или при спасброске, вы можете реакцией перебросить кость; вы должны использовать новый результат. Вы должны окончить короткий или продолжительный отдых, чтобы использовать этот Астеризм снова.
+</p><h4 class="smallSectionTitle">Вечный пульсар
+</h4><p><em>Требование: 7-й уровень, трин огня
+</em></p><p>Если вы успешно используете умение «Пульсар», до конца вашего следующего хода все участники Созвездия совершают следующий бросок атаки против вашей цели.
+</p><h4 class="smallSectionTitle">Восстанавливающая туманность
+</h4><p><em>Требование: 7-й уровень, трин воды
+</em></p><p>Когда вы используете умение «Исцеляющая туманность», чтобы исцелить участника Созвездия, это существо восстанавливает дополнительные хиты в размере, равном вашему модификатору Харизмы.
+</p><h4 class="smallSectionTitle">Единый барьер
+</h4><p><em>Требование: 7-й уровень, трин земли
+</em></p><p>Используя умение «Барьер звёздного света», вы можете поделиться им с существами из вашего Созвездия в пределах 30 футов от вас. Распределите общее количество барьеров среди выбранных существ на своё усмотрение. Существа сохраняют барьер, даже если впоследствие покинут радиус действия.
+</p><h4 class="smallSectionTitle">Обсерватория
+</h4><p><em>Требование: 7-й уровень, трин воздуха
+</em></p><p>Вы можете использовать умение «Предначертано звёздами» на существах в радиусе 30 футов, если целью является участник Созвездия или если участник Созвездия находится в пределах 30 футов от цели. Для использования этого Астеризма вы должны видеть и цель, и участника Созвездия.
+</p><br><h3 class="underlined">Астеризмы 9-го уровня
+</h3><h4 class="smallSectionTitle">Бескрайняя туманность
+</h4><p><em>Требование: 9-й уровень, трин воды
+</em></p><p>Вы получаете дополнительное использование умения «Исцеляющая туманность». Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><h4 class="smallSectionTitle">Могучий пульсар
+</h4><p><em>Требование: 9-й уровень, трин огня
+</em></p><p>Используя умение «Пульсар», вы можете наложить заклинание <a href="../../../spells/178-guiding_bolt/index.html" target="_blank">направляющий снаряд [guiding bolt]</a>, как если бы это было заклинание 3-го уровня.
+</p><h4 class="smallSectionTitle">Планетарий</h4>
+<p><em>Требование: 9-й уровень, трин воздуха
+</em></p><p>Вы получаете дополнительное использование умения«Предначертано звёздами». Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><h4 class="smallSectionTitle">Пораженный звездой
+</h4><p><em>Требование: 9-й уровень, трин земли
+</em></p><p>Если вы или участник Созвездия уже получили преимущество от умения «Барьер звёздного света», вы можете действием рассеять барьер у этого существа и направить звёздный свет на другое существо, которое вы можете видеть в пределах 100 футов от вас. Цель должна преуспеть в спасброске против вашей Сл заклинаний или будет ошеломлена до конца её следующего хода.</p><br><h3 class="underlined">Астеризмы 12-го уровня
+</h3><h4 class="smallSectionTitle">Антиматерия</h4>
+<p><em>Требование: 12-й уровень
+</em></p><p>Вы можете наложить заклинание <a href="../../../spells/475-life_transference/index.html" target="_blank">передача жизни [life transference]</a>, используя ячейку заклинаний звездочёта. Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><h4 class="smallSectionTitle">Большой крест
+</h4><p><em>Требование: 12-й уровень
+</em></p><p>Когда вы узнаёте этот астеризм, вы можете выбрать один Знак зодиака из другого трина. Вы можете использовать Аспект этого Знака дважды. Вы восстанавливаете все использования после того, как окончите продолжительный отдых. Вы можете изучить этот астеризм несколько раз; каждый раз выбирайте новый Зодиакальный знак.
+</p>
+
+<h4 class="smallSectionTitle">Гнев звёзд</h4>
+<p><em>Требование: 12-й уровень
+</em></p><p>Ваш Зодиакальный дух может совершать атаку бонусным действием.
+</p>
+
+<h4 class="smallSectionTitle">Четверокнижие</h4>
+<p><em>Требование: 12-й уровень
+</em></p><p>Чтобы сотворить заклинание как ритуал, вы тратите 1 минуту, а не 10 минут.
+</p><br>
+
+<h3 class="underlined">Астеризмы 15-го уровня
+</h3>
+
+<h4 class="smallSectionTitle">Полутень</h4>
+<p><em>Требование: 15-й уровень
+</em></p><p>Вы можете неограниченно накладывать заклинание <a href="../../../spells/8-pass_without_trace/index.html" target="_blank">бесследное передвижение [pass without trace]</a>, не тратя ячейки заклинаний.
+</p>
+
+<h4 class="smallSectionTitle">Равноденствие
+</h4><p><em>Требование: 15-й уровень
+</em></p><p>Вы можете позволить себе и участникам своего Созвездия, которые находятся в пределах 30 футов от вас, получить преимущества от короткого отдыха, потратив всего 10 минут. Вы должны окончить продолжительный отдых, чтобы использовать этот Астеризм снова.
+</p>
+
+<h4 class="smallSectionTitle">Тёмная материя
+</h4><p><em>Требование: 15-й уровень
+</em></p><p>Вы можете неограниченно накладывать заклинание <a href="../../../spells/183-invisibility/index.html" target="_blank">невидимость [invisibility]</a>, не тратя ячейки заклинаний и материальные компоненты.
+</p>
+
+<h4 class="smallSectionTitle">Червоточина</h4>
+<p><em>Требование: 15-й уровень
+</em></p><p>Вы можете наложить заклинание <a href="../../../spells/228-dimension_door/index.html" target="_blank">переносящая дверь [dimension door]</a>, используя ячейку заклинаний звездочёта. Вы должны окончить продолжительный отдых, чтобы использовать этот астеризм снова.
+</p><p><strong>Созвездие.</strong> Вы можете перенести с собой любых участников Созвездия, если они согласны и находятся в пределах 5 футов от вас.</p>
+
+</div>
+
+<h2 class="bigSectionTitle hide-next hide-next-h2"><span id='spisok_zaklinanij_zvezdochjota'>Список заклинаний звездочёта</span></h2><div class="hide-wrapper"><p>Когда вы изучаете заклинание звездочёта, сверяйтесь со списком заклинаний ниже. Они организованы по уровню заклинаний, а не по уровню персонажа.</p>
+
+<table class="no_hover">
+<tbody>
+<tr class="table_header" colspan="9">
+<td colspan="6" style="text-align: center;">Список заклинаний</td>
+</tr>
+<tr class="table_header">
+<td style="text-align: center;">Заговор</td>
+<td style="text-align: center;">1-й уровень</td>
+<td style="text-align: center;">2-й уровень</td>
+<td style="text-align: center;">3-й уровень</td>
+<td style="text-align: center;">4-й уровень</td>
+<td style="text-align: center;">5-й уровень</td>
+</tr>
+<tr>
+<td><p><a href="../../../spells/71-friends/index.html" target="_blank">дружба [friends]</a></p><p><a href="../../../spells/26-mage_hand/index.html" target="_blank">волшебная рука [mage hand]</a></p><p><a href="../../../spells/741-encode_thoughts/index.html" target="_blank">кодировка мыслей [encode thoughts]</a></p><p><a href="../../../spells/154-minor_illusion/index.html" target="_blank">малая иллюзия [minor illusion]</a></p><p><a href="../../../spells/165-true_strike/index.html" target="_blank">меткий удар [true strike]</a></p><p><a href="../../../spells/234-dancing_lights/index.html" target="_blank">пляшущие огоньки [dancing lights]</a></p><p><a href="../../../spells/3050-mind_sliver/index.html" target="_blank">расщепление разума [mind Sliver]</a></p><p><a href="../../../spells/331-message/index.html" target="_blank">сообщение [message]</a></p><p><a href="../../../spells/332-resistance/index.html" target="_blank">сопротивление [resistance]</a></p><p><a href="../../../spells/105-guidance/index.html" target="_blank">указание  [guidance]</a></p><p><a href="../../../spells/91-prestidigitation/index.html" target="_blank">фокусы [prestidigitation]</a></p><p><a href="../../../spells/80-thaumaturgy/index.html" target="_blank" style="background-color: var(--color-dark-fade-05);">чудотворство [thaumaturgy]</a></p><p><a href="../../spells/7282-photon/index.html" target="_blank">фотон [photon]</a></p></td>
+
+<td>
+<p><a href="../../../spells/99-protection_from_evil_and_good/index.html" target="_blank">защита от зла и добра [protection from evil and good]</a>&nbsp;</p><p><a href="../../../spells/144-healing_word/index.html" target="_blank">лечащее слово [healing word]</a></p><p><a href="../../../spells/178-guiding_bolt/index.html" target="_blank">направляющий снаряд [guiding bolt]</a></p><p><a href="../../../spells/182-illusory_script/index.html" target="_blank">невидимое письмо [illusory script]</a></p><p><a href="../../../spells/182-illusory_script/index.html" target="_blank"></a><a href="../../../spells/195-detect_magic/index.html" target="_blank" style="background-color: var(--color-dark-fade-05);">обнаружение магии [detect magic]</a><br></p><p><a href="../../../spells/210-identify/index.html" target="_blank">опознание [identify]</a></p><p><a href="../../../spells/401-absorb_elements/index.html" target="_blank">поглощение стихий [absorb elements]</a></p><p><a href="../../../spells/252-comprehend_languages/index.html" target="_blank">понимание языков [comprehend languages]</a></p><p><a href="../../../spells/2444-magnify_gravity/index.html" target="_blank">притяжение [magnify gravity]</a></p><p><a href="../../../spells/2444-magnify_gravity/index.html" target="_blank"></a><a href="../../../spells/306-color_spray/index.html" target="_blank" style="background-color: var(--color-dark-fade-05);">сверкающие брызги [color spray]</a><br></p><p><a href="../../../spells/313-alarm/index.html" target="_blank">сигнал тревоги [alarm]</a></p><p><a href="../../../spells/346-tenser___s_floating_disk/index.html" target="_blank">тензеров парящий диск [tenser’s floating disk]</a></p><p><a href="../../../spells/98-sleep/index.html" target="_blank">усыпление [sleep]</a></p><p><a href="../../../spells/465-ceremony/index.html" target="_blank">церемония [ceremony]</a></p><p><a href="../../../spells/70-shield/index.html" target="_blank">щит [shield]</a></p><br></td>
+
+<td><p><a href="../../../spells/8-pass_without_trace/index.html" target="_blank">бесследное передвижение [pass without trace]</a></p><a href="../../../spells/2445-fortune_s_favor/index.html" target="_blank">благословение удачи [fortune's favor]</a><br><a href="../../../spells/20-see_invisibility/index.html" target="_blank">видение невидимого [see invisibility]</a>
+<br><a href="../../../spells/31-phantasmal_force/index.html" target="_blank">воображаемая сила [phantasmal force]</a>
+<br><a href="../../../spells/40-augury/index.html" target="_blank">гадание [augury]</a>
+<br><a href="../../../spells/468-healing_spirit/index.html" target="_blank">исцеляющий дух [healing spirit]</a>
+<br><a href="../../../spells/139-levitate/index.html" target="_blank">левитация [levitate]</a>
+<br><a href="../../../spells/146-moonbeam/index.html" target="_blank">лунный луч [moonbeam]</a>
+<br><a href="../../../spells/155-lesser_restoration/index.html" target="_blank">малое восстановление [lesser restoration]</a>
+<br><a href="../../../spells/188-nystul_s_magic_aura/index.html" target="_blank">нистулова ложная аура [nystul's magic aura]</a><br><a href="../../../spells/391-skywrite/index.html" target="_blank">небесные письмена [skywrite]</a>
+<br><a href="../../../spells/183-invisibility/index.html" target="_blank">невидимость [invisibility]</a>
+<br><a href="../../../spells/192-zone_of_truth/index.html" target="_blank">область истины [zone of truth]</a>
+<br><a href="../../../spells/196-detect_thoughts/index.html" target="_blank">обнаружение мыслей [detect thoughts]</a>
+<br><a href="../../../spells/218-mirror_image/index.html" target="_blank">отражения [mirror image]</a>
+<br><a href="../../../spells/236-aid/index.html" target="_blank">подмога [aid]</a>
+<br><a href="../../../spells/349-silence/index.html" target="_blank">тишина [silence]</a>
+<br><a href="../../../spells/352-misty_step/index.html" target="_blank">туманный шаг [misty step]</a>
+<br><a href="../../../spells/102-calm_emotions/index.html" target="_blank">умиротворение [calm emotions]</a>
+<br><br></td>
+
+<td><a href="../../../spells/41-gaseous_form/index.html" target="_blank">газообразная форма [gaseous form]</a>
+<br><a href="../../../spells/44-hypnotic_pattern/index.html" target="_blank">гипнотический узор [hypnotic pattern]</a>
+<br><a href="../../../spells/47-hunger_of_hadar/index.html" target="_blank">голод Хадара [hunger of Hadar]</a>
+<br><a href="../../../spells/58-daylight/index.html" target="_blank">дневной свет [daylight]</a>
+<br><a href="../../../spells/472-catnap/index.html" target="_blank">дрёма [catnap]</a>
+<br><a href="../../../spells/106-protection_from_energy/index.html" target="_blank">защита от энергии [protection from energy]</a>
+<br><a href="../../../spells/132-counterspell/index.html" target="_blank">контрзаклинание [counterspell]</a>
+<br><a href="../../../spells/152-magic_circle/index.html" target="_blank">магический круг [magic circle]</a>
+<br><a href="../../../spells/161-blink/index.html" target="_blank">мерцание [blink]</a>
+<br><a href="../../../spells/185-nondetection/index.html" target="_blank">необнаружимость [nondetection]</a>
+<br><a href="../../../spells/219-glyph_of_warding/index.html" target="_blank">охранная руна [glyph of warding]</a>
+<br><a href="../../../spells/249/index.html" target="_blank">полёт [fly]</a>
+<br><a href="../../../spells/256-sending/index.html" target="_blank">послание [sending]</a>
+<br><a href="../../../spells/285-bestow_curse/index.html" target="_blank">проклятие [bestow curse]</a>
+<br><a href="../../../spells/293-speak_with_dead/index.html" target="_blank">разговор с мёртвыми [speak with dead]</a>
+<br><a href="../../../spells/301-dispel_magic/index.html" target="_blank">рассеивание магии [dispel magic]</a>
+<br><a href="../../../spells/2448-pulse_wave/index.html" target="_blank">силовая волна [pulse wave]</a>
+<br><a href="../../../spells/326-remove_curse/index.html" target="_blank">снятие проклятия [remove curse]</a>
+<br><a href="../../../spells/339-elemental_weapon/index.html" target="_blank">стихийное оружие [elemental weapon]</a>
+<br><a href="../../../spells/61-tongues/index.html" target="_blank">языки [tongues]</a>
+<br><br></td>
+
+<td><a href="../../../spells/477-sickening_radiance/index.html" target="_blank">болезненное сияние [sickening radiance]</a>
+<br><a href="../../../spells/116-banishment/index.html" target="_blank">изгнание [banishment]</a>
+<br><a href="../../../spells/128-mordenkainen_s_private_sanctum/index.html" target="_blank">кабинет Морденкайнена [mordenkainen's private sanctum]</a>
+<br><a href="../../../spells/142-leomund_s_secret_chest/index.html" target="_blank">леомундов потайной сундук [leomund's secret chest]</a>
+<br><a href="../../../spells/151-arcane_eye/index.html" target="_blank">магический глаз [arcane eye]</a>
+<br><a href="../../../spells/478-shadow_of_moil/index.html" target="_blank">облачение тени [shadow of Moil]</a>
+<br><a href="../../../spells/308-freedom_of_movement/index.html" target="_blank">свобода перемещения [freedom of movement]</a>
+<br><a href="../../../spells/325-confusion/index.html" target="_blank">смятение [confusion]</a>
+<br><a href="../../../spells/2449-gravity_sinkhole/index.html" target="_blank">центр притяжения [gravity sinkhole]</a>
+<br><a href="../../../spells/67-evard_s_black_tentacles/index.html" target="_blank">эвардовы чёрные щупальца [evard's black tentacles]</a><br><br></td>
+
+<td><a href="../../../spells/19-dream/index.html" target="_blank">вещий сон  [dream]</a>
+<br><a href="../../../spells/484-far_step/index.html" target="_blank">далёкий шаг	 [far step]</a>
+<br><a href="../../../spells/115-legend_lore/index.html" target="_blank">знание легенд [legend lore]</a>
+<br><a href="../../../spells/119-modify_memory/index.html" target="_blank">изменение памяти [modify memory]</a>
+<br><a href="../../../spells/135-circle_of_power/index.html" target="_blank">круг силы [circle of power]</a>
+<br><a href="../../../spells/137-teleportation_circle/index.html" target="_blank">круг телепортации [teleportation circle]</a>
+<br><a href="../../../spells/176-scrying/index.html" target="_blank">наблюдение [scrying]</a>
+<br><a href="../../../spells/189-geas/index.html" target="_blank">обет [geas]</a>
+<br><a href="../../../spells/231-planar_binding/index.html" target="_blank">планарные узы [planar binding]</a>
+<br><a href="../../../spells/3066-summon_celestial/index.html" target="_blank">призыв духа небожителя [summon Celestial]</a>
+<br><a href="../../../spells/489-dawn/index.html" target="_blank">рассвет [dawn]</a>
+<br><a href="../../../spells/300-dispel_evil_and_good/index.html" target="_blank">рассеивание зла и добра [dispel evil and good]</a>
+<br><a href="../../../spells/309-contact_other_plane/index.html" target="_blank">связь с иным миром [contact other plane]</a>
+<br><a href="../../../spells/492-wall_of_light/index.html" target="_blank">стена света [wall of light]</a>
+<br><a href="../../../spells/494-skill_empowerment/index.html" target="_blank">усиление навыка [skill empowerment]</a>
+<br><br></td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 class="bigSectionTitle"><span id='stellar-trines'>Звёздные трины</span></h2>
+<p>Звездочеты могут стать союзниками самых могущественных существ, живущих среди звезд, каждое из которых соответствует разному знаку зодиака. Эти существа образуют трины, основанные на общей близости к первоэлементам, питающим их силу.</p><p>Как и в случае с большинством космических вещей, эти элементальные связи являются столь же метафорическими, сколь и буквальными.&nbsp;</p><p>
+
+</p><h2 class="bigSectionTitle hide-next hide-next-h2"><span id='trine.water'>Трин воды</span></h2><div class="hide-wrapper">
+
+<p>Те, кто связывает себя с трином Воды, используют наставления звезд, чтобы укреплять мирские отношения. Они пристально заботятся о своих ближних и уделяют много энергии на то, чтобы излечивать и поддерживать своих союзников. Тем не менее, их эмпатия может привести к иррациональности, и это беспокойство может перерасти в нужду в контроле. Чаще всего эти звездочеты так же эффективны в эмоциональных манипуляциях другими, как и в залечивании их ран. 
+</p><p>Зодиакальные Духи, которые принадлежат Трину Воды, используют в качестве своей базовой характеристики для накладывания заклинаний вашу Мудрость.
+</p><p>Вы узнаёте новые заговоры, которые не учитываются в списке известных заговоров, а также получаете дополнительные заклинания, когда достигаете определённого уровня в этом классе, как показано в таблице «Заклинания Трина Воды». Когда вы получаете такое заклинание, оно всегда считается подготовленным и не учитывается в списке заклинаний, которые вы подготавливаете каждый день.
+</p><h4 class="tableTitle">ЗАКЛИНАНИЯ ТРИНА ВОДЫ</h4>
+<table><tbody><tr class="table_header"><td>Уровень звездочёта</td><td>Заклинания</td></tr><tr><td>1-й</td><td>
+<a href="../../../spells/145-cure_wounds/index.html" target="_blank">лечение ран [cure wounds]</a>, <a href="../../../spells/414-shape_water/index.html" target="_blank">формование воды [shape water]</a>
+</td></tr>
+<tr><td>3-й</td><td>
+<a href="../../../spells/155-lesser_restoration/index.html" target="_blank">малое восстановление [lesser restoration]</a>
+</td></tr>
+<tr><td>5-й</td><td>
+<a href="../../../spells/24-revivify/index.html" target="_blank">возрождение [revivify]</a>
+</td></tr>
+<tr><td>7-й</td><td>
+<a href="../../../spells/377-watery_sphere/index.html" target="_blank">водяная сфера [watery sphere]</a> 
+</td></tr>
+<tr><td>9-й</td><td>
+<a href="../../../spells/39-greater_restoration/index.html" target="_blank">высшее восстановление [greater restoration]</a>
+</td></tr>
+</tbody></table><br>
+
+<h3 class="smallSectionTitle">Дополнительные владения</h3>
+<p><em>1-й уровень, умение трина воды
+</em></p><p>Когда вы выбираете этот трин на 1 уровне, вы получаете владение навыком Медицина, а также обучаетесь свободно говорить на Первичном языке.
+</p><br><h3 class="smallSectionTitle">Знак зодиака: Левиафан
+</h3><p><em>3-й уровень, умение трина воды
+</em></p><p>Вы получаете поддержку Левиафана — Зодиака,  чей символ это кит. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв Зодиака».
+</p><ul><li><strong>Дар. </strong>Вы получаете скорость плавания равную вашей скорости ходьбы, а также вы можете дышать под водой.
+</li><li><strong>Аспект. </strong>Быстрое течение. Вы можете реакцией переместить любое дружественное вам существо, которое можете видеть в пределах 30 футов, на расстояние вплоть до 10 футов в любом направлении. Вы можете использовать эту реакцию в ответ на любое враждебное действие. Прежде всего совершите это передвижение, так как оно может вывести цель из зоны вражеского воздействия. Если цель не согласна, это умение не оказывает никакого эффекта. Это перемещение не провоцирует атаки.
+</li><li><strong>Воплощение.</strong> Скользящий поток. Когда Зодиакальный Дух призван, он может бонусным действием телепортироваться на 15 футов.
+</li></ul><br><h3 class="smallSectionTitle">Сияющий дух
+</h3><p><em>6-й уровень, умение трина воды
+</em></p><p>Когда вы призываете Зодиакальный Дух, его атаки считаются магическими в том случае, если нужно преодолеть сопротивление или иммунитет к немагическим атакам и урону.
+</p><br><h3 class="smallSectionTitle">Исцеляющая туманность
+</h3><p><em>6-й уровень, умение трина воды
+</em></p><p>Бонусным действием вы можете создать ауру с 15-футовым радиусом. Вы можете создать туманность, которая восстанавливает количество хитов, равное вашему уровню звездочёта каждый раз, когда существо, которое вы видите и которое попадает под ауру в первый раз в свой ход или начинает его в ней (не требуется действие). Туманность не может лечить, если у существа 0 хитов, а также если это Конструкт или Нежить.
+</p><p>Туманность может восстанавливать хиты количество раз, равное 1 + модификатор вашей базовой характеристики (минимум 2 раза). После лечения такого количества раз, после 1 минуты или если вы теряете концентрацию (также, как если бы это было заклинание), туманность заканчивается.
+</p><p>Вы можете использовать это умение количество раз, равное вашему бонусу мастерства. Вы восстанавливаете все использования после продолжительного отдыха.
+</p><br><h3 class="smallSectionTitle">Знак зодиака: Панацея
+</h3><p><em>10-й уровень, умение трина воды
+</em></p><p>Вы получаете поддержку Панацеи — Зодиака,  чей символ это кубок. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв зодиака».
+</p><ul><li><strong>Дар. </strong>Каждый раз, когда вы восстанавливаете хиты другому существу, вы получаете 5 временных хитов.
+</li><li><strong>Аспект.</strong> <em>Омоложение.</em> Каждый раз, когда вы используете заклинание или умение Звездочёта, чтобы восстановить хиты существу, вы можете дополнительно восстановить количество хитов, равное вашему модификатору Мудрости (минимум 1).
+</li><li><strong>Воплощение.</strong> <em>Стойкий.</em> Когда Зодиакальный Дух призван, он может реакцией стабилизировать существо с 0 хитов, которое он может видеть в пределах 60 футов.
+</li></ul><br><h3 class="smallSectionTitle">Знак зодиака: Наутилус
+</h3><p><em>14-й уровень, умение трина воды
+</em></p><p>Вы получаете поддержку Наутилуса — Зодиака,  чей символ это раковина. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв Зодиака».
+</p><ul><li><strong>Дар.</strong> Вы получаете сопротивление урону некротической энергией.
+</li><li><strong>Аспект.</strong> <em>Зеркальная раковина.</em> Когда враждебное существо, которое вы можете видеть в пределах 60 футов от вас, пытается наложить на участника Созвездия состояние <span tooltip-for="condition.blinded" title="condition.blinded">ослеплённый</span>, <span tooltip-for="condition.deafened" title="condition.deafened">оглохший</span>, <span tooltip-for="condition.frightened" title="condition.frightened">испуганный</span>, <span tooltip-for="condition.petrified" title="condition.petrified">окаменевший</span>, <span tooltip-for="condition.poisoned" title="condition.poisoned">отравленный</span> или <span tooltip-for="condition.stunned" title="condition.stunned">ошеломлённый</span>, вы можете реакцией заставить его повторно совершить спасбросок  против этого состояния. Вы также можете использовать эту реакцию, если участник Созвездия проваливает спасбросок, чтобы освободиться от одного из этих состояний. Если бросок успешен, враждебное существо, которое наложило это состояние, получает его же до конца его следующего хода. Если враждебному существу доступно «Легендарное сопротивление», оно может использовать его, чтобы избежать действия состояния, даже если оно не совершало спасбросок.
+</li><li><strong>Воплощение. </strong><em>Несокрушимый.</em> Когда Зодиакальный дух призван, он получает сопротивление немагическому дробящему, колющему и рубящему урону.</li></ul>
+</div>
+
+<h2 class="bigSectionTitle hide-next hide-next-h2"><span id='trine.air'>Трин воздуха</span></h2><div class="hide-wrapper" style="display: none;">
+<p>Звездочёты трина воздуха находятся в поиске истинного понимания космоса. В погоне за правдой они стремятся к рациональности, хотя они всё ещё обладают философской просвещённостью. Они не сомкнут глаз, пока не раскроют все секреты Вселенной. Некоторые считают, что эти Звездочёты холодные и отстранённые, но они редко способны разглядеть всю картину. В конце концов они способны быть такими же общительными и активными, как и другие.
+</p><p>Зодиакальные духи, которые принадлежат трину воздуха, используют в качестве своей базовой характеристики для накладывания заклинаний вашу Ловкость.
+</p><p>&nbsp;Вы узнаёте новые заговоры, которые не учитываются в списке известных заговоров, а также получаете дополнительные заклинания, когда достигаете определённого уровня в этом классе, как показано в таблице «Заклинания трина воздуха». Когда вы получаете такое заклинание, оно всегда считается подготовленным и не учитывается в списке заклинаний, которые вы подготавливаете каждый день.
+</p>
+<h4 class="tableTitle">ЗАКЛИНАНИЯ ТРИНА ВОЗДУХА</h4>
+
+<table><tbody><tr class="table_header"><td>Уровень звездочёт</td><td>Заклинания</td></tr><tr><td>1-й</td><td>
+<a href="../../../spells/184-unseen_servant/index.html" target="_blank">невидимый слуга [unseen servant]</a>, <a href="../../../spells/415-gust/index.html" target="_blank">шквал [gust]</a>
+</td></tr>
+<tr><td>3-й</td><td>
+<a href="../../../spells/40-augury/index.html" target="_blank">гадание [augury]</a>
+</td></tr>
+<tr><td>5-й</td><td>
+<a href="../../../spells/238-clairvoyance/index.html" target="_blank">подсматривание [clairvoyance]</a>
+</td></tr>
+<tr><td>7-й</td><td>
+<a href="../../../spells/266-divination/index.html" target="_blank">предсказание [divination]</a>
+</td></tr>
+<tr><td>9-й</td><td>
+<a href="../../../spells/160-rary_s_telepathic_bond/index.html" target="_blank">ментальная связь Рэри [rary's telepathic bond]</a>
+</td></tr>
+</tbody></table>
+
+<h3 class="smallSectionTitle">Дополнительные владения
+</h3><p><em>1-й уровень, умение трина воздуха
+</em></p><p>Вы получаете владение навыком <span tooltip-for="skill.investigation" title="skill.investigation">Расследование</span>, а также обучаетесь свободно говорить на Небесном языке.
+</p><br><h3 class="smallSectionTitle">Знак зодиака: Мудрец
+</h3><p><em>3-й уровень, умение трина воздуха
+</em></p><p>Вы получаете поддержку Мудреца — Зодиака, чей символ это книга. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв зодиака».
+</p><ul><li><strong>Дар. </strong>Выберите один навык, которым владеете. Ваш бонус мастерства удваивается при проверке характеристик с использованием этого навыка.
+</li><li><strong>Аспект.</strong> <em>Скрытые мысли. </em>Вы можете накладывать заклинание <a href="../../../spells/196-detect_thoughts/index.html" target="_blank">обнаружение мыслей [detect thoughts]</a>, не тратя ячейку заклинаний.
+</li><li><strong>Воплощение.</strong> <em>Консультация.</em> Когда Зодиакальный дух призван, он может действием дать существу, которое может видеть в пределах 30 футов от себя, владение любым навыком на ваш выбор на 1 минуту.
+</li></ul><br><h3 class="smallSectionTitle">Сияющий дух
+</h3><p><em>6-й уровень, умение трина воздуха
+</em></p><p>Когда вы призываете Зодиакальный дух, его атаки считаются магическими в том случае, если нужно преодолеть сопротивление или иммунитет к немагическим атакам и урону.
+</p><br><h3 class="smallSectionTitle">Предначертано звёздами
+</h3><p><em>6-й уровень, умение трина воздуха
+</em></p><p>Когда закончите продолжительный отдых и толкование звёздных предзнаменований, бросьте к6. До тех пор, пока вы не окончите следующий продолжительный отдых, у вас есть доступ к особой реакции, основанной на выпавшем значении: чётном или нечётном.
+</p><ul><li><strong>Благо (чётное). </strong>Пока вы видите существо в пределах 30 футов от вас, которое собирается совершить бросок атаки, спасбросок или проверку характеристик, вы можете потратить свою реакцию, чтобы бросить к6 и добавить выпавшее значение к броску.
+</li><li><strong>Горе (нечётное).</strong> Пока вы видите существо в пределах 30 футов от вас, которое собирается совершить бросок атаки, спасбросок или проверку характеристик, вы можете потратить свою реакцию, чтобы бросить к6 и вычесть выпавшее значение к броску.
+</li></ul><p>Вы можете использовать эту реакцию количество раз, равное вашему бонусу мастерства, а также вы восстанавливаете все использования после продолжительного отдыха.
+</p><br><h3 class="smallSectionTitle">Знак зодиака: Двойник
+</h3><p><em>10-й уровень, умение трина воздуха
+</em></p><p>Вы получаете поддержку Двойника — Зодиака, чей символ это близнецы. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв зодиака».
+</p><ul><li><strong>Дар.</strong> Вы можете добавить ваш модификатор базовой характеристики к броску Инициативы.
+</li><li><strong>Аспект.</strong> <em>Момент просветления.</em> Если вы очарованы или испуганы, вы можете реакцией окончить одной из этих состояний.
+</li><li><strong>Воплощение. </strong><em>Дружеские узы. </em>Когда Зодиакальный дух призван, он может бонусным действием наложить заклинание <a href="../../../spells/218-mirror_image/index.html" target="_blank">отражения [mirror image]</a> на себя, не тратя ячейки заклинаний. Накладывая это заклинание таким образом, дух может создать только один двойник.
+</li></ul><br><h3 class="smallSectionTitle">Знак зодиака: Мир
+</h3><p><em>14-й уровень, умение трина воздуха
+</em></p><p>Вы получаете поддержку Мира — Зодиака, чей символ это сова. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв зодиака».
+</p><ul><li><strong>Дар. </strong>Вы можете настроиться одновременно на 4 <a href="../../../items/index.html" target="_blank">магических предмета</a>.
+</li><li><strong>Аспект.</strong> <em>Баланс. </em>Вы можете накладывать заклинание <a href="../../../spells/196-detect_thoughts/index.html" target="_blank">обнаружение мыслей [detect thoughts]</a>, не тратя ячейку заклинаний.
+</li><li><strong>Воплощение.<em> </em></strong><em>Победа над гравитацией.</em> Когда Зодиакальный дух призван, он получает  скорость полёта равную его скорости ходьбы.
+</li></ul>
+</div>
+
+<h2 class="bigSectionTitle hide-next hide-next-h2"><span id='trine.earth'>Трин земли</span></h2><div class="hide-wrapper" style="display: none;">
+<p>Звездочеты, опирающиеся на силы трина земли, как правило приземленны и практичны в своих подходах к жизни. Они служат защитой смертного мира против опасностей небес и хранителями очага и дома. Эти звездочеты вероятнее всего проведут жизнь, полную жертв, но их героизм могут вдохновить на легенды, что будут жить на протяжении веков. 
+</p><p>Зодиакальные Духи, которые принадлежат Трину Земли, используют в качестве своей базовой характеристики для накладывания заклинаний ваше Телосложение.
+</p><p>Вы узнаёте новые заговоры, которые не учитываются в списке известных заговоров, а также получаете дополнительные заклинания, когда достигаете определённого уровня в этом классе, как показано в таблице «Заклинания Трина Огня». Когда вы получаете такое заклинание, оно всегда считается подготовленным и не учитывается в списке заклинаний, которые вы подготавливаете каждый день.
+</p><h4 class="tableTitle">ЗАКЛИНАНИЯ ТРИНА ЗЕМЛИ
+</h4><table><tbody><tr class="table_header"><td>Уровень звездочёта</td><td>Заклинания</td></tr><tr><td>1-й</td><td>
+<a href="../../../spells/389-mold_earth/index.html" target="_blank">лепка земли [mold earth]</a>, <a href="../../../spells/69-shield_of_faith/index.html" target="_blank">щит веры [shield of faith]</a>
+</td></tr>
+<tr><td>3-й</td><td>
+<a href="../../../spells/74-barkskin/index.html" target="_blank">дубовая кора [barkskin]</a>
+</td></tr>
+<tr><td>5-й</td><td><a href="../../../spells/143-leomund_s_tiny_hut/index.html" target="_blank">Леомундова хижина [Leomund's tiny hut]</a>
+</td></tr>
+<tr><td>7-й</td><td>
+<a href="../../../spells/129-stoneskin/index.html" target="_blank">каменная кожа [stoneskin]</a> 
+</td></tr>
+<tr><td>9-й</td><td>
+<a href="../../../spells/130-wall_of_stone/index.html" target="_blank">каменная стена [wall of stone]</a>
+</td></tr>
+</tbody></table>
+
+<h3 class="smallSectionTitle">Дополнительные владения
+</h3><p><em>1-й уровень, умение трина земли
+</em></p><p>Вы получаете владение навыком <span tooltip-for="skill.athletics" title="skill.athletics">Атлетика</span>, а также получаете владение <a href="../../../articles/inventory/95-armor_and_shields/index.html#armor.medium" target="_blank">средними доспехами</a>.
+</p><br><h3 class="smallSectionTitle">Знак зодиака: Субтерра
+</h3><p><em>3-й уровень, умение трина земли
+</em></p><p>Вы получаете поддержку Субтерры — Зодиака,  чей символ это барсук. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв зодиака».
+</p><ul><li><strong>Дар.</strong> Вы игнорируете <span tooltip-for="terrain.difficult" title="terrain.difficult">труднопроходимую местность</span>.
+</li><li><strong>Аспект. </strong><em>Осведомлённость. </em>Вы можете бонусным действием дать себе <span tooltip-for="vision.blindsight" title="vision.blindsight">слепое зрение</span> в радиусе 10 футов на 1 минуту.
+</li><li><strong>Воплощение.</strong> <em>Страж.</em> Когда Зодиакальный дух призван, он может реакцией совершить провоцированную атаку по существу, которое находится в пределах досягаемости; если дух попадает по цели, её скорость передвижения снижается до 0 до конца хода.</li></ul><br><h3 class="smallSectionTitle">Сияющий дух
+</h3><p><em>6-й уровень, умение трина земли
+</em></p><p>Когда вы призываете Зодиакальный дух, его атаки считаются магическими в том случае, если нужно преодолеть сопротивление или иммунитет к немагическим атакам и урону.
+</p><br><h3 class="smallSectionTitle">Барьер звёздного света
+</h3><p><em>6-й уровень, умение трина земли
+</em></p><p>Ваша способность превращать звёздный свет в твёрдую материю помогает вам защищаться в битвах. Вы можете потратить бонусное действие, чтобы создать барьеры из полупрозрачного звездного света в количестве, вплоть до половины вашего уровня звездочёта (округленной в большую сторону).
+</p><p>У барьеров 10 хитов; каждый бросок атаки, который превосходит ваш Класс Доспеха, сначала причиняет урон барьеру, а потом вам. Если барьер уничтожен, весь избыточный урон переносится на следующий барьер или на вас, если это был последний. 
+</p><p>Барьеры действуют 10 минут. Вы можете использовать это умение количество раз, равное вашему бонусу мастерства, и вы восстанавливаете все использования после продолжительного отдыха.
+</p><br><h3 class="smallSectionTitle">Знак зодиака: Эвдемон
+</h3><p><em>10-й уровень, умение трина земли
+</em></p><p>Вы получаете поддержку Эвдемона — Зодиака,  чей символ это страж. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв зодиака».
+</p><ul><li><strong>Дар. </strong>Ваше максимальное количество хитов увеличено на 10, а также будет увеличиваться на 1 за каждый последующий уровень звездочёта.
+</li><li><strong>Аспект. </strong><em>Смещение. </em>Если по согласному существу, которое вы можете видеть в пределах 30 футов от вас, попадает атака, вы можете реакцией магическим образом поменяться с этим существом местами. В таком случае бросок атаки совершается против вас. Если существо не согласно, умение проваливается.
+</li><li><strong>Воплощение.</strong> <em>Жить, чтобы служить.</em> Когда Зодиакальный дух призван, он может использовать действие Помощь как бонусное действие.
+</li></ul><br><h3 class="smallSectionTitle">Знак зодиака: Арктос
+</h3><p><em>14-й уровень, умение трина земли
+</em></p><p>Вы получаете поддержку Арктоса — Зодиака, с чей символ это медведь. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв зодиака».
+</p><ul><li><strong>Дар.</strong> Ваш Класс Доспеха увеличен на 1.
+</li><li><strong>Аспект.</strong> <em>Толстая Шкура.</em> Если существо, которое вы видите, попадает по вам атакой, вы можете реакцией уменьшить полученный урон вдвое.
+</li><li><strong>Воплощение.</strong> <em>Вторжение.</em> Когда Зодиакальный дух призван и может видеть видеть существо, которое при помощи атаки причиняют урон в пределах 5 футов от него, дух может реакцией уменьшить получаемый урон цели на 1к10 + его модификатор Телосложения (минимум 0 урона).</li></ul>
+</div>
+
+<h2 class="bigSectionTitle hide-next hide-next-h2"><span id='trine.fire'>Трин огня</span></h2><div class="hide-wrapper" style="display: none;">
+<p>Звездочеты, относящиеся к Трину Огня, склонны быть самыми пылкими и изменчивыми. Их храбрость и сила несравненны, также как и их темперамент. Сила их личностей подпитывает огонь, бушующий на небесах. Звездочеты этого трина имеют наивысший разрушающий потенциал, что может привести их к путям ненависти и злости, если они не будут осторожны.
+</p><p>Зодиакальные духи, которые принадлежат Трину Огня, используют в качестве своей базовой характеристики для накладывания заклинаний вашу Силу.
+</p><p>Вы узнаёте новые заговоры, которые не учитываются в списке известных заговоров, а также получаете дополнительные заклинания, когда достигаете определённого уровня в этом классе, как показано в таблице «Заклинания трина огня». Когда вы получаете такое заклинание, оно всегда считается подготовленным и не учитывается в списке заклинаний, которые вы подготавливаете каждый день.
+</p><h4 class="tableTitle">ЗАКЛИНАНИЯ ТРИНА ОГНЯ</h4>
+
+<table><tbody><tr class="table_header"><td>Уровень звездочёта</td><td>Заклинания</td></tr><tr><td>1-й</td><td>
+<a href="../../../spells/1-hellish_rebuke/index.html" target="_blank">адское возмездие [hellish rebuke]</a>, <a href="../../../spells/374-control_flames/index.html" target="_blank">власть над огнём [control flames]</a>,
+</td></tr>
+<tr><td>3-й</td><td>
+<a href="../../../spells/298-heat_metal/index.html" target="_blank">раскалённый металл [heat metal]</a>
+</td></tr>
+<tr><td>5-й</td><td><a href="../../../spells/205-fireball/index.html" target="_blank">огненный шар [fireball]</a></td></tr>
+<tr><td>7-й</td><td>
+<a href="../../../spells/202-wall_of_fire/index.html" target="_blank">огненная стена [wall of fire]</a>
+</td></tr>
+<tr><td>9-й</td><td>
+<a href="../../../spells/181-flame_strike/index.html" target="_blank">небесный огонь [flame strike]</a> 
+</td></tr>
+</tbody></table><br>
+
+<h3 class="smallSectionTitle">Дополнительные владения
+</h3><p><em>1-й уровень, умение трина огня
+</em></p><p>Вы получаете владение навыком <span tooltip-for="skill.performance" title="skill.performance">Выступление</span>, а также получаете владение <a href="../../../articles/inventory/95-armor_and_shields/index.html#armor.medium" target="_blank">средними доспехами</a>.
+</p><br><h3 class="smallSectionTitle">Знак зодиака: Регул
+</h3><p><em>3-й уровень, умение трина огня
+</em></p><p>Вы получаете поддержку Регула — Зодиака, чей символ это лев. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв зодиака».
+</p><ul><li><strong>Дар.</strong> Вас нельзя <span tooltip-for="condition.frightened" title="condition.frightened">испугать</span>, и вы совершаете спасброски броски против <span tooltip-for="condition.charmed" title="condition.charmed">очарования </span>с преимуществом.
+</li><li><strong>Аспект.</strong> Сила Духа. Если вы или иное существо, которое вы можете видеть в пределах 30 футов от вас, совершаете проверку или спасбросок Харизмы, вы можете реакцией добавить свой модификатор Харизмы к выпавшему числу.
+</li><li><strong>Воплощение.</strong> <em>Львиный Рык.</em> Когда Зодиакальный Дух призван, он может бонусным действием заставить одно существо по вашему выбору, которое может слышать Духа, совершить спасбросок Мудрости. При провале цель становится испуганной на 1 минуту. Если существо находится более, чем на 30 футах от духа, оно может совершить повторный спасбросок Мудрости, чтобы окончить этот эффект. Это существо не может быть подвержено этому эффекту снова в течение следующих 24 часов.
+</li></ul><br><h3 class="smallSectionTitle">Сияющий дух
+</h3><p><em>6-й уровень, умение трина огня
+</em></p><p>Когда вы призываете Зодиакальный дух, его атаки считаются магическими в том случае, если нужно преодолеть сопротивление или иммунитет к немагическим атакам и урону.
+</p><br><h3 class="smallSectionTitle">Пульсар
+</h3><p><em>6-й уровень, умение трина огня
+</em></p><p>Ваша связь с пристрастиями вселенной позволяет вам направлять управлять силой могучего пульсара. Заклинание <a href="../../../spells/178-guiding_bolt/index.html" target="_blank">направляющий снаряд [guiding bolt]</a> считается для вас всегда подготовленным и не учитывается в списке подготовленных заклинаний.
+</p><p>Вы можете накладывать это заклинание как заклинание 1-го уровня, не тратя ячейки заклинаний. Вы можете использовать это умение таким образом количество раз, равное вашему бонусу мастерства. Все использования восстанавливаются после продолжительного отдыха.
+</p><br><h3 class="smallSectionTitle">Знак зодиака: Криос
+</h3><p><em>10-й уровень, умение трина огня
+</em></p><p>Вы получаете поддержку Криоса — Зодиака,  чей символ это овен. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв Зодиака».
+</p><ul><li><strong>Дар.</strong> Когда вы попадаете по существу заговором Фотон, вы можете оттолкнуть это существо на 5 футов по прямой от себя.
+</li><li><strong>Аспект.</strong> <em>Освобождение Пространства.</em> В можете действием заставить любых существ Большого размера или меньше в пределах 5 футов от вас совершить спасбросок Силы. При успехе вы отталкиваете их на 5 футов от себя; при провале вы можете оттолкнуть существ по прямой от себя на 5 × ваш модификатор Харизмы футов (минимум 5 футов) с того места, откуда их толкнули.
+</li><li><strong>Воплощение.</strong> <em>Удар головой.</em> Когда Зодиакальный дух призван, он может после совершения атаки, бонусным действием он может совершить Толчок. Это умение может оказывать  эффект на существ, которые до двух раз больше, чем lух. Дух добавляет ваш модификатор Харизмы для проверки Силы (<span tooltip-for="skill.athletics" title="skill.athletics">Атлетики</span>).
+</li></ul><br><h3 class="smallSectionTitle">Знак зодиака: Гандива
+</h3><p><em>14-й уровень, умение трина огня
+</em></p><p>Вы получаете поддержку Гандивы — Зодиака,  чей символ это лук. Ваша связь позволяет вам постоянно использовать Дар, а также использовать два варианта умения «Призыв pодиака».
+</p><ul><li><strong>Дар. </strong>Ваша скорость ходьбы увеличена на 5.
+</li><li><strong>Аспект.</strong> <em>Пылающая Стрела.</em> Вы можете бонусным действием совершить дальнобойную атаку заклинанием по существу, которое можете видеть в пределах 120 футов от вас. При попадании существо получает 4к10 урона огнём.
+</li><li><strong>Воплощение.</strong> <em>Поражающий Лук. </em>Когда Зодиакальный Дух призван, дальность его атак увеличивается на 20 × ваш модификатор Харизмы футов (минимум 20 футов).</li></ul>
+</div>
+<br>
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div><script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:565'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="3345"><div class="comment__entry comment__op comment__author-group-" data-id="3345" id="comment_3345">	<div class='comment__header'>
+			<a href='https://dnd.su/@vk-576471908' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@vk-576471908' class='profile__public-link profile__public-link-group-users comment__author-name'>Иван Картавенков</a></span> 
+	<div class="comment__age" title="20:45:16 01.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_3345" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Наконец-то достойный противник! Я ждал этого четыре, нет, пять тысяч лет! Наше сражение будет легендарным!
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="3359"><div class="comment__entry comment__op comment__author-group-" data-id="3359" id="comment_3359">	<div class='comment__header'>
+			<a href='https://dnd.su/@1412e3fc9eb6' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@1412e3fc9eb6' class='profile__public-link profile__public-link-group-users comment__author-name'>Стас Касплер</a></span> 
+	<div class="comment__age" title="04:53:19 02.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_3359" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Очередной колдун, только этот на порядок сильнее обычного. Серьёзно подумаете насчёт того чтобы добавлять в кампанию, не уверен что он сделает с балансом
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="10767" id="comment_10767">	<div class='comment__header'>
+			<a href='https://dnd.su/@398ff29e1e5f' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@398ff29e1e5f' class='profile__public-link profile__public-link-group-users comment__author-name'>02022005</a></span> 
+	<div class="comment__age" title="22:20:34 28.06.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_10767" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Я бы сказал, что слабее. Фотон слабее Мистического снаряда, нет выбора заклинаний на 10+ уровня — никакого аналога Таинственного арканума, способности нужно выбирать между аспектом и воплощением, и в принципе мало гибкости.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="31703" id="comment_31703">	<div class='comment__header'>
+			<a href='https://dnd.su/@34fdcf07f800' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@34fdcf07f800' class='profile__public-link profile__public-link-group-users comment__author-name'>Sekireon</a></span> 
+	<div class="comment__age" title="06:49:49 20.06.2025">9 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_31703" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		да и ко всему прочему, нету воззваний, согласен, есть баффы от трины, но и у колдуна от покравителя есть
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="3376"><div class="comment__entry comment__op comment__author-group-Модератор" data-id="3376" id="comment_3376">	<div class='comment__header'>
+			<a href='https://dnd.su/@dream' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/b58b548d57eabfbc468c02cea2aaaa92.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@dream' class='profile__public-link profile__public-link-group-moderators comment__author-name'>Dream</a></span> 
+	<div class="comment__age" title="13:46:47 02.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_3376" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Как по мне это просто странная версия колдуна, но с рескином. Я не знаю зачем это сделали в форме класса, если можно было бы уместить в Архетипе Колдуна.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="3399"><div class="comment__entry comment__op comment__author-group-" data-id="3399" id="comment_3399">	<div class='comment__header'>
+			<a href='https://dnd.su/@28ac99c130' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@28ac99c130' class='profile__public-link profile__public-link-group-users comment__author-name'>Авдеевский Паладин</a></span> 
+	<div class="comment__age" title="03:02:46 03.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_3399" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Посоветуйтесь со своим мастером (лечащим врачом).
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="3412"><div class="comment__entry comment__op comment__author-group-" data-id="3412" id="comment_3412">	<div class='comment__header'>
+			<a href='https://dnd.su/@vk-408700250' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@vk-408700250' class='profile__public-link profile__public-link-group-users comment__author-name'>Герасим Новиков</a></span> 
+	<div class="comment__age" title="10:20:47 03.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_3412" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Бестолковый класс, адская смесь колдуна, барда и следопыта, только убогая. Поначалу я приятно удивился увидев весь этот "космический" стиль, но разочаровался увидев умения, это просто ослабленные версии умений колдуна. Этот класс спокойно можно было бы уместить в архетип колдуна, и в таком случае оно имело бы право на жизнь, а так...
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="3425"><div class="comment__entry comment__op comment__author-group-" data-id="3425" id="comment_3425">	<div class='comment__header'>
+			<a href='https://dnd.su/@4647d471130c' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@4647d471130c' class='profile__public-link profile__public-link-group-users comment__author-name'>Данил Дёмшин</a></span> 
+	<div class="comment__age" title="13:38:25 03.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_3425" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Дизбалансный ре скин колдуна. Безмысленен для наратива, а для механа интересен только с точки зрения упоротих билдов. Думаю из етой концепции можно было выжать больше.<br>Я читал етот клас до того как его добавили на ДнД су, в его более ранней версии, и тогда он все же был хуже. Но по моему он не должен стоять рядом с Егерем и Савантом.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="4190" id="comment_4190">	<div class='comment__header'>
+			<a href='https://dnd.su/@1412e3fc9eb6' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@1412e3fc9eb6' class='profile__public-link profile__public-link-group-users comment__author-name'>Стас Касплер</a></span> 
+	<div class="comment__age" title="11:57:36 14.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_4190" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Согласен, среди представленных хоумбрю классов многие сделаны как минимум интереснее в плане новых механик чем этот. Ожидал большего пока не начал читать
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="3767"><div class="comment__entry comment__op comment__author-group-" data-id="3767" id="comment_3767">	<div class='comment__header'>
+			<a href='https://dnd.su/@44ea71c885c6' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@44ea71c885c6' class='profile__public-link profile__public-link-group-users comment__author-name'>Scolo</a></span> 
+	<div class="comment__age" title="15:40:53 09.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_3767" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Обнаружил ошибку в переводе. Трины не меняют заклинательной характеристики, они позволяют использовать заклинательную характеристику Звездочета вместо названной характеристики у духа. Например Zodiac Spirits associated with the Water Trine use your spellcasting ability score in place of their Wisdom score.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="4682" id="comment_4682">	<div class='comment__header'>
+			<a href='https://dnd.su/@cd8fc19c4c' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/ac31379b9ced5ecf0c2fd192bd778bfd.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@cd8fc19c4c' class='profile__public-link profile__public-link-group-users comment__author-name'>Сега</a></span> 
+	<div class="comment__age" title="13:45:37 22.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_4682" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Я ещё заметил ошибку в тринах. Если посмотреть файл перевода от Монстров Эдны, там указаны другие уровни звездочёта для получения дополнительных заклинаний. Например, звездочет трина воздуха получает заклинание Гадание на 3 уровне, а не на 2 уровне, как указано здесь
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="5779"><div class="comment__entry comment__op comment__author-group-" data-id="5779" id="comment_5779">	<div class='comment__header'>
+			<a href='https://dnd.su/@Guardian' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/e2664ba246d306bf2f5baeb3f55a7e0d.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Guardian' class='profile__public-link profile__public-link-group-users comment__author-name'>Guardian</a></span> 
+	<div class="comment__age" title="16:28:41 06.04.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_5779" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		На самом деле класс очень криво переведён, у Трина воздуха последний знак зодиака частично дублирует первый. В "аспекте" одно и то же, хотя в оригинале нет, некоторые слова тоже непонятно написаны у некоторых способностей.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="5846"><div class="comment__entry comment__op comment__author-group-" data-id="5846" id="comment_5846">	<div class='comment__header'>
+			<a href='https://dnd.su/@0b70beb15ba8' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0b70beb15ba8' class='profile__public-link profile__public-link-group-users comment__author-name'>Archdruid</a></span> 
+	<div class="comment__age" title="15:54:42 07.04.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_5846" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Так всё-таки не понятно, он сильнее колдуна или это что-то вроде напарника?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="10768" id="comment_10768">	<div class='comment__header'>
+			<a href='https://dnd.su/@398ff29e1e5f' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@398ff29e1e5f' class='profile__public-link profile__public-link-group-users comment__author-name'>02022005</a></span> 
+	<div class="comment__age" title="22:21:20 28.06.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_10768" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Слабее. Это как минимум можно понять по слабому Фотону и отсутствию выбора заклов как в Таинственном аркануме.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="6174"><div class="comment__entry comment__op comment__author-group-" data-id="6174" id="comment_6174">	<div class='comment__header'>
+			<a href='https://dnd.su/@NEK333' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@NEK333' class='profile__public-link profile__public-link-group-users comment__author-name'>NEK333</a></span> 
+	<div class="comment__age" title="09:18:30 12.04.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_6174" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		То же самое, что и оригинальный колдун... Первые 4 уровня всë будет замечательно, но уже на 5+ он заставит игрока разочароваться в выборе класса. Такие же проблемы как и у оригинала, которые тянутся ещë с релиза 5е и никаких новых решений.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="8150"><div class="comment__entry comment__op comment__author-group-" data-id="8150" id="comment_8150">	<div class='comment__header'>
+			<a href='https://dnd.su/@7dec59638e91' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/c86001192dbf3631c285aae22f6e2e50.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@7dec59638e91' class='profile__public-link profile__public-link-group-users comment__author-name'>Ядвига Агрипинова</a></span> 
+	<div class="comment__age" title="21:59:21 15.05.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_8150" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		ааа, ребята, помогите, лучше его взять на компанию или колдуна? если последнего, то какого покровителя следует брать?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="9270" id="comment_9270">	<div class='comment__header'>
+			<a href='https://dnd.su/@c847ce1066' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/6ccee7e2bdb4ff256eaa48d12f08c747.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@c847ce1066' class='profile__public-link profile__public-link-group-users comment__author-name'>King_Nothing</a></span> 
+	<div class="comment__age" title="17:07:09 04.06.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_9270" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		1. Колдуна.<br>2. Зависит от того, какую роль ты будешь играть в пати - если хилер, то Небожителя; если ближник (или даже танк, что не бывает) - то Ведьмовской клинок; если дальник-дд - то все остальные архетипы к твоим услугам (разве только Бессмертный слабоват)
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="9654" id="comment_9654">	<div class='comment__header'>
+			<a href='https://dnd.su/@7dec59638e91' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/c86001192dbf3631c285aae22f6e2e50.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@7dec59638e91' class='profile__public-link profile__public-link-group-users comment__author-name'>Ядвига Агрипинова</a></span> 	<div class="comment__user-reply-user" data-reply-to="9270">
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_9270" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@c847ce1066' class='profile__public-link profile__public-link-group-users comment__replied-to'>King_Nothing</a>
+	<div class="comment__age" title="15:41:32 10.06.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_9654" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		спасибо❤
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="15130"><div class="comment__entry comment__op comment__author-group-" data-id="15130" id="comment_15130">	<div class='comment__header'>
+			<a href='https://dnd.su/@d177b54f41dd' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@d177b54f41dd' class='profile__public-link profile__public-link-group-users comment__author-name'>Link</a></span> 
+	<div class="comment__age" title="23:58:08 30.08.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_15130" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Странный клас для игрока, но нип получится забавный. Ябы отнасился к этому классу скорее как к списку советов  мастеру для создания интересного и нет пичного нипа в вашей компании.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="15839"><div class="comment__entry comment__op comment__author-group-" data-id="15839" id="comment_15839">	<div class='comment__header'>
+			<a href='https://dnd.su/@33296e7b3af6' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/27bc9aa814147bef2639daf5e461cc32.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@33296e7b3af6' class='profile__public-link profile__public-link-group-users comment__author-name'>Илья Раздомахин</a></span> 
+	<div class="comment__age" title="19:21:30 13.09.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_15839" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Зодиакальные духи, принадлежащие определённому Трину, используют в качестве своей базовой характеристики для накладывания заклинаний определённую характеристику. Это распроняется на заклинания, даваемые Трином или все заклинания Звездочёта?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="20283" id="comment_20283">	<div class='comment__header'>
+			<a href='https://dnd.su/@0849535e0f' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/fccc5b22cab51b7baf0ecc829bdb49c3.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0849535e0f' class='profile__public-link profile__public-link-group-users comment__author-name'>Каспар</a></span> 
+	<div class="comment__age" title="06:31:00 06.12.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_20283" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Я не знаю бро
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="17976"><div class="comment__entry comment__op comment__author-group-" data-id="17976" id="comment_17976">	<div class='comment__header'>
+			<a href='https://dnd.su/@pepemaster' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/c3069dad2140847ecf090dae7aafc427.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@pepemaster' class='profile__public-link profile__public-link-group-users comment__author-name'>pepemaster</a></span> 
+	<div class="comment__age" title="01:19:44 21.10.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_17976" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		навык 2 уровня скорее всего опечатка "pвездочёта" наверное имеется в виду "звездочёта"
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="21100"><div class="comment__entry comment__op comment__author-group-" data-id="21100" id="comment_21100">	<div class='comment__header'>
+			<a href='https://dnd.su/@b5c3e50c0c9a' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@b5c3e50c0c9a' class='profile__public-link profile__public-link-group-users comment__author-name'>WwFantom</a></span> 
+	<div class="comment__age" title="10:10:24 21.12.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_21100" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		А НЕ СЛИШКОМ ЛИ ЖИРНО ТЕБЕ, ИГРОК? ЭТО ЧО ЗА ИМБА? Хотя... в кампаниях с Дальним Пределом, или с богами неплохо...
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="21564"><div class="comment__entry comment__op comment__author-group-" data-id="21564" id="comment_21564">	<div class='comment__header'>
+			<a href='https://dnd.su/@1e7ccf4fcebb' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@1e7ccf4fcebb' class='profile__public-link profile__public-link-group-users comment__author-name'>foWLi</a></span> 
+	<div class="comment__age" title="14:09:42 01.01.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_21564" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Поясните пожалуйста про его ячейки заклинаний, непонятно написано
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="33568" id="comment_33568">	<div class='comment__header'>
+			<a href='https://dnd.su/@1fd62a53f8b3' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/1ae7812f5438b6972bd23f08c39eb31d.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@1fd62a53f8b3' class='profile__public-link profile__public-link-group-users comment__author-name'>Yrpchick</a></span> 
+	<div class="comment__age" title="13:12:51 29.07.2025">8 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_33568" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Работают также, как и у колдуна
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="22261"><div class="comment__entry comment__op comment__author-group-" data-id="22261" id="comment_22261">	<div class='comment__header'>
+			<a href='https://dnd.su/@kuromoriminetard' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/722a74ad5bff03ac3e6dadb614696549.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@kuromoriminetard' class='profile__public-link profile__public-link-group-users comment__author-name'>Махо Нишидзуми</a></span> 
+	<div class="comment__age" title="00:09:51 13.01.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_22261" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		по математике не особо, но мне он нравится больше чем колдун (ты не раб кого-то)
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="27383"><div class="comment__entry comment__op comment__author-group-" data-id="27383" id="comment_27383">	<div class='comment__header'>
+			<a href='https://dnd.su/@0cdedd846548' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0cdedd846548' class='profile__public-link profile__public-link-group-users comment__author-name'>MoonNoro</a></span> 
+	<div class="comment__age" title="12:12:57 05.04.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_27383" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		"Колдуны обладают следующими классовыми умениями." Я понимаю палиться, но не настолько же...
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="34703"><div class="comment__entry comment__op comment__author-group-" data-id="34703" id="comment_34703">	<div class='comment__header'>
+			<a href='https://dnd.su/@9ed1f7af75f8' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@9ed1f7af75f8' class='profile__public-link profile__public-link-group-users comment__author-name'>Виктор Мелеков</a></span> 
+	<div class="comment__age" title="14:24:20 23.08.2025">7 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_34703" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Доброе, класс очень сильный, такие фишки с ним можно будет делать, думаю должен зайти тем кто в игре ставит приоритет не по нанесению топ 1 урона.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="39648"><div class="comment__entry comment__op comment__author-group-" data-id="39648" id="comment_39648">	<div class='comment__header'>
+			<a href='https://dnd.su/@fc5b6891f817' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/5b716d571e2bdd590f0b9656c55b3e70.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@fc5b6891f817' class='profile__public-link profile__public-link-group-users comment__author-name'>ghjksad</a></span> 
+	<div class="comment__age" title="02:33:01 25.11.2025">4 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_39648" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		следопыт глупый
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="41082"><div class="comment__entry comment__op comment__author-group-" data-id="41082" id="comment_41082">	<div class='comment__header'>
+			<a href='https://dnd.su/@8294eafc9516' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/91a83d4b10eb6097b06d133a6b315339.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@8294eafc9516' class='profile__public-link profile__public-link-group-users comment__author-name'>The imaginary king</a></span> 
+	<div class="comment__age" title="19:51:05 19.12.2025">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_41082" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Ммм колдун с исполнением желаний
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="42473" id="comment_42473">	<div class='comment__header'>
+			<a href='https://dnd.su/@5e640a1999d3' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@5e640a1999d3' class='profile__public-link profile__public-link-group-users comment__author-name'>LelinSorc</a></span> 
+	<div class="comment__age" title="23:34:18 12.01.2026">2 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_42473" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Колдун гений также обладает желанием. В целом любой класс обладает желанием, кроме друида. Каждый фул кастер
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="45176"><div class="comment__entry comment__op comment__author-group-" data-id="45176" id="comment_45176">	<div class='comment__header'>
+			<a href='https://dnd.su/@0f169d794e4f' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/3b6366c0b7a71e144a8631a7ff08d671.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0f169d794e4f' class='profile__public-link profile__public-link-group-users comment__author-name'>Некромант Энжоер</a></span> 
+	<div class="comment__age" title="20:43:52 03.03.2026">1 месяц  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../articles/sandbox/565-stargazer/index.html#comment_45176" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Крайне сильный класс. Советую резать им владения или кость хитов
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+	 <div id="lightgallery">
+  <div data-src='/gallery/articles/565_1_1709472915.jpg' class='gallery-card shown' data-order='4' data-ref='articles:565:14443'>
+	<img src='../../../gallery/articles/565_1_1709472915_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1710182476.jpeg' class='gallery-card shown' data-order='4' data-ref='articles:565:14563'>
+	<img src='../../../gallery/articles/565_1_1710182476_s.jpeg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1710182490.jpg' class='gallery-card shown' data-order='4' data-ref='articles:565:14564'>
+	<img src='../../../gallery/articles/565_1_1710182490_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1714326875.jpg' class='gallery-card shown' data-order='4' data-ref='articles:565:15274'>
+	<img src='../../../gallery/articles/565_1_1714326875_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1714781742.jpg' class='gallery-card shown' data-order='4' data-ref='articles:565:15316'>
+	<img src='../../../gallery/articles/565_1_1714781742_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1715008812.png' class='gallery-card shown' data-order='4' data-ref='articles:565:15342'>
+	<img src='../../../gallery/articles/565_1_1715008812_s.png' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1719961240.jpg' class='gallery-card shown' data-order='4' data-ref='articles:565:15877'>
+	<img src='../../../gallery/articles/565_1_1719961240_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1722429864.jpeg' class='gallery-card shown' data-order='4' data-ref='articles:565:16124'>
+	<img src='../../../gallery/articles/565_1_1722429864_s.jpeg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_6_1723261787.jpg' class='gallery-card shown' data-order='4' data-ref='articles:565:16357'>
+	<img src='../../../gallery/articles/565_6_1723261787_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1757539438.jpg' class='gallery-card shown' data-order='4' data-ref='articles:565:18800'>
+	<img src='../../../gallery/articles/565_1_1757539438_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/565_1_1758289422.jpg' class='gallery-card shown' data-order='4' data-ref='articles:565:18840'>
+	<img src='../../../gallery/articles/565_1_1758289422_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  </div>
+	</section>
+
+    </section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../../articles/145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

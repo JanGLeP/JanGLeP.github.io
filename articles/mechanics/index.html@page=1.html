@@ -1,0 +1,779 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Игровые механики / Статьи D&D 5</title>
+	
+    <meta name="description" content="Статьи и руководства по механикам D&D 5-й редакции на русском языке." />
+    <meta name="keywords" content="dnd статьи механики,механики,игровые механики, днд статьи механики,механики,игровые механики, d&d статьи механики,механики,игровые механики, dnd 5 статьи механики,механики,игровые механики, днд 5 статьи механики,механики,игровые механики, d&d 5 статьи механики,механики,игровые механики, подземелья и драконы статьи механики,механики,игровые механики, dungeons and dragons статьи механики,механики,игровые механики" />
+    <meta property="og:title" content="Игровые механики / Статьи D&D 5" />
+    <meta property="og:description" content="Статьи и руководства по механикам D&D 5-й редакции на русском языке." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/articles/mechanics/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../ennin/rolltable.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='index.html'>Игровые механики</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/mechanics/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="index.html@page=1.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="index.html@page=1.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="index.html@page=1.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="index.html@page=1.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html@page=1.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Farticles%2Fmechanics%2F%3Fpage%3D1">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Farticles%2Fmechanics%2F%3Fpage%3D1">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Farticles%2Fmechanics%2F%3Fpage%3D1">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Farticles%2Fmechanics%2F%3Fpage%3D1">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html@page=1.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://vk.com/myriads_of_truths?partner=dnd.su" target="_blank" title="Мириады Истин" class="item_link_2 partner"><span class="sprite-partners__miriady partner-icon"></span>Мириады Истин</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCe_vCsHHRPT9XPVYDInQqqQ?partner=dnd.su" target="_blank" title="Sneaky Dice" class="item_link_2 partner"><span class="sprite-partners__sneaky_dice partner-icon"></span>Sneaky Dice</a></li><li class="item_level_2"><a href="https://vk.com/dice_scream?partner=dnd.su" target="_blank" title="Dice Scream (Самые северные стримы по ДнД, добро пожаловать к нам за стол!)" class="item_link_2 partner"><span class="sprite-partners__dice_scream partner-icon"></span>Dice Scream</a></li><li class="item_level_2"><a href="https://vk.com/rrules?partner=dnd.su" target="_blank" title="Random Rules (Random Rules I НРИ I Dungeons & Dragons)" class="item_link_2 partner"><span class="sprite-partners__rr partner-icon"></span>Random Rules</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCjMH-dz60Uh7VoZSO02PJPg?partner=dnd.su" target="_blank" title="EvilDice" class="item_link_2 partner"><span class="sprite-partners__evildice partner-icon"></span>EvilDice</a></li><li class="item_level_2"><a href="https://www.youtube.com/@DnDMultiverse?partner=dnd.su" target="_blank" title="DnD Multiverse (Мультивселенная Dungeons & Dragons)" class="item_link_2 partner"><span class="sprite-partners__dndmultiverse partner-icon"></span>DnD Multiverse</a></li><li class="item_level_2"><a href="https://youtube.com/@wermeron?partner=dnd.su" target="_blank" title="Wermeron (Дында на простом языке)" class="item_link_2 partner"><span class="sprite-partners__wermeron partner-icon"></span>Wermeron</a></li><li class="item_level_2"><a href="https://vk.com/ngdnd?partner=dnd.su" target="_blank" title="Заметки упыря (Короткие приключения | D&D)" class="item_link_2 partner"><span class="sprite-partners__ngdnd partner-icon"></span>Заметки упыря</a></li><li class="item_level_2"><a href="https://vk.com/livingroomstudio?partner=dnd.su" target="_blank" title="LivingRoomStudio" class="item_link_2 partner"><span class="sprite-partners__lrs partner-icon"></span>LivingRoomStudio</a></li><li class="item_level_2"><a href="https://vk.com/mastademic?partner=dnd.su" target="_blank" title="Мастер Демик (Мастер Демик. Разработка оффлайн инструментов для мастеров D&D)" class="item_link_2 partner"><span class="sprite-partners__master_helper partner-icon"></span>Мастер Демик</a></li><li class="item_level_2"><a href="https://discord.gg/RKzAhaQvBx?partner=dnd.su" target="_blank" title="20d20 | НРИ (Играем в НРИ, общаемся и строим сообщество, где каждый будет чувствовать себя как дома)" class="item_link_2 partner"><span class="sprite-partners__20d20 partner-icon"></span>20d20 | НРИ</a></li><li class="item_level_2"><a href="https://badmimic.com?partner=dnd.su" target="_blank" title="Сокровища Мимика (3D печать миниатюр)" class="item_link_2 partner"><span class="sprite-partners__treasuresmimic partner-icon"></span>Сокровища Мимика</a></li><li class="item_level_2"><a href="https://vk.com/twinsrpg?partner=dnd.su" target="_blank" title="Подземелья и Близняшки (Тащи рулбуки, всяк сюда входящий!)" class="item_link_2 partner"><span class="sprite-partners__twins partner-icon"></span>Подземелья и Близняшки</a></li><li class="item_level_2"><a href="https://boosty.to/strannoyemestechko?partner=dnd.su" target="_blank" title="Странное местечко (Переводы и озвучка)" class="item_link_2 partner"><span class="sprite-partners__sm partner-icon"></span>Странное местечко</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html@page=1.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='index.html'>Игровые механики</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+	            <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="index.html" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по игровым механикам" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+				<div class='paper-1 card card__group- typoable'  style="background-position:27% 0" data-id='article:151' data-typo-path='/articles/mechanics/151-madness/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Безумие"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../151-bezumie/index.html' itemprop='url' class='item-link'>Безумие [Madness]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>В обычных кампаниях персонажи не сходят с ума от ужасов, с которыми им доведётся встретиться, и ежедневной резни, но иногда стресс от такой жизни становится невыносимым. Если в вашей кампании прослеживается тема ужаса, вы можете использовать правила безумия, чтобы усилить эту тему, подчеркнув жуткий характер угроз, с которыми встречаются искатели приключений.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../151-bezumie/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:49% 0" data-id='article:485' data-typo-path='/articles/mechanics/485-bestiary/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Бестиарий"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='485-bestiary/index.html' itemprop='url' class='item-link'>Бестиарий [Bestiary]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Чудовище это любое существо, с которым можно взаимодействовать, сражаться и убить его. Даже безобидные лягушки или доброжелательные единороги попадают под определение «чудовище». Термин также применим к людям, эльфам, дварфам и другим цивилизованным народам, которые могут быть друзьями или противниками персонажей. Однако, большинство чудовищ в D&amp;D опасны, и их нужно остановить; это неистовые демоны, коварные дьяволы, высасывающая души нежить, призванные элементали. Список можно продолжать очень долго.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='485-bestiary/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:23% 0" data-id='article:143' data-typo-path='/articles/mechanics/143-piety/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Благоволение"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../143-piety/index.html' itemprop='url' class='item-link'>Благоволение [Piety]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Бытность поборником бога сама по себе не приносит никакой пользы. Каждое описание бога ниже также описывает типичного поборника бога, включая идеи о том, как персонаж игрока может оказаться в этой роли, и перечисляет идеалы, представляющие интересы бога.</p><p>Однако боги вознаграждают своих поборников за преданность. Сила вашей преданности своему богу измеряется вашим значением благоволения. Когда вы повышаете это значение, вы получаете благоволение от своего бога.
+</p><p>Благоволение не связано с верой или убеждениями, за исключением того, что мысли и идеалы личности побуждают её к действию в служении богу. Ваше значение благоволения отражает действия, которые вы совершили в служении своему божеству и которые оно щедро вознаграждает.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../143-piety/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:5% 0" data-id='article:150' data-typo-path='/articles/mechanics/150-diseases/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Болезни"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../150-bolezni/index.html' itemprop='url' class='item-link'>Болезни [Diseases]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Королевство может охватить чума, и искатели приключений отправятся на поиски лекарства. Герой выходит из древнего склепа, простоявшего закрытым несколько веков, и вскоре обнаруживает, что болен. Колдун оскорбляет тёмного владыку и заболевает странным недугом, распространяющимся, когда он накладывает заклинания.</p>
+<p>Простая болезнь может лишь немного подорвать ресурсы отряда, и может быть вылечена малым восстановлением. Более серьёзная болезнь может стать основой одного или нескольких приключений, в которых персонажи будут искать лекарство, останавливать распространение и бороться с последствиями.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../150-bolezni/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:64% 0" data-id='article:467' data-typo-path='/articles/mechanics/467-inspiration/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Вдохновение"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='467-inspiration/index.html' itemprop='url' class='item-link'>Вдохновение [Inspiration]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				Вдохновение это правило, позволяющее Мастеру награждать вас за хороший отыгрыш черт, идеалов, привязанностей и слабостей. Используя вдохновение, вы можете лучше изобразить сострадание к попрошайкам, получая преимущество в переговорах с Принцем Нищих. Или вдохновение может помочь в защите родной деревни, когда вы сопротивляетесь вредоносному заклинанию волшебника, который напал на неё.
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='467-inspiration/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:47% 0" data-id='article:146' data-typo-path='/articles/mechanics/146-supernatural-gifts-and-boons/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Дары всех мастей"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../146-dary_vseh_mastej/index.html' itemprop='url' class='item-link'>Дары всех мастей [Supernatural Gifts and Boons]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>В D&amp;D 5e существует множество таких вещей, как сверхъестественные дары. К сожалению, все они раскиданы по разным книгам, но в этой статье вы можете наблюдать абсолютно все дары, что когда-либо встречались в официальных источниках.</p>
+<p>За подготовку материала огромное спасибо <strong>Максиму Кудрявцеву</strong>.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../146-dary_vseh_mastej/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:3% 0" data-id='article:360' data-typo-path='/articles/mechanics/360-actions/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Действия"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='360-deystviya/index.html' itemprop='url' class='item-link'>Действия [Actions]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				Список действий, которые ваш персонаж может совершать.
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='360-deystviya/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:87% 0" data-id='article:159' data-typo-path='/articles/mechanics/159-downtime-activities/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Деятельность во время простоя"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../159-deyatelnost_vo_vremya_prikljucheniya/index.html' itemprop='url' class='item-link'>Деятельность во время простоя [Downtime activities]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Между походами в подземелья и сражениями с древним злом искателям приключений нужно время на отдых, восстановление и подготовку к следующим приключениям. Многие также используют это время для выполнения других задач, таких как создание оружия и доспехов, проведение исследований и трата заработанного золота.</p>
+<p>В некоторых случаях время проходит без примечательных событий. Начиная новое приключение, Мастер может просто объявить, что прошло такое-то количество времени, и позволить вам поверхностно описать, чем занимались ваши персонажи. Мастер может наоборот, пристально следить за потраченным временем, потому что параллельно этим событиям происходит что-то другое, невидимое вам.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../159-deyatelnost_vo_vremya_prikljucheniya/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:17% 0" data-id='article:200' data-typo-path='/articles/mechanics/200-food-drink-and-lodging/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Еда, напитки и постой"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='200-food-drink-and-lodging/index.html' itemprop='url' class='item-link'>Еда, напитки и постой [Food, Drink, and Lodging]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Когда искатели приключений не спускаются под землю, не исследуют старые руины и не отражают наступление тьмы, они сталкиваются с обычной жизнью. Даже в фантастическом мире у существ есть основные нужды, такие как потребность в крыше над головой, пропитании и одежде. Всё это стоит денег, хотя можно жить впроголодь, а можно и шикуя.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='200-food-drink-and-lodging/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:98% 0" data-id='article:157' data-typo-path='/articles/mechanics/157-spellcasting/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Использование заклинаний"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='157-ispolzovanie_zaklinanij/index.html' itemprop='url' class='item-link'>Использование заклинаний [Spellcasting]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Магия пронизывает миры D&amp;D, и чаще всего проявляется в виде заклинаний. В данной статье приводятся правила по использованию заклинаний. Персонажи разных классов по-разному изучают и подготавливают заклинания, чудовища тоже используют заклинания по-своему. Однако, какое бы происхождение не было у заклинания, оно подчиняется описанным ниже правилам.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='157-ispolzovanie_zaklinanij/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:96% 0" data-id='article:160' data-typo-path='/articles/mechanics/160-traps/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Ловушки"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../160-lovushki/index.html' itemprop='url' class='item-link'>Ловушки [Traps]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Ловушки можно найти практически где угодно. </p><p>Один неправильный шаг в древней гробнице — и из стен вылетят клинки, рассекающие и доспехи и кости. Невинные лианы, растущие над входом в пещеру, могут хватать и душить тех, кто хочет сквозь них пройти. Сеть, спрятанная под кронами деревьев, может упасть на проходящих под ней искателей приключений. В игре D&amp;D неосторожные искатели приключений могут упасть и разбиться, могут сгореть заживо, а могут стать мишенью для сотен отравленных дротиков.</p>
+<p>Ловушка может быть механической или магической по своей природе. В <strong>механические ловушки </strong>входят ямы, ловушки со стрелами, падающие глыбы, заполняющиеся водой комнаты, вращающиеся клинки и всё, что действует за счёт механизма. <strong>Магические ловушки</strong> это либо магические устройства, либо заклинания-ловушки.</p>
+<p>Магические устройства при активации генерируют эффект того или иного заклинания. Заклинания-ловушки это такие заклинания как <a href="../../spells/114-symbol/index.html" target="_blank">знак [symbol]</a> и <a href="../../spells/219-glyph_of_warding/index.html" target="_blank">охранные руны [glyph of warding]</a>, действующие подобно ловушкам.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../160-lovushki/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:52% 0" data-id='article:449' data-typo-path='/articles/mechanics/449-multiclassing/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Мультиклассирование"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='449-multiclassing/index.html' itemprop='url' class='item-link'>Мультиклассирование [Multiclassing]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Мультиклассирование позволяет получать уровни в разных классах. Это позволяет смешивать умения этих классов, создавая концепцию персонажа, которую не создать ни одним из стандартных классов.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='449-multiclassing/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:38% 0" data-id='article:196' data-typo-path='/articles/mechanics/196-sidekick/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Напарники"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='196-sidekick/index.html' itemprop='url' class='item-link'>Напарники [Sidekick]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<blockquote>Мой будущий напарник мог бы кое-чему научиться — ещё больше материала для проекта «Послушайнен».<br> ТАША</blockquote><p>Этот раздел представляет простой способ добавить специального НИП, называемого «напарником», к группе искателей приключений. Эти правила предлагают взять существо с низким показателем опасности и дать ему уровни в одном из трех простых классов: «боец», «заклинатель» или «эксперт».</p>
+<p>Напарника можно добавить при создании группы, или же напарник может присоединиться в течение кампании. Например, персонажи могут встретиться с деревенским жителем, животным или другим существом, подружиться и пригласить это существо присоединиться к приключениям.</p>
+<p>Как Мастер, вы также можете использовать эти правила, чтобы видоизменить монстра для собственных нужд.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='196-sidekick/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:40% 0" data-id='article:156' data-typo-path='/articles/mechanics/156-environment-and-covers/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Окружающая среда и укрытия"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='156-okruzhayuschaya_sreda_i_ukrytiya/index.html' itemprop='url' class='item-link'>Окружающая среда и укрытия [Environment and covers]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Приключения по своей природе включают исследование тёмных, опасных и таинственных мест. Правила этого раздела покрывают самые важные методы взаимодействия персонажей с окружающей средой в таких местах. В данной статье перечислены многочисленные эффекты окружающей среды, виды укрытий, освещений и вариантов зрения, а так же многое другое.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='156-okruzhayuschaya_sreda_i_ukrytiya/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:17% 0" data-id='article:158' data-typo-path='/articles/mechanics/158-movement-and-position/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Перемещения и позиция в бою"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../158-peremeschenie/index.html' itemprop='url' class='item-link'>Перемещения и позиция в бою [Movement and Position]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Плавание по реке, ползание по коридорам подземелья, подъём на отвесный утёс — в приключениях важны все виды перемещения.</p>
+<p>Мастер может подытожить перемещение без тщательных вычислений расстояний и скоростей: «Вы идёте по лесу, и к исходу третьего дня находите вход в подземелье». Даже в подземелье, если оно большое, Мастер может резюмировать перемещение между сценами: «Убив охранников у входа в древнюю крепость дварфов, вы сверяетесь с картой, по которой проходите пару километров по гулким коридорам и выходите к провалу, через который перекинут узкий каменный мост».</p>
+<p>Однако иногда важно знать, сколько времени уйдёт на путешествие, и не важно, в чём измеряется ответ, в днях, часах или минутах. Правила по определению времени путешествия зависят от трёх факторов: скорости и темпа существ, а также местности, по которой они перемещаются. </p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../158-peremeschenie/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:62% 0" data-id='article:140' data-typo-path='/articles/mechanics/140-customizing-your-origin/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Персонализация вашего происхождения"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../140-personalizatsiya_vashego_proishozhdeniya/index.html' itemprop='url' class='item-link'>Персонализация вашего происхождения [Customizing Your Origin]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>На 1-м уровне вы выбираете различные аспекты вашего персонажа, такие как значения характеристик, расу, класс и предысторию. Вместе эти элементы позволяют вам должным образом отобразить происхождение персонажа и дают гибкость в создании множества различных вариантов. Несмотря на универсальность, типичные расы персонажей в D&amp;D обладают малой вариативностью или вообще не дают выбора — недостаток, который может затруднить реализацию определённых концепций. Подразделы ниже устраняют этот недостаток, добавляя разнообразие расе вашего персонажа, позволяя вам настраивать значения характеристик, языки и определённые владения в соответствии с происхождением, которое вы придумали для своего персонажа. Его раса в игре отражает фэнтезийный вид в сочетании с культурными особенностями. Приведенные ниже опции выходят за рамки этих особенностей для создания по-настоящему уникальных персонажей.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../140-personalizatsiya_vashego_proishozhdeniya/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:68% 0" data-id='article:390' data-typo-path='/articles/mechanics/390-group-patrons/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Покровители  группы"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='390-group_patrons/index.html' itemprop='url' class='item-link'>Покровители  группы [Group patrons]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Каждая группа искателей приключений связана вместе как заданиями, которые герои выполняют, так и опасностями, с которыми они сталкиваются. Для этого глава предлагает ещё один способ скрепить отряд вместе — покровителей группы. Покровители являются сильным связующим элементом — это личность или организация, которые объединяют отряд в команду ради служения высокой цели. Покровитель группы может помочь задать тон всей кампании вашего отряда. Например, история группы, чьим покровителем является учебное заведение, скорее всего, будет отличаться от истории группы, работающей на военных. Покровитель может влиять на отношения персонажей, их предыстории и те опасности, с которыми сталкивается группа. 
+</p><p>Во время создания персонажа каждый игрок имеет возможность сплести нити связей между своим персонажем и другими членами своего отряда. Вместо создания сети устоявшихся отношений (или в дополнение к этому) игроки вместе с Мастером могут выбрать себе покровителя. Если вы хотите быть своим собственным покровителем, смотрите раздел «Будьте своим собственным покровителем» в конце статьи.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='390-group_patrons/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:39% 0" data-id='article:141' data-typo-path='/articles/mechanics/141-ten-rules-to-remember/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Помните 10 правил"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../141-pomnite_10_pravil/index.html' itemprop='url' class='item-link'>Помните 10 правил [Ten Rules to Remember]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<h3 class="smallSectionTitle">1. МАСТЕР ВЫНОСИТ ОКОНЧАТЕЛЬНОЕ РЕШЕНИЕ ПО ИСПОЛЬЗОВАНИЮ ПРАВИЛ</h3><p>Правила D&amp;D охватывают множество нюансов и деталей, которые существуют в игре, но возможности настолько обширны, что правила просто не способны учесть всё. Когда вы сталкиваетесь с чем-то, что не описано в правилах, или вы не уверены, как их правильно интерпретировать, Мастер решает, как действовать, принимая такое решение, что принесет наибольшее удовольствие вашей группе.</p>
+<h3 class="smallSectionTitle">2. ЧАСТНОЕ ПРЕВЫШЕ ОБЩЕГО</h3><p>Каждую часть игры регулируют общие правила. Например, правила, описывающие бой, указывают вам, что рукопашные атаки оружием используют Силу, а дальнобойные атаки оружием используют Ловкость. Это общее правило, и общее правило действует до тех пор, пока что-то в игре явно не говорит об обратном.</p>
+<p>Игра также включает в себя элементы, которые иногда противоречат общим правилам, такие как классовые умения, заклинания, магические предметы, умения и особенности монстров и тому подобное. Когда исключение и общее правило противоречат друг другу, исключение имеет приоритет. Например, если особенность гласит, что вы можете совершить рукопашную атаку оружием, используя свою Харизму, вы можете так поступить, даже если это утверждение противоречит общему правилу.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../141-pomnite_10_pravil/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:10% 0" data-id='article:190' data-typo-path='/articles/mechanics/190-lineages/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Происхождения"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='190-lineages/index.html' itemprop='url' class='item-link'>Происхождения [Lineages]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>В Землях Туманов сила и ужас заключаются в простом вопросе: «Что со мной произошло?». Варианты происхождения — это расы, которые персонажи могут получить благодаря особенным событиям. Они заменяют вашу первоначальную расу, если таковая имеется, становясь новой расой. Персонаж может выбрать происхождение при создании персонажа, если его трансформация произошла до начала игры. Или же события, разворачивающиеся во время приключения, могут привести вашего персонажа к смене вашей расы данным новым происхождением. Пообщайтесь со своим Мастером, чтобы определить, готовы ли вы к подобному развитию событий и тому как разворачиваются подобные истории.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='190-lineages/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:37% 0" data-id='article:144' data-typo-path='/articles/mechanics/144-advancement-of-a-vestige-of-divergence/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Развитие Отголосков Дивергенции"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../144-razvitie_otgoloskov_divergentsii/index.html' itemprop='url' class='item-link'>Развитие Отголосков Дивергенции [Advancement of a Vestige of Divergence]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Как правило, развитие Отголосков Дивергенции перекликается с собственным путешествием его владельца к самопознанию, будь то триумф или неудача. Тем не менее, Отголосок Дивергенции может развиваться сам по себе в моменты давления или отчаяния для своего владельца, предоставляя дополнительную помощь в случае необходимости. Эти моменты развития должны быть определены и реализованы Мастером подземелий, и они могут проявляться неожиданными способами.</p>
+<p>Мастер может использовать следующие примеры в качестве руководства для выстраивания развития Отголоска Дивергенции:</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../144-razvitie_otgoloskov_divergentsii/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card typoable'  style="background-position:78% 0" data-id='article:318' data-typo-path='/articles/mechanics/318-sage-advice-compendium/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Сборник Советов Мудреца"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../318-sage_advice_compendium/index.html' itemprop='url' class='item-link'>Сборник Советов Мудреца [Sage Advice Compendium]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>В Сборнике Советов мудреца собраны вопросы и ответы о правилах пятой редакции Dungeons &amp; <span>Dragons</span></p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../318-sage_advice_compendium/index.html' class='read-more'>Читать далее</a><br><a href='../318-sage_advice_compendium/index.html#comments' class='read-more-comments'>Комментарии: 33</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:15% 0" data-id='article:646' data-typo-path='/articles/mechanics/646-deals-with-devils/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='646-deals_with_devils/index.html' itemprop='url' class='item-link'>Сделки с дьяволами [Deals with devils]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Характерная особенность дьяволов — они обожают заключать сделки со смертными. Это не просто соглашения, а связанные космическими силами обязательства, согласно которым дьявол даёт смертному персонажу долю своей мощи за некую цену. Когда соглашение достигнуто, сделка скрепляется обязательным к исполнению контрактом, который подписывают обе стороны.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='646-deals_with_devils/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:98% 0" data-id='article:222' data-typo-path='/articles/mechanics/222-mounts-and-vehicles/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Скакуны и транспорт"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='222-mounts_and_vehicles/index.html' itemprop='url' class='item-link'>Скакуны и транспорт [Mounts and Vehicles]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Хороший скакун поможет вам быстро пересечь пустоши, но основное его предназначение — везти груз, который замедлял бы вас. Приведённая таблица показывает скорость разных животных и их базовую грузоподъёмность.</p>
+<p>Животное, тянущее тележку, повозку, карету, сани или фургон, может перевозить в пять раз больше базовой грузоподъёмности, включая вес транспортного средства. Если в одно транспортное средство впряжены сразу несколько животных, они могут суммировать свою грузоподъёмность.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='222-mounts_and_vehicles/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:26% 0" data-id='article:119' data-typo-path='/articles/mechanics/119-combat-encounter-difficulty/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Сложность боевой сцены"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../119-slozhnost_boevoj_stseny/index.html' itemprop='url' class='item-link'>Сложность боевой сцены [Combat Encounter Difficulty]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>При создании боевой сцены отпустите своё воображение в свободное плавание и создайте что-то, что понравится вашим игрокам. Как только вы выясните детали, используйте эту статью, чтобы настроить сложность сцены. Либо воспользуйтесь <a href="../../encounter_difficulty/index.html" target="_blank">Калькулятором сложности боевой сцены</a>.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='../119-slozhnost_boevoj_stseny/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><div class='paper-1 card card__group- typoable'  style="background-position:52% 0" data-id='article:24' data-typo-path='/articles/mechanics/24-mixing-potions/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Смешивание зелий"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='24-mixing-potions/index.html' itemprop='url' class='item-link'>Смешивание зелий [Mixing potions]</a></h2></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+								
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Персонаж может выпить одно зелье, пока находится под действием другого, или попытаться смешать несколько зелий в одной ёмкости. В этом случае, необычные ингредиенты, используемые в создании зелий, могут привести к непредсказуемым последствиям.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				<li><a href='24-mixing-potions/index.html' class='read-more'>Читать далее</a></li>
+			</ul>
+</div><div class="card__footer"></div></div></div><ul class="pagination"><li class="current"><a href="index.html@page=1.html" title="Страница 1">1</a></li><li><a href="index.html@page=2.html" title="Страница 2">2</a></li><li><a href="index.html@page=2.html" title="Следующая страница"><strong>></strong></a></li></ul></section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

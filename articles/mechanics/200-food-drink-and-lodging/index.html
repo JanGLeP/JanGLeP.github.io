@@ -1,0 +1,899 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Еда, напитки и постой / Игровые механики / Статьи D&D 5 / Player's Handbook</title>
+	
+    <meta name="description" content="«Еда, напитки и постой (Food, Drink, and Lodging)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta name="keywords" content="dnd статьи механики,механики,игровые механики, днд статьи механики,механики,игровые механики, d&d статьи механики,механики,игровые механики, dnd 5 статьи механики,механики,игровые механики, днд 5 статьи механики,механики,игровые механики, d&d 5 статьи механики,механики,игровые механики, подземелья и драконы статьи механики,механики,игровые механики, dungeons and dragons статьи механики,механики,игровые механики, dnd статьи механики,механики,игровые механики Еда, напитки и постой [Food, Drink, and Lodging], днд статьи механики,механики,игровые механики Еда, напитки и постой [Food, Drink, and Lodging], d&d статьи механики,механики,игровые механики Еда, напитки и постой [Food, Drink, and Lodging], dnd 5 статьи механики,механики,игровые механики Еда, напитки и постой [Food, Drink, and Lodging], днд 5 статьи механики,механики,игровые механики Еда, напитки и постой [Food, Drink, and Lodging], d&d 5 статьи механики,механики,игровые механики Еда, напитки и постой [Food, Drink, and Lodging], подземелья и драконы статьи механики,механики,игровые механики Еда, напитки и постой [Food, Drink, and Lodging], dungeons and dragons статьи механики,механики,игровые механики Еда, напитки и постой [Food, Drink, and Lodging]" />
+    <meta property="og:title" content="Еда, напитки и постой / Игровые механики / Статьи D&D 5 / Player's Handbook" />
+    <meta property="og:description" content="«Еда, напитки и постой (Food, Drink, and Lodging)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/articles/mechanics/200-food-drink-and-lodging/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='index.html'>Еда, напитки и постой</a><span> — </span><a href='../index.html'>Игровые механики</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Farticles%2Fmechanics%2F200-food-drink-and-lodging%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Farticles%2Fmechanics%2F200-food-drink-and-lodging%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Farticles%2Fmechanics%2F200-food-drink-and-lodging%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Farticles%2Fmechanics%2F200-food-drink-and-lodging%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://t.me/EddyGames?partner=dnd.su" target="_blank" title="Eddy Games (Канал, посвящённый лучшей в мире НРИ - Dungeons&Dragons)" class="item_link_2 partner"><span class="sprite-partners__eddy_games partner-icon"></span>Eddy Games</a></li><li class="item_level_2"><a href="https://vk.com/morelessvk?partner=dnd.su" target="_blank" title="Море Лес (Стримы D&D)" class="item_link_2 partner"><span class="sprite-partners__more partner-icon"></span>Море Лес</a></li><li class="item_level_2"><a href="https://vk.com/ngdnd?partner=dnd.su" target="_blank" title="Заметки упыря (Короткие приключения | D&D)" class="item_link_2 partner"><span class="sprite-partners__ngdnd partner-icon"></span>Заметки упыря</a></li><li class="item_level_2"><a href="https://vk.com/coniferdnd?partner=dnd.su" target="_blank" title="МФЦ и Клерки (НРИ, ДнД)" class="item_link_2 partner"><span class="sprite-partners__coniferdnd partner-icon"></span>МФЦ и Клерки</a></li><li class="item_level_2"><a href="https://vk.com/mastademic?partner=dnd.su" target="_blank" title="Мастер Демик (Мастер Демик. Разработка оффлайн инструментов для мастеров D&D)" class="item_link_2 partner"><span class="sprite-partners__master_helper partner-icon"></span>Мастер Демик</a></li><li class="item_level_2"><a href="https://www.youtube.com/@kasodochka?partner=dnd.su" target="_blank" title="Kasoda (Смешные, познавательные и разочаровывающие ролики про D&D)" class="item_link_2 partner"><span class="sprite-partners__kasoda partner-icon"></span>Kasoda</a></li><li class="item_level_2"><a href="https://www.youtube.com/c/%D0%9F%D0%BE%D0%A2%D1%83%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86?partner=dnd.su" target="_blank" title="По ту сторону страниц (Пишем Музыку, Карты, Обзоры и Подкасты!)" class="item_link_2 partner"><span class="sprite-partners__po_tu_storonu partner-icon"></span>По ту сторону страниц</a></li><li class="item_level_2"><a href="https://aternia.games?partner=dnd.su" target="_blank" title="Атерния (Ваши НРИ вселенные и инструменты)" class="item_link_2 partner"><span class="sprite-partners__aternia partner-icon"></span>Атерния</a></li><li class="item_level_2"><a href="https://badmimic.com?partner=dnd.su" target="_blank" title="Сокровища Мимика (3D печать миниатюр)" class="item_link_2 partner"><span class="sprite-partners__treasuresmimic partner-icon"></span>Сокровища Мимика</a></li><li class="item_level_2"><a href="https://vk.com/drunkenbadger?partner=dnd.su" target="_blank" title="Накидавшийся барсук (Make DnD, not war.)" class="item_link_2 partner"><span class="sprite-partners__drunkenbadger partner-icon"></span>Накидавшийся барсук</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCgQdOML6PsC_rgPn8-7t5Cg?partner=dnd.su" target="_blank" title="MAGELLAN GEEK" class="item_link_2 partner"><span class="sprite-partners__magellan partner-icon"></span>MAGELLAN GEEK</a></li><li class="item_level_2"><a href="https://t.me/diceseven?partner=dnd.su" target="_blank" title="Seven dice" class="item_link_2 partner"><span class="sprite-partners__seven_dice partner-icon"></span>Seven dice</a></li><li class="item_level_2"><a href="https://vk.com/wishport?partner=dnd.su" target="_blank" title="WishPort (Всё о ролевках)" class="item_link_2 partner"><span class="sprite-partners__wishport partner-icon"></span>WishPort</a></li><li class="item_level_2"><a href="https://vk.com/dungeonishard?partner=dnd.su" target="_blank" title="D&D - это не просто" class="item_link_2 partner"><span class="sprite-partners__not_easy partner-icon"></span>D&D - это не просто</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='index.html'>Еда, напитки и постой</a><span> — </span><a href='../index.html'>Игровые механики</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+             <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="../index.html" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по игровым механикам" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+			 <div class='paper-1 card card__group- typoable'  style="background-position:63% 0" data-id='article:200' data-typo-path='/articles/mechanics/200-food-drink-and-lodging/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Еда, напитки и постой"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='index.html' itemprop='url' class='item-link'>Еда, напитки и постой [Food, Drink, and Lodging]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Player's Handbook</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Когда искатели приключений не спускаются под землю, не исследуют старые руины и не отражают наступление тьмы, они сталкиваются с обычной жизнью. Даже в фантастическом мире у существ есть основные нужды, такие как потребность в крыше над головой, пропитании и одежде. Всё это стоит денег, хотя можно жить впроголодь, а можно и шикуя.</p>
+<p>В приведённой таблице указаны цены за готовую еду и одну ночь постоя. Эти цены уже включены в затраты на существование.</p>
+<br><table>
+<tbody>
+<tr class="table_header"><td>Пункт </td>
+<td>Стоимость</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align: left;">&nbsp; &nbsp;Вино</th></tr>
+<tr>
+<td style="text-align: center;">Обычное (кружка) </td>
+<td>2 см </td>
+</tr>
+<tr>
+<td style="text-align: center;">Отличное (бутылка) </td>
+<td>10 зм </td>
+</tr>
+<tr>
+<th colspan="2" style="text-align: left;">&nbsp; &nbsp;Пиво </th></tr>
+<tr>
+<td style="text-align: center;">Галлон (4 литра) </td>
+<td>2 см </td>
+</tr>
+<tr>
+<td style="text-align: center;">Кружка</td>
+<td>4 мм</td>
+</tr>
+<tr>
+<td style="text-align: center;">Бочка (RMR)</td>
+<td>8 см </td>
+</tr>
+<tr>
+<th colspan="2" style="text-align: left;">&nbsp; &nbsp;Тэж </th></tr>
+<tr>
+<td style="text-align: center;">Галлон (4 литра) </td>
+<td>2,5 см</td>
+</tr>
+<tr>
+<td style="text-align: center;">Кружка </td>
+<td>5 мм</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align: left;">Постоялый двор (за день)</th></tr>
+<tr>
+<td style="text-align: center;">Отрубиться в переулке (RMR)</td>
+<td><span title="Бесплатно" class="tooltip">Бесценно</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">Нищенское </td>
+<td>7 мм </td>
+</tr>
+<tr>
+<td style="text-align: center;">Бедное </td>
+<td>1 см </td>
+</tr>
+<tr>
+<td style="text-align: center;">Скромное </td>
+<td>5 см </td>
+</tr>
+<tr>
+<td style="text-align: center;">Комфортное</td>
+<td>8 см </td>
+</tr>
+<tr>
+<td style="text-align: center;">Богатое </td>
+<td>2 зм </td>
+</tr>
+<tr>
+<td style="text-align: center;">Аристократическое </td>
+<td>4 зм</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align: left;">Пропитание (за день)</th></tr>
+<tr>
+<td style="text-align: center;">Нищенское </td>
+<td>3 мм </td>
+</tr>
+<tr>
+<td style="text-align: center;">Бедное</td>
+<td>6 мм </td>
+</tr>
+<tr>
+<td style="text-align: center;">Скромное </td>
+<td>3 см </td>
+</tr>
+<tr>
+<td style="text-align: center;">Комфортное </td>
+<td>5 см </td>
+</tr>
+<tr>
+<td style="text-align: center;">Богатое </td>
+<td>8 см </td>
+</tr>
+<tr>
+<td style="text-align: center;">Аристократическое </td>
+<td>2 зм </td>
+</tr>
+<tr>
+<td>Сыр, кусок </td>
+<td>1 см </td>
+</tr>
+<tr>
+<td>Торжественный обед (на 1 едока) </td>
+<td>10 зм </td>
+</tr>
+<tr>
+<td>Хлеб, ломоть </td>
+<td>2 мм</td>
+</tr><tr>
+<td>Мясо, кусок </td>
+<td>3 см</td>
+</tr>
+
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle">ТЭж (ToA)</h3><p>Это перебродивший напиток янтарного цвета на основе мёда. В Чульте он куда более распространён и популярен, чем пиво или эль. Кружка тэжа стоит 4 мм в Порту Нянзару и 6 мм в форте Белуриан Бочонок в 1 галлон стоит 2 см в городе или 3 см в форте.</p>
+<br><h2 class="bigSectionTitle">Другие варианты пищи</h2><br><h3 class="underlined">Флора и фауна (ToA)</h3><p>В этом разделе описывается необычная дикая природа Чульта. Любой персонаж, владеющий навыком <span tooltip-for="skill.nature" title="skill.nature">Природа</span>, распознает одно из этих растений или существ, которое видит это растение, может вспомнить его свойства с помощью проверки Интеллекта (<span tooltip-for="skill.nature" title="skill.nature">Природа</span>) Сл 15. Если персонаж является уроженцем Чульта, эта проверка выполняется с преимуществом.</p>
+<p>Описанные здесь дикие растения можно купить и продать в Порту Нянзару и других поселениях по ценам, перечисленным в таблице Флора и фауна.</p>
+<p>Некоторые из этих вещей накладывают состояние «отравлен» на существо на час или больше. Помните, что <a href="../../../spells/155-lesser_restoration/index.html" target="_blank">малое восстановление [lesser restoration]</a> и подобная магия могут снять это состояние.</p>
+<h4 class="tableTitle">Флора и фауна</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>Предмет</td>
+<td> Цена</td>
+</tr>
+<tr>
+<td>Фрукт танцующей обезьяны</td>
+<td> 5 зм</td>
+</tr>
+<tr>
+<td>Листья менги (1 унция ≈ 30 гр)</td>
+<td> 2 зм</td>
+</tr>
+<tr>
+<td>Корень райях</td>
+<td> 50 зм</td>
+</tr>
+<tr>
+<td>Ягоды синда (10 шт.) </td>
+<td> 5 зм</td>
+</tr>
+<tr>
+<td>Дикий корень</td>
+<td> 25 зм</td>
+</tr>
+<tr>
+<td>Орех вукка</td>
+<td> 1 зм</td>
+</tr>
+<tr>
+<td>Яча</td>
+<td> 1 зм</td>
+</tr>
+<tr>
+<td>Забоу</td>
+<td> 10 зм</td>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle">Дикий корень (T<span style="text-transform:lowercase ;">o</span>A)</h3><p>Если каким-то образом внедрить сок дикого корня в кровоток отравленного существа (например, протирая им открытую рану), то это избавляет существо от состояния <span tooltip-for="condition.poisoned" title="condition.poisoned">отравлен</span>. После использования таким образом, дикий корень теряет это свойство.</p>
+<br><h3 class="smallSectionTitle">Забоу (T<span style="text-transform:lowercase ;">o</span>A)</h3><p>Забоу – грибы, питающиеся субпродуктами гниющей древесины мёртвых деревьев. Если действовать осторожно, то можно собрать забоу, не вызывая выброс его спор. Если раздавить или ударить по забоу, то он выпускает свои споры в сфере с радиусом 10 футов. Забоу можно также бросить на расстояние до 30 футов, как гранату, гриб выпускает облако своих спор при ударе.</p>
+<p>Любое существо в этой области должно преуспеть в спасброске Телосложения Сл 10 или получит <span tooltip-for="condition.poisoned" title="condition.poisoned">отравление</span> на 1 минуту. Кожа отравленного существа сильно чешется пока оно <span tooltip-for="condition.poisoned" title="condition.poisoned">отравлено</span>. Существо может повторять спасбросок в конце каждого своего хода, прекратив эффект при успехе.</p>
+<br><h3 class="smallSectionTitle">Корень райях (T<span style="text-transform:lowercase ;">o</span>A)</h3><p>Любое существо, которое поглощает корни райях, получает 2к4 временных хитов. Существо, которое потребляет более одного корня райях в течение 24-часового периода, должно преуспеть в спасброске Телосложения Сл 13 или получит состояние <span tooltip-for="condition.poisoned" title="condition.poisoned">отравлен</span> на 1 час.</p>
+<br><h3 class="smallSectionTitle">Листья менги (T<span style="text-transform:lowercase ;">o</span>A)</h3><p>Высушенные листья куста менги могут быть измельчены, растворены в жидкости, нагреты и выпиты.</p>
+<p>Существо, которое поглощает 1 унцию листьев менги, таким образом восстанавливает 1 хит. Существо, которое поглощает более 5 унций листьев менги в течение 24-часового периода, не получает дополнительной пользы и должно преуспеть в спасброске Телосложения Сл 11, или рухнет <span tooltip-for="condition.unconscious" title="condition.unconscious">без сознания</span> на 1 час. Бессознательное существо просыпается, если в течение одного хода получает 5 и более урона.</p>
+<p>У большого куста менги обычно есть 2к6 унций листьев. После сбора листьев требуется 1 день для их сушки, прежде чем они смогут принести какую-либо пользу.</p>
+<br><h3 class="smallSectionTitle">Орех вукка (T<span style="text-transform:lowercase ;">o</span>A)</h3><p>Эти орехи размером с кулак растут на деревьях вукка, которые популярны среди джакули, су-монстров и зорбо. Орех вукка гремит, если его встряхнуть, заставляя скорлупу испускать <span tooltip-for="light.bright" title="light.bright">яркий свет</span> в радиусе 10 футов и<span> </span><span tooltip-for="light.dim" title="light.dim">тусклый свет</span><span> ещё</span> на 10 футов. Этот волшебный свет исчезает через 1 минуту, но встряхивание ореха снова заставляет его светиться. Если скорлупа ореха треснет, он теряет свою магию.</p>
+<br><h3 class="smallSectionTitle">Ягоды синда (T<span style="text-transform:lowercase ;">o</span>A)</h3><p>Эти ягоды темно-коричневые и горькие. Полностью выросший кустарник синда содержит 4к6 ягод, растущих на нем. Оставшийся без ягод куст обрастает новыми ягодами через 1к4 месяцев. Сорванные ягоды теряют свою свежесть и эффективность через 24 часа.</p>
+<p>Свежие ягоды синда можно съесть сырыми или раздавленными, добавив в напиток, чтобы убрать горечь. Существо, которое потребляет по меньшей мере десять свежих ягод синда, автоматически преуспевает спасбросках против болезни и яда в течение следующих 24 часов.</p>
+<br><h3 class="smallSectionTitle">Яча (T<span style="text-transform:lowercase ;">o</span>A)</h3><p>Яча (произносится как Яча) – безвредный, мясистый жук размером с человеческую руку, который питается червями и личинками. Он медлителен (скорость ходьбы 10 футов) и его легко поймать.</p>
+<p>Существо, находящееся под воздействием лихорадки синего тумана, может съесть сырого или приготовленного Яча, может сразу сделать спасбросок с преимуществом против этой болезни (см. «<a href="../../150-bolezni/index.html" target="_blank">Болезни</a>», стр. 40).</p>
+<br><h3 class="underlined">Грибы Подземья</h3><p>В Подземье огромное разнообразие видов грибов с разными способами их применения. Персонажи могут встретить различные примеры флоры Подземья в своих путешествиях. Распознание свойств грибов и их потенциального применения требует успешной проверки Интеллекта (<span tooltip-for="skill.nature" title="skill.nature">Природа</span>) Сл 15, но жители Подземья уже знакомы со многими их свойствами и могут продать вам за определённую стоимость (цена определяется Мастером).</p>
+<br><h3 class="smallSectionTitle">Съедобные грибы (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Съедобные грибы предоставляют пищу и воду.</p>
+<br><h3 class="smallSectionTitle">Бочконожка (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Бочконожка – это большой бочкообразный гриб, из которого можно извлечь свежую воду, надрезав его.</p>
+<p>Одна бочконожка содержит 1к4+4 галлонов воды и 1к6+4 фунтов еды.</p>
+<br><h3 class="smallSectionTitle">Синешляпник (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Прозванный «злаком Подземья», синешляпник сам по себе несъедобен, но его споры могут быть измельчены для получения питательной, мягкой муки. Хлеб, сделанный из синешляпника, известен как спорохлеб или синехлеб. Один батон эквивалентен 1 фунту еды.</p>
+<br><h3 class="smallSectionTitle">Огненный лишайник (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Бледно-светло-оранжевого цвета, этот лишайник растет в теплой среде, и поэтому его можно встретить в областях геотермального тепла. Огненный лишайник может быть перемолот, а затем, после того как достаточно отстоится, превратится в острую приправу. Ее можно намазывать на спорохлеб, добавлять в супы или сдабривать рагу. Дуэргары также используют огненный лишайник для варения особенно горячего ликера.</p>
+<br><h3 class="smallSectionTitle">Рябая кора (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Рябая кора – это плоский гриб, напоминающий груду гниющей плоти. Он на удивление съедобен. Несмотря на то, что может быть съеден сырым, обжаренным он гораздо вкуснее. Один лист рябой коры предоставляет 1к4 + 6 фунтов еды.</p>
+<br><h3 class="smallSectionTitle">Триллимак (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Триллимак – это гриб, достигающий высоты от четырех до пяти футов, имеющий широкую серо-зеленую шляпку и светло-серую ножку. Кожистая поверхность шляпки может быть срезана, зачищена и использована для рисования карт, шитья шапок и создания&nbsp;<span style="font-size: 15px; color: var(--color-text-main);">свитков (на его поверхность хорошо ложатся красящие пигменты). Ножка может быть очищена, вымочена в воде в течении часа, а затем высушена и съедена как хлеб. Каждая ножка триллимака предоставляет 1к6+4 фунтов еды.</span></p>
+<br><h3 class="smallSectionTitle">Водошар (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Водошар – это пузыреобразный гриб, растущий на мелководье. Созревший водошар можно сдавить как губку и получить галлон питьевой воды и фунт еды («резиновой» и безвкусной).</p>
+<br><h3 class="smallSectionTitle">Зархвуд (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Зархвуд – массивный гриб, который может достигать высоты в тридцать или сорок футов. Его большие, похожие на зерно, споры съедобны и питательны, и составляют эквивалент 1к4 + 4 фунтов еды на гриб, однако зархвуд более важен по причине своей твердой, похожей на дерево, ножки. Зархвуд – один из немногих источников строительных материалов Подземья, для конструирования мебели, контейнеров, мостов, плотов и многих других вещей. Умелые ремесленники могут реализовать множество его применений.</p>
+<br><h3 class="underlined">Экзотические грибы (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Особенности грибов, представленных в этом разделе, имеют странные свойства, но никакой пищевой ценности.</p>
+<br><h3 class="smallSectionTitle">Ночник (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Ночник – высокий биолюменисцентный гриб в форме цилиндра, растущий до высоты в 1к6 + 4 футов и излучающий <span tooltip-for="light.bright" title="light.bright">яркий свет</span><span> в</span> радиусе 15 футов и <span tooltip-for="light.dim" title="light.dim">тусклый свет</span> в пределах еще 15 футов. Сорванный или уничтоженный ночник перестает светиться спустя 1 раунд. Если до ночника дотронется существо или объект, он перестанет светиться до тех пор, пока к нему снова не прикоснутся.</p>
+<br><h3 class="smallSectionTitle">Нос Нилхогга (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Нос Нилхогга – это маленький гриб, наделяющий употребившего его преимуществом при проверках Мудрости (<span tooltip-for="skill.perception" title="skill.perception">Восприятия</span>), связанных с обонянием, на 1к4 часа. Однако, существо при этом получит помеху на спасброски, связанные с обонянием, на этот промежуток времени.</p>
+<br><h3 class="smallSectionTitle">Орму (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Орму – биолюменисцентный зеленый мох, произрастающий в теплых и сырых местах – особенно часто встречается в местах, наполненных паром. Он источает <span tooltip-for="light.dim" title="light.dim">тусклый свет</span> в радиусе 5 футов и может быть собран, высушен и переделан в фосфоресцирующую пудру или пигмент.</p>
+<br><h3 class="smallSectionTitle">Тиммаск (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Тиммаск, также известный как «дьявольский гриб», представляет собой поганку высотой в пять футов с оранжевыми и красными полосами по всей ее бежевой шляпке. При срывании тиммаска или его уничтожении, выпрыскиваются ядовитые споры в радиусе 15 футов. Существа в этой области должны совершить спасбросок Телосложения Сл 14, и в случае провала будут <span tooltip-for="condition.poisoned" title="condition.poisoned">отравлены</span>. Будучи отравленным этими спорами, существо будет находиться под эффектом заклинания <a href="../../../spells/325-confusion/index.html" target="_blank">смятение [confusion]</a> в течение 1 минуты. Когда эффект заклинания заканчивается, существо также перестает быть <span tooltip-for="condition.poisoned" title="condition.poisoned">отравленным</span>.</p>
+<br><h3 class="smallSectionTitle">Язык безумия (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Язык безумия – это съедобный гриб, внешне напоминающий большой человеческий язык. Существо, которое ест язык безумия, должно совершить успешный спасбросок Телосложения Сл 12, или же начнет непроизвольно говорить все свои мысли вслух в течении одного часа. Действие эффекта может быть завершено заклинанием <a href="../../../spells/155-lesser_restoration/index.html" target="_blank">малое восстановление [lesser restoration]</a> или похожей магией.</p>
+<br><h3 class="smallSectionTitle">Огненожка (O<span style="text-transform:lowercase ;">ot</span>A)</h3><p>Огненожка, высота которой составляет один-два фута, – гриб с воспламеняющейся шляпкой, который может гореть до 24 часов при поджигании. Есть шанс 1к6 на то, что огненожка взорвется при поджигании и испустит облако горящих спор. Существа в пределах 10 футов от взорвавшейся огненожки получают 3 (1к6) урона от огня.</p><br><h3 class="underlined">Пораженные Фэрзресс Грибы</h3><p>Тоннели Ворлстоун являются домом для двух особен<span>ных видов пораженных фэрзресс грибов: крупно</span><span>шляпник и карликовая бородавка. Любой персонаж, </span><span>изучающий эти грибы, может обнаружить их ма</span><span>гические свойства с помощью успешной проверки </span><span>Интеллекта (Природа) Сл 15, либо с помощью закли</span><span>нания </span><a href="../../../spells/210-identify/index.html" target="_blank">опознание [identify]</a><span>, либо методом проб и </span><span>ошибок. Один укус гриба изменяет рост персонажа </span><span>на несколько дюймов за 5 минут, так что персонаж в </span><span>поисках еды может узнать свойства гриба случайно.</span></p><p>Изменяющие рост свойства нескольких крупношляп<span>ников или карликовых бородавок не суммируются, но </span><span>суммируется длительность эффекта. Эти грибы теря</span><span>ют свои свойства, если их вынести из вне Тоннелей </span><span>Ворлстоун на час или более.</span></p><span><br></span><h3 class="smallSectionTitle">Крупношляпник</h3><p><span>Крупношляпник – это четырехдюймовый гриб с тон</span><span>кой ножкой и широкой фиолетовой шляпкой. Суще</span><span>ство, которое его съедает, должно пройти спасбросок </span><span>Телосложения Сл 12 против воздействия магии гри</span><span>бов. Если существо проваливает спасбросок, либо не </span><span>хочет его совершать, оно увеличивается в размерах в </span><span>соответствии с заклинанием </span><a href="../../../spells/355-enlarge_reduce/index.html" target="_blank">увеличение/уменьшение [enlarge/reduce]</a><span>. Эффект длится 1 час. За десять ми</span><span>нут до окончания действия эффекта существо будет </span><span>ощущать покалывание, и с этого момента оно может </span><span>съесть еще один крупношляпник, чтобы продлить </span><span>действие. </span></p><p><span>Эффект заканчивается, если существо съе</span><span>дает карликовую бородавку или магическим образом </span><span>уменьшается до нормального размера (используя, к </span><span>примеру, уменьшающий эффект заклинания </span><a href="../../../spells/355-enlarge_reduce/index.html" target="_blank">увеличение/уменьшение [enlarge/reduce]</a><span>).</span></p><span><br></span><h3 class="smallSectionTitle">Карликовая бородавка</h3><p><span>Карликовая бородавка – это гриб, ножка которого </span><span>длиной в один дюйм, а шляпка синего цвета, толстая </span><span>и в белую крапинку. Существо, съедающее его, может </span><span>решить совершить спасбросок Телосложения Сл 12, </span><span>чтобы не попасть под воздействие магии гриба. Если </span><span>персонаж проваливает спасбросок или отказывается </span><span>проходить его, его рост уменьшается в соответствии </span><span>с уменьшающим эффектом заклинания </span><a href="../../../spells/355-enlarge_reduce/index.html" target="_blank">увеличение/уменьшение [enlarge/reduce]</a><span>. Эффект заканчивается </span><span>спустя 1 час. За десять минут до окончания действия </span><span>эффекта существо будет ощущать покалывание, и с </span><span>этого момента оно может съесть еще одну карлико</span><span>вую бородавку, чтобы продлить действие. Эффект за</span><span>канчивается, если существо съедает крупношляпник </span><span>или магическим образом увеличивается до нормаль</span><span>ного размера (используя, к примеру, увеличивающий </span><span>эффект заклинания </span><a href="../../../spells/355-enlarge_reduce/index.html" target="_blank">увеличение/уменьшение [enlarge/reduce]</a><span>).</span></p><span>
+</span><span>
+</span><span>
+</span><span>
+</span><span>
+</span><span>
+</span><span>
+</span><span>
+</span><span>
+</span><span>
+</span><span>
+</span>
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div></section>
+<script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:200'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="5249"><div class="comment__entry comment__op comment__author-group-" data-id="5249" id="comment_5249">	<div class='comment__header'>
+			<a href='https://dnd.su/@aa7896d667' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/6f803ba1b85b48002141af413c897aa5.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@aa7896d667' class='profile__public-link profile__public-link-group-users comment__author-name'>Некто</a></span> 
+	<div class="comment__age" title="11:28:29 29.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_5249" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Что значит RWR возле бочки в скобках?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="5571" id="comment_5571">	<div class='comment__header'>
+			<a href='https://dnd.su/@grom' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/f8681c50369e4deb61b8947fa17dae49.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@grom' class='profile__public-link profile__public-link-group-users comment__author-name'>Ilia Grom</a></span> 
+	<div class="comment__age" title="10:13:01 03.04.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_5571" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Dungeons & Dragons vs. Rick and Morty: Basic Rules
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="5956"><div class="comment__entry comment__op comment__author-group-" data-id="5956" id="comment_5956">	<div class='comment__header'>
+			<a href='https://dnd.su/@67017fcdb7db' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@67017fcdb7db' class='profile__public-link profile__public-link-group-users comment__author-name'>XAPPH</a></span> 
+	<div class="comment__age" title="09:50:56 09.04.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_5956" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Сколько стоит мед? Я не нашёл
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="24408" id="comment_24408">	<div class='comment__header'>
+			<a href='https://dnd.su/@grom' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/f8681c50369e4deb61b8947fa17dae49.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@grom' class='profile__public-link profile__public-link-group-users comment__author-name'>Ilia Grom</a></span> 
+	<div class="comment__age" title="16:45:44 13.02.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_24408" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		6 зм за фунт (~450 грамм). Цену нашёл на Forgotten Realms Wiki, а там взято из Baldur's Gate 3 Wiki.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="9003"><div class="comment__entry comment__op comment__author-group-" data-id="9003" id="comment_9003">	<div class='comment__header'>
+			<a href='https://dnd.su/@bdaad73787' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/1581c59adb242164e5f3a649336de2b0.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@bdaad73787' class='profile__public-link profile__public-link-group-users comment__author-name'>Ariko</a></span> 
+	<div class="comment__age" title="04:49:47 30.05.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_9003" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		на меня глядит игриво пиво пиво пивопиво... если кто нибудь найдет хоумбрю на пивоварение\приготовление алкоголя киньте ссылку пж.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="9268" id="comment_9268">	<div class='comment__header'>
+			<a href='https://dnd.su/@f31a17da050f' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@f31a17da050f' class='profile__public-link profile__public-link-group-users comment__author-name'>Kilinar</a></span> 
+	<div class="comment__age" title="16:30:08 04.06.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_9268" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Посмотри инструменты пивовара. Там, конечно, без деталей, но основное сказано (что сначала надо потратить несколько часов на непосредственную работу, а потом подождать несколько недель).
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="19759"><div class="comment__entry comment__op comment__author-group-" data-id="19759" id="comment_19759">	<div class='comment__header'>
+			<a href='https://dnd.su/@c5576f7a4f' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@c5576f7a4f' class='profile__public-link profile__public-link-group-users comment__author-name'>Мандарин</a></span> 
+	<div class="comment__age" title="00:17:32 26.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_19759" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Отрубится в переулке-бесценный опыт.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="24051"><div class="comment__entry comment__op comment__author-group-" data-id="24051" id="comment_24051">	<div class='comment__header'>
+			<a href='https://dnd.su/@4a494e847858' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@4a494e847858' class='profile__public-link profile__public-link-group-users comment__author-name'>Павел Щепалов</a></span> 
+	<div class="comment__age" title="16:24:58 08.02.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_24051" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		У вас опечатка в переводе слове "постой" [Lodging]
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="34669"><div class="comment__entry comment__op comment__author-group-" data-id="34669" id="comment_34669">	<div class='comment__header'>
+			<a href='https://dnd.su/@Fairy_world' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/41a5e76cdc22e32b2dac523700154c72.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Fairy_world' class='profile__public-link profile__public-link-group-users comment__author-name'>Пётр Толкачев</a></span> 
+	<div class="comment__age" title="13:51:02 22.08.2025">7 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_34669" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Какая проверка на добычу пиши, я не понял?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="35740" id="comment_35740">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="10:14:01 12.09.2025">6 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_35740" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		На усмотрение мастера. Чаще всего это проверка Выживания
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="39067"><div class="comment__entry comment__op comment__author-group-" data-id="39067" id="comment_39067">	<div class='comment__header'>
+			<a href='https://dnd.su/@232c17e87c08' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/2ac242eaab993fe7d119a52b2d720853.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@232c17e87c08' class='profile__public-link profile__public-link-group-users comment__author-name'>1337BRUHMAN228</a></span> 
+	<div class="comment__age" title="12:00:07 11.11.2025">4 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_39067" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Отрубился в переулке - ✨Бесценно🍷✨
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="40504" id="comment_40504">	<div class='comment__header'>
+			<a href='https://dnd.su/@8294eafc9516' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/91a83d4b10eb6097b06d133a6b315339.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@8294eafc9516' class='profile__public-link profile__public-link-group-users comment__author-name'>The imaginary king</a></span> 
+	<div class="comment__age" title="07:41:49 10.12.2025">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_40504" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Да да да я когда смотрел проживание так именно и прочитал долго мы с мастером ржали
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="40505"><div class="comment__entry comment__op comment__author-group-" data-id="40505" id="comment_40505">	<div class='comment__header'>
+			<a href='https://dnd.su/@8294eafc9516' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/91a83d4b10eb6097b06d133a6b315339.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@8294eafc9516' class='profile__public-link profile__public-link-group-users comment__author-name'>The imaginary king</a></span> 
+	<div class="comment__age" title="07:44:22 10.12.2025">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_40505" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Есть ли где-то (необязательно на этом сайте) список с кучей хавчика включая всякие блюда, может выпечку или сладости? Посоветуйте свои варианты
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="40506" id="comment_40506">	<div class='comment__header'>
+			<a href='https://dnd.su/@8294eafc9516' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/91a83d4b10eb6097b06d133a6b315339.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@8294eafc9516' class='profile__public-link profile__public-link-group-users comment__author-name'>The imaginary king</a></span> 
+	<div class="comment__age" title="07:44:51 10.12.2025">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_40506" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Чтобы там цены были разумеется
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+		<p>
+ На данный момент в галерее нет изображений.
+ 	</p>
+	</section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

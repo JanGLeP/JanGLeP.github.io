@@ -1,0 +1,823 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Сделки с дьяволами / Игровые механики / Статьи D&D 5 / Baldur's Gate: Descent Into Avernus</title>
+	
+    <meta name="description" content="«Сделки с дьяволами (Deals with devils)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta name="keywords" content="dnd статьи механики,механики,игровые механики, днд статьи механики,механики,игровые механики, d&d статьи механики,механики,игровые механики, dnd 5 статьи механики,механики,игровые механики, днд 5 статьи механики,механики,игровые механики, d&d 5 статьи механики,механики,игровые механики, подземелья и драконы статьи механики,механики,игровые механики, dungeons and dragons статьи механики,механики,игровые механики, dnd статьи механики,механики,игровые механики Сделки с дьяволами [Deals with devils], днд статьи механики,механики,игровые механики Сделки с дьяволами [Deals with devils], d&d статьи механики,механики,игровые механики Сделки с дьяволами [Deals with devils], dnd 5 статьи механики,механики,игровые механики Сделки с дьяволами [Deals with devils], днд 5 статьи механики,механики,игровые механики Сделки с дьяволами [Deals with devils], d&d 5 статьи механики,механики,игровые механики Сделки с дьяволами [Deals with devils], подземелья и драконы статьи механики,механики,игровые механики Сделки с дьяволами [Deals with devils], dungeons and dragons статьи механики,механики,игровые механики Сделки с дьяволами [Deals with devils]" />
+    <meta property="og:title" content="Сделки с дьяволами / Игровые механики / Статьи D&D 5 / Baldur's Gate: Descent Into Avernus" />
+    <meta property="og:description" content="«Сделки с дьяволами (Deals with devils)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/articles/mechanics/646-deals-with-devils/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='index.html'>Сделки с дьяволами</a><span> — </span><a href='../index.html'>Игровые механики</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Farticles%2Fmechanics%2F646-deals-with-devils%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Farticles%2Fmechanics%2F646-deals-with-devils%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Farticles%2Fmechanics%2F646-deals-with-devils%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Farticles%2Fmechanics%2F646-deals-with-devils%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://www.youtube.com/@brosaitekosti?partner=dnd.su" target="_blank" title="Бросайте кости (Канал обучающий играть в настольно-ролевые игры)" class="item_link_2 partner"><span class="sprite-partners__brosaitekosti partner-icon"></span>Бросайте кости</a></li><li class="item_level_2"><a href="https://www.adventureguys.club?partner=dnd.su" target="_blank" title="Adventure Guys (Команда друзей создаёт материалы для игр, рассказывает про лор, разбирает приключения и многое другое!)" class="item_link_2 partner"><span class="sprite-partners__ad_girl partner-icon"></span>Adventure Guys</a></li><li class="item_level_2"><a href="https://t.me/dnd_iaram?partner=dnd.su" target="_blank" title="Инсомнум D&D (Про вордбилдинг в реальном времени)" class="item_link_2 partner"><span class="sprite-partners__dnd_iaram partner-icon"></span>Инсомнум D&D</a></li><li class="item_level_2"><a href="https://t.me/VrogharMasters?partner=dnd.su" target="_blank" title="Мастерская Врогхада (Переводы, сборки локаций и советы по играм)" class="item_link_2 partner"><span class="sprite-partners__vroghar partner-icon"></span>Мастерская Врогхада</a></li><li class="item_level_2"><a href="https://vk.com/rrules?partner=dnd.su" target="_blank" title="Random Rules (Random Rules I НРИ I Dungeons & Dragons)" class="item_link_2 partner"><span class="sprite-partners__rr partner-icon"></span>Random Rules</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCe_vCsHHRPT9XPVYDInQqqQ?partner=dnd.su" target="_blank" title="Sneaky Dice" class="item_link_2 partner"><span class="sprite-partners__sneaky_dice partner-icon"></span>Sneaky Dice</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCEDRLNTs-Fp3AZfxveT8d3w?partner=dnd.su" target="_blank" title="Lore (Описание мира Forgotten Realms)" class="item_link_2 partner"><span class="sprite-partners__lore partner-icon"></span>Lore</a></li><li class="item_level_2"><a href="https://vk.com/gooddragondice?partner=dnd.su" target="_blank" title="GoodDragon Dice (Лавка кубиков)" class="item_link_2 partner"><span class="sprite-partners__gdd partner-icon"></span>GoodDragon Dice</a></li><li class="item_level_2"><a href="https://dndloot.ru?partner=dnd.su" target="_blank" title="DnDLoot (Сайт для управления инвентарём персонажей в играх по правилам D&D)" class="item_link_2 partner"><span class="sprite-partners__dndloot partner-icon"></span>DnDLoot</a></li><li class="item_level_2"><a href="https://vk.com/mastademic?partner=dnd.su" target="_blank" title="Мастер Демик (Мастер Демик. Разработка оффлайн инструментов для мастеров D&D)" class="item_link_2 partner"><span class="sprite-partners__master_helper partner-icon"></span>Мастер Демик</a></li><li class="item_level_2"><a href="https://t.me/EddyGames?partner=dnd.su" target="_blank" title="Eddy Games (Канал, посвящённый лучшей в мире НРИ - Dungeons&Dragons)" class="item_link_2 partner"><span class="sprite-partners__eddy_games partner-icon"></span>Eddy Games</a></li><li class="item_level_2"><a href="https://vk.com/klubok_istorii?partner=dnd.su" target="_blank" title="Клубок историй (Сообщество, где людей объединяет любовь к историям и НРИ. Каждый может рассказать что-то своё, вдохновиться услышанным от других или создать что-то особенное вместе)" class="item_link_2 partner"><span class="sprite-partners__klubok partner-icon"></span>Клубок историй</a></li><li class="item_level_2"><a href="https://vk.com/twinsrpg?partner=dnd.su" target="_blank" title="Подземелья и Близняшки (Тащи рулбуки, всяк сюда входящий!)" class="item_link_2 partner"><span class="sprite-partners__twins partner-icon"></span>Подземелья и Близняшки</a></li><li class="item_level_2"><a href="https://vk.com/ravenheart_studio?partner=dnd.su" target="_blank" title="Студия «Ravenheart» (Псс, не хочешь немного игры?)" class="item_link_2 partner"><span class="sprite-partners__ravenheart_studio partner-icon"></span>Студия «Ravenheart»</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='index.html'>Сделки с дьяволами</a><span> — </span><a href='../index.html'>Игровые механики</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+             <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="../index.html" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по игровым механикам" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+			 <div class='paper-1 card card__group- typoable'  style="background-position:82% 0" data-id='article:646' data-typo-path='/articles/mechanics/646-deals-with-devils/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper' ><div class="card__header"><h2 class="card-title" itemprop="name"><a href='index.html' itemprop='url' class='item-link'>Сделки с дьяволами [Deals with devils]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Baldur's Gate: Descent Into Avernus</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Характерная особенность дьяволов — они обожают заключать сделки со смертными. Это не просто соглашения, а связанные космическими силами обязательства, согласно которым дьявол даёт смертному персонажу долю своей мощи за некую цену. Когда соглашение достигнуто, сделка скрепляется обязательным к исполнению контрактом, который подписывают обе стороны.
+</p><p>Конечная цель дьявола — захватить души смертных. Если дьявол не может захватить душу одним махом, он попытается заполучить её постепенно, подстрекая смертного творить зло, чтобы обречь его душу на по- смертие в Девяти Преисподних.
+</p><p>Дьявольские сделки скреплены силой самой мультивселенной, самой сутью сил Законности и Зла. Эта сила нисходит через иерархию Преисподней, управляющую всем существованием дьяволов. Высокопоставленные дьяволы могут заключать более значительные сделки и предлагать более заманчивые дары. Низшие дьяволы не могут заключать сделки. Младшие и старшие дьяволы могут заключать их от своего лица или в качестве посредника высокопоставленных дьяволов. Только архидьяволы могут свободно вести дела с существами за пределами Девяти Преисподних, обычно когда смертные сами обращаются к ним и просят об услуге.</p><p><ul class="new-article-menu"><li class="new-article-menu__li"><a href="index.html#zakljuchenie_sdelki" class="new-article-menu__li-wrapper btn btn-sm btn-green"><span  class="new-article-menu__li-text">Заключение сделки</span></a></li><li class="new-article-menu__li"><a href="index.html#hell-ierarchy" class="new-article-menu__li-wrapper btn btn-sm btn-green"><span  class="new-article-menu__li-text">Иерархия Преисподней</span></a></li><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="predlozhenie"><span  class="new-article-menu__li-text">Предложение</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="chto_nuzhno_dyavolam"><span  class="new-article-menu__li-text">Что нужно Дьяволам</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="chto_predlagajut_dyavoly"><span  class="new-article-menu__li-text">Что предлагают Дьяволы</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="dyavolskie_kontrakty"><span  class="new-article-menu__li-text">Дьявольские контракты</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__break" data-parent="predlozhenie"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="predlozhenie"><a href="index.html#predlozhenie" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Предложение</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="predlozhenie"><a href="index.html#proverki_harakteristik_pri_zakljuchenii_sdelok" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Проверки характеристик при заключении сделок</span></a></li><li class="new-article-menu__break" data-parent="chto_nuzhno_dyavolam"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="chto_nuzhno_dyavolam"><a href="index.html#chto_nuzhno_dyavolam" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Что нужно Дьяволам</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="chto_nuzhno_dyavolam"><a href="index.html#dushi" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Души</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="chto_nuzhno_dyavolam"><a href="index.html#uslugi" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Услуги</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="chto_nuzhno_dyavolam"><a href="index.html#prisyaga_na_vernost_arhidyavoly" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Присяга на верность (архидьяволы)</span></a></li><li class="new-article-menu__break" data-parent="chto_predlagajut_dyavoly"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="chto_predlagajut_dyavoly"><a href="index.html#chto_predlagajut_dyavoly" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Что предлагают Дьяволы</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="chto_predlagajut_dyavoly"><a href="index.html#mladshie_dyavoly" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Младшие дьяволы</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="chto_predlagajut_dyavoly"><a href="index.html#starshie_dyavoly" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Старшие дьяволы</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="chto_predlagajut_dyavoly"><a href="index.html#arhidyavoly" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Архидьяволы</span></a></li><li class="new-article-menu__break" data-parent="dyavolskie_kontrakty"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="dyavolskie_kontrakty"><a href="index.html#dyavolskie_kontrakty" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Дьявольские контракты</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="dyavolskie_kontrakty"><a href="index.html#narushenie_kontrakta" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Нарушение контракта</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="dyavolskie_kontrakty"><a href="index.html#otmena_kontrakta" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Отмена контракта</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="dyavolskie_kontrakty"><a href="index.html#forma_kontrakta" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Форма контракта</span></a></li></ul></p>
+
+<h2 class="bigSectionTitle underlined"><span id='zakljuchenie_sdelki'>Заключение сделки</span></h2><p>Хотя дьяволы жаждут завлечь души смертных и опутать условиями контракта, они могут заключать сделки лишь при определённых обстоятельствах. Проще всего заключить сделку с дьяволом в Девяти Преисподних, где дьявол ближе всего к иерархии Преисподней и ему легче передать её силу. В остальных частях мультивселенной большинство дьяволов слишком далеко от этой структуры, чтобы заключать обязывающие сделки, кроме как при необычных обстоятельствах.
+</p><p>Сделка состоит из предложения, описывающего условия для обеих сторон, и самого контракта, который скрепляет сделку и делает её условия обязательными.
+</p><p>Младшие и старшие дьяволы не могут свободно заключать сделки вне родного плана, но и для них есть способы. Если призвавший дьявола на иной план знает его истинное имя или владеет его талисманом (см. «<a href="../../index.html@id=16.html#istinnye_imena_i_talismany_dvolov" target="_blank">Истинные имена и талисманы дьяволов</a>»), то вместо того, чтобы подчинять дьявола, заклинатель может создать ритуальный круг, позволяющий дьяволу заключить сделку. Скрепив сделку контрактом, дьявол возвращается в Девять Преисподних.
+</p><p>Архидьявол, желающий заключить сделку с персонажем, может сделать это лично или послать приспешника, чтобы тот вёл переговоры от его лица. Персонаж может и сам связаться с архидьяволом, если убьёт Гуманоида с добрым или хаотичным мировоззрением и будет возносить молитвы архидьяволу в течение 1 часа. Архидьявол услышит молитву персонажа и может по желанию ответить во сне или видении, а может и послать приспешника с полномочиями заключения сделки от его лица.</p><h4 class="tableTitle"><span id='hell-ierarchy'>Иерархия Преисподней</span></h4>
+
+<div class="equal-tables-2">
+<table>
+<tbody>
+<tr class="table_header">
+<td>Низшие дьяволы</td>
+</tr>
+<tr>
+<td>1. <a href="../../../bestiary/85-lemure/index.html" target="_blank">Лемур [lemure]</a>
+</td>
+</tr>
+<tr>
+<td>2. <a href="../../../bestiary/6885-nupperibo/index.html" target="_blank">Нупперибо [nupperibo]</a>
+</td>
+</tr>
+
+<tr class="table_header">
+<td>Младшие дьяволы</td>
+</tr>
+<tr>
+<td>3. <a href="../../../bestiary/84-imp/index.html" target="_blank">Бес [imp]</a></td>
+</tr>
+<tr>
+<td>
+4. <a href="../../../bestiary/87-spined_devil/index.html" target="_blank">Игольчатый дьявол (Спинагон) [spined devil]</a>
+</td>
+</tr>
+<tr>
+<td>
+5. <a href="../../../bestiary/78-bearded_devil/index.html" target="_blank">Бородатый дьявол (Барбазу) [bearded devil]</a>
+</td>
+</tr>
+<tr>
+<td>
+6. <a href="../../../bestiary/2335-merregon/index.html" target="_blank">Меррегон [merregon]</a>
+</td>
+</tr>
+<tr>
+<td>
+7. <a href="../../../bestiary/77-barbed_devil/index.html" target="_blank">Шипастый дьявол (Гаматула) [barbed devil]</a>
+</td>
+</tr>
+<tr>
+<td>
+8. <a href="../../../bestiary/80-chain_devil/index.html" target="_blank">Дьявол цепей (Китон) [chain devil]</a>
+</td>
+</tr>
+<tr>
+<td>
+9. <a href="../../../bestiary/79-bone_devil/index.html" target="_blank">Костяной дьявол (Осилут) [bone devil]</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr class="table_header">
+<td>Старшие дьяволы</td>
+</tr>
+<tr>
+<td>
+10. <a href="../../../bestiary/4891-orthon/index.html" target="_blank">Ортон [orthon]</a>
+</td>
+</tr>
+<tr>
+<td>
+11. <a href="../../../bestiary/82-horned_devil/index.html" target="_blank">Рогатый дьявол (Мальбранш) [horned devil]</a>
+</td>
+</tr>
+<tr>
+<td>
+12. <a href="../../../bestiary/81-erinyes/index.html" target="_blank">Эриния [erinyes]</a>
+</td>
+</tr>
+<tr>
+<td>
+13. <a href="../../../bestiary/1505-narzugon/index.html" target="_blank">Нарзугон [narzugon]</a>
+</td>
+</tr>
+<tr>
+<td>
+14. <a href="../../../bestiary/83-ice_devil/index.html" target="_blank">Ледяной дьявол (Гелюгон) [ice devil]</a>
+</td>
+</tr>
+<tr>
+<td>
+15. <a href="../../../bestiary/2334-amnizu/index.html" target="_blank">Амнизу [amnizu]</a></td>
+</tr>
+<tr>
+<td>
+16. <a href="../../../bestiary/86-pit_fiend/index.html" target="_blank">Исчадие преисподней [pit fiend]</a></td>
+</tr>
+<tr class="table_header">
+<td>Архидьяволы</td>
+</tr>
+<tr>
+<td>
+17. Герцог или герцогиня
+</td>
+</tr>
+<tr>
+<td>
+18. Эрцгерцог или эрцгерцогиня
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class="bigSectionTitle underlined"><span id='predlozhenie'>Предложение</span></h2>
+<p>Заключение дьявольской сделки начинается с того, что Дьявол или персонаж выходит на связь и что-то предлагает. Для условий сделки требуется, чтобы дьявол как минимум предложил дар, а персонаж согласился на цену. Если одна из сторон не согласна на условия, они могут провести переговоры и согласовать более выгодные условия, а могут и просто разойтись. Не всем сделкам суждено быть заключёнными.
+</p><p>Если цена меньше, чем душа персонажа, дьявол часто указывает штраф на случай, если персонаж не сумеет выплатить цену.
+</p><p>Приняв условия, обе стороны скрепляют сделку физическим контрактом, который может принимать разные формы (см. «Дьявольские контракты»).
+</p><br><h3 class="underlined"><span id='proverki_harakteristik_pri_zakljuchenii_sdelok'>Проверки характеристик при заключении сделок</span></h3><p>Большинство сделок с Дьяволами можно разыгрывать без бросков костей. Никакая проверка Харизмы не заставит большинство Дьяволов заключить невыгодную сделку — бестии слишком умны и опытны в этом деле, чтобы их надуть. Если Дьявол и правда ввяжется в сделку, которая кажется слишком выгодной или слишком запутанной, он скорее приостановит переговоры и посоветуется с Дьяволами поумнее, чтобы узнать их мнение.
+</p><p>При переговорах по сделке могут пригодиться такие проверки характеристик:
+</p><ul><li><span style="color: var(--color-text-main);">Если дьявол пытается обмануть персонажа на стадии переговоров, он может совершить проверку Харизмы (<span tooltip-for="skill.deception" title="skill.deception">Обман</span>) противопоставленную проверке Мудрости (<span tooltip-for="skill.insight" title="skill.insight">Проницательность</span>) персонажа. Если результат персонажа выше, чем у Дьявола, он распознаёт обман.</span></li><li><span style="color: var(--color-text-main);">Дьяволы любят вставлять дополнительные условия в контракты мелким шрифтом. В таких случаях персонаж, умеющий читать на Инфернальном языке, может совершить проверку Интеллекта (<span tooltip-for="skill.investigation" title="skill.investigation">Расследование</span>) противопоставленную проверке Харизмы (<span tooltip-for="skill.deception" title="skill.deception">Обман</span>) Дьявола. Если результат персонажа выше, чем у Дьявола, персонаж замечает лишние условия мелким шрифтом и может потребовать их убрать до подписания контракта.</span></li></ul><h2 class="bigSectionTitle underlined"><span id='chto_nuzhno_dyavolam'>Что нужно Дьяволам</span></h2><p>Всем Дьяволам нужны души. Каждая полученная душа приближает Дьявола к следующему повышению. Если персонаж хочет чего-то от Дьявола, но не готов отдавать душу, Дьявол может потребовать от персонажа оказать ему услугу. Архидьяволы к тому же любят, когда смертные приносят им присягу верности. 
+</p><br><h3 class="underlined"><span id='dushi'>Души</span></h3> 
+<p>Когда персонажи отдают души Дьяволам, это значит, что после смерти они клянутся служить в Девяти Преисподних в качестве Дьяволов. Душу, обещанную Дьяволу, не может забрать никакое другое существо. 
+</p><br><h3 class="underlined"><span id='uslugi'>Услуги</span></h3> 
+<p>Если Дьявол не может сразу заполучить душу персонажа, он может потребовать вместо этого оказать ему услугу, обычно вынуждая персонажа творить зло или морально сомнительные поступки, чтобы склонить его к ещё более тёмным сделкам в будущем. Вот несколько примеров: 
+</p><ul><li>Не используя магическое принуждение, персонаж должен убедить другого смертного заключить дьявольский контракт с этим Дьяволом. 
+</li><li>Персонажу сообщают об эпидемии, набеге или иной беде, подстроенной Дьяволом. Персонаж не должен этому мешать. 
+</li><li>Персонаж должен похитить священную реликвию из храма доброго божества и доставить Дьяволу или его подчинённому.</li></ul><br><h3 class="underlined"><span id='prisyaga_na_vernost_arhidyavoly'>Присяга на верность (архидьяволы)</span></h3><p>Верность архидьяволы ценят почти так же, как души. Один из способов для смертного доказать свою верность архидьяволу — организовать религиозный культ, поклоняющийся архидьяволу, или совершить гнусные деяния во имя архидьявола. Персонаж также может заключить соглашение и служить архидьяволу в качестве <a href="../../../homebrew/class/104-warlock/index.html" target="_blank">колдуна</a>. Такой персонаж должен взять как минимум один уровень в классе колдуна, выбрав <a href="../../../homebrew/class/104-warlock/index.html#patron.fiend" target="_blank">Исчадие</a> (в данном случае — архидьявола) как потустороннего покровителя.</p><h2 class="bigSectionTitle underlined"><span id='chto_predlagajut_dyavoly'>Что предлагают Дьяволы</span></h2><p>Пределы того, что может предложить дьявол, зависят от его положения в иерархии Преисподней. В таблице «<a href="index.html#hell-ierarchy" target="_blank">Иерархия Преисподней</a>» Дьяволы перечислены по возрастанию мощи, от ничтожных <a href="../../../bestiary/85-lemure/index.html" target="_blank">лемуров [lemure]</a> до могучих эрцгерцогов и эрцгерцогинь. 
+</p><p>Дьяволы любят искушать смертных сокровищами и магическими предметами. Как правило, магические предметы, которые даруют Дьяволы, носят следы дьявольской работы. Они выкованы из дьявольского железа, на них начертаны письмена на Инфернальном, они издают слабые стоны мук, пахнут серой или как-то ещё выдают своё происхождение. 
+</p><p>Дьяволы могут согласиться сами временно послужить смертным советниками и телохранителями.
+</p><br><h3 class="smallSectionTitle"><span id='mladshie_dyavoly'>Младшие дьяволы</span></h3><p>Низший Дьявол может предложить что-то или всё сразу из следующего:
+</p><ul><li><span style="color: var(--color-text-main);">До 500 зм в <a href="../../../loot/index.html" target="_blank">предметах искусства, монетах или самоцветах</a>.</span></li><li><span style="color: var(--color-text-main);"><a href="../../../items/index.html@search=&amp;quality=1.html" target="_blank">Необычный</a> магический предмет.</span></li><li><span style="color: var(--color-text-main);">Верную службу на период не более девяти лет.</span></li></ul><br><h3 class="smallSectionTitle"><span id='starshie_dyavoly'>Старшие дьяволы</span></h3><p>Высший дьявол может предложить что-то или всё сразу из следующего:
+</p><ul><li><span style="color: var(--color-text-main);">До 5000 зм в <a href="../../../loot/index.html" target="_blank">предметах искусства, монетах или самоцветах</a>.</span></li><li><span style="color: var(--color-text-main);"><a href="../../../items/index.html@search=&amp;quality=1.html" target="_blank">Необычный</a> или <a href="../../../items/index.html@search=&amp;quality=2.html" target="_blank">редкий</a> магический предмет.</span></li><li><span style="color: var(--color-text-main);">Верную службу на период не более девяти дней.</span></li></ul><br><h3 class="smallSectionTitle"><span id='arhidyavoly'>Архидьяволы</span></h3>
+<p>Архидьявол может предложить что-то или всё сразу из следующего:
+</p><ul><li><span style="color: var(--color-text-main);">До 50000 зм в <a href="../../../loot/index.html" target="_blank">предметах искусства, монетах, самоцветах</a> или собственности.</span></li><li><span style="color: var(--color-text-main);"><a href="../../../items/index.html@search=&amp;quality=1.html" target="_blank">Необычный</a>, <a href="../../../items/index.html@search=&amp;quality=2.html" target="_blank">редкий</a> или <a href="../../../items/index.html@search=&amp;quality=3.html" target="_blank">очень редкий</a> магический предмет.</span></li><li><span style="color: var(--color-text-main);">Ценные сведения, которые нельзя добыть никак иначе.</span></li><li><span style="color: var(--color-text-main);">Выполнение задания, на которое у архидьявола или одного его приспешника уйдёт не более девяти следующих дней.</span></li><li><span style="color: var(--color-text-main);">Сверхъестественный дар в виде <a href="../146-supernatural_gifts_and_boons/index.html#avernus" target="_blank">чар</a>.</span></li><li><span style="color: var(--color-text-main);">Эффект заклинания <a href="../../../spells/124-wish/index.html" target="_blank">исполнение желаний [wish]</a>&nbsp;(без негативных последствий из-за выбора эффекта, не дублирующего другое заклинание).</span></li></ul><h2 class="bigSectionTitle underlined"><span id='dyavolskie_kontrakty'>Дьявольские контракты</span></h2>
+<p>Когда персонаж и Дьявол договорятся об условиях сделки, её надо скрепить контрактом, который Дьявол может создать действием. Контракт часто появляется эффектным образом, например в облаке дыма, под звуки дьявольского хохота или в сопровождении беса, рассыпающего искры.
+</p><p>Контракты могут принимать различную форму. Условия в них написаны на Инфернальном, а согласие с ними скрепляют одним из нескольких способов, от простой подписи до отвратительного поступка. Когда все стороны завершат действия, необходимые для заключения контракта, сделка вступает в силу. Персонаж, заключивший сделку, получает выгоды от дара дьявола и обязан заплатить цену.
+</p><br><h3 class="underlined"><span id='narushenie_kontrakta'>Нарушение контракта</span></h3><p>Если персонаж связан дьявольским контрактом, но не сумел выплатить указанную в нём цену, он немедленно получает штраф, указанный в самом контракте. Типичные штрафы таковы:
+</p><ul><li><span style="color: var(--color-text-main);">Душа персонажа будет погублена после смерти (персонаж возродится в Девяти Преисподних <a href="../../../bestiary/85-lemure/index.html" target="_blank">лемуром [lemure]</a>).</span></li><li><span style="color: var(--color-text-main);">Дьявол отбирает у персонажа всё материальное богатство и собственность или мощный <a href="../../../items/index.html" target="_blank">магический предмет</a> (на выбор Мастера).</span></li><li><span style="color: var(--color-text-main);">У персонажа вырастают рожки, хвостик или появляются какие-то ещё дьявольские особенности внешности. Их нельзя убрать ничем, кроме разве что божественного вмешательства (впрочем, можно скрыть их иллюзией или маскировкой). Пока сохраняются эти отметины, заклинания вроде <a href="../../../spells/194-detect_evil_and_good/index.html" target="_blank">обнаружения зла и добра [detect evil and good]</a> определяют персонажа как Исчадие.</span></li><li><span style="color: var(--color-text-main);">Персонаж получает новый изъян. Персонаж, ведущий себя вопреки этому изъяну, совершает с помехой все броски атак, проверкам характеристик и спасброски, пока не поменяет поведение в соответствии с изъяном.</span></li></ul><br><h3 class="underlined"><span id='otmena_kontrakta'>Отмена контракта</span></h3><p>Если дьявольский контракт теряет силу, все его стороны освобождаются от выполнения условий безо всяких штрафов, как если бы сделки и не было никогда. Все дары и плата немедленно возвращаются обратно — правда, некоторые контракты могут оставить шрам или какой-то ещё эффект на память.
+</p><p>Дьявол и персонаж, подписавшие контракт, должны оба согласиться отменить его условия. Действием Дьявол магически призывает контракт. Обе стороны заявляют, что согласны отменить его, контракт рассыпается в прах и уничтожается.
+</p><p>За отмену контракта Дьяволы требуют компенсации. Некоторых трусливых Дьяволов можно заставить отменить контракт в обмен на сохранение им жизни, но большинство скорее рискнёт жизнью, чем стерпит понижение до низшей формы Дьявола и презрение товарищей.
+</p><p>Дьявола можно убедить отменить контракт в обмен на что-то из следующего:
+</p><ul><li><span style="color: var(--color-text-main);">Одну или несколько монет душ (младшие Дьяволы обычно соглашаются на три, старшие — на девять, а архидьяволам такая мелочь неинтересна).</span></li><li><span style="color: var(--color-text-main);">Астрономическая сумма золота и принесение в жертву множества Гуманоидов во имя этого Дьявола.</span></li><li><span style="color: var(--color-text-main);">Могучий артефакт вроде <a href="../../../items/2223-eye_and_hand_of_vecna/index.html" target="_blank">руки Векны [hand of Vecna]</a>&nbsp;или <a href="../../../items/2254-sword_of_zariel/index.html" target="_blank">меча Зариэли [sword of Zariel]</a>.</span></li></ul><br><h3 class="underlined"><span id='forma_kontrakta'>Форма контракта</span></h3><p>В таблице ниже приведены примеры разных форм дьявольских контрактов. В следующем за таблицей разделе описаны разные контракты и способы их уничтожить или отменить.
+</p>
+
+<h4 class="tableTitle">Форма контракта</h4>
+<table><tbody><tr class="table_header"><td>к6</td><td>Форма</td></tr><tr><td>1</td><td>
+Дьявольский свиток
+</td></tr>
+<tr><td>2</td><td>
+Жалкая тварь
+</td></tr>
+<tr><td>3</td><td>
+Куколки
+</td></tr>
+<tr><td>4</td><td>
+Отпечаток в камне
+</td></tr>
+<tr><td>5</td><td>
+Песнь дьявола
+</td></tr>
+<tr><td>6</td><td>
+Поцелуй лемура
+</td></tr>
+</tbody></table><p><strong><em>Дьявольский свиток. </em></strong>Дьявол создаёт свиток из пергамента, на котором записаны кровью условия сделки. Чтобы скрепить контракт, Дьявол и персонаж должны подписать свиток собственной кровью или кровью Гуманоида, который умер не ранее 1 минуты назад. Сразу после подписания обеими сторонами контракт исчезает и попадает в безопасное хранилище в Девяти Преисподних.</p><p>Если сжечь свиток, контракт будет отменён. Он невосприимчив к любому прочему урону и повреждениям.
+</p><p><strong><em>Жалкая тварь</em></strong>. Открывается портал, из него выходит, ковыляя, закованный в цепи Гуманоид. Его глаза и рот зашиты. Это, скорее всего, несчастный, который нарушил свой дьявольский контракт и теперь расплачивается. Условия вырезают на коже жалкой твари. Чтобы скрепить контракт, дьявол и персонаж вырезают на коже твари подписи, а затем немедленно изгоняют её.
+</p><p>Для жалкой твари используйте параметры <a href="../../../bestiary/18-commoner/index.html" target="_blank">обывателя [commoner]</a>, <span tooltip-for="condition.blinded" title="condition.blinded">ослеплённого</span>, пока его веки зашиты. После подписания контракта обеими сторонами тварь больше не стареет, не нуждается в пище, воде, воздухе и сне и невосприимчива к любому урону, кроме нанесённого тем Дьяволом или тем персонажем, которые заключили сделку. Контракт будет отменён в случае смерти твари.
+</p><p><strong><em>Куколки.</em></strong> Дьявол создаёт двух куколок из грязных тряпок или гнилой древесины. Куколки зачитывают договор писклявыми голосами (на Инфернальном) и плюются кровью, если их обнять. Чтобы скрепить контракт, Дьявол и персонаж должны обнять по куколке. По заключении контракта Дьявол оставляет себе одну куколку, а персонаж— другую.
+</p><p>Чтобы отменить такой контракт, надо уничтожить обеих куколок почти одновременно, в течение одной минуты. Если вторую куколку не удастся уничтожить за это время, через 1 минуту первая снова появится. Каждая куколка — объект <span tooltip-for="size.small" title="size.small">Маленького</span> размера с КД 9, 9 хитами, уязвимостью к урону огнём и иммунитетом к урону ядом и урону психической энергией.
+</p><p><strong><em>Отпечаток в камне. </em></strong>Из трещины в земле вытекает поток лавы и быстро остывает до состояния камня. Контракт появляется в виде светящегося текста на твердеющей лаве. Чтобы скрепить контракт, дьявол и персонаж должны приложить свои левые ладони к лаве (это не причинит им вреда), оставив на ней отпечатки. Затем остывшая лава исчезает и отправляется в безопасное место.
+</p><p>Если отрубить левые ладони и дьяволу, и персонажу и приложить их к отпечаткам, ладони и камень будут уничтожены, а контракт отменён.
+</p><p><strong><em>Песнь дьявола.</em></strong> Дьявол создаёт лист музыкальных нот, на котором записан контракт. Чтобы скрепить контракт, дьявол и персонаж должны спеть или сыграть эту нестройную песню, которая будет вертеться у них в памяти, пока сделка не будет выполнена.
+</p><p>Если окунуть нотный лист в святую воду, контракт будет уничтожен и отменён, а персонаж и Дьявол потеряют возможность говорить. Заклинание <a href="../../../spells/39-greater_restoration/index.html" target="_blank">высшее восстановление [greater restoration]</a> или подобная магия прекращает этот эффект для существа.
+</p><p><strong><em>Поцелуй лемура. </em></strong>Дьявол призывает <a href="../../../bestiary/85-lemure/index.html" target="_blank">лемура [lemure]</a>, на бугристой плоти которого проступают горящие руны, описывающие условия контракта. Чтобы скрепить контракт, дьявол и персонаж должны поцеловать лемура. После этого лемур превращается в каменную статую, на поверхности которой отпечатан контракт. Статуя проваливается в глубины Девяти Преисподних.
+</p><p>Статуя — объект <span tooltip-for="size.medium" title="size.medium">Среднего</span> размера с КД 17, 50 хитами, иммунитетом к любому урону, кроме урона излучением. Никакое заклинание не может снова превратить её в лемура. Если уничтожить статую, контракт будет отменён.</p>
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div></section>
+<script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:646'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="11835"><div class="comment__entry comment__op comment__author-group-" data-id="11835" id="comment_11835">	<div class='comment__header'>
+			<a href='https://dnd.su/@6391f251143b' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@6391f251143b' class='profile__public-link profile__public-link-group-users comment__author-name'>Jack135</a></span> 
+	<div class="comment__age" title="07:39:45 15.07.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_11835" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Небольшая путаница в секции "что предлагают дьяволы": указаны низшие, высшие и архидьяволы - наверное, имеются в виду младшие, старшие и архидьяволы?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="13046"><div class="comment__entry comment__op comment__author-group-" data-id="13046" id="comment_13046">	<div class='comment__header'>
+			<a href='https://dnd.su/@vk-351525530' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/47c51d06a2ed54a14c08483740e669ad.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@vk-351525530' class='profile__public-link profile__public-link-group-users comment__author-name'>Даниил Королёв</a></span> 
+	<div class="comment__age" title="23:21:38 29.07.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_13046" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		это очень интересно
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="17399"><div class="comment__entry comment__op comment__author-group-" data-id="17399" id="comment_17399">	<div class='comment__header'>
+			<a href='https://dnd.su/@88ce1ed8b037' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/691415653476378f1edf603e74d70443.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@88ce1ed8b037' class='profile__public-link profile__public-link-group-users comment__author-name'>Vladiuha12</a></span> 
+	<div class="comment__age" title="20:23:29 10.10.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_17399" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Кайф только читай контракт бдительно:)))
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="18912"><div class="comment__entry comment__op comment__author-group-" data-id="18912" id="comment_18912">	<div class='comment__header'>
+			<a href='https://dnd.su/@Lusty-Wizard' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/992fc62a4e0e3c569f0e05fb45ad3c76.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Lusty-Wizard' class='profile__public-link profile__public-link-group-users comment__author-name'>Lust&#13;Wizard</a></span> 
+	<div class="comment__age" title="15:00:03 08.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_18912" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Можно ли заработать или выиграть монеты душ ? <br> <br>Выиграть на спор или через сделку в обмен на оказание услуг от разведки и добычи чего-то вплоть до необычного и до захвата редкого и убийства конкретных лиц и даже групп за дополнительную плату ? <br> <br>Есть ли какой-то "фриланс" меж 9 преисподнями и конкретными местами в различных планах ? <br>Есть ли гильдии или культы выдающие заказы от лиц дьяволов или выше ?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="19369" id="comment_19369">	<div class='comment__header'>
+			<a href='https://dnd.su/@90e1497a9073' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@90e1497a9073' class='profile__public-link profile__public-link-group-users comment__author-name'>Саша Наранча</a></span> 
+	<div class="comment__age" title="13:18:31 18.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_19369" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		У меня так персонаж-лудоман заключил сделку с дьяволом, чтобы в любой момент можно было сыграть в карты на монеты душ. Дьявол был обязан появиться в случае если персонаж достает определённую колоду карт и начинает ее тасовать, а персонаж в обмен после смерти отправлялся в ад как бес. Но Карл(так звали персонажа) добавил мелкое условие, что если к моменту смерти у него будет больше монет душ, чем у дьявола, тот оформит ему собственное место и сам станет бесом на службе.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="19370" id="comment_19370">	<div class='comment__header'>
+			<a href='https://dnd.su/@90e1497a9073' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@90e1497a9073' class='profile__public-link profile__public-link-group-users comment__author-name'>Саша Наранча</a></span> 
+	<div class="comment__age" title="13:19:26 18.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_19370" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Чуда кстати не случилось, монет у Карла вышло меньше. Но сейчас он уже до бородатого дослужился
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="34094" id="comment_34094">	<div class='comment__header'>
+			<a href='https://dnd.su/@f2d470809235' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@f2d470809235' class='profile__public-link profile__public-link-group-users comment__author-name'>Игорь Киреев</a></span> 	<div class="comment__user-reply-user" data-reply-to="19370">
+		<a href="index.html#comment_19370" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@90e1497a9073' class='profile__public-link profile__public-link-group-users comment__replied-to'>Саша Наранча</a>
+	<div class="comment__age" title="14:16:29 09.08.2025">7 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_34094" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Это очень интересная партия.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="34857" id="comment_34857">	<div class='comment__header'>
+			<a href='https://dnd.su/@18639a756f87' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@18639a756f87' class='profile__public-link profile__public-link-group-users comment__author-name'>Renado</a></span> 	<div class="comment__user-reply-user" data-reply-to="19370">
+		<a href="index.html#comment_19370" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@90e1497a9073' class='profile__public-link profile__public-link-group-users comment__replied-to'>Саша Наранча</a>
+	<div class="comment__age" title="19:02:47 26.08.2025">7 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_34857" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Ничего если я Карла как отсылку/мем использую?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="20776"><div class="comment__entry comment__op comment__author-group-" data-id="20776" id="comment_20776">	<div class='comment__header'>
+			<a href='https://dnd.su/@a8c621bfd3d2' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@a8c621bfd3d2' class='profile__public-link profile__public-link-group-users comment__author-name'>Максим Сурков</a></span> 
+	<div class="comment__age" title="00:12:43 15.12.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_20776" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Эво как
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+		<p>
+ На данный момент в галерее нет изображений.
+ 	</p>
+	</section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

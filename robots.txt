@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+
+Disallow: /tmp/
+Disallow: /test/
+Disallow: /@*
+Disallow: /profile/
+Disallow: *search*
+Disallow: /piece*
+Disallow: */piece*
+Disallow: */login*
+Disallow: */logout*
+
+Sitemap: https://dnd.su/sitemap.xml
+
+Host: dnd.su

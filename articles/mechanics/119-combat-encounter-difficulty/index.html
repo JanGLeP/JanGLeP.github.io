@@ -1,0 +1,1138 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Сложность боевой сцены / Игровые механики / Статьи D&D 5 / Dungeon Master's Guide</title>
+	
+    <meta name="description" content="«Сложность боевой сцены (Combat Encounter Difficulty)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta name="keywords" content="dnd статьи механики,механики,игровые механики, днд статьи механики,механики,игровые механики, d&d статьи механики,механики,игровые механики, dnd 5 статьи механики,механики,игровые механики, днд 5 статьи механики,механики,игровые механики, d&d 5 статьи механики,механики,игровые механики, подземелья и драконы статьи механики,механики,игровые механики, dungeons and dragons статьи механики,механики,игровые механики, dnd статьи механики,механики,игровые механики Сложность боевой сцены [Combat Encounter Difficulty], днд статьи механики,механики,игровые механики Сложность боевой сцены [Combat Encounter Difficulty], d&d статьи механики,механики,игровые механики Сложность боевой сцены [Combat Encounter Difficulty], dnd 5 статьи механики,механики,игровые механики Сложность боевой сцены [Combat Encounter Difficulty], днд 5 статьи механики,механики,игровые механики Сложность боевой сцены [Combat Encounter Difficulty], d&d 5 статьи механики,механики,игровые механики Сложность боевой сцены [Combat Encounter Difficulty], подземелья и драконы статьи механики,механики,игровые механики Сложность боевой сцены [Combat Encounter Difficulty], dungeons and dragons статьи механики,механики,игровые механики Сложность боевой сцены [Combat Encounter Difficulty]" />
+    <meta property="og:title" content="Сложность боевой сцены / Игровые механики / Статьи D&D 5 / Dungeon Master's Guide" />
+    <meta property="og:description" content="«Сложность боевой сцены (Combat Encounter Difficulty)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/articles/mechanics/119-combat-encounter-difficulty/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='../../119-slozhnost_boevoj_stseny/index.html'>Сложность боевой сцены</a><span> — </span><a href='../index.html'>Игровые механики</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="../../119-slozhnost_boevoj_stseny/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="../../119-slozhnost_boevoj_stseny/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="../../119-slozhnost_boevoj_stseny/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="../../119-slozhnost_boevoj_stseny/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../119-slozhnost_boevoj_stseny/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Farticles%2Fmechanics%2F119-combat-encounter-difficulty%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Farticles%2Fmechanics%2F119-combat-encounter-difficulty%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Farticles%2Fmechanics%2F119-combat-encounter-difficulty%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Farticles%2Fmechanics%2F119-combat-encounter-difficulty%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../119-slozhnost_boevoj_stseny/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://vk.com/gooddragondice?partner=dnd.su" target="_blank" title="GoodDragon Dice (Лавка кубиков)" class="item_link_2 partner"><span class="sprite-partners__gdd partner-icon"></span>GoodDragon Dice</a></li><li class="item_level_2"><a href="https://www.youtube.com/@DangaMasta?partner=dnd.su" target="_blank" title="Данжа Маста (Канал о создании билдов различных персонажей в ДнД)" class="item_link_2 partner"><span class="sprite-partners__dangamasta partner-icon"></span>Данжа Маста</a></li><li class="item_level_2"><a href="https://www.youtube.com/@kasodochka?partner=dnd.su" target="_blank" title="Kasoda (Смешные, познавательные и разочаровывающие ролики про D&D)" class="item_link_2 partner"><span class="sprite-partners__kasoda partner-icon"></span>Kasoda</a></li><li class="item_level_2"><a href="https://vk.com/wishport?partner=dnd.su" target="_blank" title="WishPort (Всё о ролевках)" class="item_link_2 partner"><span class="sprite-partners__wishport partner-icon"></span>WishPort</a></li><li class="item_level_2"><a href="https://vk.com/dicehead_dnd?partner=dnd.su" target="_blank" title="DiceHead" class="item_link_2 partner"><span class="sprite-partners__dicehead partner-icon"></span>DiceHead</a></li><li class="item_level_2"><a href="https://vk.com/twinsrpg?partner=dnd.su" target="_blank" title="Подземелья и Близняшки (Тащи рулбуки, всяк сюда входящий!)" class="item_link_2 partner"><span class="sprite-partners__twins partner-icon"></span>Подземелья и Близняшки</a></li><li class="item_level_2"><a href="https://www.youtube.com/@DnDMultiverse?partner=dnd.su" target="_blank" title="DnD Multiverse (Мультивселенная Dungeons & Dragons)" class="item_link_2 partner"><span class="sprite-partners__dndmultiverse partner-icon"></span>DnD Multiverse</a></li><li class="item_level_2"><a href="https://vk.com/mastademic?partner=dnd.su" target="_blank" title="Мастер Демик (Мастер Демик. Разработка оффлайн инструментов для мастеров D&D)" class="item_link_2 partner"><span class="sprite-partners__master_helper partner-icon"></span>Мастер Демик</a></li><li class="item_level_2"><a href="https://vk.com/wwguild?partner=dnd.su" target="_blank" title="Гильдия Мироходов (Пристань многих миров)" class="item_link_2 partner"><span class="sprite-partners__wwguild partner-icon"></span>Гильдия Мироходов</a></li><li class="item_level_2"><a href="https://vk.com/morelessvk?partner=dnd.su" target="_blank" title="Море Лес (Стримы D&D)" class="item_link_2 partner"><span class="sprite-partners__more partner-icon"></span>Море Лес</a></li><li class="item_level_2"><a href="https://vk.com/phantom_st?partner=dnd.su" target="_blank" title="Студия «Phantom» (Cтудия фэнтези «Phantom». Перевод литературы по настольным ролевым играм)" class="item_link_2 partner"><span class="sprite-partners__phantom partner-icon"></span>Студия «Phantom»</a></li><li class="item_level_2"><a href="https://t.me/VrogharMasters?partner=dnd.su" target="_blank" title="Мастерская Врогхада (Переводы, сборки локаций и советы по играм)" class="item_link_2 partner"><span class="sprite-partners__vroghar partner-icon"></span>Мастерская Врогхада</a></li><li class="item_level_2"><a href="https://vk.com/drunkenbadger?partner=dnd.su" target="_blank" title="Накидавшийся барсук (Make DnD, not war.)" class="item_link_2 partner"><span class="sprite-partners__drunkenbadger partner-icon"></span>Накидавшийся барсук</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCC6Ay6Oz1Yb10SCmMdbLvPg?partner=dnd.su" target="_blank" title="Грядут Приключения (Пятеро друзей, подземелья и драконы)" class="item_link_2 partner"><span class="sprite-partners__gryadut_priklyucheniya partner-icon"></span>Грядут Приключения</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../119-slozhnost_boevoj_stseny/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='../../119-slozhnost_boevoj_stseny/index.html'>Сложность боевой сцены</a><span> — </span><a href='../index.html'>Игровые механики</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+             <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="../index.html" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по игровым механикам" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+			 <div class='paper-1 card card__group- typoable'  style="background-position:48% 0" data-id='article:119' data-typo-path='/articles/mechanics/119-combat-encounter-difficulty/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Сложность боевой сцены"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../119-slozhnost_boevoj_stseny/index.html' itemprop='url' class='item-link'>Сложность боевой сцены [Combat Encounter Difficulty]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Dungeon Master's Guide</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>При создании боевой сцены отпустите своё воображение в свободное плавание и создайте что-то, что понравится вашим игрокам. Как только вы выясните детали, используйте эту статью, чтобы настроить сложность сцены. Либо воспользуйтесь <a href="../../../encounter_difficulty/index.html" target="_blank">Калькулятором сложности боевой сцены</a>.</p>
+<br><p>Существует четыре категории сложности сцены.</p>
+<p><strong>Легко</strong>. Лёгкая сцена не потребует от персонажей больших затрат и не подвергнет их серьёзной опасности. Они могут потерять несколько хитов, но победа в любом случае гарантирована.</p>
+<p><strong>Средне</strong>. Средняя по сложности сцена, как правило, имеет один или два страшных момента для игроков, но персонажи должны одержать победу без потерь. Одному или нескольким из них, скорее всего, понадобится лечение.</p>
+<p><strong>Сложно</strong>. Сложная сцена может быть болезненна для искателей приключений. Слабые персонажи могут быть выведены из боя и есть шанс, что один или несколько героев умрёт.</p>
+<p><strong>Смертельно</strong>. Смертельная сцена может стать летальной для одного или нескольких персонажей. Группе потребуется хорошая тактика, иначе она рискует потерпеть поражение.</p>
+<br><h4 class="tableTitle">Пороговые значения опыта для определения уровня сложности</h4>
+<table>
+<tbody>
+<tr class="table_header"><td rowspan="2"><p style="text-align: center;">Уровень</p>
+<p style="text-align: center;">персонажа</p>
+</td>
+<td colspan="4" style="text-align: center;">Сложность сцены</td>
+</tr>
+<tr class="table_header"><td style="text-align: center;">Легко</td>
+<td style="text-align: center;">Средне</td>
+<td style="text-align: center;">Сложно</td>
+<td style="text-align: center;">Смертельно</td>
+</tr>
+<tr>
+<td>1</td>
+<td>25</td>
+<td>50</td>
+<td>75</td>
+<td>100</td>
+</tr>
+<tr>
+<td>2</td>
+<td>50</td>
+<td>100</td>
+<td>150</td>
+<td>200</td>
+</tr>
+<tr>
+<td>3</td>
+<td>75</td>
+<td>150</td>
+<td>225</td>
+<td>400</td>
+</tr>
+<tr>
+<td>4</td>
+<td>125</td>
+<td>250</td>
+<td>375</td>
+<td>500</td>
+</tr>
+<tr>
+<td>5</td>
+<td>250</td>
+<td>500</td>
+<td>750</td>
+<td>1100</td>
+</tr>
+<tr>
+<td>6</td>
+<td>300</td>
+<td>600</td>
+<td>900</td>
+<td>1400</td>
+</tr>
+<tr>
+<td>7</td>
+<td>350</td>
+<td>750</td>
+<td>1100</td>
+<td>1700</td>
+</tr>
+<tr>
+<td>8</td>
+<td>450</td>
+<td>900</td>
+<td>1400</td>
+<td>2100</td>
+</tr>
+<tr>
+<td>9</td>
+<td>550</td>
+<td>1100</td>
+<td>1600</td>
+<td>2400</td>
+</tr>
+<tr>
+<td>10</td>
+<td>600</td>
+<td>1200</td>
+<td>1900</td>
+<td>2800</td>
+</tr>
+<tr>
+<td>11</td>
+<td>800</td>
+<td>1600</td>
+<td>2400</td>
+<td>3600</td>
+</tr>
+<tr>
+<td>12</td>
+<td>1000</td>
+<td>2000</td>
+<td>3000</td>
+<td>4500</td>
+</tr>
+<tr>
+<td>13</td>
+<td>1100</td>
+<td>2200</td>
+<td>3400</td>
+<td>5100</td>
+</tr>
+<tr>
+<td>14</td>
+<td>1250</td>
+<td>2500</td>
+<td>3800</td>
+<td>5700</td>
+</tr>
+<tr>
+<td>15</td>
+<td>1400</td>
+<td>2800</td>
+<td>4300</td>
+<td>6400</td>
+</tr>
+<tr>
+<td>16</td>
+<td>1600</td>
+<td>3200</td>
+<td>4800</td>
+<td>7200</td>
+</tr>
+<tr>
+<td>17</td>
+<td>2000</td>
+<td>3900</td>
+<td>5900</td>
+<td>8800</td>
+</tr>
+<tr>
+<td>18</td>
+<td>2100</td>
+<td>4200</td>
+<td>6300</td>
+<td>9500</td>
+</tr>
+<tr>
+<td>19</td>
+<td>2400</td>
+<td>4900</td>
+<td>7300</td>
+<td>10900</td>
+</tr>
+<tr>
+<td>20</td>
+<td>2800</td>
+<td>5700</td>
+<td>8500</td>
+<td>12700</td>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle">Определение сложности сцены </h3><p>Используйте следующий метод, чтобы оценить сложность любой боевой сцены.</p>
+<p><strong>1. Определите пороговые значения опыта.</strong> Во первых, определите пороговые значения опыта для каждого персонажа в отряде. Приведённая выше таблица содержит по четыре пороговых значения для каждой категории сложности. Используйте уровень персонажа, чтобы определить его пороговые значения. Повторите этот процесс для каждого члена отряда.</p>
+<p><strong>2. Определите пороговые значения опыта для всего отряда.</strong> Сложите пороговые значения опыта персонажей для каждой категории сложности сцены. Так вы определите пороговые значения опыта для всего отряда. В конечном итоге у вас получится четыре значения, по одному для каждой категории сложности сцены.</p>
+<p>Например, если ваша группа состоит из трёх персонажей 3 уровня и одного 2 уровня, то итоговые пороговые значения опыта для всего отряда составят:</p>
+<br><p><strong>Легко</strong>: 275 (75 + 75 + 75 + 50)</p>
+<p><strong>Средне</strong>: 550 (150 + 150 + 150 + 100)</p>
+<p><strong>Сложно</strong>: 825 (225 + 225 + 225 + 150)</p>
+<p><strong>Смертельно</strong>: 1400 (400 + 400 + 400 + 200)</p>
+<br><p>Запишите значения, ведь вы сможете использовать их для всех сцен в вашем приключении.</p>
+<p><strong>3. Сложите опыт за чудовищ.</strong> Сложите значения опыта для всех чудовищ в сцене. У каждого чудовища опыт указан в его блоке статистики.</p>
+<p><strong>4. Модифицируйте итоговый опыт для нескольких чудовищ.</strong> Если в сцене принимает участие больше одного чудовища, то примените множитель к итоговому опыту за них. Чем больше чудовищ в сцене, тем больше атак они совершат по персонажам в раунд, и тем опасней становится схватка. Чтобы правильно оценить сложность сцены, умножьте сумму опыта за всех участвующих чудовищ на значение, указанное в таблице множителей.</p>
+<p>Например, если в сцене принимают участие четыре чудовища на общую сумму 500 опыта, вам нужно умножить опыт на 2 (взято из таблицы), и получится 1 000 опыта. Получившееся значение — это не то, сколько опыта герои получат за победу над чудовищами; получившееся значение служит для того, чтобы помочь вам точно оценить сложность сцены.</p>
+<p>При осуществлении этого расчёта не учитывайте чудовищ, чей показатель опасности значительно ниже среднего показателя опасности других чудовищ в группе. Их стоит учитывать только если они вносят действительно весомый вклад в сложность сцены.</p>
+<h4 class="tableTitle">Множители</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>Количество<br>чудовищ</td>
+<td>Множитель</td>
+</tr>
+<tr>
+<td>1</td>
+<td>×1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>×1,5</td>
+</tr>
+<tr>
+<td>3-6</td>
+<td>×2</td>
+</tr>
+<tr>
+<td>7-10</td>
+<td>×2,5</td>
+</tr>
+<tr>
+<td>11-14</td>
+<td>×3</td>
+</tr>
+<tr>
+<td>15 и более</td>
+<td>×4</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>5. Сравните опыт. </strong>Сравните полученное значение опыта за чудовищ с пороговым значением опыта для всего отряда. Пороговое значение опыта, соответствующее модифицированной сумме опыта, определяет сложность сцены. Если совпадения нет, используйте ближайшее значение, не превышающее модифицированную сумму опыта.</p>
+<p>Например, у сцены с одним багбиром и тремя хобгоблинами модифицированная сумма опыта равна 1000, что делает её сложной сценой для отряда из трёх персонажей 3 уровня и одного персонажа 2 уровня (для такого отряда значение сложной сцены равняется 825 опыта, а значение смертельной сцены равняется 1400 опыта).</p>
+<br><h3 class="smallSectionTitle">Размер отряда </h3><p>Предыдущие рекомендации основаны на том, что ваш отряд состоит из трёх-пяти искателей приключений.</p>
+<p>Если группа состоит менее чем из трёх персонажей, используйте следующий по величине множитель из таблицы «множители». Например, применяйте множитель «1,5», когда персонажи сражаются с одним чудовищем, и множитель «5» для групп из пятнадцати и более чудовищ.</p>
+<p>Если же группа состоит из шести или более персонажей, то используйте предыдущий по величине множитель из таблицы. Для одного чудовища используйте множитель «0,5».</p>
+<br><h3 class="smallSectionTitle">Составные сцены </h3><p>Иногда в сцене принимают участие несколько врагов, но отряд искателей приключений не сталкивается с ними всеми сразу. Например, чудовища могут нападать на героев волнами. Чтобы определить сложность таких сцен относитесь к каждой её части или волне как к отдельной сцене.</p>
+<p>Группа не сможет отдохнуть между частями составной сцены, поэтому они не смогут восстановить хиты и умения, требующие отдыха для перезарядки. Как правило, если модифицированная сумма опыта за чудовищ в составной сцене больше трети ожидаемого отрядом опыта за день приключений (см. ниже «день приключений»), то сцена будет сложнее, чем сумма её частей.</p>
+<br><h3 class="smallSectionTitle">Создание сцен с учётом бюджета опыта</h3><p>Вы можете создать сцену, если знаете её желаемую сложность. Пороговое значение опыта группы даёт вам бюджет опыта, который вы можете потратить на чудовищ, чтобы создавать лёгкие, средние, сложные, и смертельные сцены. Просто помните, что группы чудовищ требуют гораздо больше опыта, чем показано в их базовых значениях (смотрите шаг 4).</p>
+<p>Например, используя отряд из шага 2, вы сможете создать сцену средней сложности, убедившись, что модифицированная сумма опыта за чудовищ составляет как минимум 550 (пороговое значение опыта для сцены средней сложности) и не более чем 825 (пороговое значение опыта для сложной сцены). Одно чудовище с показателем опасности 3 (мантикора или совомед) стоит 700 опыта, поэтому в сцену можно добавить только одно такое чудовище. Если вы хотите пару чудовищ, каждое из них будет стоить уже в 1,5 раза больше его стоимости в опыте. Пара лютых волков (стоимостью 200 опыта каждый) в сумме дают 600 опыта, что делает их сценой средней сложности для отряда.</p>
+<p>Чтобы облегчить задачу, в Бестиарии есть <a href="https://dnd.su/bestiary/danger/" target="_blank">список монстров</a>, выстроенный в порядке увеличения показателя опасности.</p>
+<br><h3 class="smallSectionTitle">День приключений </h3><p>В обычных условиях и при средней удаче, большинство отрядов может пройти от шести до восьми средних или сложных сцен в день. Если в приключении задействованы более лёгкие сцены, то и пройдено будет больше. Обратная история со смертельными сценами, большое их количество никто не выдержит.</p>
+<p>Подобно тому, как вы рассчитываете уровень сложности сцены, вы можете использовать значения опыта чудовищ и других противников в качестве ориентира при определении того, как далеко продвинется отряд.</p>
+<p>Для каждого персонажа в отряде при помощи таблицы «опыт за день приключений» определите, сколько опыта персонаж планирует заработать за день. Сложите значения всех искателей приключений, чтобы получить общий опыт отряда за один день приключений. Так вы получите грубую оценку общего значения опыта для сцен, которые отряд сможет выдержать, прежде чем героям понадобится продолжительный отдых.</p>
+<br><h4 class="tableTitle">Опыт за день приключений</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>Уровень</td>
+<td>Опыт</td>
+</tr>
+<tr>
+<td>1</td>
+<td>300</td>
+</tr>
+<tr>
+<td>2</td>
+<td>600</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1200</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1700</td>
+</tr>
+<tr>
+<td>5</td>
+<td>3500</td>
+</tr>
+<tr>
+<td>6</td>
+<td>4000</td>
+</tr>
+<tr>
+<td>7</td>
+<td>5000</td>
+</tr>
+<tr>
+<td>8</td>
+<td>6000</td>
+</tr>
+<tr>
+<td>9</td>
+<td>7500</td>
+</tr>
+<tr>
+<td>10</td>
+<td>9000</td>
+</tr>
+<tr>
+<td>11</td>
+<td>10500</td>
+</tr>
+<tr>
+<td>12</td>
+<td>11500</td>
+</tr>
+<tr>
+<td>13</td>
+<td>13500</td>
+</tr>
+<tr>
+<td>14</td>
+<td>15000</td>
+</tr>
+<tr>
+<td>15</td>
+<td>18000</td>
+</tr>
+<tr>
+<td>16</td>
+<td>20000</td>
+</tr>
+<tr>
+<td>17</td>
+<td>25000</td>
+</tr>
+<tr>
+<td>18</td>
+<td>27000</td>
+</tr>
+<tr>
+<td>19</td>
+<td>30000</td>
+</tr>
+<tr>
+<td>20</td>
+<td>40000</td>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle">Короткий отдых </h3><p>В целом, в течение полного приключений дня, отряду, скорее всего, понадобится взять два коротких отдыха, по одному на каждую треть пути.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div></section>
+<script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:119'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="4045"><div class="comment__entry comment__op comment__author-group-" data-id="4045" id="comment_4045">	<div class='comment__header'>
+			<a href='https://dnd.su/@67017fcdb7db' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@67017fcdb7db' class='profile__public-link profile__public-link-group-users comment__author-name'>XAPPH</a></span> 
+	<div class="comment__age" title="10:50:48 12.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_4045" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		У меня вопрос, я могу повышать уровень врагов, например: зомби с 1/4 повысить на 5 лвл? Ну конечно с изменением хитов и урона
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="4052" id="comment_4052">	<div class='comment__header'>
+			<a href='https://dnd.su/@14d81f485b' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@14d81f485b' class='profile__public-link profile__public-link-group-users comment__author-name'>Леонид Куняшев</a></span> 
+	<div class="comment__age" title="12:13:48 12.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_4052" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Да, конечно можете. Главное, сделать все относится сбалансированно. Я обычно беру за основу уже готовых противников из бестиарий схожей сложности и вида. Так, например, если вам нужен зомби 5 ПО, изучите таких противников как Ревенант или Порождение Кьюсса.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="11677"><div class="comment__entry comment__op comment__author-group-" data-id="11677" id="comment_11677">	<div class='comment__header'>
+			<a href='https://dnd.su/@f06cf7093344' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@f06cf7093344' class='profile__public-link profile__public-link-group-users comment__author-name'>Александр Харченко</a></span> 
+	<div class="comment__age" title="16:54:58 12.07.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_11677" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Можно ли получить опыт за сбежавших врагов?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="16437" id="comment_16437">	<div class='comment__header'>
+			<a href='https://dnd.su/@bcd17fb3aa' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@bcd17fb3aa' class='profile__public-link profile__public-link-group-users comment__author-name'>Александр Вейс</a></span> 
+	<div class="comment__age" title="08:54:49 24.09.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_16437" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Можно. Тут все довольно гибко. Например, мастер может выдать полный опыт даже за тех противников, которые не появились в сцене благодаря действиям игроков (мост обрушили, тоннель забаррикадировали). Также можно выдать полный опыт, как если бы всех врагов убили, за прохождение сцены без боя: дипломатией или по стелсу. Конечно, если это соответствует текущим целям группы.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="13003"><div class="comment__entry comment__op comment__author-group-" data-id="13003" id="comment_13003">	<div class='comment__header'>
+			<a href='https://dnd.su/@84755ecfbcf9' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@84755ecfbcf9' class='profile__public-link profile__public-link-group-users comment__author-name'>Вячеслав Литвинов_5ca</a></span> 
+	<div class="comment__age" title="15:34:58 29.07.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_13003" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Сколько опыта требуется заработать персонажу 1 уровня, чтобы получить 2 уровень?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="15745" id="comment_15745">	<div class='comment__header'>
+			<a href='https://dnd.su/@198633fa279a' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@198633fa279a' class='profile__public-link profile__public-link-group-users comment__author-name'>Михаил Рыжов</a></span> 
+	<div class="comment__age" title="10:30:24 12.09.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_15745" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		300 опыта
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="31515"><div class="comment__entry comment__op comment__author-group-" data-id="31515" id="comment_31515">	<div class='comment__header'>
+			<a href='https://dnd.su/@a1856e3d38cb' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@a1856e3d38cb' class='profile__public-link profile__public-link-group-users comment__author-name'>Антон Ларионов</a></span> 
+	<div class="comment__age" title="16:23:27 16.06.2025">9 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_31515" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		У меня гораздо более сложный вопрос. Сколько опыта нужно персонажу 2 уровня, чтобы получить 3? Тут на самом деле ответ неоднозначен. 600 или 900, зависит от того как воспринимать таблицу опыта. Если 900, значит для получения 20 уровня, персонажу 19 уровня, нужно соло замочить двух тарасков, и кракена в придачу. Если же 600, то на 11 уровень нужно 21 000, на 12 - 15 000, а на 13 и 14 по 20 000.<br>В итоге для получения 20 уровня нужно либо 355 000, либо 2 148 400. Если мерить в тарасках, это почти 14. При этом даже один тараск, превышает смертельную сложность для  4-х приключенцев 19-го уровня в 3 раза, и получат они "всего" 38 750 опыта каждый. Это около 11% от уровня.<br>Короче, как качать персонажей на высоких уровнях?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="31520" id="comment_31520">	<div class='comment__header'>
+			<a href='https://dnd.su/@vk-718694007' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/a32b25537557c11946ff1eac60e3649b.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@vk-718694007' class='profile__public-link profile__public-link-group-users comment__author-name'>Яса Кушта</a></span> 
+	<div class="comment__age" title="17:54:31 16.06.2025">9 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_31520" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Однозначен. Шестьсот. Таблицу опыта надо воспринимать не в вакууме, а вместе с Книгой Игрока, где прямо сказано, что указанные значения - это весь полученный игроком опыт.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="31521" id="comment_31521">	<div class='comment__header'>
+			<a href='https://dnd.su/@vk-718694007' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/a32b25537557c11946ff1eac60e3649b.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@vk-718694007' class='profile__public-link profile__public-link-group-users comment__author-name'>Яса Кушта</a></span> 
+	<div class="comment__age" title="17:56:41 16.06.2025">9 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_31521" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Вам, безусловно, никто не мешает провести кампанию, где для достижения двадцатого уровня необходим забой дюжины таррасков, но я сомневаюсь, что из этой идеи получится что-то интересное.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="31543" id="comment_31543">	<div class='comment__header'>
+			<a href='https://dnd.su/@a1856e3d38cb' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@a1856e3d38cb' class='profile__public-link profile__public-link-group-users comment__author-name'>Антон Ларионов</a></span> 	<div class="comment__user-reply-user" data-reply-to="31520">
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_31520" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@vk-718694007' class='profile__public-link profile__public-link-group-users comment__replied-to'>Яса Кушта</a>
+	<div class="comment__age" title="09:29:05 17.06.2025">9 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_31543" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Я читал книгу игрока. По крайней мере её перевод на русский. И там этот момент не так однозначен. Вот текст оттуда "Таблица «Развитие персонажа» содержит информацию о количестве опыта, нужного для повышения уровня с 1 по 20, и бонус мастерства для персонажа соответствующего уровня. Обратитесь к информации, включённой в описание вашего класса, чтобы увидеть, какие ещё улучшения вы получаете на каждом уровне."<br>Но даже если это так, остаётся нюанс описанный мною выше. только я там со строкой таблицы ошибся. Чтобы перейти с 10 на 11, нужно набрать 21 000. Чтобы с 11 на 12 - 15 000, это на 6 000 меньше. Фигня, это даже меньше чем нужно чтобы перейти с 9 на 10, там 16 000. Потом для перехода на 13 и 14 нужно по 20 000, что тоже меньше чем нужно для перехода на 11.<br>Как-то странно, будучи 10-го уровня, мне нужно пережить семь смертельно опасных битв и одну среднюю, чтобы получить 11, а будучи 11-го, всего четыре смертельных, и одну простую.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="37849" id="comment_37849">	<div class='comment__header'>
+			<a href='https://dnd.su/@2a09971b3ced' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@2a09971b3ced' class='profile__public-link profile__public-link-group-users comment__author-name'>likoon</a></span> 	<div class="comment__user-reply-user" data-reply-to="31543">
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_31543" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@a1856e3d38cb' class='profile__public-link profile__public-link-group-users comment__replied-to'>Антон Ларионов</a>
+	<div class="comment__age" title="04:17:15 18.10.2025">5 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_37849" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Для разрешения вопроса вы можете обратиться к руководствам 3,5 редакции. Там есть и описание работы с таблицей, и формула для расчёта опыта. Для перехода на следующий уровень нужно 1000*(текущий уровень) опыта. Можете проверить, что значения из таблиц опыта получаются путём сложения значений количеств опыта, необходимых для перехода на все уровни вплоть до текущего.<br>Для перехода с 9го уровня на 10й нужно 9000 опыта. Для перехода с 10 на 11 нужно 10000 опыта. Для перехода с 11 на 12 нужно 11000 опыта. Для перехода с 19 на 20 нужно 19000 опыта.<br>В 5-й редакции таблица и формула немного видоизменяются, опыта требуется больше, но принцип работы с таблицей остаётся тот же: опыт, необходимый для перехода с N уровня на N+1 уровень = значение опыта для N+1 уровня - значение опыта для N уровня.<br>И ничто не запрещает вам а) использовать формулу из 3,5 редакции (значит, и таблицу опыта тоже); б) использовать свою интерпретацию или модификацию правил расчёта опыта; в) отказаться от опыта вообще, используя вместо этого "сюжетное назначение уровней".<br>Это правда, что в таблице опыта из 5й редакции лажанули, и при переходе с 9 на 10 уровень требуется опыта больше, чем для перехода с 10 на 11, с 11 на 12 и даже с 12 на 13. Кроме того, по-видимому, они - как это часто бывает в таблицах значений для D&D отказались от задания одной функции для описания роста параметра, и вместо этого использовали кусочно-определённую функцию. Это легко проверить, оценив разницу опыта между уровнями. А поделив эту разницу на величину уровня, можно заметить, что разница опыта между уровнями больше не зависит от уровня каким-либо монотонным образом. Она несколько раз то возрастает, то убывает. В общем, это довольно бредовая таблица опыта.<br>Если вы хотите использовать монотонную прогрессию опыта, но с тем же значением для 20-го уровня, что в 5-й редакции - можете просто взять таблицу опыта из 3,5 редакции и умножить все значения на 1,7 или на 1,8. Или, если нужна лучшая сходимость на нижних уровнях - можете умножить значения в старой таблице начиная с 10-го уровня.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="47064" id="comment_47064">	<div class='comment__header'>
+			<a href='https://dnd.su/@a7351eef8b33' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@a7351eef8b33' class='profile__public-link profile__public-link-group-users comment__author-name'>Riva666k</a></span> 
+	<div class="comment__age" title="20:21:24 04.04.2026">2 дня  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47064" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		опыт не обнуляется при достижении уровней
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="39007"><div class="comment__entry comment__op comment__author-group-" data-id="39007" id="comment_39007">	<div class='comment__header'>
+			<a href='https://dnd.su/@vk-718694007' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/a32b25537557c11946ff1eac60e3649b.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@vk-718694007' class='profile__public-link profile__public-link-group-users comment__author-name'>Яса Кушта</a></span> 
+	<div class="comment__age" title="00:37:45 10.11.2025">4 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_39007" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		А у меня ещё такой вопрос... Какой именно опыт указан в таблице дневной нагрузки - реальный или "теоретический", с модификаторами сложности? Это две очень большие разницы, учитывая то, что две встречи равной сложности могут различаться по награде в два, а то и в три раза.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="41296" id="comment_41296">	<div class='comment__header'>
+			<a href='https://dnd.su/@azdvaz' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/d9d50665c7cf728bab1540b93614707a.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@azdvaz' class='profile__public-link profile__public-link-group-users comment__author-name'>Azdvaz</a></span> 
+	<div class="comment__age" title="09:20:02 22.12.2025">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_41296" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		"Например, если в сцене принимают участие четыре чудовища на общую сумму 500 опыта, вам нужно умножить опыт на 2 (взято из таблицы), и получится 1 000 опыта. Получившееся значение — это не то, сколько опыта герои получат за победу над чудовищами; получившееся значение служит для того, чтобы помочь вам точно оценить сложность сцены." это вот прям здесь же написано, на этой самой странице. Да, две встречи равной сложности могут критически различаться в получаемом игроками опыте.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="40259"><div class="comment__entry comment__op comment__author-group-" data-id="40259" id="comment_40259">	<div class='comment__header'>
+			<a href='https://dnd.su/@aad83f929154' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@aad83f929154' class='profile__public-link profile__public-link-group-users comment__author-name'>Vars</a></span> 
+	<div class="comment__age" title="09:41:44 05.12.2025">4 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_40259" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Честно, лично я бы опустил сложность сцен на пункт, средняя - лёгкая, смертельная - сложная, в таком духе. Просто лично для меня, слишком уж щадяще получается сложность по этой таблице. Но, может это потому, что я билд вообще продумываю, и стараюсь выбирать наилучший ход из возможных. Так что, если у вас в тиме есть минмаксер... то тут никакая таблица не поможет, спросите у него, с чем он может справится, и с чем не может, так будет куда легче, и лучше для обеих сторон. И минмаксеру будет где разгуляться, и вы сможете подстроить боевую сцену против него, чтобы хоть примерно сравнять с остальными участниками группы
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="47065" id="comment_47065">	<div class='comment__header'>
+			<a href='https://dnd.su/@a7351eef8b33' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@a7351eef8b33' class='profile__public-link profile__public-link-group-users comment__author-name'>Riva666k</a></span> 
+	<div class="comment__age" title="20:23:09 04.04.2026">2 дня  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47065" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		хексадин в соло
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="47063"><div class="comment__entry comment__op comment__author-group-" data-id="47063" id="comment_47063">	<div class='comment__header'>
+			<a href='https://dnd.su/@a7351eef8b33' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@a7351eef8b33' class='profile__public-link profile__public-link-group-users comment__author-name'>Riva666k</a></span> 
+	<div class="comment__age" title="20:19:43 04.04.2026">2 дня  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47063" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		можно ли давать уровни игрокам тогда когда они дошли до определенного момента сюжета и просто забыть о системе опыта? ну просто эта система по факту поощряет бомжей убийц и попускает добрых персонажей что не добивают врагов и уходят
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="47074" id="comment_47074">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="00:06:20 05.04.2026">2 дня  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47074" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Ничего она не поощряет. Система опыта задумана так, что игроки награждаются опытом не только за убийства, а просто за победу в столкновениях и за достижения определённых моментов в приключении. Даже за победу в социальном энкаунтере (например, "Убедить стражу пропустить группу в город") может выдаваться опыт.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="47124" id="comment_47124">	<div class='comment__header'>
+			<a href='https://dnd.su/@0c63a80fe2' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/93f1f2a1044203483c4d938e05b0cb37.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0c63a80fe2' class='profile__public-link profile__public-link-group-users comment__author-name'>Трехголовый Утконос</a></span> 
+	<div class="comment__age" title="23:51:40 05.04.2026">1 день  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47124" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Можно. Это соответствует правилам<br>Большинство так и играет
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="47125" id="comment_47125">	<div class='comment__header'>
+			<a href='https://dnd.su/@0c63a80fe2' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/93f1f2a1044203483c4d938e05b0cb37.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0c63a80fe2' class='profile__public-link profile__public-link-group-users comment__author-name'>Трехголовый Утконос</a></span> 	<div class="comment__user-reply-user" data-reply-to="47074">
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47074" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__replied-to'>Дмитрий Богданов</a>
+	<div class="comment__age" title="23:52:05 05.04.2026">1 день  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47125" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Может, но правил про то сколько и подобное нет)<br>Зачем вообще давать опыт тут, лол
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="47126" id="comment_47126">	<div class='comment__header'>
+			<a href='https://dnd.su/@0c63a80fe2' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/93f1f2a1044203483c4d938e05b0cb37.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0c63a80fe2' class='profile__public-link profile__public-link-group-users comment__author-name'>Трехголовый Утконос</a></span> 	<div class="comment__user-reply-user" data-reply-to="47125">
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47125" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@0c63a80fe2' class='profile__public-link profile__public-link-group-users comment__replied-to'>Трехголовый Утконос</a>
+	<div class="comment__age" title="23:52:18 05.04.2026">1 день  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47126" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		В смысле, зачем вообще играть с опытом
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="47144" id="comment_47144">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 	<div class="comment__user-reply-user" data-reply-to="47125">
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47125" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@0c63a80fe2' class='profile__public-link profile__public-link-group-users comment__replied-to'>Трехголовый Утконос</a>
+	<div class="comment__age" title="08:00:03 06.04.2026">1 день  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../119-slozhnost_boevoj_stseny/index.html#comment_47144" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Ну здрасьте вам "нету". Стр. 260-261 Книги Мастера, параграфы "Опыт" и "Небоевые вызовы".
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+		<p>
+ На данный момент в галерее нет изображений.
+ 	</p>
+	</section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

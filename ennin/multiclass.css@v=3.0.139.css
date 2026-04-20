@@ -1,0 +1,48 @@
+#multiclass_levels td.class-level {
+    min-width: 300px;
+    max-height: 24px;
+}
+
+#multiclass_levels td.class-level div.slider {
+    min-width: 300px;
+    max-height: 24px;
+}
+
+@media only screen and (max-width: 500px) {
+    #multiclass_levels td.class-level {
+        min-width: 150px;
+    }
+
+    #multiclass_levels td.class-level div.slider {
+        min-width: 150px;
+    }
+}
+
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    user-select: none;
+}
+
+.slider__bar {
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+}
+
+.slider__button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/wood-1.jpg);
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align:center;
+}

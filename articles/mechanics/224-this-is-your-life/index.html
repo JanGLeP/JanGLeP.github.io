@@ -1,0 +1,2664 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Это ваша жизнь / Игровые механики / Статьи D&D 5 / Xanathar's Guide to Everything</title>
+	
+    <meta name="description" content="«Это ваша жизнь (This is your life)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta name="keywords" content="dnd статьи механики,механики,игровые механики, днд статьи механики,механики,игровые механики, d&d статьи механики,механики,игровые механики, dnd 5 статьи механики,механики,игровые механики, днд 5 статьи механики,механики,игровые механики, d&d 5 статьи механики,механики,игровые механики, подземелья и драконы статьи механики,механики,игровые механики, dungeons and dragons статьи механики,механики,игровые механики, dnd статьи механики,механики,игровые механики Это ваша жизнь [This is your life], днд статьи механики,механики,игровые механики Это ваша жизнь [This is your life], d&d статьи механики,механики,игровые механики Это ваша жизнь [This is your life], dnd 5 статьи механики,механики,игровые механики Это ваша жизнь [This is your life], днд 5 статьи механики,механики,игровые механики Это ваша жизнь [This is your life], d&d 5 статьи механики,механики,игровые механики Это ваша жизнь [This is your life], подземелья и драконы статьи механики,механики,игровые механики Это ваша жизнь [This is your life], dungeons and dragons статьи механики,механики,игровые механики Это ваша жизнь [This is your life]" />
+    <meta property="og:title" content="Это ваша жизнь / Игровые механики / Статьи D&D 5 / Xanathar's Guide to Everything" />
+    <meta property="og:description" content="«Это ваша жизнь (This is your life)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/articles/mechanics/224-this-is-your-life/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='index.html'>Это ваша жизнь</a><span> — </span><a href='../index.html'>Игровые механики</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Farticles%2Fmechanics%2F224-this-is-your-life%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Farticles%2Fmechanics%2F224-this-is-your-life%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Farticles%2Fmechanics%2F224-this-is-your-life%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Farticles%2Fmechanics%2F224-this-is-your-life%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://badmimic.com?partner=dnd.su" target="_blank" title="Сокровища Мимика (3D печать миниатюр)" class="item_link_2 partner"><span class="sprite-partners__treasuresmimic partner-icon"></span>Сокровища Мимика</a></li><li class="item_level_2"><a href="https://vk.com/mastademic?partner=dnd.su" target="_blank" title="Мастер Демик (Мастер Демик. Разработка оффлайн инструментов для мастеров D&D)" class="item_link_2 partner"><span class="sprite-partners__master_helper partner-icon"></span>Мастер Демик</a></li><li class="item_level_2"><a href="https://vk.com/neardeathdungeon?partner=dnd.su" target="_blank" title="Near Death Dungeon" class="item_link_2 partner"><span class="sprite-partners__ndd partner-icon"></span>Near Death Dungeon</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UC4-D-5N43bMY826ONsM6H_Q?partner=dnd.su" target="_blank" title="Торговец Сказками" class="item_link_2 partner"><span class="sprite-partners__torgovec partner-icon"></span>Торговец Сказками</a></li><li class="item_level_2"><a href="https://vk.com/gooddragondice?partner=dnd.su" target="_blank" title="GoodDragon Dice (Лавка кубиков)" class="item_link_2 partner"><span class="sprite-partners__gdd partner-icon"></span>GoodDragon Dice</a></li><li class="item_level_2"><a href="https://t.me/EddyGames?partner=dnd.su" target="_blank" title="Eddy Games (Канал, посвящённый лучшей в мире НРИ - Dungeons&Dragons)" class="item_link_2 partner"><span class="sprite-partners__eddy_games partner-icon"></span>Eddy Games</a></li><li class="item_level_2"><a href="https://vk.com/ravenheart_studio?partner=dnd.su" target="_blank" title="Студия «Ravenheart» (Псс, не хочешь немного игры?)" class="item_link_2 partner"><span class="sprite-partners__ravenheart_studio partner-icon"></span>Студия «Ravenheart»</a></li><li class="item_level_2"><a href="https://misterium-frpg.ru/?partner=dnd.su" target="_blank" title="FRPG Мистериум (Древнейшая форумная ролевая игра в стиле фэнтези)" class="item_link_2 partner"><span class="sprite-partners__misterium_rpg partner-icon"></span>FRPG Мистериум</a></li><li class="item_level_2"><a href="https://vk.com/ngdnd?partner=dnd.su" target="_blank" title="Заметки упыря (Короткие приключения | D&D)" class="item_link_2 partner"><span class="sprite-partners__ngdnd partner-icon"></span>Заметки упыря</a></li><li class="item_level_2"><a href="https://dndloot.ru?partner=dnd.su" target="_blank" title="DnDLoot (Сайт для управления инвентарём персонажей в играх по правилам D&D)" class="item_link_2 partner"><span class="sprite-partners__dndloot partner-icon"></span>DnDLoot</a></li><li class="item_level_2"><a href="https://boosty.to/strannoyemestechko?partner=dnd.su" target="_blank" title="Странное местечко (Переводы и озвучка)" class="item_link_2 partner"><span class="sprite-partners__sm partner-icon"></span>Странное местечко</a></li><li class="item_level_2"><a href="https://t.me/VrogharMasters?partner=dnd.su" target="_blank" title="Мастерская Врогхада (Переводы, сборки локаций и советы по играм)" class="item_link_2 partner"><span class="sprite-partners__vroghar partner-icon"></span>Мастерская Врогхада</a></li><li class="item_level_2"><a href="https://t.me/DiceOut20?partner=dnd.su" target="_blank" title="Достать Кубы (Давай отправимся в путешествие вместе!)" class="item_link_2 partner"><span class="sprite-partners__diceout partner-icon"></span>Достать Кубы</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCGmhxe5rI2b29loDwJzcQOw?partner=dnd.su" target="_blank" title="Бесценный Опыт" class="item_link_2 partner"><span class="sprite-partners__exp partner-icon"></span>Бесценный Опыт</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='index.html'>Это ваша жизнь</a><span> — </span><a href='../index.html'>Игровые механики</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+             <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="../index.html" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по игровым механикам" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+			 <div class='paper-1 card card__group- typoable'  style="background-position:88% 0" data-id='article:224' data-typo-path='/articles/mechanics/224-this-is-your-life/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Это ваша жизнь"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='index.html' itemprop='url' class='item-link'>Это ваша жизнь [This is your life]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Xanathar's Guide to Everything</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p>Правила создания персонажа из «Книги игрока» содержат всю необходимую информацию для подготовки персонажа к жизни искателя приключений. Но эти правила ничего не говорят об обстоятельствах, сформировавших личность вашего персонажа в течение всего времени между его рождением и началом пути в качестве представителя своего класса.</p>
+<p>Чего ваш персонаж достиг или что испытал, прежде чем решил стать искателем приключений? При каких обстоятельствах он родился? Насколько большой была его семья, и какие отношения сложились с родственниками? Кто оказывал на персонажа наибольшее влияние в те годы, когда его личность формировалась? Оно было положительным или отрицательным?</p>
+<p>Для ответа на эти и многие другие вопросы вы можете использовать таблицы и рекомендации из этого раздела, составив таким образом хорошо проработанную предысторию для вашего персонажа, которую можете использовать для объяснения ролевого отыгрыша. Ваш Мастер может черпать из этого материала сюжет для продолжения кампании, создавая ситуации и сценарии, основанные на вашем предыдущем жизненном опыте.</p>
+<ul class="new-article-menu"><li class="new-article-menu__li"><a href="index.html#proishozhdenie" class="new-article-menu__li-wrapper btn btn-sm btn-green"><span  class="new-article-menu__li-text">Происхождение</span></a></li><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="lichnye_resheniya"><span  class="new-article-menu__li-text">Личные решения</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="prodvizhenie_v_klasse"><span  class="new-article-menu__li-text">Продвижение в классе</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__li"><div class="new-article-menu__li-wrapper btn btn-sm btn-green" data-anchor="sobytiya_v_zhizni"><span  class="new-article-menu__li-text">События в жизни</span><span class="new-article-menu__li-arrow">	<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></span></div></li><li class="new-article-menu__li"><a href="index.html#dopolnitelnye_tablitsy" class="new-article-menu__li-wrapper btn btn-sm btn-green"><span  class="new-article-menu__li-text">Дополнительные таблицы</span></a></li><li class="new-article-menu__break" data-parent="lichnye_resheniya"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#lichnye_resheniya" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Личные решения</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#artist" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Артист</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#besprizornik" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Беспризорник</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#blagorodnyj" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Благородный</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#gildejskij_remeslennik" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Гильдейский ремесленник</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#moryak" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Моряк</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#mudrets" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Мудрец</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#narodnyj_geroj" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Народный герой</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#otshelnik" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Отшельник</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#prestupnik" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Преступник</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#prisluzhnik" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Прислужник</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#soldat" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Солдат</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#chuzhezemets" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Чужеземец</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="lichnye_resheniya"><a href="index.html#sharlatan" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Шарлатан</span></a></li><li class="new-article-menu__break" data-parent="prodvizhenie_v_klasse"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#prodvizhenie_v_klasse" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Продвижение в классе</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#bard" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Бард</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#varvar" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Варвар</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#voin" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Воин</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#volshebnik" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Волшебник</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#druid" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Друид</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#zhrets" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Жрец</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#koldun" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Колдун</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#monah" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Монах</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#paladin" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Паладин</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#plut" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Плут</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#sledopyt" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Следопыт</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="prodvizhenie_v_klasse"><a href="index.html#charodej" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Чародей</span></a></li><li class="new-article-menu__break" data-parent="sobytiya_v_zhizni"></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="sobytiya_v_zhizni"><a href="index.html#sobytiya_v_zhizni" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">События в жизни</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="sobytiya_v_zhizni"><a href="index.html#zhiznennye_sobytiya" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Жизненные события</span></a></li><li class="new-article-menu__li new-article-menu__li-second" data-parent="sobytiya_v_zhizni"><a href="index.html#vtorostepennye_tablitsy" class="new-article-menu__li-wrapper btn btn-sm btn-mint"><span  class="new-article-menu__li-text">Второстепенные таблицы</span></a></li></ul><br>
+<h3 class="smallSectionTitle">Идеи, не правила</h3><p>И хотя эти страницы наполнены таблицами и бросками костей, это не значит, что они обязательны к исполнению — скорее наоборот. Вы можете использовать любое количество приведённого ниже материала по вашему усмотрению.</p>
+<p>Вы можете не захотеть использовать эти таблицы для определения родителей или братьев и сестёр, так как эти обстоятельства вы уже придумали самостоятельно. Однако, вы можете использовать оставшиеся разделы, такие как раздел о событиях в жизни, чтобы добавить истории персонажа деталей и глубины.</p>
+<h4 class="tableTitle">Как и когда использовать таблицы</h4><h5 class="tableTitle"><span style=" font-weight: 400;">Если вас устраивает, что какой-либо факт о жизни вашего персонажа будет определяться броском, то бросайте кость. Если нет, вы можете принять решение сами и выбрать что-то из таблицы. Конечно, вы можете отказаться от результата броска, если он идёт вразрез с другими результатами. Если в тексте написано совершить бросок по таблице, не воспринимайте это буквально: всегда можно просто выбрать подходящий вам вариант.</span><br></h5>
+<p>Хотя эти таблицы дополняют пошаговый процесс создания персонажа из «Книги игрока», они не занимают в нём определённого места. Вы можете использовать некоторые из них на начальной стадии — например, вы можете определить своих родителей и других членов семьи сразу же после принятия решения о расе вашего персонажа, но можете сделать это на более поздних этапах создания персонажа. Возможно, вы решите сначала продумать больше фактов о вашем персонаже — например, ваши класс, характеристики и мировоззрение — перед тем, как дополнить информацию о нём предложенным здесь способом.</p>
+<h4 class="tableTitle">Раздел за разделом</h4><p><span style=" font-weight: 400;">Этот материал делится на четыре раздела, каждый из которых отвечает за различные аспекты предыстории вашего персонажа.</span></p>
+<p><strong>Происхождение</strong>. Чтобы определить, кто вы и откуда вы родом, используйте раздел «Происхождение». Когда вы закончите, у вас будет сводка фактов о ваших родителях, ваших братьях и сёстрах, а также о событиях, произошедших в процессе вашего взросления.</p>
+<p><strong>Личные решения. </strong><span>После того, как вы выбрали предысторию и класс вашего персонажа, используйте соответствующие таблицы, чтобы определить, как он пришёл к этому выбору.</span></p>
+<p><strong>Жизненные события</strong>. В жизни вашего персонажа до настоящего времени, независимо от её продолжительности и насыщенности, было одно или несколько важных памятных событий, которые оказали влияние на то, кем он стал сегодня.</p>
+<p><strong>Дополнительные таблицы</strong>. Ваша жизнь пересекается с жизнями многих других персон с младенчества до сегодняшнего дня. Когда вы встречаете такое упоминание, то можете использовать дополнительные таблицы, чтобы добавить необходимые детали — например, расу, класс или профессию этому персонажу. Некоторые таблицы в других разделах ссылаются на одну или несколько дополнительных таблиц, и вы также можете использовать их в любое другое время, когда посчитаете нужным.</p>
+<br><h3 class="smallSectionTitle"><span id='proishozhdenie'>Происхождение</span></h3><p>Обычно первый шаг в создании истории жизни вашего персонажа — это определение ранних обстоятельств. Кем были ваши родители? Где вы родились? У вас были братья и сёстры? Кто вас воспитывал? Вы можете разрешить эти вопросы, используя следующие таблицы.</p>
+<br><h4 class="tableTitle">Родители</h4><p>Конечно же у вас были родители, даже если они вас не растили. Для определения того, что вы знаете о них, используйте таблицу «Родители». По желанию вы можете совершить отдельные броски для матери и для отца. Используйте дополнительные таблицы по желанию (в частности «Класс», «Предыстория» и «Мировоззрение»), чтобы узнать больше о своих родителях.</p>
+<table>
+<tbody>
+<tr class="table_header"><td>к100</td>
+<td>Родители</td>
+</tr>
+<tr>
+<td>01-95</td>
+<td>Вы знаете или знали своих родителей.</td>
+</tr>
+<tr>
+<td>96-00</td>
+<td>Вы не знаете своих родителей.</td>
+</tr>
+</tbody>
+</table>
+<br><p><strong>Нечеловеческие родители</strong>. Если ваш персонаж — полуорк, полуэльф или тифлинг, то вы можете использовать таблицу для определения расы каждого из ваших родителей. Когда получите результат, то определите, какой относится к отцу, а какой к матери.</p>
+<h4 class="tableTitle">Родители полуэльфов</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к8</td>
+<td>Родители</td>
+</tr>
+<tr>
+<td>1-5</td>
+<td>Один родитель был человеком, а другой — эльфом.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Один родитель был эльфом, а другой — полуэльфом.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Один родитель был полуэльфом, а другой — человеком.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Оба родителя — полуэльфы.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Родители полуорков </h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к8</td>
+<td>Родители</td>
+</tr>
+<tr>
+<td>1-3</td>
+<td>Один родитель был орком, а другой — человеком.</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>Один родитель был орком, а другой — полуорком.</td>
+</tr>
+<tr>
+<td>6-7</td>
+<td>Один родитель был полуорком, а другой — человеком.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Оба родителя — полуорки.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Родители тифлингов</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к8</td>
+<td>Родители</td>
+</tr>
+<tr>
+<td>1-4</td>
+<td>Оба родителя были людьми, инфернальное наследие которых не проявлялось до вашего рождения.</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>Один родитель был тифлингом, а другой — человеком.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Один родитель был тифлингом, а другой — дьяволом.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Один родитель был человеком, а другой — дьяволом. </td>
+</tr>
+</tbody>
+</table>
+<br><h3>Место рождения</h3><p>После определения ваших родителей вы можете определить место рождения, используя таблицу. Измените результат или повторите попытку, если вы получите результат, не соответствующий тому, что вы знаете о своих родителях. После получения результата бросьте процентные кости.</p>
+<p>При результате 00 имели место быть странные события: луна окрасилась кровью, все молоко на милю пути скисло, вода в этом районе замёрзла посреди лета, всё железо в доме проржавело или стало серебром, или же произошли иные странные события по вашему выбору.</p>
+<h4 class="tableTitle">Место рождения</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к100</td>
+<td>Место рождения</td>
+</tr>
+<tr>
+<td>1-50</td>
+<td>Дом</td>
+</tr>
+<tr>
+<td>51-55</td>
+<td>Дом друга семьи</td>
+</tr>
+<tr>
+<td>56-63</td>
+<td>Дом знахаря или повивальной бабки</td>
+</tr>
+<tr>
+<td>64-65</td>
+<td>Повозка, тележка или фургон</td>
+</tr>
+<tr>
+<td>66-68</td>
+<td>Хлев, сарай или другая пристройка</td>
+</tr>
+<tr>
+<td>69-70</td>
+<td>Пещера</td>
+</tr>
+<tr>
+<td>71-72</td>
+<td>Поле</td>
+</tr>
+<tr>
+<td>73-74</td>
+<td>Лес</td>
+</tr>
+<tr>
+<td>75-77</td>
+<td>Храм</td>
+</tr>
+<tr>
+<td>78</td>
+<td>Поле боя</td>
+</tr>
+<tr>
+<td>79-80</td>
+<td>Аллея или улица</td>
+</tr>
+<tr>
+<td>81-82</td>
+<td>Бордель, таверна или трактир</td>
+</tr>
+<tr>
+<td>83-84</td>
+<td>Замок, крепость, башня или дворец</td>
+</tr>
+<tr>
+<td>85</td>
+<td>Канализация или помойка</td>
+</tr>
+<tr>
+<td>86-88</td>
+<td>Среди представителей другой расы</td>
+</tr>
+<tr>
+<td>89-91</td>
+<td>На борту корабля</td>
+</tr>
+<tr>
+<td>92-93</td>
+<td>В тюрьме или штаб-квартире секретной организации</td>
+</tr>
+<tr>
+<td>94-95</td>
+<td>В лаборатории мага</td>
+</tr>
+<tr>
+<td>96</td>
+<td>В Стране Фей</td>
+</tr>
+<tr>
+<td>97</td>
+<td>В Царстве Теней</td>
+</tr>
+<tr>
+<td>98</td>
+<td>На Астральном или Эфирном Плане</td>
+</tr>
+<tr>
+<td>99</td>
+<td>На Внутреннем Плане по вашему выбору</td>
+</tr>
+<tr>
+<td>00</td>
+<td>На Внешнем Плане по вашему выбору</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Братья и сёстры</h4>
+<p>Вы можете быть как единственным ребёнком в семье, так и одним из многих детей. Ваши братья и сёстры могли быть для вас лучшими друзьями или ненавистными соперниками. Бросьте кость по таблице «Количество братьев и сестёр» чтобы определить сколько их у вас. Если вы дварф или эльф, вычтите 2 из результата вашего броска. Затем бросьте кость по таблице «Очерёдность рождения» для каждого брата или сестры, чтобы определить их возраст относительно вашего (старше, моложе, родились одновременно).</p>
+<p><strong>Род занятий</strong>. Для каждого из братьев и сестёр соответствующего возраста совершите бросок по таблице «Род занятий», чтобы определить, чем каждый из них занимается.</p>
+<p><strong>Мировоззрение</strong>. Вы можете выбрать мировоззрение ваших братьев и сестёр или совершить броски по таблице «Мировоззрение».</p>
+<p><strong>Состояние</strong>. К настоящему моменту каждый из ваших братьев и сестёр может быть жив и здоров, жив и болен, в отчаянном положении или мёртв. Совершите бросок по таблице «Состояние».</p>
+<p><strong>Отношение</strong>. Вы можете совершить броски по дополнительной таблице «Отношения», чтобы определить, что ваши братья и сёстры чувствуют по отношению к вам. Они могут относиться к вам одинаково, или кто-то из них может иметь иное мнение на ваш счёт.</p>
+<p><strong>Другие детали</strong>. Вы можете добавить любые другие детали о каждом родственнике, включая пол, личность и место в мире.</p>
+<h4 class="tableTitle">Количество братьев и сестёр</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к10</td>
+<td>Братья и сёстры</td>
+</tr>
+<tr>
+<td>2 и меньше</td>
+<td>Ни одного</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>1к3</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td>1к4 + 1</td>
+</tr>
+<tr>
+<td>7-8</td>
+<td>1к6 + 2</td>
+</tr>
+<tr>
+<td>9-10</td>
+<td>1к8 + 3</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Очерёдность рождения</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>2к6</td>
+<td>Очерёдность рождения</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Двойняшки, тройняшки, четверняшки</td>
+</tr>
+<tr>
+<td>3-7</td>
+<td>Старший</td>
+</tr>
+<tr>
+<td>8-12</td>
+<td>Младший</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Семья и друзья</h4>
+<p>Кто вас вырастил, и какова была ваша жизнь, пока вы росли? Вы могли быть воспитаны родителями, родственниками или в приюте. Или вы могли провести своё детство на улицах переполненного города с вашими товарищами, такими же беглецами или сиротами, что составляли вам компанию.</p>
+<p>Используйте таблицу «Семья», чтобы определить, кто вас воспитал. Если вы знаете, кто ваши родители, но получили результат, который не упоминает одного из них или обоих, используйте таблицу «Отсутствующий родитель», чтобы определить, что произошло.</p>
+<p>Далее, обратитесь к таблице «Образ жизни семьи», чтобы определить общие обстоятельства вашего воспитания. В главе 5 «Книги игрока» содержится больше информации об образе жизни. Результат этой таблицы содержит число, которое добавляется к броску по таблице «Дом детства», в которой указывается, где вы провели ранние годы. Завершите этот раздел, используя таблицу «Детские воспоминания», в которой указывается, как ровесники относились к вам по мере взросления.</p>
+<p><strong>Дополнительные таблицы</strong>. Вы можете бросить кость по таблице «Отношение», чтобы определить, как члены вашей семьи или другие значимые для вас люди относились к вам. Вы также можете использовать таблицы «Раса», «Род занятий» и «Мировоззрение», чтобы узнать больше о членах семьи или опекунах, которые воспитали вас.</p>
+<h4 class="tableTitle">Семья</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к100</td>
+<td>Семья</td>
+</tr>
+<tr>
+<td>01</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Учреждение, такое как ночлежка или богадельня</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Храм</td>
+</tr>
+<tr>
+<td>04-05</td>
+<td>Сиротский приют</td>
+</tr>
+<tr>
+<td>06-07</td>
+<td>Опекун</td>
+</tr>
+<tr>
+<td>08-15</td>
+<td>Тётя, дядя или оба по линии отца или матери; либо обширная семья, такая как племя или клан</td>
+</tr>
+<tr>
+<td>16-25</td>
+<td>Дедушка и бабушка (или один из них) по линии матери или отца</td>
+</tr>
+<tr>
+<td>26-35</td>
+<td>Приёмная семья (той же или иной расы)</td>
+</tr>
+<tr>
+<td>36-55</td>
+<td>Отец-одиночка или приёмный отец</td>
+</tr>
+<tr>
+<td>56-75</td>
+<td>Мать-одиночка или приёмная мать</td>
+</tr>
+<tr>
+<td>76-00</td>
+<td>Мать и отец</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Отсутствующий родитель</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к4</td>
+<td>Участь</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Ваш родитель погиб (совершить бросок по дополнительной таблице «Причины смерти»).</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Ваш родитель был заключён в тюрьму, порабощён или лишён свободы иным образом.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Ваш родитель бросил вас.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Ваш родитель пропал без вести.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Образ жизни семьи</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>3к6</td>
+<td>Образ жизни*</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Никудышное (-40)</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>Нищенское (-20)</td>
+</tr>
+<tr>
+<td>6-8</td>
+<td>Бедное (-10)</td>
+</tr>
+<tr>
+<td>9-12</td>
+<td>Скромное (+0)</td>
+</tr>
+<tr>
+<td>13-15</td>
+<td>Комфортное (+10)</td>
+</tr>
+<tr>
+<td>16-17</td>
+<td>Богатое (+20)</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Аристократическое (+40)</td>
+</tr>
+</tbody>
+</table>
+ *Используйте число в скобках из результата этого броска в качестве модификатора для броска по таблице «Дом детства».<br><h4 class="tableTitle">Дом детства</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>1к100</td>
+<td>Дом*</td>
+</tr>
+<tr>
+<td>0 или меньше</td>
+<td>На улицах</td>
+</tr>
+<tr>
+<td>01-20</td>
+<td>Обветшалая лачуга</td>
+</tr>
+<tr>
+<td>21-30</td>
+<td>Не было постоянного дома; вы много скитались</td>
+</tr>
+<tr>
+<td>31-40</td>
+<td>Лагерь или деревня в глуши</td>
+</tr>
+<tr>
+<td>41-50</td>
+<td>Комната в захудалом районе</td>
+</tr>
+<tr>
+<td>51-70</td>
+<td>Небольшой дом</td>
+</tr>
+<tr>
+<td>71-90</td>
+<td>Большой дом</td>
+</tr>
+<tr>
+<td>91-110</td>
+<td>Поместье</td>
+</tr>
+<tr>
+<td>111 и больше</td>
+<td>Большой дворец или замок</td>
+</tr>
+</tbody>
+</table>
+ *После совершения броска добавьте модификатор из таблицы «Образ жизни семьи» чтобы получить итоговый результат.<br><h4 class="tableTitle">Детские воспоминания</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>3к6 + модификатор Харизмы</td>
+<td>Воспоминание</td>
+</tr>
+<tr>
+<td>3 или меньше</td>
+<td>Меня до сих пор преследуют призраки детства, когда меня унижали ровесники.</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>Я провёл большую часть детства в одиночестве без близких друзей.</td>
+</tr>
+<tr>
+<td>6-8</td>
+<td>Остальные считали меня странным, поэтому у меня было мало приятелей.</td>
+</tr>
+<tr>
+<td>9-12</td>
+<td>У меня было обычное детство и пара близких друзей.</td>
+</tr>
+<tr>
+<td>13-15</td>
+<td>У меня было несколько друзей, а моё детство в общем было счастливым.</td>
+</tr>
+<tr>
+<td>16-17</td>
+<td>Я всегда легко находил друзей, и мне нравилось быть рядом с людьми.</td>
+</tr>
+<tr>
+<td>18 или выше</td>
+<td>Все меня знали и у меня были друзья везде, куда бы я ни шёл.</td>
+</tr>
+</tbody>
+</table><br>
+<h3 class="smallSectionTitle"><span id='lichnye_resheniya'>Личные решения</span></h3><p><span style="color: rgb(20, 20, 20); font-weight: 400;">Жизнь вашего персонажа приобретает определённое направление, которое зависит от выбора предыстории и класса.</span></p>
+<h4 class="tableTitle">Предыстория</h4>
+<p>Совершите бросок по соответствующей таблице в этом разделе, как только выберете свою предысторию или позже в удобное для вас время. Если предыстория включает в себя момент принятия решения, например, определяющее событие народного героя, направленность преступника или специализацию мудреца, лучше всего определиться с ним перед использованием таблицы.</p>
+<h4 class="tableTitle"><span id='artist'>Артист</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал артистом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Моя семья зарабатывала на жизнь выступлениями на сцене, и я последовал их примеру.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я всегда понимал других людей достаточно хорошо, чтобы заставить их смеяться или плакать от моих историй или песен.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я сбежал из дома с труппой бродячих актёров.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Однажды я увидел выступление барда, и в тот момент понял, для чего был рождён.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я зарабатывал гроши, выступая на улицах, и в конечном итоге стал известным.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Бродячий актёр подобрал меня и обучил этому ремеслу.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='besprizornik'>Беспризорник</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал беспризорником, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Жажда странствий заставила меня покинуть семью, чтобы увидеть свет. Я заботился о себе сам.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я сбежал от невыносимой домашней обстановки и нашёл свой собственный путь в мире.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Монстры истребили мою деревню, и я был единственным уцелевшим. Мне надо было найти способ выжить.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Известный вор заботился обо мне и других сиротах, и мы шпионили и воровали, чтобы оставаться вместе с ним.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Однажды я проснулся на улице, один, голодный и без воспоминаний о моём раннем детстве.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Мои родители умерли, и не осталось никого, кто мог бы обо мне позаботиться. Я вырос самостоятельно.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='blagorodnyj'>Благородный</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал благородным, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я происхожу из древнего знатного рода, и мне выпала доля защищать имя семьи.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Моя семья была опозорена, и я намереваюсь восстановить наше доброе имя.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Моя семья недавно получила свой титул, и это возвышение привело нас в новый и незнакомый мир.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>У моей семьи есть титул, но никто из наших предков ничем не отличился с тех пор, как семья его получила.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>В моей семье много выдающихся людей. Я надеюсь прожить жизнь, следуя их примеру.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я надеюсь увеличить силу и влиятельность моей семьи.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h4 class="tableTitle"><span id='gildejskij_remeslennik'>Гильдейский ремесленник</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал гильдейским ремесленником, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я был подмастерьем мастера, который обучил меня гильдейскому делу.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я помог ремесленнику из гильдии сохранить секрет или доделать работу, и взамен он взял меня в ученики.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Один из членов моей семьи, состоявший в гильдии, договорился о месте и для меня.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я всегда умел работать руками, так что я не упустил возможность обучиться ремеслу.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я хотел уйти прочь от домашней обстановки и начать новую жизнь.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я обучился основам моего ремесла у наставника, но должен был присоединиться к гильдии, чтобы закончить обучение.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='moryak'>Моряк</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал моряком, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Меня насильно завербовали пираты, и я был вынужден служить на их корабле, пока не сбежал.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я хотел повидать мир, поэтому я нанялся матросом на торговое судно.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Один из моих родственников был моряком, который и взял меня в море.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Мне нужно было быстро сбежать из моего поселения, и поэтому я спрятался на судне. Когда команда нашла меня, я был вынужден отрабатывать свой «билет».</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Грабители напали на моё поселение, и я нашёл приют на корабле до того времени, пока не смог отомстить им.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Там, где я жил, у меня было мало перспектив, и я оставил это место, чтобы найти свою удачу где-нибудь ещё.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='mudrets'>Мудрец</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал мудрецом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я был любопытным от природы, поэтому я собрался и уехал в университет, чтобы узнать больше о мире.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Учение моего наставника открыло мой разум для новых возможностей в этой области исследований.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я всегда любил читать, и многое по своей любимой теме я узнал самостоятельно.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я обнаружил старую библиотеку и размышлял над текстами, которые там нашёл. Этот опыт пробудил во мне жажду знаний.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я произвёл впечатление на волшебника, который сказал, что я трачу свои таланты впустую и что мне следовало бы получить образование, чтобы воспользоваться своим даром.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Один из моих родителей или иных родственников дал мне базовое образование, которое разожгло мою жажду знаний, и я покинул дом, чтобы развить то, чему я уже научился.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h4 class="tableTitle"><span id='narodnyj_geroj'>Народный герой</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал народным героем, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я узнал, что такое хорошо и что такое плохо, от моей семьи.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я всегда был без ума от историй про героев, и хотел стать кем-то большим, чем простой обыватель.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я ненавидел свою обыденную жизнь и поэтому, когда пришло время кому-то встать и сделать что-то правильное, я не упустил свой шанс.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Мой родитель или один из родственников был искателем приключений, и я вдохновился его мужеством.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Когда я родился, безумный старый отшельник произнёс пророчество, сказав, что я совершу великие дела. </td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я всегда заступался за тех, кто слабее меня.</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h4 class="tableTitle"><span id='otshelnik'>Отшельник</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал отшельником потому, что... </td>
+</tr>
+<tr>
+<td>1</td>
+<td>Враги разрушили мою репутацию, и я бежал в дебри, чтобы избежать дальнейших унижений.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Мне вполне комфортно жить в изоляции, поскольку я хочу обрести мир внутри себя.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Мне никогда не нравились люди, которых я называл своими друзьями, так что было легко вычеркнуть их из своей жизни.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я чувствовал необходимость отбросить своё прошлое, но сделал это с большой неохотой, и иногда сожалею, что принял такое решение.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я потерял всё — мой дом, мою семью, моих друзей. Стать одиночкой — единственное, что мне оставалось.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Упадок общества вызывал во мне отвращение, и поэтому я решил уйти.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='prestupnik'>Преступник</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал преступником, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>В молодости меня возмущали власть имущие, и я посчитал преступную жизнь лучшим способом борьбы с тиранией и угнетением. </td>
+</tr>
+<tr>
+<td>2</td>
+<td>Нужда заставила меня ступить на этот путь, поскольку это был единственный способ выжить.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я попал в банду негодяев и бездельников, от которых всему и научился. </td>
+</tr>
+<tr>
+<td>4</td>
+<td>Родитель или родственник обучили меня преступному ремеслу, чтобы подготовить к семейному бизнесу.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я сбежал из дома и нашёл себе место в воровской гильдии или какой-то криминальной организации.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Мне всегда было скучно, поэтому я совершал преступления, чтобы скоротать время, и обнаружил, что у меня неплохо получается.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='prisluzhnik'>Прислужник</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал прислужником, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я сбежал из дома в раннем возрасте и нашёл себе убежище в храме.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Моя семья отдала меня в храм, поскольку не могла или не хотела заботиться обо мне. </td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я вырос в семье с сильными религиозными убеждениями. Служение одному или нескольким божествам представлялось естественным.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Пламенная проповедь нашла отклик в глубине моей души и побудила меня служить вере.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>На религиозное служение пошёл друг детства, уважаемый знакомый или кто-то, кого я любил. Я последовал этому примеру.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>После встречи с истинным служителем богов я был настолько вдохновлён, что сразу же поступил на службу в религиозную группу.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='soldat'>Солдат</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал солдатом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я присоединился к ополчению, чтобы помочь защищать моё поселение от монстров.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Мой родственник был солдатом, и я хотел продолжить семейную традицию.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Местный правитель заставил меня вступить в армию.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Война опустошала мою родину, пока я рос. Битва — единственная жизнь, которую я когда-либо знал.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я искал славы и удачи, поэтому присоединился к наёмникам, продавая свои услуги тому, кто больше заплатит.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Захватчики напали на мою родину. Я должен был взять в руки оружие и защитить свой народ.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='chuzhezemets'>Чужеземец</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал чужеземцем, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Юношей я провёл много времени в диких местах, и мне начал нравиться такой образ жизни.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>С малых лет я не мог терпеть вонь городов, предпочитая проводить своё время на природе.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я понял, что за тьма скрывается в дебрях и поклялся воевать с ней.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Мой народ жил на границе цивилизации, и выживать в дикой местности меня научила моя семья.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>После трагедии я скрылся в диких местах, оставив мою старую жизнь позади.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Моя семья покинула цивилизацию, и я приспособился к новой среде.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='sharlatan'>Шарлатан</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал шарлатаном, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я был предоставлен самому себе, а моё умение манипулировать другими помогало мне выжить.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я рано узнал, что люди доверчивы и их можно легко использовать в своих целях.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я не раз попадал в переплёт, но всегда мог договориться.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я учился у мошенника на доверии, от которого и перенял своё ремесло.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>После того, как шарлатан обманул мою семью, я решил обучиться этому ремеслу, чтобы не быть обманутым вновь.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я был беден или боялся стать бедным, поэтому изучил трюки, которые защитят меня от нищеты.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='prodvizhenie_v_klasse'>Продвижение в классе</span></h4>
+<p>Если вы ещё не выбрали свой класс, сделайте это сейчас, помня о своей предыстории и других деталях, которые вы уже придумали. Как только вы сделаете свой выбор, бросьте к6 и найдите выпавшее число в соответствующей таблице этого раздела, которая описывает, как вы могли стать представителем этого класса.</p>
+<p>В разделах, ранее описанных в этой главе, приводятся дополнительные варианты истории, которые вы можете использовать совместно с материалами, приведёнными здесь.</p>
+<h4 class="tableTitle"><span id='bard'>Бард</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал бардом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я пробудил свои скрытые таланты барда методом проб и ошибок.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я был талантливым исполнителем и привлёк внимание наставника бардов, который обучил меня древним техникам.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я присоединился к свободному обществу исследователей и ораторов, чтобы изучить новые техники выступления и магии.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я почувствовал призвание рассказывать о деяниях чемпионов и героев, оживляя их в песнях и историях.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я присоединился к одной из великих коллегий, чтобы изучать древние знания, тайны магии и искусство выступления.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Однажды я взял в руки музыкальный инструмент и тут же понял, что умею на нём играть.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='varvar'>Варвар</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал варваром, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Моя верность моему народу поддерживала меня в битве, сделав меня могучим и опасным.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Дух моих предков призвал меня выполнить великую миссию.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Однажды в бою я потерял контроль над собой, словно кто-то другой управлял моим телом, заставляя убивать всех врагов, до которых я мог дотянуться.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я отправился в паломничество, чтобы найти себя, но вместо этого нашёл дух зверя, который направляет, защищает и вдохновляет меня.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Меня ударило молнией, и я выжил. После этого я обнаружил в себе новую силу, которая позволила мне оставить позади мою прежнюю немощь.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Мою ярость нужно было направить в бой, иначе я рисковал начать убивать всех без разбора.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='voin'>Воин</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал воином, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я хотел отточить свои боевые навыки, поэтому поступил в военное училище. </td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я был оруженосцем у рыцаря, который научил меня сражаться, ухаживать за конём и вести себя с честью. Я решил выбрать для себя этот путь.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Ужасные монстры, обрушившиеся на моё поселение, убили кого-то, кого я любил. Я взял в руки оружие, чтобы убить этих тварей и подобных им.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я вступил в армию и научился сражаться как член отряда.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я вырос сражаясь, и оттачивал свои навыки, защищаясь от людей, которые переходили мне дорогу.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я всегда мог взять практически любое оружие и знал, как с ним обращаться.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='volshebnik'>Волшебник</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал волшебником, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Старый волшебник выбрал меня из нескольких кандидатов и взял в ученики.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Когда я заблудился в лесу, скрывавшийся там волшебник нашёл меня, приютил и обучил основам магии.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я вырос, слушая рассказы о великих волшебниках и знал, что хочу идти по их стопам. Я попытался поступить в академию магии, и у меня получилось.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Один из моих родственников был опытным волшебником, и он решил, что я достаточно умён, чтобы учиться этому искусству.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Исследуя старую гробницу, библиотеку или храм, я нашёл книгу заклинаний. Я сразу же принялся изучать всё, что мог, чтобы стать волшебником.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я был вундеркиндом, который с малых лет проявлял способности к магии. Когда я стал достаточно взрослым, чтобы отправиться в самостоятельное путешествие, я сделал это, чтобы получить ещё больше знаний о магии и увеличить свою силу.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='druid'>Друид</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал друидом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я видел слишком много разорения в диких местах, слишком много природного великолепия было разрушено грабителями. Я присоединился к кругу друидов, чтобы сражаться против врагов природы.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я нашёл своё место среди друидов после того, как сбежал от катастрофы.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Мне всегда было легко найти общий язык с животными, я изучил этот талант и нашёл способ использовать его наилучшим образом.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я подружился с друидом и проникся их учением. Я решил следовать наставлениям моего друга и отдать что-нибудь миру.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Когда я рос, я видел духов вокруг меня — сущностей, которых окружающие не могли воспринимать. Я разыскал друидов, чтобы они помогли мне понять, что же я вижу, и научили общаться с этими сущностями.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я всегда испытывал отвращение к существам неестественного происхождения. По этой причине я погрузился в изучение тайн друидов и стал защитником естественного порядка вещей.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='zhrets'>Жрец</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал жрецом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Сверхъестественное существо, служащее богам, призвало меня стать посредником между богами и этим миром.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я видел несправедливость и ужас в мире и ощущал необходимость противостоять этому.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Мой бог дал мне ясный знак. Я бросил всё, чтобы служить ему.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>И хотя я всегда был религиозен, только по завершении паломничества я понял своё истинное призвание.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Раньше я служил в канцелярии храма, но потом понял, что мне нужно идти к людям и нести свет моей веры в самые тёмные уголки земли.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я осознал, что мой бог действует через меня, и делал так, как приказано, хотя и не знал, почему я был избран служить.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='koldun'>Колдун</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал колдуном, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Когда я бродил по запретному месту, мне встретилось существо из другого мира, которое предложило мне заключить договор.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Во время изучения странной книги, которую я нашёл в заброшенной библиотеке, передо мной внезапно предстала сущность, ставшая моим покровителем.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я попал в лапы моего покровителя, когда случайно прошёл через волшебный портал.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Когда в моей жизни был переломный момент, я молился всем, кто мог меня слышать, и ответившее существо стало моим покровителем.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Мой будущий покровитель явился мне во сне и предложил великую силу за службу.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>У одного из моих предков был договор с моим покровителем, поэтому эта сущность решила заключить соглашение и со мной.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='monah'>Монах</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал монахом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Меня выбрали для обучения в уединённом монастыре. Там я освоил основные техники, необходимые, чтобы со временем достичь мастерства в традиции.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Я искал путь обретения более глубокого понимания бытия и своего места в этом мире.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я наткнулся на портал в Царство Теней и нашёл убежище в странном монастыре, где научился защищаться от сил тьмы.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я был охвачен горем после потери близкого человека и искал совета философов, чтобы смириться с потерей.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я чувствовал в себе особую силу, поэтому искал тех, кто мог бы помочь мне пробудить и использовать её.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>В юности я был озорным и недисциплинированным, но позже осознал ошибочность моего пути. Я обратился в монастырь и стал монахом, чтобы жить в гармонии.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='paladin'>Паладин</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал паладином, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Передо мной появилось фантастическое существо и призвало меня выполнить священную миссию.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Один из моих предков оставил священную миссию невыполненной, и я намерен завершить его дело.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Мир — это тёмное и ужасное место. Я решил служить маяком света в сгущающихся тенях.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я служил оруженосцем у паладина, учась всему, что нужно для принесения собственной священной клятвы.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Злу нужно противостоять на всех фронтах. Я ощущаю необходимость искать зло и вычищать его из этого мира.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Стать паладином — естественное следствие моей непоколебимой веры. Приняв клятву, я стал святым мечом моей религии.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='plut'>Плут</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал плутом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я всегда был ловким и сообразительным, так что я решил использовать эти таланты, чтобы проторить свой путь в мир.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Убийцы или воры поступили со мной несправедливо, поэтому я обучился умениям своих врагов, чтобы лучше с ними сражаться.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Опытный плут что-то во мне увидел и обучил нескольким полезным трюкам.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я решил превратить свою удачливость в основу своей профессии, но я понимал, что необходимо развивать свои навыки.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я присоединился к группе прохвостов, которые показали мне, как получить желаемое через скрытность, а не через прямое противостояние.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я испытываю слабость к блестящим побрякушкам и кошелькам с монетами, если я могу приложить к ним руку, не рискуя при этом жизнью и конечностью.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='sledopyt'>Следопыт</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал следопытом, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Я обрёл цель, пока оттачивал свои охотничьи навыки, уничтожая опасных животных на краю цивилизации.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>У меня всегда был особый подход к животным — я могу успокоить их словом или прикосновением.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Я страдал от страшной тяги к путешествиям, а образ жизни следопыта давал мне причину не задерживаться на одном месте слишком долго.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Я уже видел, что происходит, когда монстры выходят из темноты. Я взял на себя обязательство стать первым рубежом защиты от зла, находящегося за пределами цивилизации.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Я встретил седого следопыта, который обучил меня выживать в лесу и поведал много секретов диких земель.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Я служил в армии, изучая принципы моей профессии во время прокладывания троп и поиска вражеских лагерей.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='charodej'>Чародей</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к6</td>
+<td>Я стал чародеем, потому что...</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Когда я родился, вся вода в доме замёрзла, молоко скисло, а всё железо превратилось в медь. Мою семью уверяли в том, что это событие предвещало странные вещи, которые со мной произойдут.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>У меня было сильное эмоциональное и физическое напряжение, которое вызвало к жизни мою скрытую магическую силу. С тех пор я всё время боролся, чтобы контролировать её.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>В моей семье никогда не говорили о моих предках, и когда я спрашивал их об этом, они меняли тему. И лишь когда я начал проявлять свои странные способности, правда о моём наследии вышла наружу.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Когда чудовище угрожало одному из моих друзей, меня объял страх. Я инстинктивно бросился на существо и уничтожил его силой, исходящей изнутри меня.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Почувствовав что-то особенное во мне, незнакомец научил меня контролировать мой дар.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>После спасения из колдовского пожара, я понял, что изменился, хоть и остался цел. Я начал проявлять необычные способности, которые только начинаю понимать.</td>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle"><span id='sobytiya_v_zhizni'>События в жизни</span></h3><p>Независимо от того, сколько вы живёте, в вашей жизни произошло хотя бы одно событие, которое значительно повлияло на ваш характер. Жизненные события включают в себя чудеса и трагедии, конфликты и успехи, а также встречи с необычным. Они могут помочь объяснить, почему ваш персонаж стал искателем приключений, а некоторые всё ещё могут повлиять на вашу жизнь, хоть и произошли они очень давно.</p>
+<p>Чем персонаж старше, тем выше шанс, что в его жизни было несколько таких событий, как показано в таблице «Жизненные события по возрасту». Если вы уже выбрали стартовый возраст, посмотрите соответствующее число в столбце «Жизненные события». В ином случае вы можете бросить кости, чтобы определить ваш текущий возраст и количество жизненных событий случайным образом.</p>
+<p>После того, как вы узнаете, сколько жизненных событий пережил ваш персонаж, совершите бросок по таблице «Жизненные события» для каждого из них. Многие из результатов, приведённых в этой таблице, указывают на одну из нижеследующих вторичных таблиц. Как только вы определили все события в жизни персонажа, можете расположить их в хронологическом порядке как посчитаете нужным.</p>
+<h4 class="tableTitle">Жизненные события по возрасту</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к100</td>
+<td>Текущий возраст</td>
+<td>Жизненные события</td>
+</tr>
+<tr>
+<td>01-20</td>
+<td>20 лет и моложе</td>
+<td>1</td>
+</tr>
+<tr>
+<td>21-59</td>
+<td>21-30 лет</td>
+<td>1к4</td>
+</tr>
+<tr>
+<td>60-69</td>
+<td>31-40 лет</td>
+<td>1к6</td>
+</tr>
+<tr>
+<td>70-89</td>
+<td>41-50 лет</td>
+<td>1к8</td>
+</tr>
+<tr>
+<td>90-99</td>
+<td>51-60 лет</td>
+<td>1к10</td>
+</tr>
+<tr>
+<td>00</td>
+<td>61 год или старше</td>
+<td>1к12</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="life_events"><span id='zhiznennye_sobytiya'>Жизненные события</span></h4>
+<table>
+<tbody>
+<tr class="table_header"><td style="width:60px;">к100</td>
+<td>Событие</td>
+</tr>
+<tr>
+<td>01-10</td>
+<td>Вы пережили трагедию. Совершите бросок по таблице «<a href="index.html#tragedies">Трагедии</a>».</td>
+</tr>
+<tr>
+<td>11-20</td>
+<td>Судьба была к вам милостива. Совершите бросок по таблице «<a href="index.html#boons">Блага</a>».</td>
+</tr>
+<tr>
+<td>21-30</td>
+<td>Вы влюбились или поженились. Если вы получите этот результат более одного раза, вы можете выбрать вместо него рождение ребёнка. Обсудите с вашим Мастером личность возлюбленного/возлюбленной вашего персонажа.</td>
+</tr>
+<tr>
+<td>31-40</td>
+<td>Вы нажили себе врага-искателя приключений. Бросьте 1к6. Нечётное число означает, что вы виноваты в ссоре, а чётное — что вы невиновны. Используйте <a href="index.html#supplemental">дополнительные таблицы</a> и поговорите с вашим Мастером, чтобы определить личность этого враждебного персонажа и опасность, которую он представляет для вас.</td>
+</tr>
+<tr>
+<td>41-50</td>
+<td>Вы подружились с искателем приключений. Используйте <a href="index.html#supplemental">дополнительные таблицы</a> и поговорите с вашим Мастером, чтобы добавить больше деталей этому дружелюбному персонажу, и установить, как началась ваша дружба</td>
+</tr>
+<tr>
+<td>51-70</td>
+<td>Вы провели время, работая по профессии, связанной с вашей предысторией. Начните игру с дополнительными 2к6 зм.</td>
+</tr>
+<tr>
+<td>71-75</td>
+<td>Вы повстречались с очень важной персоной. Используйте <a href="index.html#supplemental">дополнительные таблицы</a>, чтобы определить личность этого персонажа и как он к вам относится. Придумайте дополнительные детали вместе с вашим Мастером, чтобы этот персонаж соответствовал вашей предыстории.</td>
+</tr>
+<tr>
+<td>76-80</td>
+<td>Вы отправились в приключение. Совершите бросок по таблице «<a href="index.html#adventures">Приключения</a>», чтобы узнать, что с вами произошло. Придумайте вместе с вашим Мастером характер приключения и существ, с которыми вы столкнулись.</td>
+</tr>
+<tr>
+<td>81-85</td>
+<td>Вы встретились со сверхъестественным. Совершите бросок по таблице «<a href="index.html#supernatural_events">Сверхъестественные события</a>», чтобы узнать, что произошло.</td>
+</tr>
+<tr>
+<td>86-90</td>
+<td>Вы сражались в битве. Совершите бросок по таблице «<a href="index.html#war">Война</a>», чтобы узнать, что с вами случилось. Придумайте вместе с вашим Мастером, что послужило причиной противостояния и кто в нём участвовал. Возможно, это был небольшой конфликт между вашим поселением и группой орков или это могло быть главное сражение в крупной войне.</td>
+</tr>
+<tr>
+<td>91-95</td>
+<td>Вы совершили преступление или были ошибочно обвинены в этом. Совершите бросок по таблице «<a href="index.html#crime">Преступление</a>», чтобы определить его характер, и по таблице «<a href="index.html#punishment">Наказание</a>», чтобы узнать, что с вами стало.</td>
+</tr>
+<tr>
+<td>96-99</td>
+<td>Вы столкнулись с чем-то магическим. Совершите бросок по таблице «<a href="index.html#arcane_matters">Волшебные дела</a>».</td>
+</tr>
+<tr>
+<td>00</td>
+<td>С вами случилось что-то действительно странное. Совершите бросок по таблице «<a href="index.html#weird_stuff">Странные вещи</a>».</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle"><span id='vtorostepennye_tablitsy'>Второстепенные таблицы</span></h4>
+<p>Эти таблицы добавляют детали ко многим результатам из таблицы «<a href="index.html#life_events">Жизненные события</a>». Ниже они приводятся в алфавитном порядке.</p>
+<h4 class="tableTitle" id="adventures">Приключения</h4>
+<table>
+<tbody>
+<tr class="table_header"><td style="width:60px">к100</td>
+<td>Результат</td>
+</tr>
+<tr>
+<td>01-10</td>
+<td>Вы были на волоске от смерти. Ваше тело уродуют скверные шрамы, и вам недостаёт уха, 1к3 пальцев рук или 1к4 пальцев ног.</td>
+</tr>
+<tr>
+<td>11-20</td>
+<td>Вы получили тяжёлую травму. Хотя рана зажила, она всё равно время от времени даёт о себе знать.</td>
+</tr>
+<tr>
+<td>21-30</td>
+<td>Вы были ранены, но со временем полностью выздоровели.</td>
+</tr>
+<tr>
+<td>31-40</td>
+<td>Вы заразились какой-то болезнью, шастая по нечистотам. Вы излечились от неё, но теперь у вас постоянный кашель, оспины на коже или не по возрасту седые волосы.</td>
+</tr>
+<tr>
+<td>41-50</td>
+<td>Вы были отравлены ловушкой или монстром. Вы восстановились, но в следующий раз, когда вам придётся проходить спасбросок против яда, вы получите помеху на этот спасбросок.</td>
+</tr>
+<tr>
+<td>51-60</td>
+<td>Вы потеряли что-то сентиментально важное для вас во время вашего приключения. Уберите одну безделушку из ваших вещей.</td>
+</tr>
+<tr>
+<td>61-70</td>
+<td>Вас ужасно испугало нечто, с чем вы столкнулись, после чего вы сбежали, бросив ваших товарищей на произвол судьбы.</td>
+</tr>
+<tr>
+<td>71-80</td>
+<td>Вы многому научились во время своих приключений. В следующий раз, когда вы будете совершать проверку характеристики или спасбросок, вы получите преимущество на этот бросок.</td>
+</tr>
+<tr>
+<td>81-90</td>
+<td>Вы обнаружили небольшое сокровище во время вашего приключения. У вас осталось 2к6 зм от вашей доли.</td>
+</tr>
+<tr>
+<td>91-99</td>
+<td>Вы нашли большое сокровище во время вашего приключения. У вас осталось 1к20+50 зм от вашей доли.</td>
+</tr>
+<tr>
+<td>00</td>
+<td>Вы обнаружили обычный магический предмет (по выбору Мастера).</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="arcane_matters">Волшебные дела</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к10</td>
+<td>Магическое событие</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Вы были очарованы или испуганы заклинанием.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Вы получили ранение от эффекта заклинания.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Вы стали свидетелем того, как творилось мощное заклинание жрецом, друидом, чародеем, колдуном или волшебником.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Вы выпили зелье (по выбору Мастера).</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вы нашли свиток заклинания (по выбору Мастера) и вам удалось успешно применить его.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Вы были телепортированы посредством магии.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Вы стали невидимым на некоторое время.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Вы распознали в чём-то иллюзию.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Вы видели существо, призванное магией.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Вашу судьбу предсказал провидец. Совершите два броска по таблице «<a href="index.html#life_events">Жизненные события</a>», но не применяйте их результаты. Вместо этого Мастер выберет одно событие как грядущее событие вашего будущего (которое может произойти, а может и нет).</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="boons">Блага</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к10</td>
+<td>Благо</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Дружественный волшебник отдал вам свиток с одним заговором (на выбор Мастера).</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Вы спасли обывателя, который теперь обязан вам жизнью. Эта личность сопровождает вас в ваших путешествиях и выполняет повседневные задачи для вас, но покинет вас, если с ним будут обращаться грубо, наплевательски или станут подвергать его опасности. Определите особенности этого персонажа, используя <a href="index.html#supplemental">дополнительные таблицы</a> и обсудив со своим Мастером.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Вы нашли ездовую лошадь.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Вы нашли немного золота. Добавьте 1к20 зм к вашему стандартному начальному богатству.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вы получили в наследство одно простое оружие (на ваш выбор).</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Вы нашли нечто интересное! Добавьте к снаряжению одну безделушку (см. раздел «Безделушки» в главе 5 «Книги игрока»).</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Вы когда-то прислуживали в местном храме. При следующем вашем визите туда вам могут полностью восстановить хиты.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Знакомый алхимик подарил вам зелье лечения или флакон кислоты на ваш выбор.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Вы нашли карту сокровищ.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Дальний родственник оставил вам состояние, позволяющее вести комфортное существование в течение 1к20 лет. Если вы решили вести существование более высокого уровня, уменьшите его стоимость на 2 зм в течение этого периода времени.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="crime">Преступление</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к8</td>
+<td>Преступление</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Убийство</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Кража</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Грабёж</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Нападение</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Контрабанда</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Похищение</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Вымогательство</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Подделка</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="punishment">Наказание</h4>
+<table>
+<tbody>
+<tr class="table_header"><td style="width:60px">к12</td>
+<td>Наказание</td>
+</tr>
+<tr>
+<td>1-3</td>
+<td>Вы не совершали преступление и были освобождены после обвинения.</td>
+</tr>
+<tr>
+<td>4-6</td>
+<td>Вы совершили преступление или помогли совершить, но, тем не менее, власти признали вас невиновным.</td>
+</tr>
+<tr>
+<td>7-8</td>
+<td>Вас едва не поймали с поличным. Вы должны были спасаться бегством и на данный момент вас разыскивают в поселении, где произошло преступление.</td>
+</tr>
+<tr>
+<td>9-12</td>
+<td>Вы были схвачены, преданы суду и провели много времени в тюрьме, гребцом на судне или на каторге. Вы отбыли наказание в течение 1к4 лет или успешно бежали после истечения этого срока.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="supernatural_events">Сверхъестественные события</h4>
+<table>
+<tbody>
+<tr class="table_header"><td style="width:60px">к100</td>
+<td>Событие</td>
+</tr>
+<tr>
+<td>01-05</td>
+<td>Вы были околдованы феей и пленены на 1к6 лет, прежде чем сумели освободиться.</td>
+</tr>
+<tr>
+<td>06-10</td>
+<td>Вы видели демона и сумели сбежать прежде, чем он смог что-либо совершить с вами.</td>
+</tr>
+<tr>
+<td>11-15</td>
+<td>Вы были соблазнены дьяволом. Совершите спасбросок мудрости Сл 10. При провале ваше мировоззрение склоняется на один пункт в сторону зла (если оно ещё не злое), и вы начинаете игру с дополнительными 1к20 + 50 зм.</td>
+</tr>
+<tr>
+<td>16-20</td>
+<td>Однажды утром вы проснулись за много километров от вашего дома, не имея понятия, как это случилось.</td>
+</tr>
+<tr>
+<td>21-30</td>
+<td>Вы посетили некое священное место, где почувствовали божественное присутствие.</td>
+</tr>
+<tr>
+<td>31-40</td>
+<td>Вы видели красную комету, лицо, появившееся среди метели, или другое странное событие. Для вас очевидно, что это — некое предзнаменование.</td>
+</tr>
+<tr>
+<td>41-50</td>
+<td>Вы избежали верной гибели и верите, что вас спасло вмешательство божества.</td>
+</tr>
+<tr>
+<td>51-60</td>
+<td>Вы стали свидетелем небольшого чуда.</td>
+</tr>
+<tr>
+<td>61-70</td>
+<td>Вы исследовали пустующий дом и обнаружили, что он населён призраками.</td>
+</tr>
+<tr>
+<td>71-75</td>
+<td>Вы были недолго одержимы некой сущностью. Бросьте 1к6, чтобы определить тип сущности: 1 — небожитель; 2 — дьявол; 3 — демон; 4 — фея; 5 — элементаль; 6 — нежить.</td>
+</tr>
+<tr>
+<td>76-80</td>
+<td>Вы видели привидение.</td>
+</tr>
+<tr>
+<td>81-85</td>
+<td>Вы видели упыря, пожирающего мёртвое тело.</td>
+</tr>
+<tr>
+<td>86-90</td>
+<td>Небожитель или божество посетили вас в ваших снах, чтобы предупредить о надвигающейся угрозе.</td>
+</tr>
+<tr>
+<td>91-95</td>
+<td>Вы ненадолго оказались в Стране Фей или в Царстве Теней.</td>
+</tr>
+<tr>
+<td>96-00</td>
+<td>Вы видели портал, который, по вашему убеждению, ведёт на другой план существования.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="tragedies">Трагедии</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к12</td>
+<td>Трагедия</td>
+</tr>
+<tr>
+<td>1-2</td>
+<td>Умер член семьи или близкий друг. Совершите бросок по дополнительной таблице «Причина смерти», чтобы узнать, как это произошло.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Дружба закончилась плохо, и кто-то другой теперь настроен враждебно к вам. Причиной могло послужить недопонимание, ваш или его поступок.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Вы потеряли всё чем владели из-за бедствия, и вам пришлось начать жизнь с нуля.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вас осудили на тюремное заключение за преступление, которого вы не совершали, и вы провели 1к6 лет в тюрьме, гребцом на судне или на каторге.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Война разорила ваше родное поселение, превратив всё в руины. Впоследствии вы либо помогли отстроить город, либо отправились в другое место.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Возлюбленный исчез без следа. С тех пор вы ищете этого человека.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Ужасная порча поразила урожай вашего поселения, и многим пришлось голодать. Вы потеряли брата, сестру или другого члена семьи.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Вы сотворили что-то, ужасно опозорившее вас в глазах вашей семьи. Вы могли быть вовлечены в скандал, связаться с тёмной магией или оскорбить кого-то важного. Отношение вашей семьи становится в лучшем случае безразличным. Впрочем, со временем они могут простить вас.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>По неизвестным для вас причинам вы были изгнаны из вашего поселения. Вы либо некоторое время скитались по диким землям, либо нашли новое место для жизни.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Роман завершился. Бросьте к6. Чётное число означает, что он завершился чьей-то обидой. Нечётное — что размолвка была по обоюдному согласию.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Ваш нынешний или потенциальный романтический партнёр умер. Проведите бросок по дополнительной таблице «Причина смерти», чтобы узнать, что произошло. Если результатом является убийство, бросьте 1к12. При результате 1 вы прямо или косвенно являетесь виновником.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="war">Война</h4>
+<table>
+<tbody>
+<tr class="table_header"><td style="width:60px">к12</td>
+<td>Исход войны</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Вы потеряли сознание и были оставлены умирать. Придя в сознание позже, вы не можете вспомнить ничего о битве.</td>
+</tr>
+<tr>
+<td>2-3</td>
+<td>Вас тяжело ранили в бою, и вы всё ещё носите ужасные шрамы от тех ранений.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Вы дезертировали из боя, чтобы спасти свою жизнь, но вам всё ещё стыдно за вашу трусость.</td>
+</tr>
+<tr>
+<td>5-7</td>
+<td>Вы получили лишь лёгкие ранения, и они зажили, не оставив шрамов.</td>
+</tr>
+<tr>
+<td>8-9</td>
+<td>Вы пережили битву, но страдаете от ужасных кошмаров, в которых вы переживаете её раз за разом.</td>
+</tr>
+<tr>
+<td>10-11</td>
+<td>Вы пережили битву невредимым, но многие ваши товарищи были ранены или пропали.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Вы показали себя достойно в бою, и вас запомнили, как героя. Возможно, вы были удостоены медали за вашу храбрость.</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle" id="weird_stuff">Странные вещи</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к12</td>
+<td>Что произошло</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Вас обратили в жабу, которой вы оставались в течение 1к4 недель.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Вас обратили в камень, и вы были каменной статуей некоторое время, пока кто-то не освободил вас.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Вы попали в рабство к карге, сатиру или кому-то другому, и провели там 1к6 лет.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Дракон держал вас в качестве заложника 1к4 месяца, пока группа искателей приключений не убила его.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вас взяли в плен злые гуманоиды вроде куо-тоа или квагготов. В Подземье вы жили как раб, пока вам не удалось сбежать.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Вы служили могущественному искателю приключений в качестве наёмника. Недавно вы ушли с этой службы. Воспользуйтесь дополнительными таблицами и обсудите с вашим Мастером базовые детали относительно вашего прошлого нанимателя.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Вы потеряли рассудок на 1к6 лет, но недавно он вернулся к вам. У вас, возможно, сохранился тик или какая-то другая странность в поведении.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Ваш возлюбленный втайне был серебряным драконом.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Вас взял в плен культ и почти принёс в жертву на алтаре сущности, которой служили культисты. Вы сбежали, но боитесь, что они найдут вас.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Вы встречались с полубогом, архидьяволом, архифеей, владыкой демонов или титаном, выжили и можете рассказать об этом.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Вас проглотила гигантская рыба, и вы провели месяц внутри неё, прежде чем вам удалось выбраться.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Могущественное существо готово было исполнить ваше желание, но вы прошляпили этот шанс на что-то глупое.</td>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle" id="supplemental"><span id='dopolnitelnye_tablitsy'>Дополнительные таблицы</span></h3><p>Дополнительные таблицы, приведённые ниже, дают вам возможность случайным образом определить характерные черты и другие факты о личностях, которые играют важную роль в жизни вашего персонажа. Используйте эти таблицы, когда того требует другая таблица или когда вам необходимо быстро выдумать часть подходящей информации. Таблицы приведены в алфавитном порядке.</p>
+<h4 class="tableTitle">Класс</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к100</td>
+<td>Класс</td>
+</tr>
+<tr>
+<td>01-07</td>
+<td>Варвар</td>
+</tr>
+<tr>
+<td>08-14</td>
+<td>Бард</td>
+</tr>
+<tr>
+<td>15-29</td>
+<td>Жрец</td>
+</tr>
+<tr>
+<td>30-36</td>
+<td>Друид</td>
+</tr>
+<tr>
+<td>37-52</td>
+<td>Воин</td>
+</tr>
+<tr>
+<td>53-58</td>
+<td>Монах</td>
+</tr>
+<tr>
+<td>59-64</td>
+<td>Паладин</td>
+</tr>
+<tr>
+<td>65-70</td>
+<td>Следопыт</td>
+</tr>
+<tr>
+<td>71-84</td>
+<td>Плут</td>
+</tr>
+<tr>
+<td>85-89</td>
+<td>Чародей</td>
+</tr>
+<tr>
+<td>90-94</td>
+<td>Колдун</td>
+</tr>
+<tr>
+<td>95-00</td>
+<td>Волшебник</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Мировоззрение</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>3к6</td>
+<td>Мировоззрение</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Хаотично-злое (50%) или хаотично-нейтральное (50%)</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>Законно-злое</td>
+</tr>
+<tr>
+<td>6-8</td>
+<td>Нейтрально-злое</td>
+</tr>
+<tr>
+<td>9-12</td>
+<td>Нейтральное</td>
+</tr>
+<tr>
+<td>13-15</td>
+<td>Нейтрально-доброе</td>
+</tr>
+<tr>
+<td>16-17</td>
+<td>Законно-доброе (50%) или законно нейтральное (50%)</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Хаотично-доброе (50%) или хаотично-нейтральное (50%)</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Отношения</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>3к4</td>
+<td>Отношение</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td>Враждебное</td>
+</tr>
+<tr>
+<td>5-10</td>
+<td>Дружественное</td>
+</tr>
+<tr>
+<td>11-12</td>
+<td>Безразличное</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Причина смерти</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к12</td>
+<td>Причина смерти</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Неизвестна</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Убит</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Погиб в битве</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Несчастный случай, связанный с классом или родом занятий</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Несчастный случай, не связанный с классом или родом занятий</td>
+</tr>
+<tr>
+<td>6-7</td>
+<td>Естественные причины вроде болезни или старости</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Очевидное самоубийство</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Разорван на части животным или природным бедствием</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Сожран монстром</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Казнён за преступление или умер под пытками</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Загадочное событие, например, убит метеоритом, поражён разгневанным богом или погиб во время вылупления слаада</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Раса</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к100</td>
+<td>Раса</td>
+</tr>
+<tr>
+<td>1-40</td>
+<td>Человек</td>
+</tr>
+<tr>
+<td>41-50</td>
+<td>Дварф</td>
+</tr>
+<tr>
+<td>51-60</td>
+<td>Эльф</td>
+</tr>
+<tr>
+<td>61-70</td>
+<td>Полурослик</td>
+</tr>
+<tr>
+<td>71-75</td>
+<td>Драконорождённый</td>
+</tr>
+<tr>
+<td>76-80</td>
+<td>Гном</td>
+</tr>
+<tr>
+<td>81-85</td>
+<td>Полуэльф</td>
+</tr>
+<tr>
+<td>86-90</td>
+<td>Полуорк</td>
+</tr>
+<tr>
+<td>91-95</td>
+<td>Тифлинг</td>
+</tr>
+<tr>
+<td>96-00</td>
+<td>По выбору Мастера</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Род занятий</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>к100</td>
+<td>Род занятий</td>
+</tr>
+<tr>
+<td>01-05</td>
+<td>Академический</td>
+</tr>
+<tr>
+<td>06-10</td>
+<td>Искатель приключений (совершите бросок по таблице «Класс»)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Аристократ</td>
+</tr>
+<tr>
+<td>12-26</td>
+<td>Ремесленник или член гильдии</td>
+</tr>
+<tr>
+<td>27-31</td>
+<td>Преступник</td>
+</tr>
+<tr>
+<td>32-36</td>
+<td>Артист</td>
+</tr>
+<tr>
+<td>37-38</td>
+<td>Изгой, отшельник или беженец</td>
+</tr>
+<tr>
+<td>39-43</td>
+<td>Исследователь или странник</td>
+</tr>
+<tr>
+<td>44-55</td>
+<td>Фермер или скотовод</td>
+</tr>
+<tr>
+<td>56-60</td>
+<td>Охотник или траппер</td>
+</tr>
+<tr>
+<td>61-75</td>
+<td>Чернорабочий</td>
+</tr>
+<tr>
+<td>76-80</td>
+<td>Купец</td>
+</tr>
+<tr>
+<td>81-85</td>
+<td>Политик или бюрократ</td>
+</tr>
+<tr>
+<td>86-90</td>
+<td>Священник</td>
+</tr>
+<tr>
+<td>91-95</td>
+<td>Моряк</td>
+</tr>
+<tr>
+<td>96-00</td>
+<td>Солдат</td>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">Состояние</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>3к6</td>
+<td>Состояние</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Мёртв (совершите бросок по таблице «Причина смерти»)</td>
+</tr>
+<tr>
+<td>4-5</td>
+<td>Пропал или состояние неизвестно</td>
+</tr>
+<tr>
+<td>6-8</td>
+<td>Жив, но испытывает трудности из-за ранения, финансов или отношений.</td>
+</tr>
+<tr>
+<td>9-12</td>
+<td>Жив и здоров</td>
+</tr>
+<tr>
+<td>13-15</td>
+<td>Жив и весьма успешен</td>
+</tr>
+<tr>
+<td>16-17</td>
+<td>Жив, и о нём идёт дурная слава</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Жив и прославлен</td>
+</tr>
+</tbody>
+</table>
+<br><h2 class="bigSectionTitle">Что дальше?</h2><p>Когда вы закончите использовать эти таблицы, у вас должен подобраться набор фактов и заметок, который, как минимум, опишет то, чем персонаж занимался в мире до текущего момента. Иногда это будет вся необходимая вам информация, но вам не обязательно на этом останавливаться.</p>
+<p>Используя своё воображение, чтобы связать все эти факты вместе в последовательную историю, вы можете создать полностью самостоятельную автобиографию для вашего персонажа в несколько предложений — прекрасный пример того, насколько цельная картина больше, чем просто сумма её частей.</p>
+<p>Вы получили несколько результатов, которые хоть и не противоречат друг другу, но и, кажется, не вяжутся между собой? Если так, вам теперь решать, как объяснить, что произошло с вами. Например, допустим, вы были рождены в замке, но домом вашего детства была дикая местность. Могло случиться так, что ваши родители отправились из своего лесного дома, чтобы получить помощь у повитухи в замке, когда ваша мать была уже на сносях. Или ваши родители могли быть членами замковой прислуги до вашего рождения, но их освободили от службы вскоре после вашего рождения.</p>
+<p>Вдобавок к углублению вашего ролевого опыта, история вашего персонажа предоставляет вашему Мастеру возможность вплести эти элементы в историю вашей кампании. Как ни взгляни на это, добавление определённости в жизнь персонажа до приключений — это хорошо проведённое время.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div></section>
+<script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:224'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="42156"><div class="comment__entry comment__op comment__author-group-" data-id="42156" id="comment_42156">	<div class='comment__header'>
+			<a href='https://dnd.su/@211aa7b006a6' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/b753ca22bb9c72bb17dd00aaa72155d4.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@211aa7b006a6' class='profile__public-link profile__public-link-group-users comment__author-name'>Ratwork</a></span> 
+	<div class="comment__age" title="14:19:12 06.01.2026">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_42156" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Прикольно
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="46035"><div class="comment__entry comment__op comment__author-group-" data-id="46035" id="comment_46035">	<div class='comment__header'>
+			<a href='https://dnd.su/@capt_snail' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/e054e3b4e9815cd26bcfb50bf198150c.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@capt_snail' class='profile__public-link profile__public-link-group-users comment__author-name'>Capt.Snail</a></span> 
+	<div class="comment__age" title="13:18:27 19.03.2026">19 дней  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="index.html#comment_46035" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		"Если вас устраивает, что какой-либо факт о жизни вашего персонажа будет определяться броском, то бросайте кость. Если нет, вы можете принять решение сами и выбрать что-то из таблицы."<br><br>Последняя фраза делает данную игровую механику одной из моих самых любимых в игре. Самостоятельно выбираешь варианты из таблиц Жизненные события и Приключения и наслаждаешься приятным количеством золотых с первого уровня
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+		<p>
+ На данный момент в галерее нет изображений.
+ 	</p>
+	</section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

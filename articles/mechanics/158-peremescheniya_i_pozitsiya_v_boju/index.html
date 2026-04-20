@@ -1,0 +1,1240 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Перемещения и позиция в бою / Игровые механики / Статьи D&D 5 / Player's Handbook</title>
+	
+    <meta name="description" content="«Перемещения и позиция в бою (Movement and Position)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta name="keywords" content="dnd статьи механики,механики,игровые механики, днд статьи механики,механики,игровые механики, d&d статьи механики,механики,игровые механики, dnd 5 статьи механики,механики,игровые механики, днд 5 статьи механики,механики,игровые механики, d&d 5 статьи механики,механики,игровые механики, подземелья и драконы статьи механики,механики,игровые механики, dungeons and dragons статьи механики,механики,игровые механики, dnd статьи механики,механики,игровые механики Перемещения и позиция в бою [Movement and Position], днд статьи механики,механики,игровые механики Перемещения и позиция в бою [Movement and Position], d&d статьи механики,механики,игровые механики Перемещения и позиция в бою [Movement and Position], dnd 5 статьи механики,механики,игровые механики Перемещения и позиция в бою [Movement and Position], днд 5 статьи механики,механики,игровые механики Перемещения и позиция в бою [Movement and Position], d&d 5 статьи механики,механики,игровые механики Перемещения и позиция в бою [Movement and Position], подземелья и драконы статьи механики,механики,игровые механики Перемещения и позиция в бою [Movement and Position], dungeons and dragons статьи механики,механики,игровые механики Перемещения и позиция в бою [Movement and Position]" />
+    <meta property="og:title" content="Перемещения и позиция в бою / Игровые механики / Статьи D&D 5 / Player's Handbook" />
+    <meta property="og:description" content="«Перемещения и позиция в бою (Movement and Position)» - статья в разделе «Игровые механики» по D&D 5-й редакции." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/articles/mechanics/158-movement-and-position/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='../../158-peremeschenie/index.html'>Перемещения и позиция в бою</a><span> — </span><a href='../index.html'>Игровые механики</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="../../158-peremeschenie/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="../../158-peremeschenie/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="../../158-peremeschenie/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="../../158-peremeschenie/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../158-peremeschenie/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Farticles%2Fmechanics%2F158-movement-and-position%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Farticles%2Fmechanics%2F158-movement-and-position%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Farticles%2Fmechanics%2F158-movement-and-position%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Farticles%2Fmechanics%2F158-movement-and-position%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../158-peremeschenie/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://t.me/dnd_lucky_mess?partner=dnd.su" target="_blank" title="Везучий Случай (Мы — группа друзей, записывающих наши приключения в волшебных мирах Dungeons & Dragons)" class="item_link_2 partner"><span class="sprite-partners__lucky_mess partner-icon"></span>Везучий Случай</a></li><li class="item_level_2"><a href="https://vk.com/wishport?partner=dnd.su" target="_blank" title="WishPort (Всё о ролевках)" class="item_link_2 partner"><span class="sprite-partners__wishport partner-icon"></span>WishPort</a></li><li class="item_level_2"><a href="https://www.youtube.com/@DnDMultiverse?partner=dnd.su" target="_blank" title="DnD Multiverse (Мультивселенная Dungeons & Dragons)" class="item_link_2 partner"><span class="sprite-partners__dndmultiverse partner-icon"></span>DnD Multiverse</a></li><li class="item_level_2"><a href="https://www.youtube.com/@DangaMasta?partner=dnd.su" target="_blank" title="Данжа Маста (Канал о создании билдов различных персонажей в ДнД)" class="item_link_2 partner"><span class="sprite-partners__dangamasta partner-icon"></span>Данжа Маста</a></li><li class="item_level_2"><a href="https://www.youtube.com/c/%D0%9F%D0%BE%D0%A2%D1%83%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86?partner=dnd.su" target="_blank" title="По ту сторону страниц (Пишем Музыку, Карты, Обзоры и Подкасты!)" class="item_link_2 partner"><span class="sprite-partners__po_tu_storonu partner-icon"></span>По ту сторону страниц</a></li><li class="item_level_2"><a href="https://t.me/EddyGames?partner=dnd.su" target="_blank" title="Eddy Games (Канал, посвящённый лучшей в мире НРИ - Dungeons&Dragons)" class="item_link_2 partner"><span class="sprite-partners__eddy_games partner-icon"></span>Eddy Games</a></li><li class="item_level_2"><a href="https://vk.com/wwguild?partner=dnd.su" target="_blank" title="Гильдия Мироходов (Пристань многих миров)" class="item_link_2 partner"><span class="sprite-partners__wwguild partner-icon"></span>Гильдия Мироходов</a></li><li class="item_level_2"><a href="https://vk.com/neardeathdungeon?partner=dnd.su" target="_blank" title="Near Death Dungeon" class="item_link_2 partner"><span class="sprite-partners__ndd partner-icon"></span>Near Death Dungeon</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCe_vCsHHRPT9XPVYDInQqqQ?partner=dnd.su" target="_blank" title="Sneaky Dice" class="item_link_2 partner"><span class="sprite-partners__sneaky_dice partner-icon"></span>Sneaky Dice</a></li><li class="item_level_2"><a href="https://vk.com/dicehead_dnd?partner=dnd.su" target="_blank" title="DiceHead" class="item_link_2 partner"><span class="sprite-partners__dicehead partner-icon"></span>DiceHead</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCHvgDnlfa2zJXpaSEdX4_8w?partner=dnd.su" target="_blank" title="Monster park (Monster park of f#king Stark)" class="item_link_2 partner"><span class="sprite-partners__stark partner-icon"></span>Monster park</a></li><li class="item_level_2"><a href="https://boosty.to/strannoyemestechko?partner=dnd.su" target="_blank" title="Странное местечко (Переводы и озвучка)" class="item_link_2 partner"><span class="sprite-partners__sm partner-icon"></span>Странное местечко</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCGmhxe5rI2b29loDwJzcQOw?partner=dnd.su" target="_blank" title="Бесценный Опыт" class="item_link_2 partner"><span class="sprite-partners__exp partner-icon"></span>Бесценный Опыт</a></li><li class="item_level_2"><a href="https://vk.com/hesgar?partner=dnd.su" target="_blank" title="Сады гесперид (Советы мастерам даю какие-то. То ли про D&D паблик, то ли нет, хрен его разбери.)" class="item_link_2 partner"><span class="sprite-partners__hesgar partner-icon"></span>Сады гесперид</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../158-peremeschenie/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='../../158-peremeschenie/index.html'>Перемещения и позиция в бою</a><span> — </span><a href='../index.html'>Игровые механики</a>                        </h1>
+                    </section>
+
+					<section class="block block_100">
+             <script>
+                let eng_to_ru = {"f":"а",",":"б","d":"в","u":"г","l":"д","t":"е","`":"ё",";":"ж","p":"з","b":"и","q":"й","r":"к","k":"л","v":"м","y":"н","j":"о","g":"п","h":"р","c":"с","n":"т","e":"у","a":"ф","\\[":"х","w":"ц","x":"ч","i":"ш","o":"щ","m":"ь","s":"ы","\\]":"ъ","'":"э","\\.":"ю","z":"я"};
+                let ru_to_eng = {"а":"f","б":",","в":"d","г":"u","д":"l","е":"t","ё":"`","ж":";","з":"p","и":"b","й":"q","к":"r","л":"k","м":"v","н":"y","о":"j","п":"g","р":"h","с":"c","т":"n","у":"e","ф":"a","х":"\\[","ц":"w","ч":"x","ш":"i","щ":"o","ь":"m","ы":"s","ъ":"\\]","э":"'","ю":"\\.","я":"z"};
+            </script>
+            <form action="../index.html" class="search search_columns" method="get">
+				                <div class="grid">
+					            <div class="col-6_lg-8_sm-12_xs-18 search-form-main" >
+            <input type="text" class="if if-text" name="search" placeholder="Поиск по игровым механикам" value="" data-list=""></div>            <div class="col-2_lg-3_sm-4_xs-6 search-form-main" >
+            <input type="submit" class="btn btn-green" value="Найти"></div>                </div>
+            </form>
+			 <div class='paper-1 card card__group- typoable'  style="background-position:0% 0" data-id='article:158' data-typo-path='/articles/mechanics/158-movement-and-position/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Механики", "Перемещения и позиция в бою"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../158-peremeschenie/index.html' itemprop='url' class='item-link'>Перемещения и позиция в бою [Movement and Position]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Player's Handbook</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<p><span style=" color: rgb(20, 20, 20); font-weight: 400;">В бою персонажи и чудовища постоянно двигаются, используя перемещение и позиционирование. Вы можете в свой ход переместиться на расстояние, не превышающее вашу скорость, используя приведённые здесь правила.</span></p>
+<p>Ваше перемещение может включать прыжки, лазание и плавание. Эти разные режимы перемещения можно объединять с ходьбой, либо всё перемещение может состоять из них. Как бы вы ни перемещались, вы вычитаете расстояние всех частей перемещения из скорости, пока не закончите перемещаться.</p>
+<br><h3 class="underlined">ПРЕРЫВАНИЕ ПЕРЕМЕЩЕНИЯ</h3><p>Вы можете прерывать перемещение в свой ход, совершая что-то между двумя перемещениями.</p>
+<p>Например, если у вас скорость 30 футов, вы можете переместиться на 10 футов, совершить действие, а затем переместиться на 20 футов.</p>
+<br><h3 class="smallSectionTitle">ПЕРЕМЕЩЕНИЕ МЕЖДУ АТАКАМИ</h3><p>Если вы совершаете действие, включающее более одной атаки оружием, вы можете дополнительно прерывать перемещение этими атаками. Например, воин, способный совершать две атаки за счёт умения «Дополнительная атака», и имеющий скорость 25 футов, может переместиться на 10 футов, совершить атаку, переместиться на 15 футов, и атаковать ещё раз.</p>
+<br><h3 class="smallSectionTitle">ИСПОЛЬЗОВАНИЕ РАЗНЫХ СКОРОСТЕЙ</h3><p>Если у вас есть несколько скоростей, например, скорость ходьбы и скорость полёта, вы можете переключаться между ними во время перемещения.</p>
+<p>При каждом переключении вычитайте уже пройденное расстояние из новой скорости. Разница покажет, на сколько ещё вы можете переместиться.</p>
+<p>Если результат равен 0 или меньше, вы не можете использовать эту новую скорость во время текущего перемещения.</p>
+<p>Например, если у вас есть скорость 30 и скорость полёта 60 за счёт заклинания <a href="../../../spells/249/index.html" target="_blank">полёт [fly]</a>, вы можете пролететь 20 футов, потом пройти 10 футов, Затем вновь подняться в воздух и пролететь ещё 30 футов.</p>
+<br><h3 class="underlined">ТРУДНОПРОХОДИМАЯ МЕСТНОСТЬ</h3><p>Сражения редко происходят в пустых комнатах и ровных полях. Окружение — щебень, кусты и крутые лестницы — может создавать труднопроходимую местность</p>
+<p>Каждый фут перемещения по труднопроходимой местности стоит 1 дополнительный фут. Это правило действует даже если на одно и то же место действуют сразу несколько эффектов, делающих его труднопроходимым, таких как подлесок, крутые ступени, снег или мелкое болото. Пространство другого существа, как враждебного, так и нет, тоже считается труднопроходимой местностью.</p>
+<br><h3 class="underlined">ЛЕЖАНИЕ НИЧКОМ</h3><p>Участники сражения часто оказываются лежащими, либо потому, что их <span tooltip-for="condition.prone" title="condition.prone">сбили с ног</span>, либо потому что они сами легли. В любом случае, они лежат <span tooltip-for="condition.prone" title="condition.prone">ничком</span>, как это и описано в состоянии. Вы можете упасть ничком, не тратя скорость.</p>
+<p>Вставание требует больше усилий, для него требуется потратить половину скорости. Например, если ваша скорость 30 футов, для вставания придётся потратить 15 футов перемещения. Вы не можете вставать, если у вас недостаточно перемещения или если скорость равна 0.</p>
+<p>Для перемещения в положении лёжа нужно или ползти, или использовать магию, такую как <span title="иммется в виду заклинания которые телепортируют в общем а не конкретное заклинание телепортации" class="tooltip">телепортация</span>. Каждый фут перемещения во время ползания стоит 1 дополнительный фут. Таким образом, ползание на 1 фут по <span tooltip-for="terrain.difficult" title="terrain.difficult">труднопроходимой местности</span> стоит 3 фута перемещения.</p>
+<br><h3 class="underlined">ПЕРЕМЕЩЕНИЕ И ДРУГИЕ СУЩЕСТВА</h3><p>Вы можете проходить сквозь пространство невраждебных существ. Сквозь пространство враждебного существа можно пройти только если его размер как минимум на две категории больше или меньше вашего. Помните, что пространство других существ является для вас <span tooltip-for="terrain.difficult" title="terrain.difficult">труднопроходимой местностью</span>.</p>
+<p>Вне зависимости от того, дружественное существо или нет, вы не можете добровольно закончить перемещение в его пространстве.</p>
+<p>Если вы во время перемещения покидаете досягаемость враждебного существа, вы, как обычно, провоцируете атаку.</p>
+<br><h3 class="underlined">ПЕРЕМЕЩЕНИЕ ПОЛЁТОМ</h3><p>Летающие существа наслаждаются отсутствием большинства препятствий, но они постоянно находятся под угрозой падения. Если летающее существо <span tooltip-for="condition.prone" title="condition.prone">сбито с ног</span>, его скорость уменьшается до 0, или оно по какой-то другой причине теряет способность перемещаться, оно падает, если только не может парить или не летает за счёт магии, такой как заклинание <a href="../../../spells/249/index.html" target="_blank">полёт [fly]</a>.</p>
+<br><h3 class="underlined">РАЗМЕР СУЩЕСТВА</h3><p>Разные существа занимают разное пространство. Приведённая таблица показывает, какое пространство занимают существа разного размера. Иногда предметы используют эти же категории размеров.</p>
+<h4 class="tableTitle">Категории размеров</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>Размер</td>
+<td>Пространство</td>
+</tr>
+<tr>
+<td>Крошечный</td>
+<td>2,5 × 2,5 фута</td>
+</tr>
+<tr>
+<td>Маленький</td>
+<td>5 × 5 футов</td>
+</tr>
+<tr>
+<td>Средний</td>
+<td>5 × 5 футов</td>
+</tr>
+<tr>
+<td>Большой</td>
+<td>10 × 10 футов</td>
+</tr>
+<tr>
+<td>Огромный</td>
+<td>15 × 15 футов</td>
+</tr>
+<tr>
+<td>Громадный</td>
+<td>20 × 20 футов или больше</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle">ПРОСТРАНСТВО</h3><p>Указанное пространство это площадь, контролируемая существом в бою, а не его габариты. Например, большинство существ Среднего размера вовсе не 5 футов в ширину, но именно такое пространство в ширину они контролируют. Если <a href="../../../bestiary/27-hobgoblin/index.html" target="_blank">хобгоблин</a> Среднего размера стоит в дверном проёме шириной 5 футов, другие существа не могут проходить через него, пока он не разрешит им.</p>
+<p>Пространство существа также отражает площадь, необходимую для эффективного сражения.</p>
+<p>Именно поэтому есть предел количества существ, которые могут окружать другое существо. Если бойцы Среднего размера, только восемь из них смогут окружить 5-футовое пространство своего противника.</p>
+<p>Из-за того, что существам большего размера требуется больше пространства, ещё меньшее их количество может принимать участие в окружении. Если пять существ Большого размера столпятся вокруг одного Среднего, больше ни для кого места не останется. И наоборот, одно Громадное существо может быть окружено двадцатью существами Среднего размера.</p>
+<br><h3 class="smallSectionTitle">ПРОТИСКИВАНИЕ В МЕНЬШЕЕ ПРОСТРАНСТВО</h3><p>Существо может протиснуться в пространство, достаточное для существа на одну категорию меньше его. Таким образом, Большое существо может протиснуться в проход шириной 5 футов. Протискиваясь, существо должно тратить 1 дополнительный фут за каждый фут перемещения, и совершает с помехой броски атаки и спасброски Ловкости.</p>
+<p>Броски атаки по существам, находящимся в тесном пространстве, совершаются с преимуществом.</p>
+<br><br><div class="additionalInfo"><h3 class="smallSectionTitle"><strong>ВАРИАНТ: ИГРА НА СЕТКЕ</strong></h3><p>Если вы отыгрываете сражения на разделённом на клетки поле с помощью миниатюр или жетонов, используйте следующие правила:</p>
+<p><strong><em>Клетки</em>.</strong> Каждая клетка поля изображает площадь 5 ×5 футов.</p>
+<p><em style=""><strong>Скорость</strong></em><strong>.</strong><em></em> Вместо перемещения на футы вы перемещаетесь по клеткам. Скорость при этом делится на сегменты по 5 футов. Можно легко сконвертировать скорость из футов в клетки, разделив её на 5. Например, скорость 30 футов превращается в 6 клеток.</p>
+<p>Если сетка используется часто, запишите скорость на листе персонажа сразу в клетках.</p>
+<p><strong><em>Вход в клетку</em>.</strong> Для того, чтобы войти в клетку, вы должны потратить как минимум 1 клетку перемещения, даже если двигались по диагонали (правила диагонального перемещения жертвуют реализмом ради скорости. В <em>«Руководстве Мастера»</em> присутствуют советы по более реалистичному подходу).</p>
+<p>Если клетка стоит дополнительного перемещения, например, из-за <span tooltip-for="terrain.difficult" title="terrain.difficult">труднопроходимой местности</span>, у вас должно хватать перемещения, чтобы войти в эту клетку. Например, у вас должно быть как минимум 2 клетки перемещения, чтобы войти в клетку с труднопроходимой местностью.</p>
+<p><strong><em>Углы</em>.</strong> Диагональное перемещение не может пересекать углы стен, больших деревьев и прочих особенностей местности, заполняющих всю свою клетку.</p>
+<p><em><strong>Расстояния</strong></em><strong>.</strong> Для определения на сетке расстояния между двумя существами или предметами начните подсчёт с клетки, смежной с одним из них и считайте кратчайшим маршрутом до клетки, в которой находится другой, включительно.</p>
+</div>
+<br><h2 class="bigSectionTitle">ПЕРЕМЕЩЕНИЕ во время приключения</h2><p>Плавание по реке, ползание по коридорам подземелья, подъём на отвесный утёс — в приключениях важны все виды перемещения.</p>
+<p>Мастер может подытожить перемещение без тщательных вычислений расстояний и скоростей: «Вы идёте по лесу, и к исходу третьего дня находите вход в подземелье». Даже в подземелье, если оно большое, Мастер может резюмировать перемещение между сценами: «Убив охранников у входа в древнюю крепость дварфов, вы сверяетесь с картой, по которой проходите пару километров по гулким коридорам и выходите к провалу, через который перекинут узкий каменный мост».</p>
+<p>Однако иногда важно знать, сколько времени уйдёт на путешествие, и не важно, в чём измеряется ответ, в днях, часах или минутах. Правила по определению времени путешествия зависят от трёх факторов: скорости и темпа существ, а также местности, по которой они перемещаются.</p>
+<br><h3 class="underlined">СКОРОСТЬ</h3><p>У всех персонажей и чудовищ есть скорость, которая измеряется в футах и показывает, как далеко персонаж или чудовище могут переместиться за 1 раунд. Это число предполагает ускоренное перемещение в угрожающих жизни обстоятельствах.</p>
+<p>Вот правила, по которым определяется, как далеко персонаж или чудовище могут продвинуться за минуту, час и день.</p>
+<br><h3 class="smallSectionTitle">ТЕМП ПЕРЕМЕЩЕНИЯ</h3><p>Во время перемещения группа искателей приключений может перемещаться в нормальном, быстром или медленном темпе, как показано в приведённой ниже таблице. В таблице указано расстояние, на которое может переместиться отряд за это время и эффекты выбранного темпа, если они есть. Быстрый темп сказывается на восприятии, а медленный темп позволяет красться и тщательно осматривать местность (смотрите ниже «Деятельность во время путешествия»).</p>
+<p><strong><em>Форсированный марш</em>.</strong> Таблица предполагает, что персонажи путешествуют по 8 часов в день. Они могут ускориться, рискуя своим здоровьем. За каждый дополнительный час путешествия сверх 8 часов, персонажи покрывают расстояние, указанное в колонке «час» для их темпа, но все персонажи должны в конце каждого лишнего часа совершать спасброски Телосложения. Сл равна 10 + 1 за каждый час сверх 8. В случае провала персонаж получает одну степень <span tooltip-for="condition.exhaustion" title="condition.exhaustion">истощения</span>.</p>
+<p><strong><em>Скакуны и транспорт</em>.</strong> В течение небольших промежутков времени (в пределах часа) многие животные перемещаются значительно быстрее гуманоидов. Едущий верхом персонаж может в течение часа ехать галопом, покрывая двойное расстояние быстрого темпа. Если через каждые 8–16 километров есть свежие скакуны, персонажи могут покрывать в таком темпе большие расстояния, но такое возможно только в густонаселённых землях.</p>
+<p>Персонажи в фургонах, каретах и прочем наземном транспорте, используют нормальный темп. Персонажи на водном транспорте ограничены скоростью судна, и они не получают ни штрафы за быстрый темп, ни преимущества от медленного темпа. В зависимости от судна и размера экипажа, корабли могут перемещаться и по 24 часа в сутки.</p>
+<p>Некоторые особые скакуны, такие как <a href="../../../bestiary/262-pegasus/index.html" target="_blank">пегасы</a> и <a href="../../../bestiary/190-griffon/index.html" target="_blank">грифоны</a>, или особый транспорт, такой как ковёр-самолёт, позволяют перемещаться быстрее.</p>
+<br><h4 class="tableTitle">ТЕМП ПЕРЕМЕЩЕНИЯ (PHB)</h4>
+<br><table>
+<tbody>
+<tr>
+<th colspan="4" style="text-align: left;"> Дистанция, пройдённая за... </th></tr>
+<tr>
+<td><strong>Темп</strong></td>
+<td style="text-align: center;"><strong>Минуту</strong></td>
+<td style="text-align: center;"><strong>Час</strong></td>
+<td style="text-align: center;"><strong>День</strong></td>
+<td><strong>Эффект</strong></td>
+</tr>
+<tr>
+<td>Быстрый</td>
+<td>400 футов (120 метров)</td>
+<td>4 мили (6 км)</td>
+<td>30 миль (50 км)</td>
+<td>Штраф −5 к пассивному значению Мудрости (<span tooltip-for="skill.perception" title="skill.perception">Восприятие</span>)</td>
+</tr>
+<tr>
+<td>Нормальный</td>
+<td>300 футов (90 метров)</td>
+<td>3 мили (4,5 км)</td>
+<td>24 мили (40 км)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Медленный </td>
+<td>200 футов (60 метров)</td>
+<td>2 мили (3 км)</td>
+<td>18 миль (30 км) </td>
+<td>Возможность идти скрытно</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+<br><h4 class="tableTitle">ТЕМП ПЕРЕМЕЩЕНИЯ ПО КАРТЕ (DMG)</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>Масштаб карты</td>
+<td>Медленный темп</td>
+<td>Нормальный темп</td>
+<td>Быстрый темп</td>
+</tr>
+<tr>
+<td>Подземелье (1 кл. = 10 фт.)</td>
+<td>20 кл./мин</td>
+<td>30 кл./мин.</td>
+<td>40 кл./мин.</td>
+</tr>
+<tr>
+<td>Город (1 кл. = 100 фт.)</td>
+<td>2 кл./мин.</td>
+<td>3 кл./мин.</td>
+<td>4 кл./мин.</td>
+</tr>
+<tr>
+<td>Область (1 гекс = 1 миля)</td>
+<td>2 гекса/ч, 18 гексов/день</td>
+<td>3 гекса/ч, 24 гекса/день</td>
+<td>4 гекса/ч, 30 гексов/день</td>
+</tr>
+<tr>
+<td>Королевство (1 гекс = 6 миль)</td>
+<td>1 гекс/3 ч, 3 гекса/день</td>
+<td>1 гекс/2 ч, 4 гекса/день</td>
+<td>1 гекс/1,5 ч, 5 гексов/день</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle">ТРУДНОПРОХОДИМАЯ МЕСТНОСТЬ</h3><p>Скорость, указанная в таблице, подразумевает путешествие по относительно нормальной местности: дороги, открытые равнины или ровные коридоры подземелья. Однако искатели приключений часто забредают в густые леса, глубокие болота, заваленные булыжниками руины, крутые горы и закованные в ледяной панцирь реки — всё это труднопроходимая местность.</p>
+<p>По труднопроходимой местности вы перемещаетесь с уменьшенной вдвое скоростью: перемещение на 1 фут совершается за счёт 2 футов скорости, так что за минуту, час или день вы пройдёте вдвое меньшее расстояние, чем обычно.</p>
+<br><h3 class="underlined">ОСОБЫЙ ТЕМП ПУТЕШЕСТВИЯ (DMG)</h3><p>Правила темпа перемещения описанные выше подразумевают, что группа путешественников идёт в темпе, на который не влияет скорость ходьбы отдельных её участников. Разница в скорости ходьбы может быть важна во время сражения, а во время похода разница исчезает, так как путники изредка останавливаются, чтобы перевести дух, более быстрые поджидают медленных, а проворство одних уравновешивается выносливостью других.</p>
+<p>Персонаж, скачущий на <a href="../../../spells/279-phantom_steed/index.html" target="_blank">призрачном скакуне</a>, парящий в воздухе на <a href="https://dnd.su/items/87-carpet_of_flying/" target="_blank">ковре-самолёте</a>, или плывущий на паруснике или хитроумном изобретении гномов, работающем на пару, путешествует не с обычной скоростью, так как магия, двигатели или ветер не устают в отличие от существ, и в воздухе нет таких многочисленных препятствий как на земле. Если существо путешествует со скоростью полёта или со скоростью, дарованной магией, двигателем или силой стихии (такой как ветер или течение), вы можете превратить скорость в темп перемещения, используя следующие правила:</p>
+<ul>
+<li>За 1 минуту вы можете переместиться на количество футов, равное вашей скорости, умноженной на 10.</li>
+<li>За 1 час вы можете переместиться на количество миль, равное вашей скорости, делённой на 10.</li>
+<li>Для вычисления пройдённого за день расстояния умножьте расстояние, проходимое за час, на число часов в путешествии (обычно это 8 часов).</li>
+<li>Для быстрого темпа увеличьте пройдённое расстояние на одну треть.</li>
+<li>Для медленного темпа умножьте пройдённое расстояние на две третьих.</li>
+</ul>
+<p>Например, персонаж под эффектом заклинания <a href="../../../spells/90-wind_walk/index.html" target="_blank">хождение по ветру [wind walk]</a> получает скорость полёта 300 футов. За 1 минуту он может переместиться на 3000 футов в нормальном темпе, 4000 футов в быстром темпе или 2000 футов в медленном темпе. Этот персонаж может покрыть 20, 30 или 40 миль в час. Заклинание длится 8 часов, позволяя ему переместиться на 160, 240 или 320 миль в день.</p>
+<p>Точно так же, заклинание <a href="../../../spells/279-phantom_steed/index.html" target="_blank">призрачный скакун [phantom steed]</a> создаёт магического скакуна со скоростью 100 футов, и который не устаёт, в отличие от настоящей лошади. Персонаж на призрачном скакуне может покрыть 1000 футов за 1 минуту в нормальном темпе, 1333 футов в быстром темпе или 666 футов в медленном темпе. За 1 час этот персонаж может переместиться на 7, 10 или 13 миль.</p>
+<br><h2 class="bigSectionTitle">ОСОБЫЕ ВИДЫ ПЕРЕМЕЩЕНИЯ</h2><p>По опасным подземельям и глухим местам не ходят просто пешком. Искателям приключений приходится карабкаться, ползать, плавать и прыгать, чтобы добраться до нужного места.</p>
+<br><h3 class="underlined">ЛАЗАНИЕ, ПЛАВАНИЕ И ПОЛЗАНИЕ</h3><p>Во время лазания и плавания каждый фут перемещения стоит 1 дополнительный фут (2 дополнительных фута при труднопроходимой местности), если у существа нет скорости лазания или плавания. Если Мастер решит, лазание по скользкой вертикальной поверхности или поверхности, где мало за что можно ухватиться, может требовать успешную проверку Силы (<span tooltip-for="skill.athletics" title="skill.athletics">Атлетика</span>). Точно так же, плавание в бурных водах может требовать успешную проверку Силы (<span tooltip-for="skill.athletics" title="skill.athletics">Атлетика</span>).</p>
+<br><h3 class="smallSectionTitle">ПЛАВАНИЕ</h3><p>Без помощи магии персонажи не могут плыть по 8 часов в день. После каждого часа плавания персонаж должен преуспеть в спасброске Телосложения Сл 10, иначе он получает одну степень истощения.</p>
+<p>Существо, имеющее скорость плавания — включая персонажей с <a href="../../../items/101-ring_of_swimming/index.html" target="_blank">кольцом плавания [ring of swimming]</a> или подобной магией — могут без штрафов плыть весь день, используя обычные правила <strong>форсированного </strong><strong>марша</strong>.</p>
+<p><span id='underwater.swimming'></span>Плавание глубоко под водой подобно путешествию на большой высоте, из-за большого давления и низкой температуры. Для существа без скорости плавания, каждый час плавания на глубине больше 100 футов считается за 2 часа при определении истощения. Плавание на глубине более 200 футов считается за 4 часа.</p>
+<br><h3 class="smallSectionTitle">ВИДИМОСТЬ ПОД ВОДОЙ<br></h3><p>Видимость под водой зависит от чистоты воды и освещения. Если у персонажей нет источника света, используйте приведённую таблицу для определения расстояния, с которого персонажи могут узнать о возможной сцене.</p>
+<h4 class="tableTitle">ДИСТАНЦИЯ ПОДВОДНЫХ СЦЕН</h4>
+<table>
+<tbody>
+<tr class="table_header"><td>Условия </td>
+<td>Дистанция сцен</td>
+</tr>
+<tr>
+<td>Прозрачная вода, <span tooltip-for="light.bright" title="light.bright">яркий свет<span>.</span></span></td>
+<td style="text-align: center;">60 футов</td>
+</tr>
+<tr>
+<td>Прозрачная вода, <span tooltip-for="light.dim" title="light.dim">тусклый свет</span></td>
+<td style="text-align: center;">30 футов</td>
+</tr>
+<tr>
+<td>Мутная вода или свет отсутствует</td>
+<td style="text-align: center;">10 футов</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle">ПРЫЖКИ</h3><p>Ваша Сила определяет, как далеко вы можете прыгать.</p>
+<p><strong><em>Прыжок в длину</em>. </strong>Если вы совершаете прыжок в длину, вы покрываете количество футов, равное значению Силы, если непосредственно перед прыжком переместились минимум на 10 футов. Если вы совершаете прыжок в длину без разбега, прыгнуть можно только на половину этой дистанции. В любом случае, каждый фут, на который вы перенеслись прыжком, учитывается при подсчёте перемещения.</p>
+<p>Это правило предполагает, что высота прыжка не имеет значения, как в случае перепрыгивания ручья или пропасти. Если Мастер решит, вы должны преуспеть в проверке Силы (<span tooltip-for="skill.athletics" title="skill.athletics">Атлетика</span>) Сл 10, чтобы перепрыгнуть через препятствие (не выше четверти расстояния прыжка), такое как изгородь или невысокая стена. В противном случае вы ударяетесь об него.</p>
+<p>Если вы приземляетесь в <span tooltip-for="terrain.difficult" title="terrain.difficult">труднопроходимую местность</span>, вы должны успешно пройти проверку Ловкости (<span tooltip-for="skill.acrobatics" title="skill.acrobatics">Акробатика</span>) Сл 10, чтобы приземлиться на ноги. В противном случае вы падаете <span tooltip-for="condition.prone" title="condition.prone">ничком</span>.</p>
+<p><strong><em>Прыжок в высоту</em>. </strong>Если вы совершаете прыжок в высоту, вы поднимаетесь в воздух на количество футов, равное 3 + модификатор Силы, если непосредственно перед прыжком переместились минимум на 10 футов. Если вы совершаете прыжок в высоту без разбега, прыгнуть можно только на половину этой дистанции. В любом случае, каждый фут, на который вы перенеслись прыжком, учитывается при подсчёте перемещения. В некоторых случаях Мастер может позволить совершить проверку Силы (Атлетика), чтобы прыгнуть выше, чем обычно.</p>
+<p>Руки можно вытянуть вверх на половину своего роста. Таким образом, вы дотягиваетесь до расстояния, равного высоте прыжка + полтора ваших роста.</p>
+<br><h3 class="smallSectionTitle">НЕБО</h3><p>Летающие персонажи могут перемещаться из одного места в другого по относительно прямой линии, игнорируя местность и чудовищ, которые не могут летать, и у которых нет дальнобойных атак.</p>
+<p>Летание при помощи заклинания или магического предмета работает так же как пешее путешествие, как описано выше. Существо, которое служит летающим ездовым животным, должно отдыхать 1 час за каждые 3 часа полёта, и оно не может летать более 9 часов в день. Таким образом, персонаж верхом на <a href="../../../bestiary/190-griffon/index.html" target="_blank">грифоне</a> (у которого скорость полёта 80 футов) может пролетать 8 миль в час, покрывая в день 72 мили за 9 часов с двумя часовыми перерывами. Если скакун не устаёт (например, является летающим конструктом), он не подвержен этим ограничениям.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div></section>
+<script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:158'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="5279"><div class="comment__entry comment__op comment__author-group-" data-id="5279" id="comment_5279">	<div class='comment__header'>
+			<a href='https://dnd.su/@b9e45198d8a5' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/eb42275a68adfbc60a381f4be18f807c.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@b9e45198d8a5' class='profile__public-link profile__public-link-group-users comment__author-name'>VeydReyd</a></span> 
+	<div class="comment__age" title="17:35:41 29.03.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_5279" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		А что с копанием делать? Там как?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="5432" id="comment_5432">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="10:50:19 01.04.2024">2 года  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_5432" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Это описано в Бестиарии, т.к. это способность монстров. "Чудовище, имеющее скорость копания, может использовать её для передвижения через песок, землю, грязь или лёд. Чудовище не может копать сквозь камень, если у него нет особого умения, позволяющего делать это."
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="6397"><div class="comment__entry comment__op comment__author-group-" data-id="6397" id="comment_6397">	<div class='comment__header'>
+			<a href='https://dnd.su/@998d1d7a45a4' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/035748eabd666ea4a26ab5cb43cbb130.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@998d1d7a45a4' class='profile__public-link profile__public-link-group-users comment__author-name'>Вор личностей</a></span> 
+	<div class="comment__age" title="09:53:12 15.04.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_6397" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Объясните пожалуйста как можно сбить летающее существо и где об этом можно прочесть?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="6609" id="comment_6609">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="08:50:14 18.04.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_6609" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Прямо на этой странице написано. "Если летающее существо сбито с ног, его скорость уменьшается до 0, или оно по какой-то другой причине теряет способность перемещаться, оно падает, если только не может парить или не летает за счёт магии, такой как заклинание полёт [fly]."
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="19537" id="comment_19537">	<div class='comment__header'>
+			<a href='https://dnd.su/@4887a735d6' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@4887a735d6' class='profile__public-link profile__public-link-group-users comment__author-name'>ozihel</a></span> 	<div class="comment__user-reply-user" data-reply-to="6609">
+		<a href="../../158-peremeschenie/index.html#comment_6609" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__replied-to'>Дмитрий Богданов</a>
+	<div class="comment__age" title="09:29:05 21.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_19537" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Да, но ведь существо начинает полет и заканчивает на своем ходу, как его можно сбить вне очередности?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="19730" id="comment_19730">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 	<div class="comment__user-reply-user" data-reply-to="19537">
+		<a href="../../158-peremeschenie/index.html#comment_19537" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@4887a735d6' class='profile__public-link profile__public-link-group-users comment__replied-to'>ozihel</a>
+	<div class="comment__age" title="12:53:25 25.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_19730" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Существа в днд не начинают полёт и не заканчивают полёт. Они летают пока решают находиться в воздухе, имея скорость полёта. Например, существо может в конце своего хода остаться в воздухе и будет там до начала своего следующего хода, и в это время другие существа в свой ход могут его сбить. Но и в ход самого существа его тоже могут сбить, например, заготовив какое-либо действие, способное обездвижить летуна.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="24060" id="comment_24060">	<div class='comment__header'>
+			<a href='https://dnd.su/@88893296a83a' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/5a1a1e23ba3d426866761a6924adbfea.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@88893296a83a' class='profile__public-link profile__public-link-group-users comment__author-name'>Hiloker</a></span> 
+	<div class="comment__age" title="18:15:02 08.02.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_24060" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Варианты сбить летающий существ: использовать захват(если летает низко), верëвка связывания(если попало существо упадëт), иссущающий укол(если не пройдëт спас, то упадёт), толкнуть(если летает низко), снизить скорость до 0, если дм разрешит, то при чистой 20 на атаке может упасть, это всë что я знаю...
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="28107" id="comment_28107">	<div class='comment__header'>
+			<a href='https://dnd.su/@c05fd0f4fca7' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@c05fd0f4fca7' class='profile__public-link profile__public-link-group-users comment__author-name'>Денис Шобик</a></span> 	<div class="comment__user-reply-user" data-reply-to="24060">
+		<a href="../../158-peremeschenie/index.html#comment_24060" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@88893296a83a' class='profile__public-link profile__public-link-group-users comment__replied-to'>Hiloker</a>
+	<div class="comment__age" title="09:44:42 19.04.2025">11 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_28107" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Ещё сеть приходит на ум
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="12476"><div class="comment__entry comment__op comment__author-group-" data-id="12476" id="comment_12476">	<div class='comment__header'>
+			<a href='https://dnd.su/@Avantyure' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/2f39da51884d8cf40e81c4036ce06604.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Avantyure' class='profile__public-link profile__public-link-group-users comment__author-name'>Avantyure</a></span> 
+	<div class="comment__age" title="10:15:24 23.07.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_12476" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		А где можно на сайте найти правила по окружению в бою? Никак не могу их найти. Если их нет, то возможно их стоит добавить в этой статью. Это конечно опциональные правила, но всё же многие опциональные правила на сайте есть.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="19744" id="comment_19744">	<div class='comment__header'>
+			<a href='https://dnd.su/@1ce6c1ee1617' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@1ce6c1ee1617' class='profile__public-link profile__public-link-group-users comment__author-name'>Степан Захаров</a></span> 
+	<div class="comment__age" title="18:19:38 25.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_19744" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		251 страница дмг
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="19025"><div class="comment__entry comment__op comment__author-group-" data-id="19025" id="comment_19025">	<div class='comment__header'>
+			<a href='https://dnd.su/@cab55c040c47' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@cab55c040c47' class='profile__public-link profile__public-link-group-users comment__author-name'>Иван Куделин</a></span> 
+	<div class="comment__age" title="09:22:50 11.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_19025" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		если у меня скорость 30 и сила 24 я могу переместиться с помощью прыжка на 34 фута в ход, или не смогу? А если моя скорость 30 могу ли я 20 футов пешком и последние 10 футов разбег для прыжка в длину?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="19070" id="comment_19070">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="21:46:47 11.11.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_19070" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Дистанция прыжка тратит перемещение. Например, если у вас скорость 30 футов и вы берёте 10 футов на разбег, то дальше 20 футов вы не прыгнете.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="20427" id="comment_20427">	<div class='comment__header'>
+			<a href='https://dnd.su/@cab55c040c47' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@cab55c040c47' class='profile__public-link profile__public-link-group-users comment__author-name'>Иван Куделин</a></span> 	<div class="comment__user-reply-user" data-reply-to="19070">
+		<a href="../../158-peremeschenie/index.html#comment_19070" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__replied-to'>Дмитрий Богданов</a>
+	<div class="comment__age" title="16:51:49 08.12.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_20427" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Ясно
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="22470"><div class="comment__entry comment__op comment__author-group-" data-id="22470" id="comment_22470">	<div class='comment__header'>
+			<a href='https://dnd.su/@c42f280cf94c' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@c42f280cf94c' class='profile__public-link profile__public-link-group-users comment__author-name'>Андрей Ящук</a></span> 
+	<div class="comment__age" title="13:29:33 16.01.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_22470" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		А могу ли я взлететь в воздух, чтобы меня не смогли достать ближними атаками? <br>Нигде не могу про это найти
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="22487" id="comment_22487">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="18:00:11 16.01.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_22487" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Если у вас есть скорость полёта, то конечно можете. Летать можно вертикально вверх
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="23329"><div class="comment__entry comment__op comment__author-group-" data-id="23329" id="comment_23329">	<div class='comment__header'>
+			<a href='https://dnd.su/@b316693df1e3' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/a720a7fbdf0fa978019f66506e1bde70.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@b316693df1e3' class='profile__public-link profile__public-link-group-users comment__author-name'>Монах пути быстрой смерти</a></span> 
+	<div class="comment__age" title="21:11:56 29.01.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_23329" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Я зашёл сюда чтобы почитать конкретно про то, что значит "парить" и какие механики действуют на тех, кто может парить но не может летать. Не нашёл. В бестиарии тоже не нашёл. Условно говоря если кто-нибудь сделает параплан или кто-нибудь как-то получит перепонки как у белки-летяги по каким законам они будут преодолевать пространство по воздуху? Есть какие-то правила на такие случаи или это будет на моей совести прописать хоумбрю на этот вариант перемещения?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="23382" id="comment_23382">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="14:12:04 30.01.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_23382" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		В днд возможность "парить" это свойство эффект, дающего существу скорость полёта. То есть либо "существо может парить" используя этот полёт или не может, если не указано. Это играет роль только в ситуациях, когда летящее существо сбивается с ног или его скорость становится равна нулю. Если существо может парить (или если эффект полёта магический), то в такой ситуации оно остаётся в воздухе; если не может парить (и эффект полёта немагический), то тут же падает.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="23383" id="comment_23383">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="14:13:48 30.01.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_23383" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Если вас интересует "планирование" как у белки-летяги, то для примера можете посмотреть как это работает у расы хадози: "Когда вы падаете с высоты не менее 10 футов над землей, вы можете реакцией расправить свои кожаные мембраны, чтобы горизонтально спланировать на количество футов, равное вашей скорости ходьбы, и вы получаете 0 урона от падения. Вы определяете направление планирования."<br>Это не общая механика, а расовая способность хадози, но можете взять это как образец для своих хоумрулов.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="24505"><div class="comment__entry comment__op comment__author-group-" data-id="24505" id="comment_24505">	<div class='comment__header'>
+			<a href='https://dnd.su/@b58cfba38e39' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/4796e859ce47a6a67ca841668b6effa5.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@b58cfba38e39' class='profile__public-link profile__public-link-group-users comment__author-name'>Wersi</a></span> 
+	<div class="comment__age" title="19:39:03 14.02.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_24505" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Либо плохо читаю, либо в воде ну очень удобно колдовать и это не навешивает никакие отрицательные эффекты на игрока. Ну только если вода мутная нельзя будет использовать заклинание где надо врага видеть, а так, типо, всë нормально
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="24617" id="comment_24617">	<div class='comment__header'>
+			<a href='https://dnd.su/@a013c1312bde' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@a013c1312bde' class='profile__public-link profile__public-link-group-users comment__author-name'>SheldHTP</a></span> 
+	<div class="comment__age" title="09:52:40 16.02.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_24617" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Ну, вербальный компонент точно слетит, если вы не можете дышать под водой... Хотя, даже так, по идее, вы не сможете использовать его
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="24645" id="comment_24645">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="17:45:07 16.02.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_24645" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Если персонаж не способен дышать под водой, то после сотворения всего одного заклинания с вербальным компонентом он начнёт задыхаться (по правилам задержки дыхания), потому что когда ты говоришь, ты не можешь больше задерживать дыхание.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="38003" id="comment_38003">	<div class='comment__header'>
+			<a href='https://dnd.su/@136bedefff5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@136bedefff5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Alor11</a></span> 	<div class="comment__user-reply-user" data-reply-to="24645">
+		<a href="../../158-peremeschenie/index.html#comment_24645" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__replied-to'>Дмитрий Богданов</a>
+	<div class="comment__age" title="10:00:28 21.10.2025">5 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_38003" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Тут исключительно мастерский произвол будет, даже если все 6 секунд произносится вербальный компонент не значит что весь воздух должен потратиться
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="38076" id="comment_38076">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 	<div class="comment__user-reply-user" data-reply-to="38003">
+		<a href="../../158-peremeschenie/index.html#comment_38003" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@136bedefff5d' class='profile__public-link profile__public-link-group-users comment__replied-to'>Alor11</a>
+	<div class="comment__age" title="10:03:01 22.10.2025">5 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_38076" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Мой вам совет: читайте правила игры, прежде чем комментировать
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="25588"><div class="comment__entry comment__op comment__author-group-" data-id="25588" id="comment_25588">	<div class='comment__header'>
+			<a href='https://dnd.su/@7b6740fda45e' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@7b6740fda45e' class='profile__public-link profile__public-link-group-users comment__author-name'>Mrak Smesh</a></span> 
+	<div class="comment__age" title="12:30:38 02.03.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_25588" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Если использовать 2 заклинания, создающих труднопроходимую местность, будут ли они стакаться и как?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="25754" id="comment_25754">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="12:06:21 04.03.2025">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_25754" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Не будут
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="30892"><div class="comment__entry comment__op comment__author-group-" data-id="30892" id="comment_30892">	<div class='comment__header'>
+			<a href='https://dnd.su/@389fadb6031f' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@389fadb6031f' class='profile__public-link profile__public-link-group-users comment__author-name'>Fedmunty_f61</a></span> 
+	<div class="comment__age" title="13:48:34 05.06.2025">10 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_30892" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Можно ли при помощи прыжка преодолеть часть труднопроходимой местности не замедляясь на ней? <br><br>Предположим, у меня скорость 30фт и дальность прыжка 10фт. Передо мной труднопроходимая местность, а я стою на обычной местности. После прыжка в труднопроходимую местность на 10фт, у меня останется 20фт или 10фт перемещения?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="31257" id="comment_31257">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="18:36:38 11.06.2025">9 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_31257" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Да, прыжок позволяет избегать труднопроходимой местности, но с риском быть сбитым с ног, если вы прыгаете в зону труднопроходимой местности.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="36796"><div class="comment__entry comment__op comment__author-group-" data-id="36796" id="comment_36796">	<div class='comment__header'>
+			<a href='https://dnd.su/@podzemka' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/98b950f9167f186f39a0eacced05090c.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@podzemka' class='profile__public-link profile__public-link-group-users comment__author-name'>Егор Жижа</a></span> 
+	<div class="comment__age" title="15:12:06 30.09.2025">6 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_36796" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Встать это действие или перемещение или что-то иное? Как оно взаимодействует с заклинанием<br>Психическая плеть Таши [Tasha's mind whip]?<br><br>Вы психически хлещете одно существо, которое видите в пределах дистанции. Цель должна совершить спасбросок Интеллекта. При провале цель получает 3к6 урона психической энергией и не может использовать реакцию до конца своего следующего хода. Кроме того, на своём следующем ходу цель должна выбрать, что она будет делать: передвигаться, совершать действие или совершать бонусное действие — цель может совершить лишь что-то одно. При успехе цель получает половину урона и не получает других эффектов заклинания.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="36982" id="comment_36982">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="09:40:36 03.10.2025">6 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_36982" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Встать - это трата перемещения в количестве половины скорости существа. Если существо будет повалено и под эффектом Плети выберет совершить действие или бонусное действие, то встать оно сможет только если потратит это действие на Рывок (которое позволяет передвинуться). Если выберет передвинуться, то сможет встать как обычно.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="41961" id="comment_41961">	<div class='comment__header'>
+			<a href='https://dnd.su/@7189ad1a4c62' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/bef3d06bc4e128748b2e6891774f3be5.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@7189ad1a4c62' class='profile__public-link profile__public-link-group-users comment__author-name'>Ярослав Лихман</a></span> 	<div class="comment__user-reply-user" data-reply-to="36982">
+		<a href="../../158-peremeschenie/index.html#comment_36982" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__replied-to'>Дмитрий Богданов</a>
+	<div class="comment__age" title="00:33:05 03.01.2026">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_41961" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Экшуали, существо уже потратило ДЕЙСТВИЕ на рывок, так что оно просто получило x2 к футам перемещения, которые ОНО НЕ МОЖЕТ ИСПОЛЬЗОВАТЬ, так как оно уже выбрало один из предложеных вариантов.<br><br>Форточка не помогает...
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="41970" id="comment_41970">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 	<div class="comment__user-reply-user" data-reply-to="41961">
+		<a href="../../158-peremeschenie/index.html#comment_41961" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@7189ad1a4c62' class='profile__public-link profile__public-link-group-users comment__replied-to'>Ярослав Лихман</a>
+	<div class="comment__age" title="11:00:22 03.01.2026">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_41970" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Справедливое замечание, спасибо. Мне казалось, что Рывок и добавляет скорость к перемещению, и позволяет переместиться (не "х2" к перемещению, но не суть), но нет, он только добавляет перемещение. А тратить перемещение - уже отдельная активность, которую Плеть Таши запретит, раз совершили действие.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="37430"><div class="comment__entry comment__op comment__author-group-" data-id="37430" id="comment_37430">	<div class='comment__header'>
+			<a href='https://dnd.su/@4ec1dbc93aa0' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@4ec1dbc93aa0' class='profile__public-link profile__public-link-group-users comment__author-name'>The_observer</a></span> 
+	<div class="comment__age" title="14:02:47 10.10.2025">5 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_37430" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Так возник интересный вопрос , если я буду копать с помощью лопаты то какая это будет скорость копания , и второй вопрос смотрите для заговора лепка земли нужен только соматический компонент , так вот я же могу имитировать то что я копаю с помощью лопаты , без лопаты , но что мне мешает сделать это с лопатой в руках , и копать лопатой тем самым это же копание и будет соматическим элементом заговора  , так как оно  буквально олицетворяет собой копание
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="37595" id="comment_37595">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="15:54:31 13.10.2025">5 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_37595" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Копание лопатой не даст скорость копания. Представьте, сколько времени вам нужно было бы копать в реальности - на это и ориентируйтесь (результат всё равно на усмотрение мастера).<br>Заговору требуется соматический компонент - значит вам нужна хотя бы одна свободная рука, чтобы выполнять этот компонент. Это правило и не даст вам копать с лопатой в обеих руках, потому что тогда ваши руки будут заняты и не смогут выполнять соматический компонент.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="37464"><div class="comment__entry comment__op comment__author-group-" data-id="37464" id="comment_37464">	<div class='comment__header'>
+			<a href='https://dnd.su/@9d7071790a98' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@9d7071790a98' class='profile__public-link profile__public-link-group-users comment__author-name'>RunningRaven</a></span> 
+	<div class="comment__age" title="00:40:48 11.10.2025">5 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_37464" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Вопрос, допустим я начинаю ход опутанным или под другим схожим эффектом и моя скорость равна 0, в свой ход я каким-то образом избавляюсь от этого состояния так моя скорость восстановится или нет? Или если я уже начал ход с 0 футов перемещения то без использования рывка я уже двигаться не смогу?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="37593" id="comment_37593">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="15:49:26 13.10.2025">5 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_37593" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Да, ваша скорость восстанавливается, а значит вы в этот ход можете переместиться на свою скорость.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="42501"><div class="comment__entry comment__op comment__author-group-" data-id="42501" id="comment_42501">	<div class='comment__header'>
+			<a href='https://dnd.su/@fbd442dbc019' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@fbd442dbc019' class='profile__public-link profile__public-link-group-users comment__author-name'>ivanpro6666@</a></span> 
+	<div class="comment__age" title="18:25:39 13.01.2026">2 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_42501" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Удваивается ли скорость персонажа в днд при рывке? Есть стойкое утверждение что нет. Только проделанный путь. Но путь не скорость в раунде
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="42841" id="comment_42841">	<div class='comment__header'>
+			<a href='https://dnd.su/@239159bcde5d' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@239159bcde5d' class='profile__public-link profile__public-link-group-users comment__author-name'>Дмитрий Богданов</a></span> 
+	<div class="comment__age" title="06:42:52 21.01.2026">2 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../158-peremeschenie/index.html#comment_42841" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Не удваивается. Рывок не меняет скорость, он добавляет доступное вам перемещение. Например, скорость 30 значит что вы можете переместиться на 30 футов. Тогда рывок даст вам переместиться ещё на 30 футов (итого на 60 футовв этом ходу), но скорость ваша всё так же будет 30.<br>Если вы, к примеру, плут и совершаете Рывок и за действие, и за бонусное действие, то вы сможете переместиться на 90 футов за раунд (30 + 30 + 30).
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+		<p>
+ На данный момент в галерее нет изображений.
+ 	</p>
+	</section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>

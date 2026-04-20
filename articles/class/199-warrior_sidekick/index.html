@@ -1,0 +1,821 @@
+<!DOCTYPE html><!-- by Unbat / Igor Nedosekov / unbat / 2017 - 2026 -->
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Боец / Классы D&D 5 / Tasha's Cauldron of Everything</title>
+	
+    <meta name="description" content="" />
+    <meta name="keywords" content="dnd статьи классы,классы, днд статьи классы,классы, d&d статьи классы,классы, dnd 5 статьи классы,классы, днд 5 статьи классы,классы, d&d 5 статьи классы,классы, подземелья и драконы статьи классы,классы, dungeons and dragons статьи классы,классы, dnd статьи классы,классы Боец [Warrior Sidekick], днд статьи классы,классы Боец [Warrior Sidekick], d&d статьи классы,классы Боец [Warrior Sidekick], dnd 5 статьи классы,классы Боец [Warrior Sidekick], днд 5 статьи классы,классы Боец [Warrior Sidekick], d&d 5 статьи классы,классы Боец [Warrior Sidekick], подземелья и драконы статьи классы,классы Боец [Warrior Sidekick], dungeons and dragons статьи классы,классы Боец [Warrior Sidekick]" />
+    <meta property="og:title" content="Боец / Классы D&D 5 / Tasha's Cauldron of Everything" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://dnd.su/class/199-warrior-sidekick/" />
+    <meta property="og:image" content="https://dnd.su/img/thumbnail.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	
+    <link rel="apple-touch-icon" href="../../../img/favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png" />
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
+    <link rel="manifest" href="../../../img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#000000" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/common.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/print.min.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../ennin/rolltable.css@v=3.0.139.css">
+<link rel="stylesheet" type="text/css" href="../../../beta/css/script.typos.min.css@v=3.0.139.css">
+
+    <meta name="yandex-verification" content="ad850fa96eef28f1" />
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6QSMG73H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P6QSMG73H5');
+    </script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</head>
+<body id="body">
+
+<header>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <h2 class="header-logo">
+                <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a>
+            </h2>
+
+            <h1 class="header-page_title">
+				<a href='../../../homebrew/class/199-warrior-sidekick/index.html'>Боец</a><span> — </span><a href='../../../class/index.html'>Классы</a>            </h1>
+
+			
+            <div id="top__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="toUp">	<span class="svg svg-24 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span></div>
+    <main>
+        <div class="cont">
+
+			
+<aside id="aside">
+
+    <nav>
+        <ul class="left_menu">
+
+            <li class="item_level_1 item_link_head">
+                <a href="https://boosty.to/dnd.su" target="_blank" class="boosty">	<span class="svg svg-20 svg--boosty "><svg><use xlink:href="/beta/img/sprite.svg#boosty"></use></svg></span><span class="item_text">Boosty</span></a>
+                <a href="https://discord.com/invite/NVj9b4tWmb" target="_blank" class="discord">	<span class="svg svg-20 svg--discord "><svg><use xlink:href="/beta/img/sprite.svg#discord"></use></svg></span><span class="item_text">Discord</span></a>
+            </li>
+
+	                        <li class="item_level_1 item_link_head domain-switch">
+                    <a href="https://next.dnd.su/" class="active">5e24 	<span class="svg svg-16 svg--external_link "><svg><use xlink:href="/beta/img/sprite.svg#external_link"></use></svg></span></a>
+                    <span class="delimiter">/</span> <span class="passive">5e14</span>
+                </li>
+		        
+
+<li class="item_level_1">
+
+    <a href="../../../homebrew/class/199-warrior-sidekick/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-1">
+        <span class="item_text">Справочники</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../class/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--helmet "><svg><use xlink:href="/beta/img/sprite.svg#helmet"></use></svg></span>                <span class="item_text">Классы</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../race/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--race "><svg><use xlink:href="/beta/img/sprite.svg#race"></use></svg></span>                <span class="item_text">Расы и происхождения</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../backgrounds/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--scroll "><svg><use xlink:href="/beta/img/sprite.svg#scroll"></use></svg></span>                <span class="item_text">Предыстории</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../feats/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--puzzle "><svg><use xlink:href="/beta/img/sprite.svg#puzzle"></use></svg></span>                <span class="item_text">Черты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../spells/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--book "><svg><use xlink:href="/beta/img/sprite.svg#book"></use></svg></span>                <span class="item_text">Заклинания</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../bestiary/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--monster "><svg><use xlink:href="/beta/img/sprite.svg#monster"></use></svg></span>                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../items/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--crystalball "><svg><use xlink:href="/beta/img/sprite.svg#crystalball"></use></svg></span>                <span class="item_text">Магические предметы</span>
+            </a>
+        </li>
+
+		
+    </ul>
+</li>
+<li class="item_level_1">
+
+	<a href="../../../homebrew/class/199-warrior-sidekick/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-newbie">
+		<span class="item_text" style="color: var(--color-mint);">Новичку</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>	</a>
+
+	<ul class="dropdown-list">
+
+            <li class="item_level_2">
+        <a href="../../newbie/536-how-to-start-playing-dd/index.html" class="item_link_2">
+            <span class="item_text">Как начать играть в D&D</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../mechanics/468-using_ability_scores/index.html" class="item_link_2">
+            <span class="item_text">Использование характеристик</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../mechanics/26-main_formulas/index.html" class="item_link_2">
+            <span class="item_text">Основные формулы</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../newbie/722-pregenerated-characters/index.html" class="item_link_2">
+            <span class="item_text">Готовые персонажи</span>
+        </a>
+    </li>
+    <li class="item_level_2">
+        <a href="../../../faq/index.html" class="item_link_2">
+            <span class="item_text">Часто задаваемые вопросы</span>
+        </a>
+    </li>	</ul>
+</li><li class="item_level_1">
+
+    <a href="../../../homebrew/class/199-warrior-sidekick/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-2">
+        <span class="item_text">Статьи</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../bestiary/index.html" class="item_link_2">
+                <span class="item_text">Бестиарий</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../inventory/index.html" class="item_link_2">
+                <span class="item_text">Инвентарь</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../mechanics/index.html" class="item_link_2">
+                <span class="item_text">Игровые механики</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../lore/index.html" class="item_link_2">
+                <span class="item_text">Lore</span>
+            </a>
+        </li>
+
+	            <li class="item_level_2">
+            <a href="../../homebrew/index.html" class="item_link_2">
+                <span class="item_text">Homebrew</span>
+            </a>
+        </li>
+        
+        <li class="item_level_2">
+            <a href="../../news/index.html" class="item_link_2">
+                <span class="item_text">Новости сайта</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../partners/index.html" class="item_link_2">
+                <span class="item_text">Сообщество</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+        <li class="ya-search">
+            <div class="ya-search">
+                <div class="ya-site-form ya-site-form_inited_no" onclick="return {'action':'/search/','arrow':false,'bg':'transparent','fontsize':14,'fg':'#000000','language':'ru','logo':'rw','publicname':'Поиск по сайту DnD.su','suggest':true,'target':'_self','tld':'ru','type':2,'usebigdictionary':true,'searchid':2294916,'input_placeholder':'Поиск по сайту'}">
+                    <form action="https://yandex.ru/search/site/" method="get" target="_self" accept-charset="utf-8" class="search">
+                        <input type="hidden" name="searchid" value="2294916"/>
+                        <input type="hidden" name="l10n" value="ru"/>
+                        <input type="hidden" name="reqenc" value="utf-8"/>
+                        <input type="search" name="text" value=""/>
+                        <input type="submit" value="Найти" style="cursor:pointer"/>
+                    </form>
+                </div>
+                <style>.ya-page_js_yes .ya-site-form_inited_no {
+                        display: none
+                    }
+
+                    #ya-site-form0 .ya-site-form__search-input {
+                        padding: 0
+                    }</style>
+                <script type="text/javascript">(function (w, d, c) {
+                        var s = d.createElement('script'), h = d.getElementsByTagName('script')[0],
+                            e = d.documentElement;
+                        if ((' ' + e.className + ' ').indexOf(' ya-page_js_yes ') === -1) {
+                            e.className += ' ya-page_js_yes';
+                        }
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.charset = 'utf-8';
+                        s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') + '//site.yandex.net/v2.0/js/all.js';
+                        h.parentNode.insertBefore(s, h);
+                        (w[c] || (w[c] = [])).push(function () {
+                            Ya.Site.Form.init()
+                        })
+                    })(window, document, 'yandex_site_callbacks');</script>
+            </div>
+        </li>
+
+		
+<li class="item_level_1">
+
+    <a href="../../../homebrew/class/199-warrior-sidekick/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-4">
+        <span class="item_text">Инструменты</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../point_buy/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--stats "><svg><use xlink:href="/beta/img/sprite.svg#stats"></use></svg></span>                <span class="item_text">Закуп характеристик</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../loot/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--chest "><svg><use xlink:href="/beta/img/sprite.svg#chest"></use></svg></span>                <span class="item_text">Генератор добычи</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../encounter_difficulty/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--swords "><svg><use xlink:href="/beta/img/sprite.svg#swords"></use></svg></span>                <span class="item_text">Сложность боя</span>
+            </a>
+        </li>
+
+	    
+        
+        <li class="item_level_2">
+            <a href="../../../praise_the_random/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--clover "><svg><use xlink:href="/beta/img/sprite.svg#clover"></use></svg></span>                <span class="item_text">Мне повезёт</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../../homebrew/class/199-warrior-sidekick/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-5">
+        <span class="item_text">Пользователь</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+		
+        <li class="item_level_2">
+            <a href="../../../comments/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--comments "><svg><use xlink:href="/beta/img/sprite.svg#comments"></use></svg></span>                <span class="item_text">Комментарии</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../settings/index.html" class="item_link_2">
+			    	<span class="svg svg-16 svg--gear "><svg><use xlink:href="/beta/img/sprite.svg#gear"></use></svg></span>                <span class="item_text">Настройки</span>
+            </a>
+        </li>
+
+	    
+	    
+	    
+	    
+	    
+            <li class="item_level_2 form-auth">
+			                    <form method="post" action="https://dnd.su/login/native/?from=%2Fclass%2F199-warrior-sidekick%2F">
+				                        <div class="grid">
+
+                        <div class="col-24">
+	                        <input type="text" required="true" name="login" value="" placeholder="Логин" class="if if-text">                        </div>
+
+                        <div class="col-24">
+	                        <input type="password" required="true" name="password" value="" placeholder="*****" class="if if-text">                        </div>
+
+                        <div class="col-24">
+                            <input type="checkbox" name="remember_me" placeholder="Запомнить" class="if if-checkbox if-sm if-contrast">                        </div>
+
+                        <div class="col-9">
+                            <input type="submit" class="btn btn-primary" value="Войти">
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/vkontakte/?from=%2Fclass%2F199-warrior-sidekick%2F">
+			                    	<span class="svg svg-20 svg--vkontakte "><svg><use xlink:href="/beta/img/sprite.svg#vkontakte"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/yandex/?from=%2Fclass%2F199-warrior-sidekick%2F">
+			                    	<span class="svg svg-20 svg--yandex "><svg><use xlink:href="/beta/img/sprite.svg#yandex"></use></svg></span>                            </a>
+                        </div>
+
+                        <div class="col-5">
+                            <a class="btn btn-primary social_auth" href="https://dnd.su/login/google/?from=%2Fclass%2F199-warrior-sidekick%2F">
+			                    	<span class="svg svg-20 svg--google "><svg><use xlink:href="/beta/img/sprite.svg#google"></use></svg></span>                            </a>
+                        </div>
+
+                    </div>
+                </form>
+            </li>
+
+            <li class="item_level_2">
+                <a href="../../../registration/index.html" class="item_link_2">
+                    <span class="item_text">Регистрация</span>
+                </a>
+            </li>
+
+        
+
+    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../../homebrew/class/199-warrior-sidekick/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-7">
+        <span class="item_text">Партнёры</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+		<li class="item_level_2"><a href="../../partners/index.html" class="item_link_2"><span class="item_text">Новости сообщества</span></a></li><li class="item_level_2"><a href="https://vk.com/dungeons_ru?partner=dnd.su" title="Dungeonsanddragons.ru\Dungeons_ru - переводы D&D" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dungeonsru partner-icon"></span><span class="item_text">Dungeons_ru</span></a></li><li class="item_level_2"><a href="https://dm.am?partner=dnd.su" title="Форумные рпг на любой вкус" target="_blank" class="item_link_2 partner"><span class="sprite-partners__dmam partner-icon"></span><span class="item_text">Dungeonmaster.ru</span></a></li><li class="item_level_2"><a href="https://t.me/DiceOut20?partner=dnd.su" target="_blank" title="Достать Кубы (Давай отправимся в путешествие вместе!)" class="item_link_2 partner"><span class="sprite-partners__diceout partner-icon"></span>Достать Кубы</a></li><li class="item_level_2"><a href="https://vk.com/neardeathdungeon?partner=dnd.su" target="_blank" title="Near Death Dungeon" class="item_link_2 partner"><span class="sprite-partners__ndd partner-icon"></span>Near Death Dungeon</a></li><li class="item_level_2"><a href="https://dkdice.com?partner=dnd.su" target="_blank" title="Dungeon Keepers's Dice (Уникальные игральные кости ручной работы)" class="item_link_2 partner"><span class="sprite-partners__dkdice partner-icon"></span>Dungeon Keepers's Dice</a></li><li class="item_level_2"><a href="https://youtube.com/@wermeron?partner=dnd.su" target="_blank" title="Wermeron (Дында на простом языке)" class="item_link_2 partner"><span class="sprite-partners__wermeron partner-icon"></span>Wermeron</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCgQdOML6PsC_rgPn8-7t5Cg?partner=dnd.su" target="_blank" title="MAGELLAN GEEK" class="item_link_2 partner"><span class="sprite-partners__magellan partner-icon"></span>MAGELLAN GEEK</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCVl0HbZOsQyVrXNes6u4rnQ?partner=dnd.su" target="_blank" title="Уютное Газебо" class="item_link_2 partner"><span class="sprite-partners__gazebo partner-icon"></span>Уютное Газебо</a></li><li class="item_level_2"><a href="https://vk.com/biblioteka_nri?partner=dnd.su" target="_blank" title="Библиотека на краю мира (Библиотека НРИ)" class="item_link_2 partner"><span class="sprite-partners__library partner-icon"></span>Библиотека на краю мира</a></li><li class="item_level_2"><a href="https://www.youtube.com/c/%D0%9F%D0%BE%D0%A2%D1%83%D0%A1%D1%82%D0%BE%D1%80%D0%BE%D0%BD%D1%83%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86?partner=dnd.su" target="_blank" title="По ту сторону страниц (Пишем Музыку, Карты, Обзоры и Подкасты!)" class="item_link_2 partner"><span class="sprite-partners__po_tu_storonu partner-icon"></span>По ту сторону страниц</a></li><li class="item_level_2"><a href="https://www.youtube.com/channel/UCHvgDnlfa2zJXpaSEdX4_8w?partner=dnd.su" target="_blank" title="Monster park (Monster park of f#king Stark)" class="item_link_2 partner"><span class="sprite-partners__stark partner-icon"></span>Monster park</a></li><li class="item_level_2"><a href="https://vk.com/myriads_of_truths?partner=dnd.su" target="_blank" title="Мириады Истин" class="item_link_2 partner"><span class="sprite-partners__miriady partner-icon"></span>Мириады Истин</a></li><li class="item_level_2"><a href="https://t.me/dnd_iaram?partner=dnd.su" target="_blank" title="Инсомнум D&D (Про вордбилдинг в реальном времени)" class="item_link_2 partner"><span class="sprite-partners__dnd_iaram partner-icon"></span>Инсомнум D&D</a></li><li class="item_level_2"><a href="https://cyborgsandmages.com/?partner=dnd.su" target="_blank" title="Киборги и Чародеи (Настольные ролевые игры — статьи, ресурсы, материалы)" class="item_link_2 partner"><span class="sprite-partners__cam partner-icon"></span>Киборги и Чародеи</a></li><li class="item_level_2"><a href="https://vk.com/dicebucket?partner=dnd.su" target="_blank" title="Ведро Кубов (НРИ | D&D)" class="item_link_2 partner"><span class="sprite-partners__dicebucket partner-icon"></span>Ведро Кубов</a></li><li class="item_level_2"><a href="https://www.youtube.com/@fox_tavern?partner=dnd.su" target="_blank" title="Сытый Лис (Бесплатный сервер для игроков в НРИ и настольные игры)" class="item_link_2 partner"><span class="sprite-partners__fox_tavern partner-icon"></span>Сытый Лис</a></li>    </ul>
+</li>
+<li class="item_level_1">
+
+    <a href="../../../homebrew/class/199-warrior-sidekick/index.html#" class="item_link_1 dropdown_trigger active" data-menu="menu-6">
+        <span class="item_text">Разное</span>
+			<span class="svg svg-16 svg--dropdown "><svg><use xlink:href="/beta/img/sprite.svg#dropdown"></use></svg></span>    </a>
+
+    <ul class="dropdown-list">
+
+        <li class="item_level_2">
+            <a href="../../../contacts/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--letter "><svg><use xlink:href="/beta/img/sprite.svg#letter"></use></svg></span>                <span class="item_text">Контакты</span>
+            </a>
+        </li>
+
+        <li class="item_level_2">
+            <a href="../../../support/index.html" class="item_link_2">
+					<span class="svg svg-16 svg--coins "><svg><use xlink:href="/beta/img/sprite.svg#coins"></use></svg></span>                <span class="item_text">Помощь сайту</span>
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+        </ul>
+    </nav>
+</aside>
+
+
+            <!-- CENTRAL COLUMN -->
+            <div class="center">
+                <div class="row">
+
+                    <section class="block block-100 block-page_title">
+                        <h1 class="center-page_title">
+							<a href='../../../homebrew/class/199-warrior-sidekick/index.html'>Боец</a><span> — </span><a href='../../../class/index.html'>Классы</a>                        </h1>
+                    </section>
+
+					    <section class="block block_100">
+		<div class='paper-1 card card__group-classic typoable'  style="background-position:51% 0" data-id='article:199' data-typo-path='/class/199-warrior-sidekick/' itemscope itemtype='https://schema.org/Article'><div class='card-wrapper'  data-tags='["Классы", "Боец", "class_partners"]'><div class="card__header"><h2 class="card-title" itemprop="name"><a href='../../../homebrew/class/199-warrior-sidekick/index.html' itemprop='url' class='item-link'>Боец [Warrior Sidekick]</a></h2>	<div class="card-menu">
+		<span class="card-menu__button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</span>
+		<ul class="card-menu__list">
+			<li class='card-menu__list-item'><a href='javascript:window.print();'>Распечатать</a></li>
+		</ul>
+	</div></div><div class="card__body new-article" itemprop="articleBody">			<ul class="params card__article-body">
+				<li><strong>Источник:</strong> «<span>Tasha's Cauldron of Everything</span>»</li>				
+			</ul>
+			
+			<div class="desc card__article-body" itemprop="articleBody">
+				<div class="additionalInfo"><p style="text-align: right;"><em>Классы напарников являются инструментом Мастера на тот случай, если неигровому персонажу второстепенного плана, что путешествует вместе с персонажами игроков, необходимо дать классовые умения. Имейте в виду: этот и другие классы напарников заведомо слабее классов из «Книги игрока». Общую статью о напарниках вы можете отыскать в этой <a href="../../mechanics/196-sidekick/index.html" target="_blank">статье</a>.<br></em><em><strong>— Господин Финик</strong></em></p>
+</div>
+<br><p>Боец растит свою боевую доблесть, когда сражается рядом с вами. Это может быть солдат, городской стражник, боевой зверь или любое другое существо, выращенное для боя.</p>
+<p>Напарник получает следующие характеристики класса по мере продвижения в уровнях, как показано в таблице «Боец».</p>
+<h4 class="tableTitle">Боец</h4>
+<table class="class_table"><tbody>
+<tr class="table_header"><td>Уровень</td>
+<td> Бонус<br>мастерства</td>
+<td> Умения </td>
+</tr>
+<tr>
+<td>1</td>
+<td> +2</td>
+<td> Бонусные владения, Воинская роль </td>
+</tr>
+<tr>
+<td>2</td>
+<td> +2</td>
+<td> Второе дыхание (1 использование) </td>
+</tr>
+<tr>
+<td>3</td>
+<td> +2</td>
+<td> Улучшенные критические попадания </td>
+</tr>
+<tr>
+<td>4</td>
+<td> +2</td>
+<td> Увеличение характеристик </td>
+</tr>
+<tr>
+<td>5</td>
+<td> +3</td>
+<td> — </td>
+</tr>
+<tr>
+<td>6</td>
+<td> +3</td>
+<td> Дополнительная атака (1 дополнительная атака) </td>
+</tr>
+<tr>
+<td>7</td>
+<td> +3</td>
+<td> Боеготовность</td>
+</tr>
+<tr>
+<td>8</td>
+<td> +3</td>
+<td> Увеличение характеристик </td>
+</tr>
+<tr>
+<td>9</td>
+<td> +4</td>
+<td> — </td>
+</tr>
+<tr>
+<td>10</td>
+<td> +4</td>
+<td> Улучшенная оборона </td>
+</tr>
+<tr>
+<td>11</td>
+<td> +4</td>
+<td> Упорство (1 использование) </td>
+</tr>
+<tr>
+<td>12</td>
+<td> +4</td>
+<td> Увеличение характеристик </td>
+</tr>
+<tr>
+<td>13</td>
+<td> +5</td>
+<td> — </td>
+</tr>
+<tr>
+<td>14</td>
+<td> +5</td>
+<td> Увеличение характеристик </td>
+</tr>
+<tr>
+<td>15</td>
+<td> +5</td>
+<td> Дополнительная атака (2 дополнительные атаки) </td>
+</tr>
+<tr>
+<td>16</td>
+<td> +5</td>
+<td> Увеличение характеристик </td>
+</tr>
+<tr>
+<td>17</td>
+<td> +6</td>
+<td> — </td>
+</tr>
+<tr>
+<td>18</td>
+<td> +6</td>
+<td> Упорство (2 использования) </td>
+</tr>
+<tr>
+<td>19</td>
+<td> +6</td>
+<td> Увеличение характеристик </td>
+</tr>
+<tr>
+<td>20</td>
+<td> +6</td>
+<td> Второе дыхание (2 использования)</td>
+</tr>
+</tbody>
+</table>
+<br><h3 class="smallSectionTitle">Бонусные владения</h3><p><em>1-й уровень, умение бойца </em></p>
+<p>Напарник получает владение одним из следующих спасбросков по вашему выбору: Сила, Ловкость или Телосложение.</p>
+<p>Кроме того, напарник получает владение двумя навыками по вашему выбору из следующего списка: <span tooltip-for="skill.acrobatics" title="skill.acrobatics">Акробатика</span>, <span tooltip-for="skill.athletics" title="skill.athletics">Атлетика</span>, <span tooltip-for="skill.perception" title="skill.perception">Восприятие</span>, <span tooltip-for="skill.survival" title="skill.survival">Выживание</span>, <span tooltip-for="skill.intimidation" title="skill.intimidation">Запугивание</span>, <span tooltip-for="skill.nature" title="skill.nature">Природа</span> или <span tooltip-for="skill.animalHandling" title="skill.animalHandling">Уход за животными</span>.</p>
+<p>Напарник получает владение всеми типами доспехов, и если он гуманоид или имеет простое или воинское оружие в своём блоке статистики, он также получает владение щитами и всеми видами простого и воинского оружия.</p>
+<br><h3 class="smallSectionTitle">Воинская роль</h3><p><em>1-й уровень, умение бойца </em></p>
+<p>Каждый боец сосредотачивает свои тренировки на нападении или защите. Выберите один из следующих вариантов:</p>
+<p></p><ul><li><strong>Атакующий</strong>. Напарник получает бонус +2 ко всем броскам атаки.</li><li><strong>Защитник</strong>. Напарник может использовать реакцию, для создания помехи на бросок атаки существа в пределах 5 футов от него, если напарник не является целью атаки, и при условии, что напарник может видеть нападающего.</li></ul><p></p>
+
+<br><h3 class="smallSectionTitle">Второе дыхание</h3><p><em>2-й уровень, умение бойца </em></p>
+<p>Напарник может бонусным действием восстановить хиты, равные 1к10 + уровень напарника в классе бойца.</p>
+<p>Использовав это умение, напарник должен завершить короткий либо продолжительный отдых, чтобы получить возможность использовать умение снова.</p>
+<p>Напарник может использовать это умение дважды между отдыхами, начиная с 20-го уровня.</p>
+<br><h3 class="smallSectionTitle">Улучшенные критические попадания</h3><p><em>3-й уровень, умение бойца </em></p>
+<p>Броски атаки напарника считаются критическими при выпадении «19» или «20» на к20.</p>
+<br><h3 class="smallSectionTitle">Увеличение характеристик</h3><p><em>4-й уровень, умение бойца</em></p>
+<p> На 4-м, 8-м, 12-м, 14-м, 16-м и 19-м уровнях напарник повышает значение одной из характеристик по вашему выбору на 2, или двух характеристик по вашему выбору на 1. Значение повышаемой характеристики напарника не может стать выше 20 с использованием этого умения.</p>
+<br><h3 class="smallSectionTitle">Дополнительная атака</h3><p><em>6-й уровень, умение бойца </em></p>
+<p>Если напарник в свой ход совершает действие Атака, то он может совершить две атаки вместо одной. Количество атак увеличивается до трех, когда напарник достигает 15-го уровня.</p>
+<p>Если у напарника есть действие «Мультиатака», он может использовать «Дополнительную атаку» или «Мультиатаку» в свой ход, но не то и другое одновременно.</p>
+<br><h3 class="smallSectionTitle">Боеготовность</h3><p><em>7-й уровень, умение бойца </em></p>
+<p>Напарник совершает броски инициативы с преимуществом.</p>
+<br><h3 class="smallSectionTitle">Улучшенная оборона</h3><p><em>10-й уровень, умение бойца </em></p>
+<p>Класс Доспеха напарника увеличивается на 1.</p>
+<br><h3 class="smallSectionTitle">Упорство</h3><p><em>11-й уровень, умение бойца </em></p>
+<p>Напарник может повторно совершить проваленный спасбросок, но он должен использовать новое выпавшее значение. Когда напарник использует это умение, то его нельзя использовать снова, пока напарник не закончит продолжительный отдых.</p>
+<p>Начиная с 18-го уровня, напарник может использовать это умение дважды, после чего потребуется совершить продолжительный отдых, чтобы использовать умение снова.</p>
+
+			</div>
+
+			<ul class="params card__article-body">
+				
+			</ul>
+</div><div class="card__footer"></div></div></div><script>window.commentsAccess = {"comments:next":1};</script>
+			
+<section class="comments-block block block_100">
+	<div class="card paper-1">
+		<div class="card-wrapper">
+			<div class="card__header" id="comments">
+				<h2 class="card-title">Комментарии</h2>
+			</div>
+			<div class="card__body">							
+				<div class="comments" data-page='articles:199'>
+					<div class="comments__holder"><div class="comments__thread" data-thread="8583"><div class="comment__entry comment__op comment__author-group-" data-id="8583" id="comment_8583">	<div class='comment__header'>
+			<a href='https://dnd.su/@4ca43e447bca' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/c10d5a74c2afa35be4950b0d3d6ed0d9.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@4ca43e447bca' class='profile__public-link profile__public-link-group-users comment__author-name'>Dark_Aeidus</a></span> 
+	<div class="comment__age" title="22:30:51 22.05.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_8583" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Как у напарников считаются хиты?
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-Администратор" data-id="9153" id="comment_9153">	<div class='comment__header'>
+			<a href='https://dnd.su/@ennin' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/62d22014b2fdd7f9b19c6cf072dacdcc.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@ennin' class='profile__public-link profile__public-link-group-administrators comment__author-name'>Ennin</a></span> 
+	<div class="comment__age" title="11:05:01 02.06.2024">1 год  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_9153" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		См. общую статью о механиках напарников.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="35664"><div class="comment__entry comment__op comment__author-group-" data-id="35664" id="comment_35664">	<div class='comment__header'>
+			<a href='https://dnd.su/@Sun_master_Ansar' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/73902e41d62422061b671169a0cca5cc.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__author-name'>Сын мастера Ансара</a></span> 
+	<div class="comment__age" title="17:50:14 10.09.2025">6 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35664" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		хмм... интересно было чтобы у напарников были еще и подклассы
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="35665" id="comment_35665">	<div class='comment__header'>
+			<a href='https://dnd.su/@Sun_master_Ansar' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/73902e41d62422061b671169a0cca5cc.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__author-name'>Сын мастера Ансара</a></span> 
+	<div class="comment__age" title="18:09:20 10.09.2025">6 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35665" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Подмастерье боевых искусств<br><br>БОЕВОЕ ПРЕВОСХОДСТВО<br>3-й уровень, умение Подмастерье боевых искусств<br><br>Если вы выбираете этот архетип, вы изучаете приёмы, использующие специальные кости, называемые костями превосходства.<br><br>Приёмы. напарник изучаете два приёма на ваш выбор. Большинство приёмов тем или иным образом усиливают атаку. Во время одной атаки вы можете использовать только один приём. Вы изучаете два дополнительных приёма при достижении 7-го, 10-го и 15-го уровней. Каждый раз, при изучении новых приёмов, вы можете также заменить один из известных вам приёмов на другой.<br><br>Кости превосходства. У напарник есть две кости превосходства. Это кости к8. Кости превосходства тратятся при использовании. Вы восполняете все потраченные кости в конце короткого или продолжительного отдыха.<br><br>Вы получаете ещё по одной кости превосходства на 7-м и 15-м уровнях.<br><br>Спасброски. Некоторые из ваших приёмов требуют от цели спасброска, чтобы избежать эффекта приёма. Сложность такого спасброска рассчитывается следующим образом:<br><br>Сложность спасброска приёма = 8 + напарник бонус мастерства + напарник модификатор Силы или Ловкости (на ваш выбор)<br><br>ПОЗНАЙ СВОЕГО ВРАГА<br>9-й уровень, умение подмастерье боевых искусств<br><br>Если напарник потратит как минимум 1 минуту, рассматривая, или по другому взаимодействуя с существом вне боя, напарник может узнать некоторую информацию о его способностях в сравнении с вашими. Мастер сообщит напарнику, равняется ли существо, превосходит или уступает ему в двух характеристиках на ваш выбор из перечисленных:<br><br>Значение Силы<br>Значение Телосложения<br>Класс Доспеха<br>Текущие хиты<br>Общее количество уровней (если есть)<br><br>НЕОСЛАБЕВАЮЩИЙ<br>17-й уровень, умение подмастерье боевых искусств<br><br>Если напарник совершаете бросок инициативы, не имея костей превосходства, напарник получает одну.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="35666" id="comment_35666">	<div class='comment__header'>
+			<a href='https://dnd.su/@Sun_master_Ansar' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/73902e41d62422061b671169a0cca5cc.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__author-name'>Сын мастера Ансара</a></span> 	<div class="comment__user-reply-user" data-reply-to="35665">
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35665" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__replied-to'>Сын мастера Ансара</a>
+	<div class="comment__age" title="18:23:39 10.09.2025">6 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35666" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		победитель<br><br>ВЫДАЮЩИЙСЯ АТЛЕТ<br>3-й уровень, умение победитель<br><br>напарник может добавлять половину бонуса мастерства, округлённую в большую сторону, ко всем проверкам Силы и Телосложению куда этот бонус еще не включён.<br><br>Кроме того, если напарник совершает прыжок в длину с разбега, дальность прыжка увеличивается на количество футов, равное модификатору Силы.<br><br>ПРЕВОСХОДНЫЕ КРИТИЧЕСКИЕ ПОПАДАНИЯ<br>9-й уровень, умение победитель<br><br>атаки напарника оружием совершают критическое попадание при выпадении «18–20» на кости атаки.<br><br>ДОПОЛНИТЕЛЬНЫЙ ВОИНСКАЯ РОЛЬ<br>17-й уровень, умение победитель<br><br>На 17 уровне напарник можете выбрать вторую воинская роль.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="35668" id="comment_35668">	<div class='comment__header'>
+			<a href='https://dnd.su/@Sun_master_Ansar' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/73902e41d62422061b671169a0cca5cc.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__author-name'>Сын мастера Ансара</a></span> 	<div class="comment__user-reply-user" data-reply-to="35666">
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35666" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__replied-to'>Сын мастера Ансара</a>
+	<div class="comment__age" title="18:34:13 10.09.2025">6 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35668" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		мистический бойца<br><br>ИСПОЛЬЗОВАНИЕ ЗАКЛИНАНИЙ<br>3-й уровень, умение мистического бойца<br><br>К своим воинским талантам вы добавляете возможность накладывать заклинания. Смотрите общие правила о заклинаниях и список заклинаний волшебника.<br><br>Заговоры. Вы изучаете 1 заговора на свой выбор из списка заклинаний волшебника. Дополнительный заговор волшебника вы изучите на 10-м уровне.<br><br>Ячейки заклинаний. Таблица заклинаний мистического рыцаря содержит информацию о количестве доступных вам ячеек заклинаний для накладывания заклинаний волшебника. Чтобы накладывать заклинание волшебника определённого уровня, вы должны потратить ячейку того же уровня или выше. Все потраченные ячейки заклинаний вы восстанавливаете после окончания продолжительного отдыха.<br><br>Например, если вы знаете заклинание 1-го уровня щит [shield] и имеете ячейки 1-го и 2-го уровней, вы можете наложить это заклинание, использовав любую из этих ячеек.<br><br>Известные заклинания первого и более высоких уровней. Вы знаете три заклинания 1-го уровня из списка волшебника на свой выбор, два из которых должны принадлежать к школам Воплощения и Ограждения.<br><br>Колонка «известные заклинания» в таблице показывает, когда вы сможете выучить новые заклинания волшебника. Все эти заклинания должны принадлежать школам Воплощения или Ограждения, и не должны превышать уровень доступных вам ячеек заклинаний. Например, при достижении 7 уровня в этом классе вы можете выучить новое заклинание 1-го или 2-го уровня.<br><br>Заклинания, которые вы выучите на 8-м, 14-м и 20-м уровнях, могут принадлежать любой школе магии.<br><br>Каждый раз, получая уровень в этом классе, вы можете заменить одно из заклинаний волшебника, известное вам, другим по вашему выбору. Новое заклинание должно быть из списка доступных волшебнику, у вас должны быть ячейки соответствующего уровня, и заклинание должно принадлежать школам Воплощения или Ограждения, кроме случаев, когда вы заменяете заклинания, полученные из любой школы на 3-м, 8-м, 14-м или 20-м уровнях.<br><br>Базовая характеристика заклинаний. Интеллект является базовой характеристикой для ваших заклинаний, поскольку вы узнаёте заклинания посредством изучения и запоминания. Когда заклинание требует использовать базовую характеристику, вы используете Интеллект. Кроме того, вы используете модификатор Интеллекта при определении Сл спасбросков от ваших заклинаний волшебника и при броске атаки заклинаниями.<br><br>Сл спасброска = 8 + ваш бонус мастерства + ваш модификатор Интеллекта<br><br>Модификатор броска атаки = ваш бонус мастерства + ваш модификатор Интеллекта<br><br>СВЯЗЬ С ОРУЖИЕМ<br>3-й уровень, умение мистического бойца<br><br>напарник узнаёт ритуал, позволяющий создать магическую связь между напарником и одним оружием. напарник выполняете ритуал в течение 1 часа, и он может быть совершён в течение короткого отдыха. Оружие во время проведения ритуала должно находиться на доступном расстоянии от вас, и в конце вы должны прикоснуться к нему и создать связь.<br><br>Как только напарник привязали к себе оружие, он не можете быть обезоруженным, пока не станете недееспособным. Если оружие находится на одном плане существования с напарником, вы можете в свой ход бонусным действием призвать его, телепортируя себе в руку.<br><br>У вас может быть не более двух привязанных оружий одновременно, и бонусным действием вы призываете их по одному. Если вы попытаетесь создать связь с третьим оружием, вам придётся разорвать связь с одним из первых двух.<br><br>БОЕВАЯ МАГИЯ<br>9-й уровень, умение мистического бойца<br><br>Если напарник действием накладываете заговор, вы можете бонусным действием совершить одну атаку оружием.<br><br>ВОЛШЕБНЫЙ РЫВОК<br>17-й уровень, умение мистического бойца<br>напарник получаете возможность телепортироваться на 20 футов в свободное пространство, которое вы видите, когда используете «дополнительная атака». Вы можете телепортироваться до или после дополнительного действия.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="35669" id="comment_35669">	<div class='comment__header'>
+			<a href='https://dnd.su/@Sun_master_Ansar' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/73902e41d62422061b671169a0cca5cc.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__author-name'>Сын мастера Ансара</a></span> 	<div class="comment__user-reply-user" data-reply-to="35668">
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35668" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__replied-to'>Сын мастера Ансара</a>
+	<div class="comment__age" title="18:34:57 10.09.2025">6 месяцев  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35669" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		на оценку
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="41389" id="comment_41389">	<div class='comment__header'>
+			<a href='https://dnd.su/@3b5e2989ef8b' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/default.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@3b5e2989ef8b' class='profile__public-link profile__public-link-group-users comment__author-name'>AugustWeiss</a></span> 	<div class="comment__user-reply-user" data-reply-to="35669">
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_35669" class="comment__user-reply-user-link">
+			ответил
+		</a>
+	</div>
+	<a href='https://dnd.su/@Sun_master_Ansar' class='profile__public-link profile__public-link-group-users comment__replied-to'>Сын мастера Ансара</a>
+	<div class="comment__age" title="21:31:12 23.12.2025">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_41389" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Оправдал ник, что ещё тут можно сказать
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="39640"><div class="comment__entry comment__op comment__author-group-" data-id="39640" id="comment_39640">	<div class='comment__header'>
+			<a href='https://dnd.su/@fc5b6891f817' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/5b716d571e2bdd590f0b9656c55b3e70.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@fc5b6891f817' class='profile__public-link profile__public-link-group-users comment__author-name'>ghjksad</a></span> 
+	<div class="comment__age" title="02:31:56 25.11.2025">4 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_39640" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		следопыт глупый
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div><div class="comment__entry comment__reply comment__author-group-" data-id="40542" id="comment_40542">	<div class='comment__header'>
+			<a href='https://dnd.su/@1b5a87c2f288' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/325d345df66e15b7aaa4420022b5e0a1.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@1b5a87c2f288' class='profile__public-link profile__public-link-group-users comment__author-name'>Архангел</a></span> 
+	<div class="comment__age" title="21:15:48 10.12.2025">3 месяца  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_40542" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Глупый тут только ты, потому что не понимаешь, что следопыта добавили как челлендж игрокам, собрать нормального персонажа из г... Кхм-кхм, подручных средств.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div><div class="comments__thread" data-thread="45309"><div class="comment__entry comment__op comment__author-group-" data-id="45309" id="comment_45309">	<div class='comment__header'>
+			<a href='https://dnd.su/@0f169d794e4f' class='profile__avatar comment__author-avatar'><img src='https://dnd.su/storage/avatar/3b6366c0b7a71e144a8631a7ff08d671.png' class='profile__avatar-img'></a> <span class="comment__username"><a href='https://dnd.su/@0f169d794e4f' class='profile__public-link profile__public-link-group-users comment__author-name'>Некромант Энжоер</a></span> 
+	<div class="comment__age" title="21:32:03 06.03.2026">1 месяц  назад</div>
+	<div class="comment__promoted-icon" title="Комментарий помечен как важный">	<span class="svg svg-16 svg--heart "><svg><use xlink:href="/beta/img/sprite.svg#heart"></use></svg></span></div>
+	<div class="comment__hidden-icon" title="Комментарий скрыт от пользователей">	<span class="svg svg-16 svg--hide "><svg><use xlink:href="/beta/img/sprite.svg#hide"></use></svg></span></div>
+		<a href="../../../homebrew/class/199-warrior-sidekick/index.html#comment_45309" class="comment__link">#</a>
+	</div>
+	<div class='comment__body card__article-body'>
+		Хотелось бы договориться с мастером чтобы при разрыве моей связи с покровителем я бы становился сайдкиком.
+	</div>
+	<div class="comment__footer">
+		<div class='comment__reply-block'></div>
+		<div class='comment__operations btn-group'></div>
+	</div></div></div></div>
+					<div class="comments__poster"><div class="comments__message">Авторизуйтесь, чтобы оставлять комментарии.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><section class="block block_100 gallery">
+	<h2 class="section-title" itemprop="name" id="gallery">Галерея</h2>
+	<script>window.gallery_access = 'user';</script>
+	 <div id="lightgallery">
+  <div data-src='/gallery/articles/199_1_1711815016.jpg' class='gallery-card shown' data-order='4' data-ref='articles:199:14788'>
+	<img src='../../../gallery/articles/199_1_1711815016_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/199_2_1711815016.jpg' class='gallery-card shown' data-order='4' data-ref='articles:199:14789'>
+	<img src='../../../gallery/articles/199_2_1711815016_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  <div data-src='/gallery/articles/199_1_1711815112.jpg' class='gallery-card shown' data-order='4' data-ref='articles:199:14790'>
+	<img src='../../../gallery/articles/199_1_1711815112_s.jpg' class='gallery-image' />
+	<span class="gallery_favorite_icon">	<span class="svg svg-24 svg--favorite_fill "><svg><use xlink:href="/beta/img/sprite.svg#favorite_fill"></use></svg></span>	<span class="svg svg-24 svg--favorite "><svg><use xlink:href="/beta/img/sprite.svg#favorite"></use></svg></span></span>
+</div>
+  </div>
+	</section>
+
+    </section>
+                </div>
+            </div>
+            <!---->
+        </div>
+    </main>
+	<footer>
+    <div class="wrapper">
+        <a href="../../145-poluchenie_rangov_ai/index.html">DnD.su</a> © 2017 - 2026. | По&nbsp;вопросам сотрудничества: <a href="javascript:void(0)" class="show-email">показать&nbsp;email</a>
+    </div>
+</footer>
+
+<script type="text/javascript">const COMPENDIUM = {"bestiary":{"alignment":{"lg":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ng":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","cg":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0434\u043e\u0431\u0440\u044b\u0439","ln":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","n":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","cn":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439","le":"\u0417\u0430\u043a\u043e\u043d\u043d\u043e-\u0437\u043b\u043e\u0439","ne":"\u041d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e-\u0437\u043b\u043e\u0439","ce":"\u0425\u0430\u043e\u0442\u0438\u0447\u043d\u043e-\u0437\u043b\u043e\u0439","none":"\u0411\u0435\u0437 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u044f","any":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435"},"alignment_union":{"ce.cg.cn.le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.le.ne":"\u041b\u044e\u0431\u043e\u0435 \u0437\u043b\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cg.lg.ng":"\u041b\u044e\u0431\u043e\u0435 \u0434\u043e\u0431\u0440\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","cn.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cg.cn":"\u041b\u044e\u0431\u043e\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","le.lg.ln":"\u041b\u044e\u0431\u043e\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435","ce.cn.le.ln.n.ne":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0434\u043e\u0431\u0440\u043e\u0433\u043e","ce.cg.cn.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u0430\u043a\u043e\u043d\u043d\u043e\u0433\u043e","cg.cn.lg.ln.n.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0437\u043b\u043e\u0433\u043e","le.lg.ln.n.ne.ng":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u0445\u0430\u043e\u0442\u0438\u0447\u043d\u043e\u0433\u043e","ce.cg.le.lg":"\u041b\u044e\u0431\u043e\u0435 \u043c\u0438\u0440\u043e\u0432\u043e\u0437\u0437\u0440\u0435\u043d\u0438\u0435 \u043a\u0440\u043e\u043c\u0435 \u043d\u0435\u0439\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e"},"damage_types":{"10":"\u0414\u0440\u043e\u0431\u044f\u0449\u0438\u0439","12":"\u041a\u043e\u043b\u044e\u0449\u0438\u0439","11":"\u0420\u0443\u0431\u044f\u0449\u0438\u0439","18":"\u0417\u0432\u0443\u043a","19":"\u0418\u0437\u043b\u0443\u0447\u0435\u043d\u0438\u0435","17":"\u041a\u0438\u0441\u043b\u043e\u0442\u0430","21":"\u041d\u0435\u043a\u0440\u043e\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","13":"\u041e\u0433\u043e\u043d\u044c","22":"\u041f\u0441\u0438\u0445\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f","20":"\u0421\u0438\u043b\u043e\u0432\u043e\u0435 \u043f\u043e\u043b\u0435","14":"\u0425\u043e\u043b\u043e\u0434","15":"\u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e","16":"\u042f\u0434"},"damage_types_tags":{"nm":"\u041d\u0435\u043c\u0430\u0433\u0438\u0447.","ns":"\u041d\u0435\u043f\u043e\u0441\u0435\u0440\u0435\u0431.","na":"\u041d\u0435\u0430\u0434\u0430\u043c\u0430\u043d\u0442.","m":"\u041c\u0430\u0433\u0438\u0447.","a":"\u0410\u0442\u0430\u043a\u0430"}},"eng_to_ru":{"f":"\u0430",",":"\u0431","d":"\u0432","u":"\u0433","l":"\u0434","t":"\u0435","`":"\u0451",";":"\u0436","p":"\u0437","b":"\u0438","q":"\u0439","r":"\u043a","k":"\u043b","v":"\u043c","y":"\u043d","j":"\u043e","g":"\u043f","h":"\u0440","c":"\u0441","n":"\u0442","e":"\u0443","a":"\u0444","\\[":"\u0445","w":"\u0446","x":"\u0447","i":"\u0448","o":"\u0449","m":"\u044c","s":"\u044b","\\]":"\u044a","'":"\u044d","\\.":"\u044e","z":"\u044f"},"ru_to_eng":{"\u0430":"f","\u0431":",","\u0432":"d","\u0433":"u","\u0434":"l","\u0435":"t","\u0451":"`","\u0436":";","\u0437":"p","\u0438":"b","\u0439":"q","\u043a":"r","\u043b":"k","\u043c":"v","\u043d":"y","\u043e":"j","\u043f":"g","\u0440":"h","\u0441":"c","\u0442":"n","\u0443":"e","\u0444":"a","\u0445":"\\[","\u0446":"w","\u0447":"x","\u0448":"i","\u0449":"o","\u044c":"m","\u044b":"s","\u044a":"\\]","\u044d":"'","\u044e":"\\.","\u044f":"z"}};</script>
+<script type="text/javascript"  src="../../../beta/js/pack.common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/common.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/script.typos.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.comments.min.js@v=3.0.139"></script>
+<script type="text/javascript"  src="../../../beta/js/pack.gallery.min.js@v=3.0.139"></script>
+<script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(42419409, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/42419409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">let ALERTS = [];</script>
+
+</body>
+</html>
