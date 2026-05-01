@@ -12,6 +12,6 @@ Disallow: */piece*
 Disallow: */login*
 Disallow: */logout*
 
-Sitemap: https://dnd.su/sitemap.xml
+Sitemap: https://janglep.github.io/sitemap.xml
 
-Host: dnd.su
+Host: janglep.github.io
