@@ -1,0 +1,240 @@
+{
+	"name": "bestiary",
+	"items":
+	[
+		{
+			"name": "size",
+			"list":
+			[
+				{"title":"Крошечный","value":1},
+				{"title":"Маленький","value":2},
+				{"title":"Средний","value":3},
+				{"title":"Большой","value":4},
+				{"title":"Огромный","value":5},
+				{"title":"Громадный","value":6},
+				{"title":"Маленький или средний","value":10},
+				{"title":"Маленький рой крошечных","value":11},
+				{"title":"Средний рой крошечных","value":7},
+				{"title":"Большой рой крошечных","value":8},
+				{"title":"Большой рой маленьких","value":12},
+				{"title":"Большой рой средних","value":9}
+			]
+		}
+		{
+			"name": "type",
+			"list":
+			[
+				{"title":"Аберрация","value":24},
+				{"title":"Великан","value":25},
+				{"title":"Гуманоид","value":19},
+				{"title":"Дракон","value":21},
+				{"title":"Зверь","value":22},
+				{"title":"Исчадие","value":31},
+				{"title":"Конструкт","value":29},
+				{"title":"Монстр","value":23},
+				{"title":"Небожитель","value":28},
+				{"title":"Нежить","value":20},
+				{"title":"Растение","value":26},
+				{"title":"Слизь","value":27},
+				{"title":"Фея","value":32},
+				{"title":"Элементаль","value":30},
+				{"title":"Транспорт","value":33},
+				{"title":"Объект","value":34}
+			]
+		}
+		{
+			"name": "danger",
+			"list":
+			[
+				{"title":"0  - 0 или 10 опыта","value":10},
+				{"title":"1\/8  - 25 опыта","value":11},
+				{"title":"1\/4  - 50 опыта","value":12},
+				{"title":"1\/2  - 100 опыта","value":13},
+				{"title":"1  - 200 опыта","value":14},
+				{"title":"2  - 450 опыта","value":15},
+				{"title":"3  - 700 опыта","value":16},
+				{"title":"4  - 1100 опыта","value":17},
+				{"title":"5  - 1800 опыта","value":18},
+				{"title":"6  - 2300 опыта","value":19},
+				{"title":"7  - 2900 опыта","value":20},
+				{"title":"8  - 3900 опыта","value":21},
+				{"title":"9  - 5000 опыта","value":22},
+				{"title":"10  - 5900 опыта","value":23},
+				{"title":"11  - 7200 опыта","value":24},
+				{"title":"12  - 8400 опыта","value":25},
+				{"title":"13  - 10 000 опыта","value":26},
+				{"title":"14  - 11 500 опыта","value":27},
+				{"title":"15  - 13 000 опыта","value":28},
+				{"title":"16  - 15 000 опыта","value":29},
+				{"title":"17  - 18 000 опыта","value":30},
+				{"title":"18  - 20 000 опыта","value":31},
+				{"title":"19  - 22 000 опыта","value":32},
+				{"title":"20  - 25 000 опыта","value":33},
+				{"title":"21  - 33 000 опыта","value":34},
+				{"title":"22  - 41 000 опыта","value":35},
+				{"title":"23  - 50 000 опыта","value":36},
+				{"title":"24  - 62 000 опыта","value":37},
+				{"title":"25  - 75 000 опыта","value":38},
+				{"title":"26  - 90 000 опыта","value":39},
+				{"title":"27  - 105 000 опыта","value":40},
+				{"title":"28  - 120 000 опыта","value":41},
+				{"title":"29  - 135 000 опыта","value":42},
+				{"title":"30  - 155 000 опыта","value":43}
+			]
+		}
+		{
+			"name": "source",
+			"list":
+			{
+				"80":{"title":"Unearthed Arcana","list":{
+					"77":{"title":"Unearthed Arcana","value":118},
+					"80":{"title":"Wonders of the Multiverse","value":172}}},
+				"999":{"title":"Homebrew","list":{
+					"81":{"title":"Homebrew","value":999},
+					"82":{"title":"Assault on Armaros Station","value":216},
+					"83":{"title":"Plane Shift: Amonkhet","value":144},
+					"85":{"title":"Plane Shift: Innistrad","value":142},
+					"92":{"title":"Chronicles of Naimiria","value":193},
+					"98":{"title":"Enhanced Demons","value":195},
+					"99":{"title":"Enhanced Devils","value":196},
+					"102":{"title":"The Game Master's Book of Legendary Dragons","value":186},
+					"103":{"title":"Grim Hollow","value":170},
+					"104":{"title":"Heliana’s Guide to Monster Hunting","value":212},
+					"105":{"title":"Humblewood Campaign Setting","value":222},
+					"106":{"title":"laserllama","value":179},
+					"107":{"title":"Matt Mercer \/ Critical Role","value":147},
+					"108":{"title":"Midgard Heroes Handbook","value":156},
+					"111":{"title":"Monster Girl Encyclopedia","value":168},
+					"114":{"title":"Rebreya: Shadow of Progress","value":211},
+					"116":{"title":"Steinhardt's Guide to the Eldritch Hunt","value":192},
+					"117":{"title":"Spark of Alastas","value":310},
+					"118":{"title":"Sprouting Chaos","value":104},
+					"120":{"title":"Tal'Dorei Campaign Setting Reborn","value":165},
+					"123":{"title":"Tome of Beasts","value":164}}}
+			}
+		}
+		{
+			"name": "npc",
+			"list":
+			[
+				{"title":"Нет","value":0},
+				{"title":"Да","value":1}
+			]
+		}
+		{
+			"name": "languages",
+			"list":
+			[
+				{"title":"","list":[
+					{"title":"Общий","value":12},
+					{"title":"Телепатия","value":29},
+					{"title":"Все","value":30},
+					{"title":"Любой","value":75}]},
+				{"title":"Обычные","list":[
+					{"title":"Великаний","value":18},
+					{"title":"Гномий","value":13},
+					{"title":"Гоблинский","value":19},
+					{"title":"Дварфийский","value":14},
+					{"title":"Драконий","value":20},
+					{"title":"Орочий","value":17},
+					{"title":"Полуросликов","value":15},
+					{"title":"Эльфийский","value":16}]},
+				{"title":"Необычные","list":[
+					{"title":"Бездны","value":21},
+					{"title":"Глубинная речь","value":22},
+					{"title":"Инфернальный","value":23},
+					{"title":"Небесный","value":24},
+					{"title":"Первичный","value":25},
+					{"title":"Подземный","value":26},
+					{"title":"Сильван","value":27},
+					{"title":"Ауран","value":28},
+					{"title":"Акван","value":33},
+					{"title":"Терран","value":34},
+					{"title":"Игнан","value":35}]},
+				{"title":"Редкие","list":[
+					{"title":"Воровской жаргон","value":55},
+					{"title":"Друидический","value":45},
+					{"title":"Гитский","value":31},
+					{"title":"Гноллий","value":36},
+					{"title":"Модронский","value":39},
+					{"title":"Сахуагинский","value":41},
+					{"title":"Тэйский","value":57},
+					{"title":"Мерфолк","value":62},
+					{"title":"Леонинский","value":67}]},
+				{"title":"Равника","list":[
+					{"title":"Ведалкен","value":79},
+					{"title":"Язык Локсодонов","value":78},
+					{"title":"Язык Минотавров","value":77}]},
+				{"title":"Экзотические","list":[
+					{"title":"Доварский","value":72},
+					{"title":"Бохти","value":61},
+					{"title":"Зиксвет","value":69},
+					{"title":"Йикариа","value":65},
+					{"title":"Крауль","value":74},
+					{"title":"Крутик","value":63},
+					{"title":"Куори","value":64},
+					{"title":"Отиджский","value":40},
+					{"title":"Тлетлахтолли","value":70},
+					{"title":"Три-кринский","value":44},
+					{"title":"Троглодитский","value":46},
+					{"title":"Слаадский","value":42},
+					{"title":"Умбрал","value":76},
+					{"title":"Язык Аартуков","value":71},
+					{"title":"Язык Бурых увальней","value":47},
+					{"title":"Язык Вегепигмеев","value":58},
+					{"title":"Язык Воргов","value":49},
+					{"title":"Язык Гигантских лосей","value":51},
+					{"title":"Язык Гигантских орлов","value":52},
+					{"title":"Язык Гигантских сов","value":50},
+					{"title":"Язык Глубинных воронов","value":68},
+					{"title":"Язык Греллов","value":37},
+					{"title":"Язык Грунгов","value":59},
+					{"title":"Язык Икситксачитлов","value":66},
+					{"title":"Язык Йети","value":48},
+					{"title":"Язык Жаболюдов","value":32},
+					{"title":"Язык Крюкастых ужасов","value":38},
+					{"title":"Язык Ледяных жаб","value":56},
+					{"title":"Язык Мерцающих псов","value":53},
+					{"title":"Язык Полярных волков","value":54},
+					{"title":"Язык Сфинксов","value":43},
+					{"title":"Язык Тлинкалли","value":60},
+					{"title":"Язык Хадози","value":73},
+					{"title":"Соламнийский","value":80},
+					{"title":"Наречие кендеров","value":81}]}
+			]
+		}
+		{
+			"name": "environment",
+			"list":
+			[
+				{"title":"Арктика","value":1},
+				{"title":"Болото","value":2},
+				{"title":"Город","value":3},
+				{"title":"Горы","value":4},
+				{"title":"Лес","value":5},
+				{"title":"Луг","value":6},
+				{"title":"Побережье","value":7},
+				{"title":"Под водой","value":8},
+				{"title":"Подземье","value":9},
+				{"title":"Пустыня","value":10},
+				{"title":"Холмы","value":11}
+			]
+		}
+		{
+			"name": "speed",
+			"list":
+			[
+				{"title":"Скорость ходьбы","value":"+1"},
+				{"title":"Скорость плавания","value":"+2"},
+				{"title":"Скорость полёта","value":"+3"},
+				{"title":"Скорость лазания","value":"+4"},
+				{"title":"Скорость копания","value":"+5"},
+				{"title":"Без скорости ходьбы","value":-1},
+				{"title":"Без скорости плавания","value":-2},
+				{"title":"Без скорости полёта","value":-3},
+				{"title":"Без скорости лазания","value":-4},
+				{"title":"Без скорости копания","value":-5}
+			]
+		}
+	]
+}

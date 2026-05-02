@@ -1,0 +1,107 @@
+{
+	"name": "items",
+	"items":
+	[
+		{
+			"name": "type",
+			"list":
+			[
+				{"title": "Волшебная палочка","value": 5},
+				{"title": "Доспех","value": 8},
+				{"title": "Жезл","value": 6},
+				{"title": "Зелье","value": 2},
+				{"title": "Кольцо","value": 3},
+				{"title": "Оружие","value": 9},
+				{"title": "Посох","value": 7},
+				{"title": "Свиток","value": 4},
+				{"title": "Чудесный предмет","value": 1}
+			]
+		}
+		{
+			"name": "quality",
+			"list":
+			[
+				{"title": "Обычный","value": 6},
+				{"title": "Необычный","value": 1},
+				{"title": "Редкий","value": 2},
+				{"title": "Очень редкий","value": 3},
+				{"title": "Легендарный","value": 4},
+				{"title": "Артефакт","value": 7},
+				{"title": "Не имеет редкости","value": 8},
+				{"title": "Редкость варьируется","value": 5}
+			]
+		}
+		{
+			"name": "attunement",
+			"list":
+			[
+				{"title": "Требуется настройка","value": 2},
+				{"title": "Не требуется настройка","value": 1}
+			]
+		}
+		{
+			"name": "source",
+			"list":
+			{
+					"10":{"title": "Core","list": {
+						"1": {"title": "Dungeon Master's Guide","value": 101}}},
+					"20":{"title": "Sourcebooks","list":{
+						"6":{"title": "Acquisition Incorporated","value": 115},
+						"7":{"title": "Bigby Presents: Glory of the Giants","value": 198},
+						"8":{"title": "The Book of Many Things","value": 207},
+						"10":{"title": "Eberron: Rising from the Last War","value": 119},
+						"11":{"title":"Explorer's Guide to Wildemount","value":116},
+						"12":{"title":"Fizban's Treasury of Dragons","value":152},
+						"15":{"title":"Guildmasters' guide to Ravnica","value":112},
+						"18":{"title":"Mordenkainen's Tome of Foes","value":113},
+						"19":{"title":"Mythic Odysseys of Theros","value":121},
+						"20":{"title":"Spelljammer: Adventures in Space","value":160},
+						"21":{"title":"Planescape: Adventures in the Multiverse","value":205},
+						"23":{"title":"Tasha's Cauldron of Everything","value":117},
+						"24":{"title":"Van Richten's Guide to Ravenloft","value":125},
+						"25":{"title":"Volo's guide to monsters","value":111},
+						"27":{"title":"Xanathar's Guide to Everything","value":109}}},
+					"30":{"title":"Adventures, hardcovers","list":{
+						"28":{"title":"Baldur's Gate: Descent Into Avernus","value":126},
+						"29":{"title":"Candlekeep Mysteries","value":122},
+						"30":{"title":"Critical Role: Call of the Netherdeep","value":159},
+						"31":{"title":"Curse of Strahd","value":124},
+						"32":{"title":"Descent into the Lost Caverns of Tsojcanth","value":213},
+						"33":{"title":"Dragonlance: Shadow of the Dragon Queen","value":183},
+						"34":{"title":"Ghosts of Saltmarsh","value":128},
+						"35":{"title":"Hoard of the Dragon Queen","value":105},
+						"36":{"title":"Icewind Dale: Rime of the Frostmaiden","value":120},
+						"37":{"title":"Journeys through the Radiant Citadel","value":171},
+						"38":{"title":"Keys from the Golden Vault","value":189},
+						"39":{"title":"Out of the Abyss","value":129},
+						"40":{"title":"Princes of the Apocalypse","value":107},
+						"41":{"title":"Phandelver and Below: The Shattered Obelisk","value":202},
+						"42":{"title":"Storm King's Thunder","value":132},
+						"43":{"title":"Strixhaven: A Curriculum of Chaos","value":155},
+						"44":{"title":"Tales from the Yawning Portal","value":133},
+						"45":{"title":"The Rise of Tiamat","value":106},
+						"46":{"title":"The Wild Beyond The Witchlight: A Feywild Adventure","value":151},
+						"47":{"title":"Tomb of Annihilation","value":114},
+						"48":{"title":"Waterdeep: Dragon Heist","value":134},
+						"49":{"title":"Waterdeep: Dungeon of the Mad Mage","value":135},
+						"50":{"title":"Vecna: Eve of Ruin","value":214},
+						"51":{"title":"Quest from the Infinite Staircase","value":218}}},
+					"40":{"title":"Adventures, softcovers","list":{
+						"53":{"title":"Essentials Kit: Divine Contention","value":127},
+						"55":{"title":"Essentials Kit: Sleeping Dragon's Wake","value":131},
+						"58":{"title":"Hunt for the Thessalhydra","value":123},
+						"59":{"title":"Infernal Machine Rebuild","value":161},
+						"61":{"title":"The Lost Dungeon of Rickedness: Big Rick Energy","value":130},
+						"62":{"title":"Lost Mine of Phandelver","value":110}}},
+					"50":{"title":"Supplements","list":{
+						"64":{"title":"Honor among Thieves","value":191},
+						"67":{"title":"Monstrous Compendium Vol 2: Dragonlance Creatures","value":188},
+						"68":{"title":"Monstrous Compendium Vol 3: Minecraft Creatures","value":199}}},
+					"60":{"title":"Adventurers League","list":{
+						"74":{"title":"Adventurers League","value":169},
+						"75":{"title":"Lost Laboratory of Kwalish","value":153},
+						"76":{"title":"Saltmarsh Encounters","value":180}}}
+			}
+		}
+	]
+}

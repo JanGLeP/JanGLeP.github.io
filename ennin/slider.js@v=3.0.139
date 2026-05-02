@@ -1,0 +1,80 @@
+(function() {
+  window.slider = function(oSlider, nMin, nMax, callback) {
+    let bar = oSlider.querySelector('.slider__bar'),
+      thumb = oSlider.querySelector('.slider__button'),
+      output = oSlider.querySelector('.slider__button');
+    output.textContent = nMin;
+    let LimitMovementX, thumbCoord;
+	let valueOld = nMin;
+
+    let startTouch = null;
+    let lastTouch = null;
+
+    function onMouseMove(e) {
+      LimitMovementX = {
+        min: bar.offsetLeft,
+        max: bar.offsetLeft + bar.offsetWidth - thumb.offsetWidth
+      }
+
+      let shift = e.movementX;
+      if (isTouchDevice()) {
+        let touch = e.touches[0];
+        shift = lastTouch ? (touch.pageX - lastTouch.pageX) : 0;
+        lastTouch = touch;
+      }
+      thumbCoord = thumb.offsetLeft + shift;
+
+      if (thumbCoord < LimitMovementX.min) {
+        thumbCoord = LimitMovementX.min;
+      }
+      if (thumbCoord > LimitMovementX.max) {
+        thumbCoord = LimitMovementX.max;
+      }
+	  let valueNew = nMin + thumbCoord * (nMax - nMin) / LimitMovementX.max ^ 0;
+      thumb.style.left = thumbCoord + 'px';
+	  if (valueNew !== valueOld) {
+		output.textContent = valueNew;
+		callback(valueOld, valueNew);
+		valueOld = valueNew;
+	  }
+    }
+
+    function isTouchDevice() {
+      return (('ontouchstart' in window) ||
+          (navigator.maxTouchPoints > 0) ||
+          (navigator.msMaxTouchPoints > 0));
+    }
+
+    function onThumbup() {
+      document.removeEventListener('touchmove', onMouseMove);
+      document.removeEventListener('mouseup', onThumbup);
+    }
+
+    function onMouseup() {
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mouseup', onMouseup);
+    }
+
+    if (isTouchDevice()) {
+      thumb.addEventListener('touchstart', function(e) {
+        startTouch = e.touches[0];
+        this.addEventListener('dragstart', function(e) {
+          e.preventDefault();
+        });
+        document.addEventListener('touchmove', onMouseMove);
+        document.addEventListener('touchend', onThumbup);
+      });
+    } else {
+      thumb.addEventListener('mousedown', function() {
+        this.addEventListener('dragstart', function(e) {
+          e.preventDefault();
+        });
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseup);
+      });
+    }
+
+
+	callback(-1, nMin);
+  };
+}());

@@ -1,0 +1,256 @@
+{
+	"name": "spells",
+	"items":
+	[
+		{
+			"name": "level",
+			"list":
+			[
+				{"title":"Заговор","value":0},
+				{"title":"1","value":1},
+				{"title":"2","value":2},
+				{"title":"3","value":3},
+				{"title":"4","value":4},
+				{"title":"5","value":5},
+				{"title":"6","value":6},
+				{"title":"7","value":7},
+				{"title":"8","value":8},
+				{"title":"9","value":9}
+			]
+		}
+		{
+			"name": "quality",
+			"list":
+			[
+				{"title":"Варвар","value":11},
+				{"title":"Воин","value":14},
+				{"title":"Волшебник","value":21},
+				{"title":"Бард","value":12},
+				{"title":"Друид","value":22},
+				{"title":"Жрец","value":13},
+				{"title":"Изобретатель","value":23},
+				{"title":"Колдун","value":20},
+				{"title":"Монах","value":15},
+				{"title":"Паладин","value":16},
+				{"title":"Плут","value":18},
+				{"title":"Следопыт","value":17},
+				{"title":"Чародей","value":19}
+			]
+		}
+		{
+			"name": "archetype",
+			"list":
+			{
+				"12":{"title":"Бард","list":{
+					"100":{"title":"Коллегия доблести","value":100},
+					"101":{"title":"Коллегия знаний","value":101},
+					"102":{"title":"Коллегия мечей","value":102},
+					"103":{"title":"Коллегия очарования","value":103},
+					"104":{"title":"Коллегия шёпотов","value":104},
+					"105":{"title":"Коллегия красноречия","value":105},
+					"106":{"title":"Коллегия созидания","value":106},
+					"107":{"title":"Коллегия духов","value":107},
+					"231":{"title":"Коллегия древних","value":231}}},
+				"11":{"title":"Варвар","list":{
+					"291":{"title":"Путь великана","value":291}}},
+				"14":{"title":"Воин","list":{
+					"117":{"title":"Мистический рыцарь","value":117},
+					"121":{"title":"Мистический лучник","value":121},
+					"124":{"title":"Пси-воин","value":124}}},
+				"21":{"title":"Волшебник","list":{
+					"126":{"title":"Школа Воплощения","value":126},
+					"127":{"title":"Школа Вызова","value":127},
+					"128":{"title":"Школа Иллюзии","value":128},
+					"129":{"title":"Школа Некромантии","value":129},
+					"130":{"title":"Школа Ограждения","value":130},
+					"132":{"title":"Школа Преобразования","value":132},
+					"133":{"title":"Школа Прорицания","value":133},
+					"134":{"title":"Военная магия","value":134},
+					"135":{"title":"Магия хронургии","value":135},
+					"136":{"title":"Магия гравитургии","value":136},
+					"137":{"title":"Орден писцов","value":137},
+					"138":{"title":"Песнь клинка","value":138},
+					"216":{"title":"Техномант","value":216},
+					"217":{"title":"Теург","value":217},
+					"218":{"title":"Мастер знаний","value":218},
+					"241":{"title":"Школа древностей","value":241}}},
+				"22":{"title":"Друид","list":{
+					"139":{"title":"Круг земли","value":139},
+					"140":{"title":"Круг луны","value":140},
+					"141":{"title":"Круг пастыря","value":141},
+					"142":{"title":"Круг снов","value":142},
+					"143":{"title":"Круг дикого огня","value":143},
+					"144":{"title":"Круг звёзд","value":144},
+					"145":{"title":"Круг спор","value":145},
+					"244":{"title":"Круг плодородия","value":244},
+					"273":{"title":"Круг Сумерек","value":273}}},
+				"13":{"title":"Жрец","list":{
+					"146":{"title":"Домен бури","value":146},
+					"147":{"title":"Домен войны","value":147},
+					"148":{"title":"Домен жизни","value":148},
+					"149":{"title":"Домен знаний","value":149},
+					"150":{"title":"Домен обмана","value":150},
+					"151":{"title":"Домен природы","value":151},
+					"152":{"title":"Домен света","value":152},
+					"153":{"title":"Домен смерти","value":153},
+					"154":{"title":"Домен магии","value":154},
+					"155":{"title":"Домен кузни","value":155},
+					"156":{"title":"Домен упокоения","value":156},
+					"157":{"title":"Домен мира","value":157},
+					"159":{"title":"Домен сумерек","value":159},
+					"274":{"title":"Домен Города","value":274}}},
+				"23":{"title":"Изобретатель","list":{
+					"160":{"title":"Алхимик","value":160},
+					"161":{"title":"Артиллерист","value":161},
+					"162":{"title":"Боевой кузнец","value":162},
+					"163":{"title":"Бронник","value":163},
+					"249":{"title":"Инакомыслящий","value":249}}},
+				"20":{"title":"Колдун","list":{
+					"164":{"title":"Архифея","value":164},
+					"165":{"title":"Исчадие","value":165},
+					"166":{"title":"Великий Древний","value":166},
+					"167":{"title":"Бессмертный","value":167},
+					"168":{"title":"Ведьмовской клинок","value":168},
+					"169":{"title":"Небожитель","value":169},
+					"170":{"title":"Бездонный","value":170},
+					"171":{"title":"Гений","value":171},
+					"172":{"title":"Нежить","value":172},
+					"279":{"title":"Призрак в Машине","value":279}}},
+				"15":{"title":"Монах","list":{
+					"174":{"title":"Путь тени","value":174},
+					"175":{"title":"Путь четырёх стихий","value":175},
+					"176":{"title":"Путь долгой смерти","value":176},
+					"177":{"title":"Путь кенсэя","value":177}}},
+				"16":{"title":"Паладин","list":{
+					"185":{"title":"Клятва мести","value":185},
+					"186":{"title":"Клятвопреступник","value":186},
+					"187":{"title":"Клятва короны","value":187},
+					"189":{"title":"Клятва покорения","value":189},
+					"190":{"title":"Клятва славы","value":190}}},
+				"18":{"title":"Плут","list":{
+					"194":{"title":"Мистический ловкач","value":194}}},
+				"17":{"title":"Следопыт","list":{
+					"202":{"title":"Повелитель зверей","value":202},
+					"203":{"title":"Странник горизонта","value":203},
+					"204":{"title":"Сумрачный охотник","value":204},
+					"205":{"title":"Убийца монстров","value":205},
+					"206":{"title":"Странник фей","value":206},
+					"207":{"title":"Хранитель роя","value":207},
+					"208":{"title":"Наездник на дрейке","value":208}}},
+				"19":{"title":"Чародей","list":{
+					"209":{"title":"Наследие драконьей крови","value":209},
+					"210":{"title":"Дикая магия","value":210},
+					"211":{"title":"Божественная душа","value":211},
+					"212":{"title":"Теневая магия","value":212},
+					"213":{"title":"Штормовое колдовство","value":213},
+					"214":{"title":"Аберрантный разум","value":214},
+					"215":{"title":"Заводная душа","value":215},
+					"262":{"title":"Зелёная кровь","value":262},
+					"286":{"title":"Лунное чародейство","value":286},
+					"288":{"title":"Душа феникса","value":288},
+					"290":{"title":"Магия моря","value":290}}}
+			}
+		}
+		{
+			"name": "school",
+			"list":
+			[
+				{"title":"Воплощение","value":1},
+				{"title":"Вызов","value":2},
+				{"title":"Иллюзия","value":3},
+				{"title":"Некромантия","value":4},
+				{"title":"Ограждение","value":5},
+				{"title":"Очарование","value":6},
+				{"title":"Преобразование","value":7},
+				{"title":"Прорицание","value":8}
+			]
+		}
+		{
+			"name": "source",
+			"list":
+			{
+				"80":{"title":"Unearthed Arcana","list":{
+						"77":{"title":"Unearthed Arcana","value":118},
+						"78":{"title":"DnD One","value":209},
+						"79":{"title":"Modern Magic","value":166},
+						"80":{"title":"Wonders of the Multiverse","value":172}}},
+				"999":{"title":"Homebrew","list":{
+						"81":{"title":"Homebrew","value":999},
+						"90":{"title":"Book of Lost Spells","value":150},
+						"91":{"title":"Chronicles of Eberron","value":185},
+						"95":{"title":"Deep Magic","value":163},
+						"96":{"title":"Dungeon Masters Guild","value":184},
+						"103":{"title":"Grim Hollow","value":170},
+						"105":{"title":"Humblewood Campaign Setting","value":222},
+						"106":{"title":"laserllama","value":179},
+						"107":{"title":"Matt Mercer \/ Critical Role","value":147},
+						"108":{"title":"Midgard Heroes Handbook","value":156},
+						"110":{"title":"Midgard Worldbook","value":162},
+						"115":{"title":"Ryoko's guide to the yokai realms","value":210},
+						"116":{"title":"Steinhardt's Guide to the Eldritch Hunt","value":192},
+						"118":{"title":"Sprouting Chaos","value":104},
+						"120":{"title":"Tal'Dorei Campaign Setting Reborn","value":165},
+						"122":{"title":"Technomancer's Textbook","value":136},
+						"124":{"title":"Valda's Spire of Secrets","value":190}}}
+			}
+		}
+		{
+			"name": "concentration",
+			"list":
+			[
+				{"title":"Требуется","value":2},
+				{"title":"Не требуется","value":1}
+			]
+		}
+		{
+			"name": "ritual",
+			"list":
+			[
+				{"title":"Ритуал","value":2},
+				{"title":"Не ритуал","value":1}
+			]
+		}
+		{
+			"name": "components",
+			"list":
+			[
+				{"title":"Вербальный","value":"v"},
+				{"title":"Соматический","value":"s"},
+				{"title":"Материальный","value":"m"},
+				{"title":"Без вербального","value":"-v"},
+				{"title":"Без соматического","value":"-s"},
+				{"title":"Без материального","value":"-m"}
+			]
+		}
+		{
+			"name": "casttime",
+			"list":
+			[
+				{"title":"Действие","value":"action"},
+				{"title":"Бонусное действие","value":"bonus_action"},
+				{"title":"Реакция","value":"reaction"},
+				{"title":"Минуты","value":"minute"},
+				{"title":"Часы","value":"hour"}
+			]
+		}
+		{
+			"name": "damtype",
+			"list":
+			[
+				{"title":"Дробящий","value":10},
+				{"title":"Колющий","value":12},
+				{"title":"Рубящий","value":11},
+				{"title":"Звук","value":18},
+				{"title":"Излучение","value":19},
+				{"title":"Кислота","value":17},
+				{"title":"Некротическая энергия","value":21},
+				{"title":"Огонь","value":13},
+				{"title":"Психическая энергия","value":22},
+				{"title":"Силовое поле","value":20},
+				{"title":"Холод","value":14},
+				{"title":"Электричество","value":15},
+				{"title":"Яд","value":16}
+			]
+		}
+	]
+}
